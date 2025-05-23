@@ -1,0 +1,252 @@
+// MinMax font-size in px
+$min-font-size-in-px: ($min-font-size * 1px)
+$max-font-size-in-px: ($max-font-size * 1px)
+
+// MinMax Viewport in px
+$min-viewport-width-in-px: ($min-screen-size * 1px)
+$max-viewport-width-in-px: ($max-screen-size * 1px)
+
+// MinMax Viewport in px
+$min-viewport-width-in-rem: (($min-screen-size / $min-font-size) * 1rem)
+$max-viewport-width-in-rem: (($max-screen-size / $max-font-size) * 1rem)
+
+
+// --------- Fluid Typography Mixin — START --------//
+
+// Requires the calc-interpolation function which can also be used independently
+
+@function calc-interpolation($min-screen, $min-value, $max-screen, $max-value)
+  $a: ($max-value - $min-value) / ($max-screen - $min-screen)
+  $b: $min-value - $a * $min-screen
+  $sign: "+"
+  @if $b < 0
+    $sign: "-"
+    $b: abs($b)
+  @return calc(#{$a * 100}vw #{$sign} #{$b})
+
+// This is the recommended mixin from Mike Riethmuller:
+=interpolate($properties, $min-screen, $max-screen, $min-value, $max-value)
+    @each $property in $properties
+      #{$property}: $min-value
+
+    @media screen and (min-width: $min-screen)
+      @each $property in $properties
+        #{$property}: calc-interpolation($min-screen, $min-value, $max-screen, $max-value)
+
+    @media screen and (min-width: $max-screen)
+      @each $property in $properties
+        #{$property}: $max-value
+
+
+=fluid($val, $sm, $lg)
+  +interpolate($val, $min-viewport-width-in-rem, $max-viewport-width-in-rem, m($sm), d($lg))
+
+=padding($min-screen, $max-screen, $side, $min-value, $max-value)
+  padding-#{$side}: $min-value
+
+  @supports (padding: unquote( 'max(0px)' ))
+    padding-#{$side}: unquote('max(#{$min-value}, env(safe-area-inset-#{$side}))')
+
+  @media screen and (min-width: $min-screen)
+    padding-#{$side}: calc-interpolation($min-screen, $min-value, $max-screen, $max-value)
+
+    @supports (padding: unquote( 'max(0px)' ))
+      padding-#{$side}: unquote('max(#{calc-interpolation($min-screen, $min-value, $max-screen, $max-value)}, env(safe-area-inset-#{$side}))')
+
+  @media screen and (min-width: $max-screen)
+    padding-#{$side}: $max-value
+
+    @supports (padding: unquote( 'max(0px)' ))
+      padding-#{$side}: unquote('max(#{$max-value}, env(safe-area-inset-#{$side}))')
+
+
+=padding-top($sm, $lg)
+  +padding($min-viewport-width-in-rem, $max-viewport-width-in-rem, 'top', m($sm), d($lg))
+
+=padding-right($sm, $lg)
+  +padding($min-viewport-width-in-rem, $max-viewport-width-in-rem, 'right', m($sm), d($lg))
+
+=padding-bottom($sm, $lg)
+  +padding($min-viewport-width-in-rem, $max-viewport-width-in-rem, 'bottom', m($sm), d($lg))
+
+=padding-left($sm, $lg)
+  +padding($min-viewport-width-in-rem, $max-viewport-width-in-rem, 'left', m($sm), d($lg))
+
+
+// Indrek Pass also has a fantastic mixin here: http://sassmeister.com/gist/7f22e44ace49b5124eec
+
+// --------- Fluid Typography Mixin — END --------//
+
+// Convert px to em
+
+// Mobile
+@function m($m)
+  @return ($m / $min-font-size) * 1rem
+
+// Desktop
+@function d($d)
+  @return ($d / $max-font-size) * 1rem
+
+// Ems
+@function em($em)
+  @return ($em / $max-font-size) * 1em
+
+// The below functions are necessary to calculate heading sizes with the Golden Ratio.
+
+// --------- Square Root — START --------//
+
+// This function calculates the square root of a number.
+@function sqrt($r)
+  $x0: 1
+  $x1: $x0
+  @for $i from 1 through 10
+    $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0)
+    $x0: $x1
+  @return $x1
+
+// --------- Square Root — END --------//
+
+// --------- Power Function — START --------//
+
+// This function calculates numbers by exponents.
+// Courtesy of CSS-Tricks: https://css-tricks.com/snippets/sass/power-function/
+
+// @function pow($number, $exponent)
+//   $value: 1
+
+//   @if $exponent > 0
+//     @for $i from 1 through $exponent
+//       $value: $value * $number
+//   @else if $exponent < 0
+//     @for $i from 1 through -$exponent
+//       $value: $value / $number
+
+//   @return $value
+
+@function pow($value, $pow: 1)
+  @return if($pow == 0, 1, $value * pow($value, $pow - 1))
+
+@function rounded($value, $precision: 1)
+  $pow10: pow(10, $precision)
+
+  @return round($value * $pow10) / $pow10
+
+// --------- Power Function — END --------//
+
+$ratio: (1 + sqrt(5)) / 2
+
+@function lh($lh)
+  $lh: $ratio - 1 / (2 * $ratio) * (1 - $min-screen-size / pow($lh * $ratio, 2))
+  @return $lh
+
+@function lhm($lh)
+  $lh: $ratio - 1 / (2 * $ratio) * (1 - $max-screen-size / pow($lh * $ratio, 2))
+  @return $lh
+  
+// MinMax h1 tag
+@function h1($font-size)
+  $font-size: $font-size * pow($ratio, 2)
+  @return $font-size
+
+// MinMax h2 tag
+@function h2($font-size)
+  $font-size: $min-font-size * pow(sqrt($ratio), 3)
+  @return $font-size
+  
+// MinMax h3 tag
+@function h3($font-size)
+  $font-size: $min-font-size * $ratio
+  @return $font-size
+  
+// MinMax h4 tag
+@function h4($font-size)
+  $font-size: $min-font-size * sqrt($ratio)
+  @return $font-size
+  
+// MinMax h5 tag
+@function h5($font-size)
+  $font-size: $min-font-size
+  @return $font-size
+  
+// MinMax h5 tag
+@function h6($font-size)
+  $font-size: $min-font-size / sqrt($ratio)
+  @return $font-size
+
+
+
+=font($min-font-size, $max-font-size)
+  font-size: d($max-font-size)
+  +interpolate(line-height, $min-viewport-width-in-rem, $max-viewport-width-in-rem, lh($min-font-size) * m($min-font-size) , lhm($max-font-size) * d($max-font-size))
+
+// Interpolation Values - END
+
+=font-face($name, $file, $weight, $style)
+  @font-face
+    font-family: '#{$name}'
+    src: url('#{$url}#{$file}.woff2') format('woff2'), url('#{$url}#{$file}.woff') format('woff')
+    font-weight: $weight
+    font-style: $style
+    font-display: swap
+
+=margin
+  margin-right: auto
+  margin-left: auto
+
+  @media (max-width: $sw + 40)
+    margin-right: max(20px, env(safe-area-inset-right))
+    margin-left: max(20px, env(safe-area-inset-left))
+
+
+=device($size)
+  @if $size == phone-only
+    @media (max-width: 799px)
+      @content
+  @else if $size == tablet-up
+    @media (min-width: 800px)
+      @content
+  @else if $size == tablet-or-less
+    @media (max-width: 1024px), (max-width: 1366px) and (hover: none)
+      @content
+  @else if $size == desktop-up
+    @media (min-width: 1025px) and (hover: hover), (min-width: 1367px) and (hover: hover)
+      @content
+  @else if $size == big-desktop-up
+    @media (min-width: 1800px)
+      @content
+
+=ignore
+  /* uncss:ignore start */
+  @content
+  /* uncss:ignore end */
+
+=hover
+
+  &:focus
+    @content
+
+  @media (hover:hover)
+    &:hover
+      @content
+
+  &:active
+    @content
+    
+
+@function split-decimal($value)
+  @if type-of($value) != 'number'
+    @return $value
+
+  $int: floor($value)
+  $fract: $value - $int
+  @if $fract == 0
+    @return $int
+
+  $fract: round($fract * 100) / 100
+  $fractStr: ''
+  @while $fract != floor($fract)
+    $fract: $fract * 10
+    $fractStr: $fractStr + floor($fract)
+    $fract: $fract - floor($fract)
+
+  @return unquote($int + '\\.' + $fractStr)

@@ -1,0 +1,77 @@
+extends ../../layout/_layout
+
+block var
+  - title = 'Our Values'
+  - description = 'Clever '
+  - heading = 'Lorem ipsum dolor sit amet consectetur elit cupiditate deleniti itaque'
+  - subheading = 'At Clever we work with companies - large and small - to find digital solutions that deliver real world success.'
+  - pageUrl = ''
+  - agency = 'current'
+  - crumbs = {'Agency':'last'}
+  //- - custom = 'agency'
+  - agency = true
+  - url = `miami-skyline.jpg`
+
+  - size = 37
+
+block content
+  main#main(class='[ main ]')
+
+    include ../../partials/_hero
+
+
+    div(class='[ x--wide grid layout--sidebar--right py--5 ]')
+
+      article(class='[ content ]')
+
+        h2 Mission
+        
+        p To deliver seamless supply chain solutions that connect businesses to their global aspirations. We optimize logistics operations, streamline inventory management, and provide reliable transportation services. Our commitment is to be your trusted partner in logistics, here, there, and everywhere.
+        
+        h2 Vision
+        p To be the leading provider of integrated logistics solutions, recognized for our unwavering commitment to quality, innovation, and customer satisfaction. We aim to shape the future of logistics by driving efficiency, sustainability, and technological advancements in the industry.
+
+        h2 Core Values
+
+        ol(class='[ list-style--none mb--1 ]')
+          li(class='[ mb--1 ]')
+            strong Customer-Centric Approach:
+            |  We prioritize our customers' needs, understanding that their success is our success. We go above and beyond to provide personalized solutions, exceptional service, and build long-lasting partnerships.
+
+          li(class='[ mb--1 ]') 
+            strong Excellence and Quality:
+            |  We strive for excellence in everything we do, setting high standards for ourselves and continuously improving our processes. We are dedicated to delivering quality service, exceeding expectations, and achieving operational excellence.
+
+          li(class='[ mb--1 ]') 
+            strong Innovation and Technology:
+            |  We embrace innovation and leverage cutting-edge technologies to drive efficiency, optimize supply chain processes, and provide advanced solutions to our clients. We continuously explore new avenues for growth and improvement.
+
+          li(class='[ mb--1 ]') 
+            strong Integrity and Transparency:
+            |  We conduct business with the highest level of integrity, honesty, and transparency. We believe in building trust through open communication, ethical practices, and maintaining confidentiality and security throughout our operations.
+
+          li(class='[ mb--1 ]') 
+            strong Sustainability and Responsibility:
+            |  We are committed to sustainable practices and responsible stewardship of the environment. We strive to minimize our environmental impact by implementing eco-friendly solutions, promoting energy efficiency, and reducing waste.
+
+          li(class='[ mb--1 ]') 
+            strong Collaboration and Partnership:
+            |  We foster a collaborative and inclusive work environment, valuing teamwork, respect, and diversity. We believe in the power of partnership and collaboration to achieve shared goals and drive mutual success.
+
+        p At Titan Logistics, our values form the foundation of our operations, guiding our decisions and actions every step of the way. We are dedicated to delivering exceptional service, innovative solutions, and exceeding the expectations of our valued clients.
+
+
+      aside(class='[ sidebar ]')
+        
+        nav(class='[ navigation--sidebar ]')
+
+          ul(class='[ menu menu--sidebar ]')
+
+            li(class='[ menu--sidebar__item ]')
+              a(class='[ menu--sidebar__link ]' href='/agency/') About Us
+            
+            li(class='[ menu--sidebar__item ]')
+              a(class='[ menu--sidebar__link ]' href='/agency/values') Values
+            
+            li(class='[ menu--sidebar__item ]')
+              a(class='[ menu--sidebar__link ]' href='/agency/team') Team

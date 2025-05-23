@@ -1,0 +1,68 @@
+$ones: 1, 2, 3, 4, 5, 6, 7, 8, 9
+$decimals: 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95
+$sides: (t: (property: top), r: (property: right), b: (property: bottom), l: (property: left), y: (property: (top, bottom)), x: (property: (left, right)))
+
+@each $one in $ones
+  .p--#{$one}
+    padding: #{$one}em
+    @supports (padding: unquote('max(0px)'))
+      padding: unquote('max(#{$one}em, env(safe-area-inset-top))') unquote('max(#{$one}em, env(safe-area-inset-right))') unquote('max(#{$one}em, env(safe-area-inset-bottom))') unquote('max(#{$one}em, env(safe-area-inset-left))')
+
+  @each $side, $values in $sides
+    $name: $side
+    $property: map-get($values, property)
+
+    .p#{$name}--#{$one}
+      @each $prop in $property
+        padding-#{$prop}: #{$one}em
+      
+        @supports (padding: unquote('max(0px)'))
+          padding-#{$prop}: unquote('max(#{$one}em, env(safe-area-inset-#{$prop}))')
+
+  @each $decimal in $decimals
+    $dd: $one + $decimal
+    $decimalClassName: split-decimal($one + $decimal)
+    
+    .p--#{$decimalClassName}
+      padding: $dd
+      @supports (padding: unquote('max(0px)'))
+        padding: unquote('max(#{$dd}, env(safe-area-inset-top))') unquote('max(#{$dd}, env(safe-area-inset-right))') unquote('max(#{$dd}, env(safe-area-inset-bottom))') unquote('max(#{$dd}, env(safe-area-inset-left))')
+
+    @each $side, $values in $sides
+      $name: $side
+      $property: map-get($values, property)
+
+      .p#{$name}--#{$one}
+        @each $prop in $property
+          padding-#{$prop}: #{$one}em
+        
+          @supports (padding: unquote('max(0px)'))
+            padding-#{$prop}: unquote('max(#{$one}em, env(safe-area-inset-#{$prop}))')
+
+      .p#{$name}--#{$decimalClassName}
+        @each $prop in $property
+          padding-#{$prop}: #{$dd}em
+        
+          @supports (padding: unquote('max(0px)'))
+            padding-#{$prop}: unquote('max(#{$dd}em, env(safe-area-inset-#{$prop}))')
+
+@each $decimal in $decimals
+  $dd: $decimal
+  $decimalClassName: split-decimal($decimal)
+  .p--#{$decimalClassName}
+    padding: $dd
+    @supports (padding: unquote('max(0px)'))
+      padding: unquote('max(#{$dd}, env(safe-area-inset-top))') unquote('max(#{$dd}, env(safe-area-inset-right))') unquote('max(#{$dd}, env(safe-area-inset-bottom))') unquote('max(#{$dd}, env(safe-area-inset-left))')
+
+  @each $side, $values in $sides
+    $name: $side
+    $property: map-get($values, property)
+
+    .p#{$name}--#{$decimalClassName}
+      @each $prop in $property
+        padding-#{$prop}: #{$dd}em
+      
+        @supports (padding: unquote('max(0px)'))
+          padding-#{$prop}: unquote('max(#{$dd}em, env(safe-area-inset-#{$prop}))')
+
+

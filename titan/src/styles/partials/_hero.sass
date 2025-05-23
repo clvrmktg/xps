@@ -1,0 +1,56 @@
+.hero
+  +fluid('min-height', 400, 500)
+
+  &.hero--home
+    min-height:  100svh
+
+    // outline: $bg
+
+    @supports not (min-height: 100svh)
+      min-height: 100vh
+
+  > .wrapper
+    min-height: inherit
+
+  &__content
+    position: relative
+    z-index: 1
+
+    // outline: $bg
+
+    &::after
+      content: ''
+      width: 200vw
+      height: 140%
+      // background-color: rgba($black, 0.9)
+      background-color: #c00
+      position: absolute
+      top: -20%
+      right: -20%
+      z-index: -1
+
+$color: #9395A1
+.lead
+  grid-template-columns: [heading-start content-start] repeat(2, 1fr) [heading-end] 1fr [content-end]
+  grid-template-rows: [heading-start] max-content [heading-end content-start] max-content [content-end]
+
+  +device(desktop)
+    grid-template-columns: [heading-start] 1fr [heading-end] 1fr [content-start] repeat(2, 1fr) [content-end]
+    grid-template-rows: [heading-start content-start] max-content [heading-end content-end]
+
+  &__heading
+    grid-area: heading
+
+  &__content
+    grid-area: content
+
+.bar-before
+  
+
+  &::before
+    content: ''
+    display: block
+    width: em(66)
+    height: em(2)
+    background-color: #c00
+    order: 1

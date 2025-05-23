@@ -1,0 +1,125 @@
+// Display
+
+.block
+  display: block
+
+.inline
+  display: inline
+
+.in-bl
+  display: inline-block
+
+// Font Case
+
+.lower
+  text-transform: lowercase
+
+.upper
+  text-transform: uppercase
+
+// Font Weight
+
+.light
+  font-weight: lighter
+  
+.reg
+  font-weight: normal
+
+.bold
+  font-weight: bold
+
+// Text Decoration
+
+.strike
+  text-decoration: line-through
+
+// Positioning
+
+.sticky
+  position: sticky
+  top: 2em
+
+.fixed
+  position: fixed
+
+// Margins
+
+.x--auto
+  margin-left: auto
+  margin-right: auto
+
+@for $h from 35 through 54
+
+  .ch--#{$h}
+    max-width: #{$h}ch
+
+
+@for $o from 1 through 10
+  .o--#{$o}
+    order: $o
+
+@for $gap from 1 through 10
+  .g--#{$gap}
+    gap: #{$gap}em
+
+  .gc--#{$gap}
+    column-gap: #{$gap}em
+  
+  .gr--#{$gap}
+    row-gap: #{$gap}em
+
+.px--full
+  +fluid(('padding-right','padding-left'), 16, 40)
+
+.text
+
+  &--left
+    text-align: left
+
+  &--center
+    text-align: center
+
+  &--right
+    text-align: right
+
+.hidden
+  width: 0
+  height: 0
+  overflow: hidden
+  visibility: hidden
+  position: absolute
+  top: 0
+  left: -999rem
+  z-index: -999
+
+.video
+  min-width: 100%
+  max-width: 100%
+  min-height: 100%
+  max-height: 100%
+  background-color: $black
+  object-fit: cover
+
+.line
+  height: em(1)
+
+  &--white
+    background-color: #979797
+
+.bg
+  background:
+    repeat: no-repeat
+    position: center
+    size: cover
+
+@for $o from 1 through 10
+  .o--#{$o}
+    order: $o
+
+.no-wrap
+  white-space: nowrap
+
+@for $width from 1 through 100
+
+  .w--#{$width}
+    width: percentage($width / 100)

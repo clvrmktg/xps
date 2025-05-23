@@ -1,0 +1,32 @@
+.main
+  padding-top: var(--navbar-height)
+  min-height: 100vh
+
+.layout
+
+  &--sidebar
+
+    +device(desktop-up)
+      &--left
+          grid-template-columns: minmax(max-content, 20%) 1fr
+          grid-template-areas: 'b . a'
+
+      &--right
+        grid-template-columns: minmax(em(200), em(950)) 1fr minmax(em(200), 1fr)
+        grid-template-areas: 'a . b'
+
++device(desktop-up)
+      
+  .content
+    grid-area: a
+
+  .sidebar
+    grid-area: b
+    padding-top: em(27)
+
+
+.services
+
+  &__item
+    flex: 50%
+    width: 100%

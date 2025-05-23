@@ -1,0 +1,23 @@
+=ratio($width, $height)
+  .ratio--#{$width}\:#{$height}
+    aspect-ratio: #{$width} / #{$height}
+
+    > img, > noscript > img
+      height: 100%
+      object-fit: cover
+
+    @supports not (aspect-ratio: auto)
+      padding-top: percentage($width / $height)
+      position: relative
+
+      > img
+        position: absolute
+        top: 0
+        left: 0
+
+
++ratio(1,1)
+
++ratio(16,9)
+
++ratio(4,5)

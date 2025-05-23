@@ -1,0 +1,44 @@
+form#contact-form(class='[ form form--contact ]' data-validate=true)
+  
+  div(class='[ wrapper ]')
+    label(class='[ form__field ]')
+      
+      input#name(class='[ form__input ] [ pt--1 ]' type='text', name='name', placeholder='Name', required)
+      span.form__label
+        | Name
+        span.red  *
+
+  div(class='[ wrapper ]')
+    label(class='[ form__field ]')
+      
+      input#email(class='[ form__input ] [ pt--1 ]' type='email', name='email', placeholder='Email', required)
+      span.form__label
+        | Email
+        span.red  *
+
+  div(class='[ wrapper ]')
+    label(class='[ form__field ]')
+      
+      input#tel(class='[ form__input ] [ pt--1 ]' type='tel', name='tel', placeholder='Telephone')
+      span.form__label
+        | Telephone
+
+  div(class='[ wrapper ]')
+
+    label(class='[ form__field ]')
+      
+      textarea#message(class='[ form__message ]' placeholder='Message', required)
+      span.form__label Message
+        span.red  *
+
+  input#lead-source(type='hidden', value='Contact Us | Clever')
+  input#lead-url(type='hidden', value='https://getclever.marketing/contact')
+
+  .form__submit.flex--end
+
+    input#submit(class='[ btn ] [ btn--solid--lg solid--blk ]' type='submit', value='Send')
+
+//- https://codepen.io/tonycorp/pen/JRLaKw
+//- https://github.com/anydigital/float-label-css
+//- https://medium.com/@adambsilver
+//- http://mds.is/still-floating-labels/

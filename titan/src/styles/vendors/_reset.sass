@@ -1,0 +1,89 @@
+*, *::before, *::after
+  box-sizing: border-box
+
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd
+  margin: 0
+
+ol, ul
+  margin: 0
+  padding: 0
+
+  &:not([class])
+    padding-bottom: 0.75em
+
+    li::marker
+      color: $prime
+
+  &[class]
+    list-style: none
+
+ol:not([class])
+  margin-left: 1.5em
+
+ul:not([class])
+  margin-left: 1em
+
+nav > ul:not([class])
+  margin: 0
+  padding: 0
+  list-style: none
+
+a
+  text-decoration: none
+
+abbr
+  text-decoration: none
+
+address
+  font-style: normal
+
+blockquote, q
+  quotes: none
+
+blockquote
+
+  &::before, &::after
+    content: ''
+    content: none
+
+q
+  &::before, &::after
+    content: '"'
+    // content: none
+    color: $prime
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+input, button, textarea, select
+  font: inherit
+  line-height: inherit
+  -webkit-appearance: none
+  border-radius: 0
+
+button
+  background-color: rgba($white, 0)
+  border-width: 0
+  padding: 0
+
+input[type=submit]
+  font: inherit
+  cursor: pointer
+  appearance: none
+
+sup
+  font-size: 0.3em
+
+@media (prefers-reduced-motion: reduce)
+  *
+    animation-duration: 0.01ms !important
+    animation-iteration-count: 1 !important
+    transition-duration: 0.01ms !important
+    scroll-behavior: auto !important
+
+    &::before, &::after
+      animation-duration: 0.01ms !important
+      animation-iteration-count: 1 !important
+      transition-duration: 0.01ms !important
+      scroll-behavior: auto !important

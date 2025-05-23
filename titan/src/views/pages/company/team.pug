@@ -1,0 +1,157 @@
+extends ../../layout/_layout
+
+block var
+  - title = 'Our Team'
+  - description = 'Clever '
+  - heading = 'Lorem ipsum dolor sit amet consectetur elit cupiditate deleniti itaque'
+  - subheading = 'At Clever we work with companies - large and small - to find digital solutions that deliver real world success.'
+  - pageUrl = ''
+  - agency = 'current'
+  - crumbs = {'Agency':'last'}
+  //- - custom = 'agency'
+  - agency = true
+  - url = `miami-skyline.jpg`
+
+  - size = 37
+
+block content
+  main#main.main
+
+    include ../../partials/_hero
+
+    section(class='[ x--wide py--5 ]')
+
+      ul(class='[ grid x3--md gc--4 gr--2 ]')
+        li(class='[ flex--col animated fade-in--up ]')
+          div(class='[ o--2 ]')
+            h2(class='[ font--3 mb--0.25 ]') We foster relationships
+            p All great relationships start with a chat. We’ll listen to your goals and get to know your business. We’ll research your competitors, identify how we can make an impact, and help solve your customer’s needs. We work with you to refine your ideas and present solutions which will help achieve your goals.
+
+          div(class='[ flex mb--1.5 o--1 ]')
+            div(class='[ icon ] [ mr--1.5 ]')
+              +comments(size)
+
+            div(class='[ icon ] [ mr--1.5 ]') 
+              +people-arrows(size)
+
+            div(class='[ icon ]') 
+              +handshake(size)
+
+
+        li(class='[ flex--col animated fade-in--up ]')
+          div(class='[ o--2 ]')
+            h2(class='[ font--3 mb--0.25 ]') We’re user-first
+            p Collaboration breeds the best work. We’ll listen to your story, look at your aspirations, and create a set of concepts that wow. Together with your input, our designers and developers will create a unique and exciting brand, or website, that you and your business will boldly wear with pride.
+
+          div(class='[ flex mb--1.5 o--1 ]')
+            div(class='[ icon ] [ mr--1.5 ]')
+              +user(size)
+
+            div(class='[ icon ] [ mr--1.5 ]') 
+              +star(size)
+
+            div(class='[ icon ]') 
+              +arrow-right-from-bracket(size)
+
+
+        li(class='[ flex--col animated fade-in--up ]')
+          div(class='[ o--2 ]')
+            h2(class='[ font--3 mb--0.25 ]') We love what we do
+            p We offer much more than design and build. We give you a powerful marketing tool for your brand that has a focus on creativity, usability, and conversions. The result is a representation of your business that is appealing, functional, and will generate more leads.
+
+          div(class='[ flex mb--1.5 o--1 ]')
+            div(class='[ icon ] [ mr--1.5 ]')
+              +chart-tree-map(size)
+
+            div(class='[ icon ] [ mr--1.5 ]') 
+              +laptop-code(size)
+
+            div(class='[ icon ]') 
+              +heart-circle-check(size)
+
+    section(class='[ x--wide py--5 ]')
+
+      -
+        members = [
+          {name:'Joseph Pinder', title:'Managing Principal/Founder', img:url},
+          //- {name:'Gabriel Sastre', title:'Managing Principal/Founder', img:url}
+
+        ]
+
+      +square(members,4,5)
+
+
+    section(class='[ horn ] [ x--wide grid gc--4 gr--2 py--5 ]')
+
+      div
+
+        h2(class='[ color--prime font--3 animated fade-in--up ]') What makes us so... 
+          br
+          | damned... Clever      
+
+      ul(class='[ toots ] [ grid ]')
+
+        li(class='[ toot ] [ grid font--3 pb--1 animated fade-in--up all ]')
+          span(class='[ color--prime ] [ mr--0.5 ]') 2
+          span Passionate digital experts
+
+        li(class='[ toot ] [ grid font--3 py--1 animated fade-in--up all ]')
+          span(class='[ color--prime ] [ mr--0.5 ]') 2
+          span Passionate digital experts
+
+        li(class='[ toot ] [ grid font--3 py--1 animated fade-in--up all ]')
+          span(class='[ color--prime ] [ mr--0.5 ]') 30+
+          span Passionate digital experts
+
+        li(class='[ toot ] [ grid font--3 py--1 animated fade-in--up all ]')
+          span(class='[ color--prime ] [ mr--0.5 ]') 10+
+          span Years of collective digital experience
+
+        li(class='[ toot ] [ grid font--3 py--1 animated fade-in--up all ]')
+          span(class='[ color--prime ] [ mr--0.5 ]') 1000+
+          span Passionate digital experts
+        
+
+    section(class='[ x--wide grid x2--md gc--4 gr--2 py--5 ]')
+
+      div(class='[ flex--middle animated fade-in--up ]')
+
+        div
+
+          h2(class='[ color--prime mb--0.5 ]') Smart people
+            br
+            | surround themselves
+            br
+            | with even smarter people
+          
+          p As a digital company we are only as good as the systems we build upon. Thats why we ONLY use the word most flexible CMS WordPress &amp; partner with only the best plugin developers for all our solutions.
+
+          p Of course if you have a plugin/system requirement, EPIC Digital is more than happy to work within your regiments + systems.
+
+          +arrow('Partner with us', '/contact', 500)
+
+      ul(class='[ apps ] [ grid x2--xs x3--lg g--2 ]')
+
+        li(class='[ app ] [ ratio--16:9 flex--center--middle animated fade-in--up ]')
+
+          div
+            <svg fill="currentColor" viewBox="0 0 36 42"><path d="m18 0 18 10.498v21.004L18 42 0 31.502V10.498L18 0ZM2 11.693v18.614l16 9.332 16-9.332V11.693L18 2.36 2 11.693Z"/><path d="m26 21-5 2.59V24h5v4H10v-4h5v-.437L10 21v-5l8 4.297L26 16"/></svg>
+
+        li(class='[ app ] [ ratio--16:9 flex--center--middle animated fade-in--up ]')
+
+        li(class='[ app ] [ ratio--16:9 flex--center--middle animated fade-in--up ]')
+
+        li(class='[ app ] [ ratio--16:9 flex--center--middle animated fade-in--up ]')
+
+        li(class='[ app ] [ ratio--16:9 flex--center--middle animated fade-in--up ]')
+
+        li(class='[ app ] [ ratio--16:9 flex--center--middle animated fade-in--up ]')
+
+        li(class='[ app ] [ ratio--16:9 flex--center--middle animated fade-in--up ]')
+
+        li(class='[ app ] [ ratio--16:9 flex--center--middle animated fade-in--up ]')
+
+        li(class='[ app ] [ ratio--16:9 flex--center--middle animated fade-in--up ]')
+          span(class='[ font--4 ]') + lots more
+
+

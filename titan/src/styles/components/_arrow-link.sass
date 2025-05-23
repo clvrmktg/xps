@@ -1,0 +1,16 @@
+.arrow
+  color: $prime
+  fill: $prime
+  +transition('opacity')
+
+  > span
+    +transition('margin-right')
+
+  > svg
+    width: 0.8em
+
+  &:hover, &:focus
+    opacity: 0.7
+
+    > span
+      margin-right: 0.75em

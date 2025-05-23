@@ -1,0 +1,64 @@
+.featured
+  padding:
+    bottom: 5em
+    top: 5em
+
+  &__headline
+    order: 2
+
+  &__details
+    display: block
+
+.details
+  // opacity: 0
+
+  &__wrapper
+    color: rgba($black, 0)
+    background-color: rgba($prime, 0)
+    padding: 5em 1em 2em
+    height: inherit
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out
+
+    .arrow-link
+      color: rgba($black, 0)
+      fill: rgba($black, 0)
+
+    &:hover
+      color: rgba($black, 1)
+      background-color: $prime
+
+      .arrow-link
+        color: rgba($black, 1)
+        fill: rgba($black, 1)
+
+
+.project
+
+  &--1
+    order: 1
+
+  &--2
+    order: 3
+
+  &--3
+    order: 4
+
+.cards
+  grid-gap: 1.5rem
+  
+.card
+  position: relative
+  z-index: 1
+
+  &--square
+    padding-bottom: 100%
+
+  &__content, &__img
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+
+  &__img
+    z-index: -1

@@ -1,0 +1,14 @@
+mixin tel(area, prefix, line)
+  template(class=false obscure=true data-p1='+1' data-p2=area data-p3=prefix data-p4=line)&attributes(attributes)
+    a(href='tel:%1%2%3%4') (%2) %3 %4
+    //- | (%2) %3-%4
+
+mixin email(local, domain)
+  template(class=false obscure=true data-p1=local data-p2=domain)&attributes(attributes)
+    a(href='mailto:%1@%2') %1@%2
+
+
+mixin telFr(two, three, four, five, six)
+  template(class=false obscure=true data-p1='+33' data-p2=two data-p3=three data-p4=four data-p5=five data-p6=six)&attributes(attributes)
+    a(href='tel:%1%2%3%4%5%6') %1 %2 %3 %4 %5 %6
+

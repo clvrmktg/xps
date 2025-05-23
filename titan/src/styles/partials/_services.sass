@@ -1,0 +1,247 @@
+@for $i from 1 through 6
+  h#{$i}.listed
+    
+    &::before
+      content: attr(data-list-number)
+      +font_3
+      color: $prime
+
+.inner
+  max-width: $desktop--wide / 2
+
+.inner--950
+  max-width: $desktop--wide * 0.63
+
+.inner--976
+  max-width: #{452 + 452 + (18 * 4)}px
+
+$min: $min-font-size
+$max: $max-font-size
+
+.pt--0-5
+  +padding-top(0, $max * 5)
+
+.py--0-5
+  +padding-top(0, $max * 5)
+  +padding-bottom(0, $max * 5)
+
+.pb--2-5
+  +padding-bottom($min * 2, $max * 5)
+
+.gr--2-9
+  +fluid('row-gap', $min * 2, $max * 9)
+
+.g--1-3
+  +fluid('gap', $min, $max * 3)
+
+.img
+
+  &-holder
+    position: relative
+
+  &--primary, &--secondary
+    +transition('transform, opacity, z-index')
+
+  &--primary
+    transform: scale(1)
+    opacity: 1
+    backface-visibility: hidden
+  
+  &--secondary
+    position: absolute
+    top: 0
+    left: 0
+    transform: scale(0.95)
+    opacity: 0
+    z-index: -1
+
+.project
+  +transition('color, margin-right')
+
+  h2
+
+  +hover
+        
+    h2
+      color: $prime
+
+    .arrow
+      opacity: 0.7
+
+      > span
+        margin-right: 0.75em
+    
+    .img
+
+      &--primary
+        transform: scale(0.95)
+        opacity: 0
+        z-index: -1
+
+      &--secondary
+        transform: scale(1)
+        opacity: 1
+        z-index: 1
+
+.link-out
+  @extend a:not([class])
+
+  svg
+    fill: $prime
+
+.quote
+  border-left: em(4) solid $prime
+
++device(tablet-up)
+  .gallery
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(3, min-content)
+
+    &__banner
+      grid-area: banner
+
+    &__featured
+      grid-area: featured
+
+    &__screen
+      grid-area: screen
+
+    &__tall
+      grid-area: tall
+
+  .tall
+    
+    &--right
+      grid-template-areas: 'banner banner' 'featured tall' 'screen tall'
+
+    &--left
+      grid-template-areas: 'banner banner' 'tall featured' 'tall screen'
+
+
+// Agency
+
++device(desktop-up)
+  .horn
+    grid-template-columns: repeat(2,minmax(max-content, 1fr))
+
+.toot
+  grid-template-columns: em(60) 1fr
+  border-bottom: 1px solid $grey
+
+// Hosting + Support  
+.pricing
+
+  &--table
+    border: em(1) solid grey
+
+  &--popular
+    border: em(1) solid $prime
+
+.line
+  height: em(1)
+  background-color: grey
+
+.popular
+  height: 3em
+  color: $black
+  background-color: $prime
+
++ignore
+  .animated
+    position: relative
+    opacity: 0
+    +transition('transform, opacity')
+    transition-duration: 1800ms
+    
+    @for $t from 1 through 3
+
+      $x: 200
+
+      @if $t == 1
+        $x: 50
+
+      &:nth-child(#{$t})
+        transition-delay: #{$t * $x}ms
+
+    @for $t from 4 through 6
+
+      &:nth-child(#{$t})
+        transition-delay: #{($t - 3) * 200}ms
+
+    @for $t from 7 through 9
+
+      &:nth-child(#{$t})
+        transition-delay: #{($t - 6) * 200}ms
+
+    @for $t from 10 through 12
+
+      &:nth-child(#{$t})
+        transition-delay: #{($t - 9) * 200}ms
+
+    &.sequence--4
+
+      @for $t from 1 through 4
+
+        $x: 200
+
+        @if $t == 1
+          $x: 50
+
+        &:nth-child(#{$t})
+          transition-delay: #{$t * $x}ms
+
+      @for $t from 5 through 8
+
+        &:nth-child(#{$t})
+          transition-delay: #{($t - 4) * 200}ms
+
+    &.all
+
+      @for $t from 1 through 12
+
+        $x: 200
+
+        @if $t == 1
+          $x: 50
+
+        &:nth-child(#{$t})
+          transition-delay: #{$t * $x}ms
+
+
+  .fade-in
+
+    &--up
+      // transform: translateY(em(100))
+      transform: translate3d(0, 25%, 0)
+
+      &.start
+        // transform: translateY(0)
+        transform: translate3d(0, 0, 0)
+        opacity: 1
+
+
+    &--right
+      transform: translateX(-25%)
+
+      &.start
+        transform: translateX(0)
+        opacity: 1
+
+    &--bottom
+      transform: translateY(25%)
+
+      &.start
+        transform: translateY(0)
+        opacity: 1
+
+    &--left
+      transform: translateX(25%)
+
+      &.start
+        transform: translateX(0)
+        opacity: 1
+
+// Capabilities
+
+.icon
+  fill: $prime

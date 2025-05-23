@@ -1,0 +1,57 @@
+@use 'abstracts' as *
+
+.loop-wrap
+  grid-template-rows: 1fr max-content
+
+.posts
+  display: grid
+  grid-template-rows: max-content
+  gap: 2em
+  margin-bottom: 2em
+
+  > li
+    position: relative
+    
+    &::before
+      content: ''
+      width: 104%
+      height: 120%
+      border-radius: em(5)
+      position: absolute
+      top: -10%
+      left: -2%
+      z-index: -1
+      +transition(background-color)
+
+    &:has(.post__link:hover), &:has(.post__link:focus-visible), &:has(.post__link:active)
+      
+      &::before
+        background-color: var(--background)
+
+.post
+
+  
+  &__link
+    color: color('white')
+    display: block
+
+    > h2
+      padding-bottom: 0
+
+    > time
+      display: inline-block
+      color: color('text-grey')
+      margin-bottom: 1em
+
+// time
+//   font-size: 0.9em
+.pagination
+  display: grid
+  grid-template-columns: [newer-start] max-content [newer-end] 1fr [older-start] max-content [older-end]
+  column-gap: 1em
+  
+.newer
+  grid-area: newer
+
+.older
+  grid-area: older

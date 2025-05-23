@@ -1,0 +1,20 @@
+ul(class='[ loop ] [ x--wide grid x2--md x3--lg gc--4 gr--2-9 py--5 ]')
+
+  - i = 0
+
+  while i++ < count
+
+    li(class='[ loop__item ] [ animated fade-in--up ]')
+
+      article
+      
+        a(class='[ loop__link ] [ flex--col ]' href='/insights/post')
+
+          h2(class='[ font--3 o--2 ]')= postTitle
+
+          p(class='[ o--3 ]') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ratione voluptatibus ut, possimus a laudantium velit distinctio cumque ex explicabo itaque, modi reiciendis, natus soluta [...]
+
+          time(class='[ font--500 color--prime mb--1 o--1 ]' datetime='2020-07-20 20:00') 20.06.2023
+
+          div(class='[ o--4 ]')
+            +arrow('Read more', '/post', 500, true)

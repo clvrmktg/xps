@@ -1,0 +1,50 @@
+extends ../../layout/_layout
+
+block var
+  - title = 'Resource Center'
+  - description = 'Keep up with the latest news, updates, tips and tricks from Clever.'
+  - heading = 'Lorem ipsum dolor sit amet consectetur elit cupiditate deleniti itaque'
+  - subheading = description
+  - url = 'filiio-desktop-laptop-phone-it-is-time.jpg'
+  - blog = 'current';
+  - crumbs = {'Resource Center':'last'}
+  //- - white = true
+
+
+block content
+  
+  main#main(class='[ main ]')
+
+    //- include ../../partials/_hero
+    div(class='[ grid ]')
+      
+      header(class='[ o--2 ]')
+        h1(class='[ x--wide ]')= title 
+
+      div(class='[ o--1 ]')
+        +breadcrumbs(crumbs)(class='[ x--wide pt--0.5 pb--5 o--1 ]')
+
+    div(class='[ grid gr--5 ]')
+
+      section 
+
+        div(class='[ x--wide ]')
+
+
+      
+      section 
+
+        div(class='[ x--wide ]')
+          
+          hr
+          
+          h2 Press Releases
+
+
+    //- - count = 9
+    
+    //- include ../../partials/_loop
+
+    //- include ../../components/_pagination
+
+//- https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/

@@ -1,0 +1,120 @@
+extends ../../layout/_layout
+
+block var
+  - title = postTitle
+  - description = 'This is a template.'
+  - pageUrl = ''
+  - url = 'filiio-desktop-laptop-phone-it-is-time.jpg'
+  - crumbs = {'Insights':'/insights', 'Cost, Price, Value And The Difference':'last'}
+
+
+  
+
+block content
+
+  main#main(class='[ main ]')
+
+    article(class='[ post ] [ x--wide ]')
+
+      header(class='[ inner ] [ flex--col mb--2 ]')
+
+        h1(class='[ color--prime mb--0.5 o--2 ]')= postTitle
+
+        p(class='[ o--3 ]') Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores suscipit ducimus, vitae enim consequatur doloribus error pariatur omnis sint.
+
+        div(class='[ flex o--4 ]')
+
+          small(class='[ color--prime mr--1 ]') Joseph I. Pinder II
+          
+          small(class='[ flex ]')
+
+            time(class='[ mr--1 ]' datetime='2020-02-15') Feb 15, 2020
+
+            span#read_time 5 min read
+
+        +breadcrumbs(crumbs)(class='[ mb--1 o--1 ]')
+
+      figure(class='[ inner--950 ratio--16:9 mb--4 ]')
+        +img(url, title)
+
+      div(class='[ inner ] [ pb--5 ]')
+
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut similique dolorum adipisci perferendis veniam ex iusto dolore tempora at saepe, voluptatum, quaerat, dolores sunt ipsum accusantium laborum quod voluptas possimus?
+
+        h2 Heading 2
+        
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut similique dolorum adipisci perferendis veniam ex iusto dolore tempora at saepe, voluptatum, quaerat, dolores sunt ipsum accusantium laborum quod voluptas possimus?
+        
+        h3 Heading 3
+        
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut similique dolorum adipisci perferendis veniam ex iusto dolore tempora at saepe, voluptatum, quaerat, dolores sunt ipsum accusantium laborum quod voluptas possimus?
+        
+        ul
+          - u = 0
+          
+          while u++ < 6
+            li=`Item ${u}`
+        
+        h4 Heading 4
+        
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut similique dolorum adipisci perferendis veniam ex iusto dolore tempora at saepe, voluptatum, quaerat, dolores sunt ipsum accusantium laborum quod voluptas possimus?
+        
+        ol
+          - u = 0
+          
+          while u++ < 6
+            li=`Item ${u}`
+        
+        h5 Heading 5
+        
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut similique dolorum adipisci perferendis veniam ex iusto dolore tempora at saepe, voluptatum, quaerat, dolores sunt ipsum accusantium laborum quod voluptas possimus?
+        
+        h6 Heading 6
+        
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut similique dolorum adipisci perferendis veniam ex iusto dolore tempora at saepe, voluptatum, quaerat, dolores sunt ipsum accusantium laborum quod voluptas possimus?
+        
+
+        //- - i = 0;
+        //- while i++ < 2
+
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut similique dolorum adipisci perferendis veniam ex iusto dolore tempora at saepe, voluptatum, quaerat, dolores sunt ipsum accusantium laborum quod voluptas possimus?
+        
+        p Lorem ipsum dolor 
+          q sit amet consectetur
+          |, adipisicing elit. Aut similique dolorum adipisci perferendis veniam ex iusto dolore tempora at saepe, voluptatum, quaerat, dolores sunt ipsum accusantium laborum quod voluptas possimus?
+
+
+
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut similique dolorum adipisci perferendis veniam ex iusto dolore tempora at saepe, voluptatum, quaerat, dolores sunt ipsum accusantium laborum quod voluptas possimus?
+
+
+
+
+      footer
+      
+
+        h2(class='[ font--3 ]') More insights for you...
+
+        - count = 2
+
+        ul(class='[ loop ] [ inner grid gr--2 pt--2 ]')
+
+          - i = 0
+
+          while i++ < count
+
+            li(class='[ loop__item ] [ animated fade-in--up ]')
+
+              article
+              
+                a(class='[ loop__link ] [ flex--col ]' href='/insights/post')
+
+                  h2(class='[ font--3 o--2 ]')= postTitle
+
+                  p(class='[ o--3 ]') Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed ratione voluptatibus ut, possimus a laudantium velit distinctio cumque ex explicabo itaque, modi reiciendis, natus soluta [...]
+
+                  time(class='[ font--500 color--prime mb--1 o--1 ]' datetime='2020-07-20 20:00') 20.06.2023
+
+                  div(class='[ o--4 ]')
+                    +arrow('Read more', '/post', 500, true)
+

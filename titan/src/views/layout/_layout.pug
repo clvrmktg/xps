@@ -1,0 +1,111 @@
+include ../_var
+include ../utils/_mixins
+include ../utils/_obscure
+include ../utils/_icons
+include ../components/_breadcrumbs
+include ../components/team/_squares
+include ../components/_arrow-link
+include ../graphics/_icons
+
+doctype html
+
+block var
+
+html#page(lang='en' prefix="og: https://ogp.me/ns#")
+  
+  head
+  
+    meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+    
+    //- Site Title
+    title= home ? `${siteName} | ${tagLine}` : `${title} | ${siteName}`
+    //- title= title
+    //- Site Description
+    meta(name='description' content= description)
+    //- Responsive Tag
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, viewport-fit=cover')
+
+    //- Google hreflang Tag
+    link(rel='canonical', href= site + pageUrl)
+  
+    //- Preconnect
+    link(rel='preconnect', href='https://res.cloudinary.com/filiio/')
+    //- link(rel='preconnect', href='https://connect.facebook.net')
+
+
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
+    link(rel='preconect' href='https://aggregate.twic.pics/?v1')
+
+    - hash = new Date().getTime()
+
+    //- CSS — START
+    if pro
+      link(rel='preload', href='/styles/style-version.min.css', as='style')
+      link(rel='preload', href="/scripts/snippets-version.js", as='script')
+      //- link(rel='preload' href='https://kit.fontawesome.com/b6fccca418.js' as='script')
+      link(rel='stylesheet', href='/styles/style-version.min.css', type='text/css')
+    else
+      link(rel='preload', href=`/styles/style.css?${hash}`, as='style')
+      //- link(rel='preload', href=`/scripts/snippets.build.js?${hash}`, as='script')
+      link(rel='stylesheet', href=`/styles/style.css?${hash}` type='text/css')
+
+    noscript
+      link(rel="stylesheet", href=`/styles/noscript.css?${hash}` type='text/css')
+    //- CSS — END
+
+    //- Site Scripts — START
+    script.
+      const cloudinary = 'filiio'
+    +script('snippets', false, async )
+    //- Site Scripts — END
+
+    //- Site Favicons - START
+    link(rel='icon' href='/favicon.svg')
+    link(rel='mask-icon' href='/safari-pinned-tab.svg' color='#9395A1')
+    link(rel='apple-touch-icon' href='/apple-touch-icon.png')
+    link(rel='manifest' href='/manifest.json')
+    meta(name='theme-color' content='#ffffff')
+    //- Site Favicons - END
+      
+  body
+    // Start of Tawk.to Script
+    script(type='text/javascript').
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/65f833999317c54371290b30/1hp8oj3ts';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+    // End of Tawk.to Script
+
+    
+    input#click(class='[ hidden ]' type='checkbox' aria-labelledby='prompt')
+
+    #container(class='[ container ]')
+      //-  Include Site Header
+      include _navbar
+      
+      //- #wrapper(class='[ content--wrapper ]')
+      block content
+      
+      //- Include Site Footer
+      include _footer
+          
+        //- include ../partials/_sidebar
+
+      //- +breadcrumbs(crumbs)(class='[ pb--1 ]')
+    script(src='https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js')
+    +script('lazysizes', true)
+    +script('app', false, false)
+    +script('obscure', false )
+    script(src='https://kit.fontawesome.com/b6fccca418.js', crossorigin='anonymous')
+    //- script !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','246740276522258');fbq('track','PageView')
+    //- noscript
+    //-   img(height='1', width='1', style='display:none', src='https://www.facebook.com/tr?id=XXXXXXXXXX&ev=PageView&noscript=1')
+    
+    block footer
+      

@@ -1,0 +1,43 @@
+<footer class="[ footer ]">
+  <div>
+    <p class="[ tag-header ]">Find me elsewhere</p>
+    <ul class="[ social ][ flex ]">
+      <!-- <li class="[ social__item ]">
+      <a class="[ social__link ]" href="https://youtube.com/channel/jsphpndr" target="_blank" rel="noopener" aria-label="Follow me on YouTube">
+
+      </a></li> -->
+      <!-- <li class="[ social__item ]">
+        <a class="[ social__link ]" href="https://www.facebook.com/jsphpndr" target="_blank" rel="noopener" aria-label="Follow me on Facebook">
+         </a>
+        </li> -->
+      <!--<li class="[ social__item ]">
+        <a class="[ social__link ]" href="https://instagram.com/jsphpndr" target="_blank" rel="noopener" aria-label="Follow me on Instagram">
+
+        </a>
+      </li>-->
+      <li class="[ social__item ]">
+        <a class="[ social__link ]" href="https://x.com/jsphpndr" target="_blank" rel="noopener" aria-label="Follow me on X (formerly Twitter)">
+          {{ readFile "static/icons/x.svg" | safeHTML }}
+        </a>
+      </li>
+      <li class="[ social__item ]">
+        <a class="[ social__link ]" href="https://www.linkedin.com/in/jsphpndr" target="_blank" rel="noopener" aria-label="Follow me on LinkedIn">
+        {{ readFile "static/icons/linkedin.svg" | safeHTML}}
+        </a>
+      </li>
+      <li class="[ social__item ]">
+        <a class="[ social__link ]" href="https://github.com/jsphpndr" target="_blank" rel="noopener" aria-label="Follow me on GitHub">
+          {{ readFile "static/icons/github.svg" | safeHTML }}
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="[ copy ][ flex ]"><small>© {{ now.Format "2006" }} Joseph Pinder. All rights reserved.</small>
+    <nav> 
+      <ul>
+        <li> <a class="[ link ]" href="/accessibility-statement"> <small>Accessibility Statement</small></a></li>
+        <li> <a class="[ link ]" href="/privacy-policy"> <small>Privacy Policy</small></a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
