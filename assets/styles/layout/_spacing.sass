@@ -1,0 +1,22 @@
+@use '../abstracts' as *
+
+$min: $min-font-size * 3
+$max: $max-font-size * 5
+
+.layout--spacing, .section--spacing
+  +clamp('row-gap', $min, $max)
+
+.section--padding
+  +clamp('padding-top', $min, $max)
+  +clamp('padding-bottom', $min, $max)
+
++padding(5, 'top')
++padding(5, 'bottom')
+
+
++col(2, 'md')
+
++col-gap(1)
+
++gap(1)
++gap(2)

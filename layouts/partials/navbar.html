@@ -1,0 +1,14 @@
+<header id="navbar"  class="[ navbar ][ full-width content-grid ]" >
+  <div class="[ wrapper ][ flex between middle ]">
+    <a class="[ logo ]" href="/" title="Home" aria-label="Home" data-prefetch>
+      {{- readFile "static/icons/logo.svg" | safeHTML }}
+    </a>
+    <nav class="[ nav ]">
+      <ul class="[ menu ][ flex ]">
+          <li class="[ menu__item ]">
+            <a class="[ menu__link ]{{ if or (eq .RelPermalink "/blog/") .Params.post }}[ current ]{{ end }}" href="/blog/" data-prefetch>Blog</a>
+          </li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -2,24 +2,13 @@
 <html id="page" lang="{{ .Site.LanguageCode }}" prefix="og: https://ogp.me/ns#">
   {{ partial "head.html" . }}
   <body>
-    <header class="[ navbar ]" id="navbar">
-      <div class="[ wrapper ][ flex between middle ]">
-        <a class="[ logo ]" href="/" title="Home" aria-label="Home" data-prefetch>
-          {{- readFile "static/icons/logo.svg" | safeHTML }}
-        </a>
-        <nav class="[ nav ]">
-          <ul class="[ menu ][ flex ]">
-              <li class="[ menu__item ]">
-                <a class="[ menu__link ]{{ if or (eq .RelPermalink "/blog/") .Params.post }}[ current ]{{ end }}" href="/blog/" data-prefetch>Blog</a>
-              </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="[ main ]{{- if eq .Page.Kind "404" -}}[ error ]{{- end -}}" id="main">
-      {{- block "main" . -}}{{- end -}}
-    </main>
-    {{- partial "footer.html" . -}}
+    <div class="[ container ]">
+      {{- partial "navbar.html" . -}}
+      <main class="[ main ][ content-grid ]{{- if eq .Page.Kind "404" -}}[ error ]{{- end -}}" id="main">
+        {{- block "main" . -}}{{- end -}}
+      </main>
+      {{- partial "footer.html" . -}}
+    </div>
     <script src="/scripts/app-{{ .Site.Params.Version }}.min.js" defer></script>
     {{partial "script.html" (dict "path" "scripts/components/prefetch.js" "targetPath" "scripts/prefetch.js")}}
     {{- if or .IsHome ( .Store.Get "hasObscure" ) }}

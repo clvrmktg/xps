@@ -1,6 +1,6 @@
-baseURL = 'https://josephpinder.com/'
+baseURL = 'https://xpslogistics.net/'
 languageCode = 'en-us'
-title = 'Joseph Pinder'
+title = 'XPS Logistics'
 
 [sass]
   use_dart_sass = true

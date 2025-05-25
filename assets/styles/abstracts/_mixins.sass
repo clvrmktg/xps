@@ -365,13 +365,14 @@
     .o--#{$value}
       order: $value
 
-=hsl($name, $color)
-  --#{$name}: hsl(#{color.channel($color, "hue", $space: hsl)}, #{color.channel($color, "saturation", $space: hsl)}, #{color.channel($color, "lightness", $space: hsl)})
-  --#{$name}-with-fallback: var(--#{$name}, rgb(#{color.channel($color, "red", $space: rgb)}, #{color.channel($color, "green", $space: rgb)}, #{color.channel($color, "blue", $space: rgb)}))
-
-=hsla($name, $color, $alpha)
-  --#{$name}-#{$alpha}: hsla(#{color.channel($color, "hue", $space: hsl)}, #{color.channel($color, "saturation", $space: hsl)}, #{color.channel($color, "lightness", $space: hsl)}, #{$alpha * 10%})
-  --#{$name}-#{$alpha}-with-fallback: var(--#{$name}-#{$alpha}, rgba(#{color.channel($color, "red", $space: rgb)}, #{color.channel($color, "green", $space: rgb)}, #{color.channel($color, "blue", $space: rgb)}, #{math.div($alpha, 10)}))
+=hsl($name, $color, $alpha: null)
+  @if $alpha == null
+    --#{$name}: hsl(#{math.round(color.hue($color))}, #{math.round(color.saturation($color))}, #{math.round(color.lightness($color))})
+    --#{$name}-with-fallback: var(--#{$name}, rgb(#{math.round(color.red($color))}, #{math.round(color.green($color))}, #{math.round(color.blue($color))}))
+  @else
+    $alpha-decimal: math.div($alpha, 10)
+    --#{$name}-#{$alpha}: hsl(#{math.round(color.hue($color))}, #{math.round(color.saturation($color))}, #{math.round(color.lightness($color))} / #{$alpha-decimal})
+    --#{$name}-#{$alpha}-with-fallback: var(--#{$name}-#{$alpha}, rgba(#{math.round(color.red($color))}, #{math.round(color.green($color))}, #{math.round(color.blue($color))}, #{$alpha-decimal}))
 
 =oklch($name, $color)
   --#{$name}: oklch(#{color.channel($color, "lightness", $space: oklch)} #{color.channel($color, "chroma", $space: oklch)} #{color.channel($color, "hue", $space: oklch)})

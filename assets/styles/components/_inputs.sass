@@ -1,0 +1,182 @@
+@use '../abstracts' as *
+
+textarea, input
+
+  &:focus
+    outline: none
+    -webkit-appearance: none
+
+  &:-webkit-autofill, &:focus
+    font:
+      size: var(--font-4)
+      weight: 400
+      weight: 500
+    transition: background-color 600000s 0s, color 600000s 0s
+
+input[type=submit]
+  color: color('xps-red')
+  background-color: color('xps-red')
+  border: 0 solid color('xps-red')
+  +transition(color)
+
+  @media (hover: hover)
+    &:hover, &:focus
+      opacity: 0.7
+
+.form
+
+  &__field
+    position: relative
+    min-height: rem(75)
+
+    & > input[placeholder=" "]:not(:focus):placeholder-shown,
+    & > textarea[placeholder=" "]:not(:focus):placeholder-shown 
+      
+      & + label, & ~ label
+        font-size: 1.5em
+        transform: translateY(1.1em)
+
+    &.open
+
+      & > input[placeholder=" "]:not(:focus):placeholder-shown
+
+        & + label, & ~ label
+          font-size: 1em
+          transform: translateY(0)
+
+  &__label
+    // color: $grey
+    transform-origin: top left
+    position: absolute
+    top: 0
+    left: 0
+    pointer-events: none
+    +transition((font-size, transform))
+
+
+  &__input, &__message
+    font-family: inherit
+    line-height: inherit
+    color: color('white')
+    background-color: inherit
+    width: 100%
+
+    border: none
+    border-bottom: em(1) solid color('white')
+
+    position: relative
+    
+  &__message
+    min-height: 6em
+    resize: vertical
+
++ignore
+  .form
+
+    &__input, &__message
+
+
+      &.has-value
+        border-bottom-color: color('xps-red')
+
+        & + label, & ~ label
+          color: color('xps-red')
+
+        &.error
+          border-bottom-color: color('xps-red')
+
+          & ~ label
+            color: color('xps-red')         
+      
+      &.error
+        border-bottom-color: color('xps-red')
+
+        & ~ label
+          color: color('xps-red')
+
+      &.open
+
+        & > input[placeholder=" "]:not(:focus):placeholder-shown
+
+          & + label, & ~ label
+            transform: translateY(0) scale(1) 
+            pointer-events: none
+
+  .error-message
+    color: color('xps-red')
+    position: absolute
+    top: 110%
+
+
+.options
+  background-color: color('black')
+  max-height: 0
+  overflow: hidden
+  position: absolute
+  top: 100%
+  left: 0
+  z-index: 1
+
+  +transition(max-height)
+
+  &.open
+    max-height: em(900)
+    overflow: scroll
+
+.option
+  // color: $grey
+  background-color: color('black')
+  +transition((color, background-color))
+  cursor: pointer
+
+  +hover
+    color: color('white')
+    // background-color: rgba($body-bg, 1)
+
++ignore
+  
+  .btn--select
+    width: 102%
+    height: em(50)
+    position: absolute
+    z-index: 2
+    top: 86%
+    left: -1%
+    transform: translateY(-80%)
+    cursor: pointer
+    +transition(transform)
+
+    > span
+      animation-duration: 300ms
+      animation-timing-function: ease-in-out
+      animation-fill-mode: forwards
+      animation-name: closed
+
+    svg
+      fill: color('white')
+
+    &.open
+
+      > span
+        animation-duration: 300ms
+        animation-timing-function: ease-in-out
+        animation-fill-mode: forwards
+        animation-name: open
+
+
+.required
+  color: color('xps-red')
+
+@keyframes open
+  100%
+    transform: rotate(180deg)
+
+@keyframes closed
+  0%
+    transform: rotate(180deg)
+
+  100%
+    transform: rotate(0deg)
+
+    
+    

@@ -6,7 +6,7 @@ $block: 0.5em
 $inline: 2em
 %btn
   display: block
-  font-weight: 500
+  font-weight: 700
   text-align: center
   // border-radius: 100vh
   border: $border solid
@@ -46,3 +46,15 @@ $inline: 2em
       +hover
         color: color('black')
         background-color: color('white')
+
+
+  &--red
+    color: color('white')
+    background-color: color('xps-red')
+    border-color: color('xps-red')
+    +transition((background-color, border-color))
+
+    +hover
+      background-color: color('xps-red-darker')
+      border-color: color('xps-red-darker')
+
