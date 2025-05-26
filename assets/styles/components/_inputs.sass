@@ -1,6 +1,7 @@
 @use '../abstracts' as *
 
-textarea, input
+input, textarea
+  // outline: $bg
 
   &:focus
     outline: none
@@ -13,99 +14,25 @@ textarea, input
       weight: 500
     transition: background-color 600000s 0s, color 600000s 0s
 
-input[type=submit]
-  color: color('xps-red')
-  background-color: color('xps-red')
-  border: 0 solid color('xps-red')
-  +transition(color)
-
-  @media (hover: hover)
-    &:hover, &:focus
-      opacity: 0.7
 
 .form
 
-  &__field
-    position: relative
-    min-height: rem(75)
-
-    & > input[placeholder=" "]:not(:focus):placeholder-shown,
-    & > textarea[placeholder=" "]:not(:focus):placeholder-shown 
-      
-      & + label, & ~ label
-        font-size: 1.5em
-        transform: translateY(1.1em)
-
-    &.open
-
-      & > input[placeholder=" "]:not(:focus):placeholder-shown
-
-        & + label, & ~ label
-          font-size: 1em
-          transform: translateY(0)
-
-  &__label
-    // color: $grey
-    transform-origin: top left
-    position: absolute
-    top: 0
-    left: 0
-    pointer-events: none
-    +transition((font-size, transform))
-
-
   &__input, &__message
-    font-family: inherit
-    line-height: inherit
-    color: color('white')
-    background-color: inherit
-    width: 100%
-
     border: none
-    border-bottom: em(1) solid color('white')
+    border-bottom: em(2) solid color('black')
 
-    position: relative
+    &:focus
+      border-bottom: em(2) dashed color('xps-red')
     
   &__message
     min-height: 6em
     resize: vertical
 
-+ignore
-  .form
 
-    &__input, &__message
-
-
-      &.has-value
-        border-bottom-color: color('xps-red')
-
-        & + label, & ~ label
-          color: color('xps-red')
-
-        &.error
-          border-bottom-color: color('xps-red')
-
-          & ~ label
-            color: color('xps-red')         
-      
-      &.error
-        border-bottom-color: color('xps-red')
-
-        & ~ label
-          color: color('xps-red')
-
-      &.open
-
-        & > input[placeholder=" "]:not(:focus):placeholder-shown
-
-          & + label, & ~ label
-            transform: translateY(0) scale(1) 
-            pointer-events: none
-
-  .error-message
-    color: color('xps-red')
-    position: absolute
-    top: 110%
+  // .error-message
+  //   color: color('xps-red')
+  //   position: absolute
+  //   top: 110%
 
 
 .options

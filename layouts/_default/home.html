@@ -1,6 +1,15 @@
+{{- define "main" -}}
 {{- .Store.Set "hasTwic" true -}}
 {{- .Store.Set "hasObscure" true -}}
-{{- define "main" -}}
- {# Hero - START #}
- {# Hero - END #}
+<!-- Hero - START -->
+<header class="[ hero hero--home ]">
+  <h1 class="[ hidden ]">XPS Logistics</h1>
+  <div class="[ wrapper ][ flex middle py--5 ]">
+    <div class="[ hero__content ] ">
+      <h2 class="[ font--1 ]">Trusted <abbr title="Third Party Logistics">3PL</abbr> Warehousing, <br>Distribution, and Supply <br>Chain Solutions for you</h2>
+      <p class="[ ch--48 color--white ]">XPS Logistics specializes in warehousing, distribution, and last-mile delivery services in Nassau and throughout The Bahamas, leveraging over two decades of expertise as a trusted third-party logistics provider.</p><a class="[ btn btn--solid--lg bg:color--red--200 ]">Request A Quote</a>
+    </div>
+  </div>
+</header>
+<!-- Hero - END  -->
 {{- end -}}
