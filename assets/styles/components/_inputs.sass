@@ -17,7 +17,7 @@ input, textarea
 
 .form
 
-  &__input, &__message
+  &__input
     border: none
     border-bottom: em(2) solid color('black')
 
@@ -26,8 +26,12 @@ input, textarea
     
   &__message
     min-height: 6em
+    border: em(2) solid color('black')
     resize: vertical
 
+    &:focus
+      border: em(2) dashed color('xps-red')
+    
 
   // .error-message
   //   color: color('xps-red')

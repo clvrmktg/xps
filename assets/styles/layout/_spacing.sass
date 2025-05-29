@@ -10,21 +10,28 @@ $max: $max-font-size * 5
   +clamp('padding-top', $min, $max)
   +clamp('padding-bottom', $min, $max)
 
+.section--padding-top
+  +clamp('padding-top', $min, $max)
+
 
 +padding(5, 'top')
 +padding(5, 'bottom')
 
++padding(0.25, 'y')
 +padding(5, 'y')
 
 +padding(0.5)
 
 +col(2, 'md')
++col(2, 'lg')
 
 +col-gap(1)
++col-gap(2)
 +col-gap(4)
 
 +row-gap(0.25)
 +row-gap(0.5)
++row-gap(1)
 +row-gap(2)
 
 +gap(1)

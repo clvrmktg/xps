@@ -5,9 +5,15 @@
     </a>
     <nav class="[ nav ]">
       <ul class="[ menu ][ flex ]">
-          <li class="[ menu__item ]">
-            <a class="[ menu__link ]{{ if or (eq .RelPermalink "/blog/") .Params.post }}[ current ]{{ end }}" href="/blog/" data-prefetch>Blog</a>
+        {{- $context := .context -}}
+        {{- $currentPage := .currentPage -}}
+        {{with $context}}
+          {{ range .Site.Menus.main }}
+          <li class="[ menu__item ][ grid font--500 ]">
+            <a class="[ menu__link link--navbar ]{{ if eq $.currentPage.RelPermalink .URL }}[ current {{ end }}" href="{{ .URL }}" {{ if eq $.currentPage.RelPermalink .URL }}aria-current="page"{{ end }} data-prefetch>{{ .Name }}</a>
           </li>
+          {{ end }}
+        {{end}}
       </ul>
     </nav>
   </div>
