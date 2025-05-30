@@ -51,24 +51,11 @@
             <input class="[ form__input ][ py--0.25 ]" name="company" id="company" type="text"/>
           </div>
         </div>
-        <noscript>
-          <div class="[ form__field ][ grid ]">
-            <label class="[ form__label ]" for="company">How can we help?</label>
-            <select class="[ form__input ][ py--0.25 ]" name="" id="">
-              <option selected>--Please select--</option>
-              <option value="inquiry">General Inquiry</option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-            </select>
-          </div>
-        </noscript>
         <div class="[ dropdown-wrapper ][ grid ]">
           <label for="inquiry">How can we help?</label>
         
           <!-- This <select> is always in the DOM and will be submitted -->
-          <select id="inquiry" name="inquiry">
+          <select class="[ form__input ][ py--0.25 ]" id="inquiry" name="inquiry">
             <option value="" disabled selected>--Please select--</option>
             <option value="General Inquiry">General Inquiry</option>
   
