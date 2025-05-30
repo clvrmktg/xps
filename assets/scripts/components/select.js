@@ -112,6 +112,25 @@ document.addEventListener("DOMContentLoaded", () => {
       open ? closeDropdown() : openDropdown();
     }
 
+    let isHovering = false;
+    
+    dropdownEl.addEventListener("mouseenter", () => {
+      isHovering = true;
+    });
+    
+    dropdownEl.addEventListener("mouseleave", () => {
+      isHovering = false;
+    });
+    
+    // Handle blur via keyboard (tabbing out)
+    dropdownEl.addEventListener("blur", () => {
+      setTimeout(() => {
+        if (!dropdownEl.contains(document.activeElement) && !isHovering) {
+          closeDropdown();
+        }
+      }, 10);
+    });
+
     document.addEventListener("mousedown", e => {
       if (!dropdownEl.contains(e.target)) {
         closeDropdown();

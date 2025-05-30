@@ -15,14 +15,20 @@ if (bouncer.isValid()) {
 }
 
 // Listen for validation events
-document.addEventListener('bouncerFormValid', function () {
-	console.log('bouncerFormValid event fired');
-	console.log('Form is valid, submitting...');
-	var form = document.querySelector('[data-validate]');
-	form.submit();  // Submit the form after validation
-}, false);
+document.addEventListener("DOMContentLoaded", function () {
+	var bouncer = new Bouncer("[data-validate]", {
+		disableSubmit: true, // Prevents submission if invalid
+		emitEvents: true
+	});
 
-document.addEventListener('bouncerFormInvalid', function () {
-	console.log('bouncerFormInvalid event fired');
-	console.log('Form is invalid');
-}, false);
+	document.querySelector("[data-validate]").addEventListener("bouncerFormValid", function (event) {
+		let form = event.target;
+		
+		// Check if Netlify reCAPTCHA exists
+		if (form.querySelector('[data-netlify-recaptcha]')) {
+			return; // Do NOT auto-submit, let Netlify handle it
+		}
+
+		form.submit(); // If no reCAPTCHA, submit normally
+	});
+});

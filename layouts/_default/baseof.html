@@ -12,6 +12,9 @@
     </div>
     <script src="/scripts/app-{{ .Site.Params.Version }}.min.js" defer></script>
     {{partial "script.html" (dict "path" "scripts/components/prefetch.js" "targetPath" "scripts/prefetch.js")}}
+    {{- if $.Store.Get "hasObscure"  -}}
+    {{ partial "script.html" (dict "path" "scripts/components/obscure.js" "targetPath" "scripts/obscure.js") }}
+    {{- end -}}
     {{- if or .IsHome ( .Store.Get "hasObscure" ) }}
     {{ partial "script.html" (dict "path" "scripts/components/obscure.js" "targetPath" "scripts/obscure.js") }}
     {{- end -}}
