@@ -2,7 +2,7 @@
 date = '2025-05-30T08:32:54-04:00'
 draft = false
 title = 'Accessibility Statement'
-description = ''
+description = 'XPS Logistics is committed to making our website accessible to all users. Learn about our efforts to ensure a user-friendly experience for everyone, including individuals with disabilities.'
 
 [params]
   hasTwic = false

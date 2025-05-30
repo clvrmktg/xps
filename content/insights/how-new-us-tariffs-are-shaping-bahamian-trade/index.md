@@ -1,9 +1,9 @@
 +++
 date = '2025-05-29T14:57:23-04:00'
 lastMod = '2025-05-29T14:57:23-04:00'
-draft = true
+draft = false
 title = 'How New U.S Tariffs Are Shaping Bahamian Trade'
-description = ""
+description = "Learn how new 2025 U.S. tariffs are affecting Bahamian importers, exporters, and supply chains—and how XPS Logistics can help you adapt."
 
 [feature]
   image = ""
@@ -22,8 +22,6 @@ description = ""
   categories = []
   tags = []
 +++
-
-# How New U.S. Tariffs Are Shaping Bahamian Trade
 
 As global trade continues to evolve, businesses in The Bahamas are facing a fresh wave of challenges stemming from new U.S. tariffs that took effect in early 2025. These developments carry significant implications for importers, exporters, and the logistics networks that support them. At XPS Logistics, we recognize the urgency of these changes and the need for adaptive, forward-thinking strategies. Here's what Bahamian businesses need to know—and how we can help.
 
