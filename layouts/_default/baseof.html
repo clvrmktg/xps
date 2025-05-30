@@ -8,18 +8,38 @@
       <main class="[ main ][ content-grid ]{{- if eq .Page.Kind "404" -}}[ error ]{{- end -}}" id="main">
         {{- block "main" . -}}{{- end -}}
       </main>
-      {{- partial "footer.html" . -}}
+      {{- partial "footer.html"  (dict "context" . "currentPage" $currentPage) -}}
     </div>
-    <script src="/scripts/app-{{ .Site.Params.Version }}.min.js" defer></script>
+    <!-- <script src="/scripts/app-{{ .Site.Params.Version }}.min.js" defer></script> -->
     {{partial "script.html" (dict "path" "scripts/components/prefetch.js" "targetPath" "scripts/prefetch.js")}}
     {{- if $.Store.Get "hasObscure"  -}}
     {{ partial "script.html" (dict "path" "scripts/components/obscure.js" "targetPath" "scripts/obscure.js") }}
     {{- end -}}
-    {{- if or .IsHome ( .Store.Get "hasObscure" ) }}
-    {{ partial "script.html" (dict "path" "scripts/components/obscure.js" "targetPath" "scripts/obscure.js") }}
+    {{- if $.Store.Get "hasBouncer"  -}}
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer/dist/bouncer.polyfills.min.js"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+          var bouncer = new Bouncer("[data-validate]", {
+            disableSubmit: true, // Prevents submission if invalid
+            emitEvents: true
+          });
+
+          document.querySelector("[data-validate]").addEventListener("bouncerFormValid", function (event) {
+            let form = event.target;
+            
+            // Check if Netlify reCAPTCHA exists
+            if (form.querySelector('[data-netlify-recaptcha]')) {
+              return; // Do NOT auto-submit, let Netlify handle it
+            }
+
+            form.submit(); // If no reCAPTCHA, submit normally
+          });
+        });
+    </script>
     {{- end -}}
     {{- if .Store.Get "hasSelect" -}}
-    {{ partial "script.html" (dict "path" "scripts/components/select.js" "targetPath" "scripts/prism.js") }}
+    {{ partial "script.html" (dict "path" "scripts/components/select.js" "targetPath" "scripts/select.js") }}
     {{- end -}}
     {{- if .Store.Get "hasYouTube" -}}
     {{

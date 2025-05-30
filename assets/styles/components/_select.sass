@@ -22,7 +22,7 @@ select
 
   // Scrollbar styling
   \::-webkit-scrollbar
-    width: 8px
+    width: rem(4)
 
   \::-webkit-scrollbar-thumb
     background-color: #999
@@ -60,13 +60,14 @@ select
 .dropdown_panel
   display: none
   position: absolute
+  top: 2.8em
   width: 100%
-  max-height: 200px
+  max-height: rem(400)
   overflow-y: auto
   background: color('white')
   border: 0.1em solid #aaa
   z-index: 1000
-  border-radius: 0 0 0.25rem 0.25rem
+  // border-radius: 0 0 0.25rem 0.25rem
 
 // Container for items
 .dropdown_items
@@ -75,7 +76,7 @@ select
   pointer-events: all
   z-index: 9999
   width: 100%
-  max-height: 170px
+  max-height: rem(280)
   overflow-y: auto
   +transition(all)
 

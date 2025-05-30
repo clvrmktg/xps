@@ -1,34 +1,31 @@
 +++
-date = '2025-01-27T10:11:24-05:00'
+date = '2025-05-30T08:32:54-04:00'
 draft = false
 title = 'Accessibility Statement'
+description = ''
 
 [params]
   hasTwic = false
-  hasObscure = true
-  
+
 +++
 
-Hey, I’m Joseph. I’m committed to making my website accessible to everyone, including people with disabilities. My goal is to create a space that’s welcoming, easy to use, and enjoyable for all visitors, regardless of their abilities or the technology they use.
 
-## My Accessibility Efforts
+**Effective Date:** [Insert Date]
 
-I’ve taken steps to ensure that my site follows the **Web Content Accessibility Guidelines (WCAG) 2.1 AA**—a widely recognized standard for web accessibility. Here are some of the things I’ve done to make this site more accessible:
-- Made sure the site works with a keyboard, so you don’t need a mouse to navigate.
-- Added alternative text to images, so they’re accessible to screen readers.
-- Designed the site to adapt well on different devices and assistive technologies.
+XPS Logistics is committed to providing a website that is accessible to all users, including those with disabilities. We aim to ensure that our content is easy to navigate and interact with, regardless of technology or ability.
 
-## How You Can Help
+## Our Commitment
 
-While I’ve done my best, I know there’s always room for improvement. If you find anything on my site that’s hard to use or not accessible, I’d love to hear from you. Your feedback will help me make this space better for everyone.
+We strive to follow best practices and industry standards for accessibility, including guidelines such as the Web Content Accessibility Guidelines (WCAG) 2.1. Our efforts include:
+- Clear, structured content with consistent navigation
+- Alternative text for images where appropriate
+- Keyboard navigability for interactive elements
+- Sufficient contrast and readable fonts
 
-## Get in Touch
+## Ongoing Improvements
 
-If you encounter any accessibility issues or have suggestions, please let me know. You can reach me here:
-- Email: {{<email local="hello" domain="josephpinder.com">}}
+We recognize that accessibility is an ongoing effort. While we continuously work to enhance the usability of our site, some areas may not yet fully comply with all accessibility standards. We welcome your feedback to help us identify and address any issues.
 
-I’ll do my best to address any issues and respond to your message within [insert your response timeframe, e.g., 3 business days].
+## Contact Us
 
-## Always Improving
-
-I’m committed to ongoing learning and improvement. As I continue to update my site, I’ll prioritize accessibility and work toward making everything as user-friendly as possible. Thanks for being here! This statement was last updated on {{<date>}}.
+If you encounter any difficulty accessing content on this website or have suggestions for improvement, please [visit our Contact Page](/contact) to let us know. We’ll do our best to assist you.

@@ -66,113 +66,6 @@
   @content
   /* purgecss ignore */
 
-=padding($value, $prop: null, $breakpoint: null)
-  $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
-  $side: null
-
-  @if $prop == 'top'
-    $side: 't'
-  
-  @if $prop == 'right'
-    $side: 'r'
-
-  @if $prop == 'bottom'
-    $side: 'b'
-
-  @if $prop == 'left'
-    $side: 'l'
-
-  $escaped-value: split-decimal($value)
-
-  @if $side
-    $class-prefix: if($breakpoint, "#{$breakpoint}\\:p#{$side}--", "p#{$side}--")
-    
-    .#{$class-prefix}#{$escaped-value}
-      @if map.get($breakpoints, $breakpoint) != null
-        +breakpoint(map.get($breakpoints, $breakpoint))
-          padding-#{$prop}: #{$value}em
-
-          @supports (padding: max(0px))
-            padding-#{$prop}: max(#{$value}em, env(safe-area-inset-#{$prop}))
-
-      @else
-        padding-#{$prop}: #{$value}em
-
-        @supports (padding: max(0px))
-          padding-#{$prop}: max(#{$value}em, env(safe-area-inset-#{$prop}))
-
-
-  @else if $prop == 'x'
-    $class-prefix: if($breakpoint, "#{$breakpoint}\\:px--", "px--")
-    
-    .#{$class-prefix}#{$escaped-value}
-      @if map.get($breakpoints, $breakpoint) != null
-        +breakpoint(map.get($breakpoints, $breakpoint))
-          padding-inline: #{$value}em
-
-          @supports (padding: max(0px))
-            padding-inline: max(#{$value}em, env(safe-area-inset-left)) max(#{$value}em, env(safe-area-inset-right))
-
-      @else
-        padding-inline: #{$value}em
-
-        @supports (padding: max(0px))
-          padding-inline: max(#{$value}em, env(safe-area-inset-left)) max(#{$value}em, env(safe-area-inset-right))
-
-
-  @else if $prop == 'y'
-    $class-prefix: if($breakpoint, "#{$breakpoint}\\:py--", "py--")
-
-    .#{$class-prefix}#{$escaped-value}
-      @if map.get($breakpoints, $breakpoint) != null
-        +breakpoint(map.get($breakpoints, $breakpoint))
-          padding-block: #{$value}em
-
-          @supports (padding: max(0px))
-            padding-block: max(#{$value}em, env(safe-area-inset-top)) max(#{$value}em, env(safe-area-inset-bottom))
-
-      @else
-        padding-block: #{$value}em
-
-        @supports (padding: max(0px))
-          padding-block: max(#{$value}em, env(safe-area-inset-top)) max(#{$value}em, env(safe-area-inset-bottom))
-
-
-  @else
-    $class-prefix: if($breakpoint, "#{$breakpoint}\\:p--", "p--")
-
-    .#{$class-prefix}#{$escaped-value}
-      @if map.get($breakpoints, $breakpoint) != null
-        +breakpoint(map.get($breakpoints, $breakpoint))
-          padding: #{$value}em
-
-          @supports (padding: max(0px))
-            padding: max(#{$value}em, env(safe-area-inset-top)) max(#{$value}em, env(safe-area-inset-right)) max(#{$value}em, env(safe-area-inset-bottom)) max(#{$value}em, env(safe-area-inset-left))
-
-      @else
-        padding: #{$value}em
-
-        @supports (padding: max(0px))
-          padding: max(#{$value}em, env(safe-area-inset-top)) max(#{$value}em, env(safe-area-inset-right)) max(#{$value}em, env(safe-area-inset-bottom)) max(#{$value}em, env(safe-area-inset-left))
-
-=margin($value, $prop: null, $breakpoint: null)
-  $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
-  $side: null
-
-  @if $prop == 'top'
-    $side: 't'
-
-  @if $prop == 'right'
-    $side: 'r'
-
-  @if $prop == 'bottom'
-    $side: 'b'
-
-  @if $prop == 'left'
-    $side: 'l'
-
-  $escaped-value: split-decimal($value)
-
 // Padding mixin with breakpoints
 =padding($value, $prop: null, $breakpoint: null)
   $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
@@ -271,6 +164,65 @@
         @supports (padding: max(0px))
           padding: max(#{$value}em, env(safe-area-inset-top)) max(#{$value}em, env(safe-area-inset-right)) max(#{$value}em, env(safe-area-inset-bottom)) max(#{$value}em, env(safe-area-inset-left))
 
+=margin($value, $prop: null, $breakpoint: null)
+  $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
+  $side: null
+
+  @if $prop == 'top'
+    $side: 't'
+  
+  @if $prop == 'right'
+    $side: 'r'
+
+  @if $prop == 'bottom'
+    $side: 'b'
+
+  @if $prop == 'left'
+    $side: 'l'
+
+  $escaped-value: split-decimal($value)
+
+  @if $side
+    $class-prefix: if($breakpoint, "#{$breakpoint}\\:m#{$side}--", "m#{$side}--")
+    
+    .#{$class-prefix}#{$escaped-value}
+      @if map.get($breakpoints, $breakpoint) != null
+        +breakpoint(map.get($breakpoints, $breakpoint))
+          margin-#{$prop}: #{$value}em
+      @else
+        margin-#{$prop}: #{$value}em
+
+  @else if $prop == 'x'
+    $class-prefix: if($breakpoint, "#{$breakpoint}\\:mx--", "mx--")
+    
+    .#{$class-prefix}#{$escaped-value}
+      @if map.get($breakpoints, $breakpoint) != null
+        +breakpoint(map.get($breakpoints, $breakpoint))
+          margin-inline: #{$value}em
+      @else
+        margin-inline: #{$value}em
+
+  @else if $prop == 'y'
+    $class-prefix: if($breakpoint, "#{$breakpoint}\\:my--", "my--")
+
+    .#{$class-prefix}#{$escaped-value}
+      @if map.get($breakpoints, $breakpoint) != null
+        +breakpoint(map.get($breakpoints, $breakpoint))
+          margin-block: #{$value}em
+      @else
+        margin-block: #{$value}em
+
+  @else
+    $class-prefix: if($breakpoint, "#{$breakpoint}\\:m--", "m--")
+
+    .#{$class-prefix}#{$escaped-value}
+      @if map.get($breakpoints, $breakpoint) != null
+        +breakpoint(map.get($breakpoints, $breakpoint))
+          margin: #{$value}em
+      @else
+        margin: #{$value}em
+
+  
 =block($width, $height)
   aspect-ratio: $width/$height
 
@@ -372,7 +324,7 @@
     --#{$name}-with-fallback: var(--#{$name}, rgb(#{math.round(color.red($color))}, #{math.round(color.green($color))}, #{math.round(color.blue($color))}))
   @else
     $alpha-decimal: math.div($alpha, 10)
-    --#{$name}-#{$alpha}: hsl(#{math.round(color.hue($color))}, #{math.round(color.saturation($color))}, #{math.round(color.lightness($color))} / #{$alpha-decimal})
+    --#{$name}-#{$alpha}: hsl(#{math.round(color.hue($color))}, #{math.round(color.saturation($color))}, #{math.round(color.lightness($color))}, #{math.percentage($alpha-decimal)})
     --#{$name}-#{$alpha}-with-fallback: var(--#{$name}-#{$alpha}, rgba(#{math.round(color.red($color))}, #{math.round(color.green($color))}, #{math.round(color.blue($color))}, #{$alpha-decimal}))
 
 =oklch($name, $color)

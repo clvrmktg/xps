@@ -1,0 +1,12 @@
+<nav class="[ breadcrumbs ][ px--2 md:px--0 ]" aria-label="Breadcrumb">
+  <ol class="[ flex middle col-gap--1 ]">
+    {{- range .Ancestors -}}
+    <li class="[ breadcrumb ]">
+      <a class="[ breadcrumb__link ][ flex ]" href="{{ .RelPermalink }}" title="{{ .LinkTitle }}" aria-label="{{ .LinkTitle }}" data-prefetch>{{ readFile "static/icons/home.svg" | safeHTML }}</a>
+    </li>
+    {{- end -}}
+    <li class="[ breadcrumb ][ font--700 ]" aria-current="page">
+      <a class="[ breadcrumb__link--last ]" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    </li>
+  </ol>
+</nav>

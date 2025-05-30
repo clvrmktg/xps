@@ -1,0 +1,76 @@
+@use '../abstracts' as *
+
+// .breadcrumb
+//   user-select: none
+//   position: relative
+
+//   &:last-of-type
+//     white-space: nowrap
+//     overflow: hidden
+//     text-overflow: ellipsis
+
+//     &::before
+//       content: '<'
+//       color: color('xps-red')
+//       position: absolute
+//       top: 0
+//       right: em(-15)
+
+//     &::after
+//       content: none
+    
+
+//   &::after
+//     content: '/'
+//     position: absolute
+//     right: -0.75em
+//     top: -10%
+  
+//   &__link
+//     // +unstyled-link
+
+//     &--last
+//       color: color('black')
+//       pointer-events: none
+
+
+.breadcrumb
+  user-select: none
+  position: relative
+
+  &:last-of-type
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+    // &::before
+    //   content: '<'
+    //   color: $prime
+    //   position: absolute
+    //   top: 0
+    //   right: em(-15)
+
+    &::after
+      content: none
+    
+  &::after
+    content: '\203A'
+    position: absolute
+    right: -0.75em
+    top: 50%
+    transform: translateY(-50%)
+  
+  &__link
+    +transition(fill)
+    // @extend a:not([class])
+
+    // +hover('color, background-color')
+    //   color: $prime
+    //   background-color: rgba($second, 1)
+
+    +hover
+      fill: color('xps-red')
+
+    &--last
+      color: color('black')
+      pointer-events: none

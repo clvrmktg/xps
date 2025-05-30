@@ -9,33 +9,58 @@ title = 'Privacy Policy'
   
 +++
 
+**Effective Date:** [Insert Date]
 
-Hey, I’m Joseph, and this is my website, [https://josephpinder.com](/). One of my main priorities is respecting the privacy of my visitors. This Privacy Policy explains my approach to data collection and use.
+XPS Logistics (“we,” “our,” or “us”) respects your privacy and is committed to protecting the personal information you provide when using our website.
 
-## No Data Collection
+## 1. Information We Collect
 
-I do not collect, track, or store any personal data from visitors at this time. My website does not use cookies, analytics tools, or any other tracking mechanisms.
+We may collect the following types of information:
+- **Contact details** (e.g., name, email address, phone number) submitted via our contact form
+- **Company information** (if provided)
+- **Website usage data**, collected automatically via cookies and tracking tools like Google Analytics and Facebook Pixel
 
-## General Data Protection Regulation (GDPR)
+## 2. How We Use Your Information
 
-Since I’m not collecting or processing any personal information, no GDPR compliance measures are applicable at this time. If this policy changes in the future, I’ll update this page to reflect any new data collection practices.
+We use the information collected to:
+- Respond to your inquiries and provide customer support
+- Improve our services and website performance
+- Analyze site traffic and user behavior
+- Deliver targeted advertising through third-party platforms
 
-## Log Files
+## 3. Sharing Your Information
 
-I do not log or store any visitor data. This means no information such as IP addresses, browser types, or referring pages is recorded when you visit my site.
+We do **not** sell or rent your personal information. We may share data with trusted service providers (such as email or hosting providers) only to help us operate our website and communicate with you.
 
-## Children’s Information
+Third-party services we use include:
+- **Google Analytics** – to understand how visitors use our site
+- **Facebook Pixel** – to serve relevant ads based on site usage
 
-I do not knowingly collect any personally identifiable information from children under the age of 13. Since no data collection is performed, this policy serves as a safeguard. Should this change, I’ll ensure that protections for children’s privacy remain a priority.
+Each provider has its own privacy practices; we encourage you to review their respective policies.
 
-## Online Privacy Policy Only
+## 4. Your Choices
 
-This Privacy Policy applies to your visit to [https://josephpinder.com](/). Since I’m not collecting any data, this policy outlines my minimal data usage practices.
+You may:
+- Choose not to fill out any forms on our website
+- Disable cookies in your browser settings
+- Opt out of Google Analytics tracking by installing [Google’s opt-out browser add-on](https://tools.google.com/dlpage/gaoptout)
 
-## Consent
+## 5. Data Retention
 
-By using my website, you acknowledge that no data is collected, tracked, or stored during your visit.
+We retain your personal information only as long as necessary to fulfill the purposes for which it was collected, unless a longer retention period is required by law.
 
----
+## 6. Security
 
-If you have any questions about this Privacy Policy, please feel free to {{<email text="contact me" local="hello" domain="josephpinder.com" >}}.
+We take reasonable measures to protect the personal information you submit against unauthorized access, use, or disclosure.
+
+## 7. Links to Other Sites
+
+Our website may contain links to third-party sites. We are not responsible for the privacy practices or content of those websites.
+
+## 8. Changes to This Policy
+
+We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date.
+
+## 9. Contact
+
+For any questions regarding this policy or your data, please [visit our Contact Page](/contact-us).

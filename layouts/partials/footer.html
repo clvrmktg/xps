@@ -30,40 +30,18 @@
 
     <div class="[ navigation ][ grid col-gap--4 ]">
       <div>
-        <h4 class="[ mb--1 ]">Our Company </h4>
         <nav> 
           <ul class="[ grid row-gap--0.5 ]"> 
-            <li><a href="#">Overview </a></li>
-            <li><a href="#">Team </a></li>
-            <li><a href="#">Careers</a></li>
+            {{- $context := .context -}}
+            {{- $currentPage := .currentPage -}}
+            {{with $context}}
+              {{ range .Site.Menus.main }}
+              <li><a class="{{ if eq $.currentPage.RelPermalink .URL }}[ current ]{{ end }}" href="{{ .URL }}" {{ if eq $.currentPage.RelPermalink .URL }}aria-current="page"{{ end }} data-prefetch>{{ .Name }} </a></li>
+              {{ end }}
+            {{end}}
           </ul>
         </nav>
       </div>
-      <div>
-        <h4 class="[ mb--1 ]">Our Services</h4>
-        <nav> 
-          <ul class="[ grid row-gap--0.5 ]"> 
-            <li><a href="#">Overview </a></li>
-            <li><a href="#">Import/Export</a></li>
-            <li><a href="#">Customs Brokerage </a></li>
-            <li><a href="#">Warehousing</a></li>
-            <li><a href="#">Distribution</a></li>
-            <li><a href="#">Last-Mile Delivery</a></li>
-            <li><a href="#">Reverse Logistics</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <h4 class="[ mb--1 ]">Help</h4>
-        <nav> 
-          <ul class="[ grid row-gap--0.5 ]">
-            <li><a href="#">Resource Center</a></li>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">Site Map</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
 
     <ul class="[ social ][ flex ]">
       <li class="[ social__item ]"><a class="[ social__link ]" href="https://www.facebook.com/#" target="_blank" rel="noopener" aria-label="Follow us on Facebook">
@@ -87,10 +65,10 @@
     <div>
       <nav class="[ mb--2 lg:mb--0 ]">
         <ul class="[ flex--col lg:flex--row gap--1 ]">
-          <li><small><a href="/policies/privacy-policy">Privacy Policy</a></small></li>
-          <li><small><a href="/policies/terms-use">Terms of Use</a></small></li>
-          <li><small><a href="/policies/cookie-policy">Cookie Policy</a></small></li>
-          <li><small><a href="/policies/web-accessibility-statement">Accessibility Statement</a></small></li>
+          <li><small><a href="/privacy-policy">Privacy Policy</a></small></li>
+          <li><small><a href="/terms-use">Terms of Use</a></small></li>
+          <li><small><a href="/cookie-policy">Cookie Policy</a></small></li>
+          <li><small><a href="/accessibility-statement">Accessibility Statement</a></small></li>
         </ul>
       </nav><small>© 2024 XPS Logistics. All rights reserved.</small>
     </div>

@@ -1,45 +1,55 @@
 {{- define "main" -}}
 {{- .Store.Set "hasTwic" true -}}
 {{- .Store.Set "hasObscure" true -}}
+{{- .Store.Set "hasBouncer" true -}}
 {{- .Store.Set "hasSelect" true -}}
 <div class="[ grid lg:col--2 col-gap--4 section--padding-top section--spacing ]">
-  <div>
+  <div class="[ grid row-gap--1 ]">
     <header>
       <h1>{{ .Title }}</h1>
+      {{ partial "breadcrumbs.html" . }}
     </header>
 
-    {{.Content }}
+    <div>
+      {{.Content }}
+      <p class="[ pb--0 ]"><strong>Office Hours:</strong> 9:00 AM – 5:00 PM (Monday - Friday)</p>
+    </div>
     
-    <p><strong>Office Hours:</strong> 9:00 AM – 5:00 PM (Monday - Friday)</p>
-    <h2 class="[ xps--red font--3 ]">Telephone</h2>
-    <ul>
-      <li><strong>Main Line:</strong> +1 (242) XXX-XXXX</li>
-    </ul>
-
-    <h2 class="[ xps--red font--3 ]">Email</h2>
-    <ul>
-      <li><strong>Customer Service:</strong> accounts@xpslogistics.com</li>
-      <li><strong>Operations Department:</strong> operations@xpslogistics.com</li>
-      <li><strong>Accounts Department:</strong> accounts@xpslogistics.com</li>
-    </ul>
-    <h2 class="[ xps--red font--3 ]">Address</h2>
-    <address>
-      <ul class="[ address ]">
-        <li>Lyford Cay Commerce Park</li>
-        <li>Western Road</li>
-        <li>P.O. Box CR-56008</li>
-        <li>Nassau, NP</li>
-        <li>Bahamas</li>
+    <div>
+      <h2 class="[ xps--red font--3 ]">Telephone</h2>
+      <ul class="[ contacts ]">
+        <li><strong>Main Line:</strong> {{ partial "phone.html" (dict "country" 1 "area" 242 "prefix" 601 "line" 3613)}}</li>
       </ul>
-    </address>
+    </div>
+
+    <div>
+      <h2 class="[ xps--red font--3 ]">Email</h2>
+      <ul class="[ contacts ]">
+        <li><strong>Logistics Department:</strong> {{partial "email.html" (dict "local" "logistics" "domain" "xpslogistics.net") }}</li>
+        <li><strong>Operations Department:</strong> {{partial "email.html" (dict "local" "ops" "domain" "xpslogistics.net") }}</li>
+        <li><strong>Accounts Department:</strong> {{partial "email.html" (dict "local" "accounts" "domain" "xpslogistics.net") }}</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="[ xps--red font--3 ]">Address</h2>
+      <address>
+        <ul class="[ address ]">
+          <li>Lyford Cay Commerce Park</li>
+          <li>Western Road</li>
+          <li>P.O. Box CR-56008</li>
+          <li>Nassau, NP</li>
+          <li>Bahamas</li>
+        </ul>
+      </address>
+    </div>
     
   </div>
   <div>
-    <form class="[ grid gap--2 ]" name="contact" action="/thank-you" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-validate>
+    <form class="[ grid gap--1 ]" name="contact" action="/thank-you" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-validate>
       <div class="hidden">
         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
       </div>
-      <div class="[ grid gap--1 ]">
         <div class="[ grid md:col--2 col-gap--2 row-gap--1 ]">
           <div class="[ form__field ][ grid ]">
             <label class="[ form__label ]" for="first_name">First Name <abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr></label>
@@ -71,7 +81,10 @@
           <select class="[ form__input ][ py--0.25 ]" id="inquiry" name="inquiry">
             <option value="" disabled selected>--Please select--</option>
             <option value="General Inquiry">General Inquiry</option>
-  
+            <option value="Freight Forwarding">Freight Forwarding</option>
+            <option value="Customs Brokerage">Customs Brokerage</option>
+            <option value="Warehousing">Warehousing</option>
+            <option value="Distribution">Distribution</option>
           </select>
         
           <!-- Template for JS-enhanced UI (not shown unless JS runs) -->
@@ -86,11 +99,11 @@
           </template>
         </div>
 
-      </div>
       <div class="[ form__field ][ grid ]">
         <label class="[ form__label ]" for="message">Message <abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr></label>
         <textarea class="[ form__message ][ p--0.25 ]" name="message" id="message" placeholder="Tell us how we can help..." required maxlength="3000"></textarea>
       </div>
+      <small>By submitting this form, you consent to the collection and use of your information for the purpose of responding to your inquiry. For more details on how we handle your data, please see our <a href="/privacy-policy">Privacy Policy</a>.</small>
       <div data-netlify-recaptcha="true"></div>
       <div class="[ flex end ]">
       <button type="submit" class="[ btn btn--lg btn--red ]">Send</button>

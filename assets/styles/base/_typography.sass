@@ -2,7 +2,7 @@
 
 h1, h2, h3, h4, h5, h6
   font-weight: 700
-  line-height: 1.5
+  line-height: 1.15
   padding-bottom: 0.25em
   
   a
@@ -31,13 +31,12 @@ p
   padding-bottom: 1em
   
 a:not([class])
-  color: color('white')
-  border-bottom: em(2) solid color('white')
-  +transition('color, background-color')
+  color: color('xps-red')
+  border-bottom: em(2) solid color('xps-red')
+  +transition((color, background-color))
 
   +hover
-    color: color('black')
-    background-color: color('white')
+    background-color: color('xps-red-1')
 
 small, figcaption, .font--small
   font-size: var(--step--1)
