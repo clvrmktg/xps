@@ -80,16 +80,21 @@ input, button, textarea, select
   line-height: inherit
   border-radius: 0
 
+  &:focus
+    outline: none
+    appearance: none 
+
+textarea, select
+  appearance: none
+
 input
 
   &:not([type=checkbox]):not([type=radio])
-    // -webkit-appearance: none
     appearance: none
 
   &[type=submit]
     font: inherit
     cursor: pointer
-    
 
 button
   background-color: transparent

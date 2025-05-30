@@ -15,8 +15,8 @@
     {{- if or .IsHome ( .Store.Get "hasObscure" ) }}
     {{ partial "script.html" (dict "path" "scripts/components/obscure.js" "targetPath" "scripts/obscure.js") }}
     {{- end -}}
-    {{- if .Store.Get "hasCode" -}}
-    {{ partial "script.html" (dict "path" "scripts/vendor/prism.js" "targetPath" "scripts/prism.js") }}
+    {{- if .Store.Get "hasSelect" -}}
+    {{ partial "script.html" (dict "path" "scripts/components/select.js" "targetPath" "scripts/prism.js") }}
     {{- end -}}
     {{- if .Store.Get "hasYouTube" -}}
     {{

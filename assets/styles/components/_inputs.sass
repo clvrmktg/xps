@@ -1,11 +1,7 @@
 @use '../abstracts' as *
 
-input, textarea
+// input, textarea
   // outline: $bg
-
-  &:focus
-    outline: none
-    -webkit-appearance: none
 
   &:-webkit-autofill, &:focus
     font:
@@ -22,6 +18,7 @@ input, textarea
     border-bottom: em(2) solid color('black')
 
     &:focus
+      border: none
       border-bottom: em(2) dashed color('xps-red')
     
   &__message

@@ -1,6 +1,7 @@
 {{- define "main" -}}
 {{- .Store.Set "hasTwic" true -}}
 {{- .Store.Set "hasObscure" true -}}
+{{- .Store.Set "hasSelect" true -}}
 <div class="[ grid lg:col--2 col-gap--4 section--padding-top section--spacing ]">
   <div>
     <header>
@@ -10,48 +11,85 @@
     {{.Content }}
     
     <p><strong>Office Hours:</strong> 9:00 AM – 5:00 PM (Monday - Friday)</p>
-    <h2 class="[ font--3 ]">Telephone</h2>
+    <h2 class="[ xps--red font--3 ]">Telephone</h2>
     <ul>
       <li><strong>Main Line:</strong> +1 (242) XXX-XXXX</li>
     </ul>
 
-    <h2 class="[ font--3 ]">Email</h2>
+    <h2 class="[ xps--red font--3 ]">Email</h2>
     <li><strong>Customer Service:</strong> support@xpslogistics.com</li>
     <li><strong>Operations Department:</strong> operations@xpslogistics.com</li>
     <li><strong>Accounts Department:</strong> accounts@xpslogistics.com</li>
   </div>
   <div>
-    <form class="[ grid gap--1 ]" name="contact" action="/thank-you" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-validate>
+    <form class="[ grid gap--2 ]" name="contact" action="/thank-you" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-validate>
       <div class="hidden">
         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
       </div>
-      <div class="[ grid md:col--2 col-gap--2 row-gap--1 ]">
-        <div class="[ form__field ][ grid ]">
-          <label class="[ form__label ]" for="first_name">First Name <abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr></label>
-          <input class="[ form__input ][ py--0.25 ]" name="first_name" id="first_name" type="text" placeholder="Your Name" required minlength="2" maxlength="50"/>
+      <div class="[ grid gap--1 ]">
+        <div class="[ grid md:col--2 col-gap--2 row-gap--1 ]">
+          <div class="[ form__field ][ grid ]">
+            <label class="[ form__label ]" for="first_name">First Name <abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr></label>
+            <input class="[ form__input ][ py--0.25 ]" name="first_name" id="first_name" type="text" required minlength="2" maxlength="50"/>
+          </div>
+          <div class="[ form__field ][ grid ]">
+            <label class="[ form__label ]" for="last_name">Last Name <abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr></label>
+            <input class="[ form__input ][ py--0.25 ]" name="last_name" id="last_name" type="text" required minlength="2" maxlength="50"/>
+          </div>
         </div>
         <div class="[ form__field ][ grid ]">
-          <label class="[ form__label ]" for="last_name">Last Name <abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr></label>
-          <input class="[ form__input ][ py--0.25 ]" name="last_name" id="last_name" type="text" required minlength="2" maxlength="50"/>
+          <label class="[ form__label ]" for="email">Email <abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr></label>
+          <input class="[ form__input ][ py--0.25 ]" name="email" id="email" type="email" required/>
         </div>
-      </div>
-      <div class="[ form__field ][ grid ]">
-        <label class="[ form__label ]" for="email">Email <abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr></label>
-        <input class="[ form__input ][ py--0.25 ]" name="email" id="email" type="email" required/>
-      </div>
-      <div class="[ grid md:col--2 col-gap--2 row-gap--1 ]">
-        <div class="[ form__field ][ grid ]">
-          <label class="[ form__label ]" for="phone">Phone Number</label>
-          <input class="[ form__input ][ py--0.25 ]" name="phone" id="phone" type="tel"/>
+        <div class="[ grid md:col--2 col-gap--2 row-gap--1 ]">
+          <div class="[ form__field ][ grid ]">
+            <label class="[ form__label ]" for="phone">Phone Number</label>
+            <input class="[ form__input ][ py--0.25 ]" name="phone" id="phone" type="tel"/>
+          </div>
+          <div class="[ form__field ][ grid ]">
+            <label class="[ form__label ]" for="company">Company</label>
+            <input class="[ form__input ][ py--0.25 ]" name="company" id="company" type="text"/>
+          </div>
         </div>
-        <div class="[ form__field ][ grid ]">
-          <label class="[ form__label ]" for="company">Company</label>
-          <input class="[ form__input ][ py--0.25 ]" name="company" id="company" type="text"/>
+        <noscript>
+          <div class="[ form__field ][ grid ]">
+            <label class="[ form__label ]" for="company">How can we help?</label>
+            <select class="[ form__input ][ py--0.25 ]" name="" id="">
+              <option selected>--Please select--</option>
+              <option value="inquiry">General Inquiry</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </div>
+        </noscript>
+        <div class="[ dropdown-wrapper ][ grid ]">
+          <label for="inquiry">How can we help?</label>
+        
+          <!-- This <select> is always in the DOM and will be submitted -->
+          <select id="inquiry" name="inquiry">
+            <option value="" disabled selected>--Please select--</option>
+            <option value="General Inquiry">General Inquiry</option>
+  
+          </select>
+        
+          <!-- Template for JS-enhanced UI (not shown unless JS runs) -->
+          <template id="dropdown-template">
+            <div class="[ form__input ][ dropdown py--0.25 ]" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
+              <div class="[ dropdown_value ]" aria-live="polite" aria-atomic="true"></div>
+              <div class="[ dropdown_arrow ][ flex middle ]">{{ readFile "static/icons/dropdown_arrow.svg" | safeHTML }}</div>
+              <div class="[ dropdown_panel ]" role="listbox">
+                <div class="[ dropdown_items ][ font--700 ]" role="option" tabindex="-1" aria-selected="false"></div>
+              </div>
+            </div>
+          </template>
         </div>
+
       </div>
       <div class="[ form__field ][ grid ]">
         <label class="[ form__label ]" for="message">Message <abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr></label>
-        <textarea class="[ form__message ][ py--0.25 ]" name="message" id="message" placeholder="Tell us how we can help..." required maxlength="3000"></textarea>
+        <textarea class="[ form__message ][ p--0.25 ]" name="message" id="message" placeholder="Tell us how we can help..." required maxlength="3000"></textarea>
       </div>
       <div data-netlify-recaptcha="true"></div>
       <div class="[ flex end ]">
