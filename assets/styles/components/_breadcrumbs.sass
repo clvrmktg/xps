@@ -61,12 +61,12 @@
     transform: translateY(-50%)
   
   &__link
-    +transition(fill)
-    // @extend a:not([class])
+    +unstyled-link
 
-    // +hover('color, background-color')
-    //   color: $prime
-    //   background-color: rgba($second, 1)
+    &:has(svg)
+      border-bottom: none
+      +transition(fill)
+
 
     +hover
       fill: color('xps-red')

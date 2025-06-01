@@ -30,13 +30,17 @@ h6,.font--6
 p
   padding-bottom: 1em
   
-a:not([class])
-  color: color('xps-red')
-  border-bottom: em(2) solid color('xps-red')
-  +transition((color, background-color))
+li > p
+  padding-bottom: 0
 
-  +hover
-    background-color: color('xps-red-1')
+a:not([class])
+  +unstyled-link
+  // color: color('xps-red')
+  // border-bottom: em(2) solid color('xps-red')
+  // +transition((color, background-color))
+
+  // +hover
+  //   background-color: color('xps-red-1')
 
 small, figcaption, .font--small
   font-size: var(--step--1)

@@ -43,4 +43,4 @@ These Terms shall be governed by and construed in accordance with the laws of th
 
 ## 8. Contact
 
-If you have any questions about these Terms of Use, please [visit our Contact Page](/contact).
+If you have any questions about these Terms of Use, please [visit our Contact Page](/contact-us).

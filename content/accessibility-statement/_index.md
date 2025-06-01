@@ -28,4 +28,4 @@ We recognize that accessibility is an ongoing effort. While we continuously work
 
 ## Contact Us
 
-If you encounter any difficulty accessing content on this website or have suggestions for improvement, please [visit our Contact Page](/contact) to let us know. We’ll do our best to assist you.
+If you encounter any difficulty accessing content on this website or have suggestions for improvement, please [visit our Contact Page](/contact-us) to let us know. We’ll do our best to assist you.

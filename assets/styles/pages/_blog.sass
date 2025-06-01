@@ -4,7 +4,7 @@
   grid-template-rows: 1fr max-content
 
 .posts
-  display: grid
+  // display: grid
   // grid-template-rows: max-content
   // gap: 2em
   // margin-bottom: 2em
@@ -28,23 +28,35 @@
   //     &::before
   //       background-color: var(--background)
 
-// .post
+.post
 
   
-//   &__link
-//     color: color('white')
-//     display: block
+  &__link
+    color: color('black')
+  //     display: block
 
-//     > h2
-//       padding-bottom: 0
+  //     > h2
+  //       padding-bottom: 0
 
-//     > time
-//       display: inline-block
-//       color: color('text-grey')
-//       margin-bottom: 1em
+  //     > time
+  //       display: inline-block
+  //       color: color('text-grey')
+  //       margin-bottom: 1em
 
-// time
-//   font-size: 0.9em
+  // time
+  //   font-size: 0.9em
+
+  &__img
+    background-color: color('black')
+
+  h2
+    line-height: 1.3
+
+  +hover
+
+    h2
+      text-decoration: underline
+
 .pagination
   display: grid
   grid-template-columns: [newer-start] max-content [newer-end] 1fr [older-start] max-content [older-end]
@@ -55,3 +67,7 @@
 
 .older
   grid-area: older
+
++order(1)
++order(2)
++order(3)

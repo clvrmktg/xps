@@ -1,10 +1,12 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply" "Logistics & Supply Chain" "Inside-XPS" "Inside XPS" -}}
   {{- $pageTitle := "" -}}
   {{- if .IsHome -}}
-  {{- $pageTitle = printf "%s | Web Designer | Nassau, Bahamas" .Site.Title -}}
+  {{- $pageTitle = printf "%s | 3PL | Third-Party Logistics | Nassau, Bahamas" .Site.Title -}}
   {{- else -}}
-  {{- $pageTitle = printf "%s | %s" .Title .Site.Title -}}
+  {{- $title := index $categoryLabels .Title | default .Title -}}
+  {{- $pageTitle = printf "%s | %s" $title .Site.Title -}}
   {{- end -}}
   {{- $feature := .Params.feature -}}
   {{- $cover := .Params.cover -}}
@@ -57,10 +59,13 @@
   {{- if .Store.Get "hasCode" -}}
   <script src="/scripts/prism-{{- .Site.Params.Version -}}.min.js" async></script>
   {{- end -}} 
-  <link rel="icon" type="image/png" href="/favicon-light.svg" media="(prefers-color-scheme: light)">
-  <link rel="icon" type="image/png" href="/favicon-dark.svg" media="(prefers-color-scheme: dark)">
-  <link rel="mask-icon" href="/favicon-light.svg" color="#9395A1">
+  <!-- Default Icon - Use SVG for highest quality display - Use `media` attribute for light or dark mode (i.e. media="(prefers-color-scheme: dark)") - All browsers -->
+  <link rel="icon" type="image/svg" href="/xps-favicon.svg">
+  <!-- Mask Icon - 512 x 512 - PNG - Use `color` attribute with SVG (i.e. color="#000000") - Safari --> 
+  <link rel="mask-icon" href="/mask-icon.png">
+  <!-- Apple Touch Icon - 512 x 512 - PNG - iOS MacOS -->
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- Manifest - 192 x 192 | 512 x 512 - PNG - Android Chrome | PWA -->
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#0d1117">
   {{- $iso := "2006-01-02T15:04:05Z07:00" -}}
@@ -69,7 +74,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ $pageTitle }}">
   {{- $image := $feature.image | default .Site.Params.share -}}
-  {{- $alt := $feature.alt | default "Default share image of Joseph Pinder's logo" -}}
+  {{- $alt := $feature.alt | default "XPS Logistics logo" -}}
   <meta property="og:description" content="{{- .Description -}}">
   <meta property="og:image" content="{{- $image | absURL -}}">
   <meta property="og:image:alt" content="{{ $alt  }}">
@@ -83,8 +88,4 @@
   <meta name="author" content="Joseph Pinder">
   <meta name="publish_date" property="og:publish_date" content="{{- .Date.Format "2006-01-02T15:04:05Z0700" -}}">
   <meta name="facebook-domain-verification" content="zq21trdszbl5aqzihtrzw3rngnpof0">
-  <link href="https://github.com/jsphpndr" rel="me">
-  <link href="https://twitter.com/jsphpndr" rel="me">
-  <link rel="webmention" href="https://webmention.io/josephpinder.com/webmention">
-  <link rel="pingback" href="https://webmention.io/josephpinder.com/xmlrpc">
 </head>

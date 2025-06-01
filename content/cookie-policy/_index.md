@@ -52,4 +52,4 @@ We may update this Cookie Policy from time to time. Any changes will be posted o
 
 ## 6. Contact
 
-If you have any questions about our use of cookies, please [visit our Contact Page](/contact).
+If you have any questions about our use of cookies, please [visit our Contact Page](/contact-us).

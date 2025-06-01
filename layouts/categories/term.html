@@ -1,0 +1,42 @@
+{{- define "main" -}}
+<div class="[ grid layout--spacing section--padding-top ]">
+  <header>
+    {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" -}}
+    <h1>{{- index $categoryLabels .Title | default .Title -}}</h1>
+    {{ partial "breadcrumbs.html" . }}
+  </header>
+  <div class="[ loop-wrap ]">
+    <ul class="[ posts ][ grid md:col--3 gap--2 ]">
+      {{- $format := "January 2, 2006" -}}
+      {{- $iso := "2006-01-02T15:04:05Z07:00" -}}
+      {{ $paginator := .Paginator }}
+      {{ $counter := 0 }}
+      {{ range $paginator.Pages }}
+      {{ $counter := add $counter 1 }}
+      <li id="post-{{$counter}}" class="[ post ]">
+        <a class="[ post__link ][ grid row-gap--0.5 ]" href="{{ .RelPermalink }}" data-prefetch>
+          <figure class="[ post__img ][ ratio--16:9 ]">
+
+          </figure>
+          <div class="[ grid ]">
+            <h2 class="[ font--3 o--2 ]">{{ .LinkTitle }}</h2>
+            <div class="[ o--1 ]">
+              <!-- Categories -->
+              {{- $page := . -}}
+              {{- range sort $page.Params.categories }}
+              <small>{{- index $categoryLabels . | default . -}}</small>
+              {{- end }}
+              | <small>{{ .ReadingTime }} min read</small>
+            </div>
+            <p class="[ o--3 ]">{{ .Description | truncate 145 "[...]" | plainify }}</p>
+          </div>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+    
+    {{ partial "pagination.html" . }}
+
+  </div>
+</div>
+{{- end -}}

@@ -10,6 +10,40 @@
       <p class="[ ch--48 color--white ]">XPS Logistics specializes in warehousing, distribution, and last-mile delivery services in Nassau and throughout The Bahamas, leveraging over two decades of expertise as a trusted third-party logistics provider.</p><a class="[ btn btn--solid--lg bg:color--red--200 ]">Request A Quote</a>
     </div>
   </div>
+  <section class="[ grid section--spacing ]">
+    <h2>Insights</h2>
+
+    <ul class="[ posts ][ grid md:col--3 col-gap--1 row-gap--2 ]">
+      {{- $format := "January 2, 2006" -}}
+      {{- $iso := "2006-01-02T15:04:05Z07:00" -}}
+      {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply" "Logistics & Supply Chain" "Inside-XPS" "Inside XPS" -}}
+      {{ $counter := 0 }}
+      {{ $insights := where .Site.RegularPages "Section" "insights" | first 3 }}
+      {{ range $insights }}
+      {{ $counter := add $counter 1 }}
+      <li id="post-{{$counter}}" class="[ post ]">
+        <a class="[ post__link ][ grid row-gap--0.5 ]" href="{{ .RelPermalink }}" data-prefetch>
+          <figure class="[ post__img ][ ratio--16:9 ]">
+  
+          </figure>
+          <div class="[ grid ]">
+            <h2 class="[ font--3 o--2 ]">{{ .LinkTitle }}</h2>
+            <div class="[ o--1 ]">
+              <!-- Categories -->
+              {{- $page := . -}}
+              {{- range sort $page.Params.categories }}
+              <small>{{- index $categoryLabels . | default . -}}</small>
+              {{- end }}
+              | <small>{{ .ReadingTime }} min read</small>
+            </div>
+            <p class="[ o--3 ]">{{ .Description | truncate 145 "[...]" | plainify }}</p>
+          </div>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+
 </header>
 <!-- Hero - END  -->
 {{- end -}}

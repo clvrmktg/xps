@@ -9,6 +9,10 @@ upload_dir = "assets/uploads"
 public_path = "/uploads"
 # disableKinds = [ "taxonomy", "term" ]
 
+[taxonomies]
+  category = "categories"
+  # tag = "tags"
+
 [pagination]
   pagerSize = 6
 

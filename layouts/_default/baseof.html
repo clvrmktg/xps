@@ -5,7 +5,7 @@
     <div class="[ container ]">
       {{ $currentPage := . }}
       {{ partial "navbar.html" (dict "context" . "currentPage" $currentPage) }}
-      <main class="[ main ][ content-grid ]{{- if eq .Page.Kind "404" -}}[ error ]{{- end -}}" id="main">
+      <main class="[ main ][ content-grid section--spacing {{ if eq .Page.Kind "404" }}error {{ end }}]" id="main">
         {{- block "main" . -}}{{- end -}}
       </main>
       {{- partial "footer.html"  (dict "context" . "currentPage" $currentPage) -}}
