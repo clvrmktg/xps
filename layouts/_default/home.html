@@ -16,7 +16,7 @@
     <ul class="[ posts ][ grid md:col--3 col-gap--1 row-gap--2 ]">
       {{- $format := "January 2, 2006" -}}
       {{- $iso := "2006-01-02T15:04:05Z07:00" -}}
-      {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply" "Logistics & Supply Chain" "Inside-XPS" "Inside XPS" -}}
+      {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply Chain" "Logistics & Supply Chain" -}}
       {{ $counter := 0 }}
       {{ $insights := where .Site.RegularPages "Section" "insights" | first 3 }}
       {{ range $insights }}

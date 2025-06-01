@@ -2,7 +2,7 @@
   <ol class="[ flex middle col-gap--1 ]">
 
     {{- $homeIcon := readFile "static/icons/home.svg" | safeHTML -}}
-    {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply" "Logistics & Supply Chain" "Inside-XPS" "Inside XPS" -}}
+    {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply Chain" "Logistics & Supply Chain" -}}
     {{- range $index, $ancestor := .Ancestors.Reverse -}}
       <li class="[ breadcrumb ]">
         <a class="[ breadcrumb__link ]{{- if eq $index 0 -}}[ flex ]{{- end -}}" href="{{ $ancestor.RelPermalink }}" title="{{ $ancestor.LinkTitle }}" aria-label="{{- index $categoryLabels $ancestor.LinkTitle  | default $ancestor.LinkTitle  -}}" data-prefetch>

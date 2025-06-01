@@ -85,4 +85,4 @@ As you recalibrate your supply chain strategy, let us help you chart the most ef
 
 Whether you're navigating customs regulations, optimizing supply chains, or exploring new markets, XPS Logistics is here to help.
 
-[**Contact Us Today**](https://yourdomain.com/contact) to get started.
+[**Contact Us Today**](/contact-us) to get started.

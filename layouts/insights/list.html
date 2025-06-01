@@ -10,7 +10,7 @@
       <ul class="[ posts ][ grid md:col--3 gap--2 ]">
         {{- $format := "January 2, 2006" -}}
         {{- $iso := "2006-01-02T15:04:05Z07:00" -}}
-        {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply" "Logistics & Supply Chain" "Inside-XPS" "Inside XPS" -}}
+        {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply Chain" "Logistics & Supply Chain" -}}
         {{ $paginator := .Paginator }}
         {{ $counter := 0 }}
         {{ range $paginator.Pages }}
@@ -28,7 +28,7 @@
                 {{- range sort $page.Params.categories }}
                 <small>{{- index $categoryLabels . | default . -}}</small>
                 {{- end }}
-                <small>{{ .ReadingTime }} min read</small>
+                | <small>{{ .ReadingTime }} min read</small>
               </div>
               <p class="[ o--3 ]">{{ .Description | truncate 145 "[...]" | plainify }}</p>
             </div>

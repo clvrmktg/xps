@@ -19,7 +19,7 @@
     </div>
     <ul class="[ grid md:col--2 lg:col--3 gap--2 ]">
       <li>
-        <h3>Regional</h3>
+        <h3>Regional Reach</h3>
         <p>Our reach extends throughout The Bahamas, Caribbean, North, and South America, allowing us to provide reliable logistics solutions tailored to your needs.</p>
       </li>
       <!--
@@ -29,12 +29,12 @@
       </li>
       -->
       <li>
-        <h3>Growing</h3>
+        <h3>Strategic Growth</h3>
         <p>We're increasing our warehouse capacity, expanding our fleet while investing in onboarding and training our team to meet increasing demands.</p>
       </li>
       <li>
-        <h3>Reliable</h3>
-        <p>Leveraging over two decades of industry experience in freight-forwarding, warehousing and distribution we have exactly what it takes to deliver results.</p>
+        <h3>Proven Experience</h3>
+        <p>Leveraging over five decades of industry experience in freight-forwarding, warehousing and distribution we have exactly what it takes to deliver results.</p>
       </li>
     </ul>
   </section>
@@ -120,11 +120,11 @@
           <p>We believe in giving our best, which is why we're forward-thinking and invest in our people, technology, and equipment. Innovation provides us with opportunities to improve performance for our customers and employees alike.</p>
         </li>
         <li> 
-          <h3 class="[ bar-before ][ flex--col gr--1 mb--0.5 ]">Be respectful</h3>
+          <h3 class="[ bar-before ][ flex--col gr--1 row-gap--0.5 ]">Be respectful</h3>
           <p>We're committed to fostering a culture of honesty and respect, where everyone has a voice. That's why we work hard to ensure that our team feels valued and their opinions are heard.</p>
         </li>
         <li> 
-          <h3 class="[ bar-before ][ flex--col gr--1 mb--0.5 ]">Be world-class</h3>
+          <h3 class="[ bar-before ][ flex--col gr--1 row-gap--0.5 ]">Be world-class</h3>
           <p>We're determined to be #1 in 3PL. Competitive and driven to win, we don't settle for less than best— for ourselves or our customers.</p>
         </li>
       </ul>
@@ -135,8 +135,8 @@
       <div class="[ split-sub ][ pb--5 ]">
         <p class="[ font--4 ]">We're a team that prioritizes safety, a customer-focused approach, and operational excellence. That's why our team is comprised of industry professionals with a wealth of experience in operations and technology</p>
       </div>
-      <ul class="[ team ][ grid md:x2 lg:x4 g--2 ]">
-        <li class="[ member ][ grid ]">
+      <ul class="[ team ][ grid md:col--2 lg:col--4 gap--2 ]">
+        <li class="[ member ][ grid row-gap--0.5 ]">
           <h3 class="[ member__name ][ o--3 ]">Joseph Pinder</h3>
           <p class="[ member__role ][ font--small o--2 ]">General Manager</p>
           <figure class="[ member__photo ][ ratio--1:1 o--1 mb--1 ]">
@@ -152,45 +152,12 @@
       </ul>
     </div>
   </section>
-  <section class="[ grid section--spacing ]">
-    <h2>Insights</h2>
-
-    <ul class="[ posts ][ grid md:col--3 col-gap--1 row-gap--2 ]">
-      {{- $format := "January 2, 2006" -}}
-      {{- $iso := "2006-01-02T15:04:05Z07:00" -}}
-      {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply" "Logistics & Supply Chain" "Inside-XPS" "Inside XPS" -}}
-      {{ $counter := 0 }}
-      {{ $insights := where .Site.RegularPages "Section" "insights" | first 3 }}
-      {{ range $insights }}
-      {{ $counter := add $counter 1 }}
-      <li id="post-{{$counter}}" class="[ post ]">
-        <a class="[ post__link ][ grid row-gap--0.5 ]" href="{{ .RelPermalink }}" data-prefetch>
-          <figure class="[ post__img ][ ratio--16:9 ]">
-  
-          </figure>
-          <div class="[ grid ]">
-            <h2 class="[ font--3 o--2 ]">{{ .LinkTitle }}</h2>
-            <div class="[ o--1 ]">
-              <!-- Categories -->
-              {{- $page := . -}}
-              {{- range sort $page.Params.categories }}
-              <small>{{- index $categoryLabels . | default . -}}</small>
-              {{- end }}
-              | <small>{{ .ReadingTime }} min read</small>
-            </div>
-            <p class="[ o--3 ]">{{ .Description | truncate 145 "[...]" | plainify }}</p>
-          </div>
-        </a>
-      </li>
-      {{ end }}
-    </ul>
-  </section>
-  <section class="[ bg:color--black color--white ]">
-    <div class="[ grid lg:x2  g--2 ]">
+  <section class="[ banner--black full-width content-grid ]">
+    <div class="[ grid middle md:col--2 gap--2 ]">
       <div class="[ py--5 ]">
         <h2>Join our world class team</h2>
         <p>At XPS we value every employee because every employee is critical to our success. Let's connect!</p>
-        <button class="[ btn btn--solid--lg ]">Work with us</button>
+        <button class="[ btn btn--lg btn--red ]">Work with us</button>
       </div>
       <figure class="[ ratio--1:1 ]">
         <style>
@@ -203,4 +170,43 @@
       </figure>
     </div>
   </section>
+  <section class="[ grid section--spacing ]">
+    <h2>Newsroom</h2>
+
+    <ul class="[ posts ][ grid md:col--3 col-gap--1 row-gap--2 ]">
+      {{- $format := "January 2, 2006" -}}
+      {{- $iso := "2006-01-02T15:04:05Z07:00" -}}
+      {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply Chain" "Logistics & Supply Chain" "Newsroom" "Newsroom" -}}
+      {{ $counter := 0 }}
+      {{ $insights := first 3 (where .Site.RegularPages "Params.categories" "intersect" (slice "Newsroom")) }}
+      {{ range $insights }}
+        {{ $counter := add $counter 1 }}
+        <li id="post-{{$counter}}" class="[ post ]">
+          <a class="[ post__link ][ grid row-gap--0.5 ]" href="{{ .RelPermalink }}" data-prefetch>
+            <figure class="[ post__img ][ ratio--16:9 ]">
+
+            </figure>
+            <div class="[ grid ]">
+              <h2 class="[ font--3 o--2 ]">{{ .LinkTitle }}</h2>
+              <div class="[ o--1 ]">
+                {{- $page := . -}}
+                {{- range sort $page.Params.categories }}
+                <small>{{- index $categoryLabels . | default . -}}</small>
+                {{- end }}
+                | <small>{{ .ReadingTime }} min read</small>
+              </div>
+              <p class="[ o--3 ]">{{ .Description | truncate 145 "[...]" | plainify }}</p>
+            </div>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+  <section class="[ grid center row-gap--3 ]">
+    <h2 class="[ font--2 ]">Ready to start shipping with confidence?</h2>
+    <div class="[ text--center ]">
+      <a href="/contact-us" class="[ btn btn--lg btn--red ]" data-prefetch>Let’s Talk</a>
+    </div>
+  </section>
+
 {{- end -}}

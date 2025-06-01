@@ -1,7 +1,7 @@
 {{- define "main" -}}
 <div class="[ grid layout--spacing section--padding-top ]">
   <header>
-    {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" -}}
+    {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply Chain" "Logistics & Supply Chain" -}}
     <h1>{{- index $categoryLabels .Title | default .Title -}}</h1>
     {{ partial "breadcrumbs.html" . }}
   </header>

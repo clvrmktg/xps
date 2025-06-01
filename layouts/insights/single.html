@@ -13,7 +13,7 @@
       {{- $lastModified := .Lastmod | default .Date -}}
       {{- $hourDiff := div (sub $lastModified.Unix $published.Unix) 3600 -}}
       <p class="[ meta{{ if .Params.feature.image }} meta--spaced{{ end }} ]">
-        {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" -}}
+        {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply Chain" "Logistics & Supply Chain" -}}
         {{ range sort .Params.categories }}
         <span><a href="{{ "/categories/" | relURL }}{{ . | urlize }}">{{- index $categoryLabels . | default . -}}</a></span>
         {{ end }}
@@ -43,7 +43,7 @@
     <div class="[ content ]">
       {{ .Content }}
     </div>
-    <footer>
+    <footer class="[ post-breakout ][  ]">
       {{- if gt $hourDiff 1 -}}
       <div class="[ original-publish-date ]"> 
         <p class="[ font--small ]">Last Updated: 
@@ -52,43 +52,48 @@
       </div>
       {{ end }}
       {{- partial "footnotes.html" . -}}
-      {{- with .Site.Home.Params.avatar -}}
-      {{- $image := (printf "/uploads/%s" .image) -}}
-      <section class="[ bio ]">
-        <div>
-          <figure class="[ profile__avatar ]">
-            <picture id="avatar" class="[ bg ]">
-              <style>#avatar {background-image: url('https://{{ $.Site.Params.twic }}.twic.pics{{ $image }}?twic=v1/output=preview');}</style>
-              <img data-twic-src="image:{{ $image }}" data-twic-focus="auto" alt="Joseph Pinder" width="90" height="90"/>
-              <noscript><img class="[ script ]" src="https://{{ $.Site.Params.twic }}.twic.pics{{ $image }}?twic=v1/output=preview" alt="Joseph Pinder" width="90" height="90"/></noscript>
-            </picture>
-          </figure>
-        </div>
-        <div>
-          <h2 class="[ flex middle ]">About The Author</h2>
-          <p>{{ .snippet }}</p>
-        </div>
-      </section>
-      {{- end -}}
-      <section>
-        <h2 class="[ tag-header ]">Related Posts</h2>
-        <ul class="[ posts ]">
-          {{ $currentPost := .Permalink }}
-          {{ $posts := where .Site.RegularPages "Section" "blog" }}
-          {{ $posts = shuffle $posts }} <!-- Randomize the posts -->
-          {{- range first 2 $posts -}} <!-- Show the first 2 posts after randomizing -->
-          {{- if ne .Permalink $currentPost -}} <!-- Exclude the current post -->
-            <li class="[ post ]">
-              <a class="[ post__link ]" href="{{ .RelPermalink }}" data-prefetch>
-                <h3 class="[ font--2 ]">{{ .LinkTitle }}</h3>
-                <time class="[ font--small ]" datetime="{{ .Date.Format $iso }}">{{ .Date.Format $format }}</time>
-                <p>{{ (.Description | plainify) | strings.Truncate 145 "[...]" | htmlUnescape }}</p>
-              </a>
-            </li>
-          {{- end -}}
-        {{- end -}}
-        </ul>
-      </section>
+      {{ $current := . }}
+      {{ $currentCategories := .Params.categories }}
+      {{ if $currentCategories }}
+
+        {{ $related := slice }}
+
+        {{ range .Site.RegularPages }}
+          {{ if and (in .Params.categories (index $currentCategories 0)) (ne .Permalink $current.Permalink) }}
+            {{ $related = $related | append . }}
+          {{ end }}
+        {{ end }}
+
+        {{ if gt (len $related) 0 }}
+          {{ $related = shuffle $related }}
+
+          <section class="[ grid row-gap--3 section--padding-top ]">
+            <h2 class="[ tag-header ]">More from {{ index $currentCategories 0 }}</h2>
+            <ul class="[ posts ][ grid md:col--3 gap--2 ]">
+              {{ range first 2 $related }}
+                <li class="[ post ]">
+                  <a class="[ post__link ][ grid row-gap--0.5 ]" href="{{ .RelPermalink }}" data-prefetch>
+                    <figure class="[ post__img ][ ratio--16:9 ]"></figure>
+                    <div class="[ grid ]">
+                      <h2 class="[ font--3 o--2 ]">{{ .LinkTitle }}</h2>
+                      <div class="[ o--1 ]">
+                        {{- $page := . -}}
+                        {{- range sort $page.Params.categories }}
+                        <small>{{- index $categoryLabels . | default . -}}</small>
+                        {{- end }}
+                        | <small>{{ .ReadingTime }} min read</small>
+                      </div>
+                      <p class="[ o--3 ]">{{ .Description | truncate 145 "[...]" | plainify }}</p>
+                    </div>
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+          </section>
+        {{ end }}
+
+      {{ end }}
+
     </footer>
   </div>
 </article>
