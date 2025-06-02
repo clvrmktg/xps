@@ -18,23 +18,41 @@
       </div>
     {{ end }}
   </section>
-  <section class="[ grid md:col--2 ][ middle row-gap--1 col-gap--2 ]">
+<section class="[ service--blocks ][ full-width content-grid section--padding section--spacing ]">
+
+  <div class="[ service--block grid middle gap--2 ]">
     <div>
-      <h2>Why Choose XPS for {{ .Title }}</h2>
-      {{ .Content }}
+    <h2>What We Offer</h2>
+    {{ with .Params.offers }}
+      {{ .content | markdownify }}
+    {{ end }}
     </div>
-    <figure class="[ ratio--4:7 bg ]">
-      <!-- Use twic image logic -->
-      <img data-twic-src="image:/uploads/{{ .Params.feature.image }}" alt="{{ .Params.feature.alt }}" width="1920" height="1080" />
+    <figure class="[ ratio--4:7 ]">
+
     </figure>
-  </section>
-  <section class="[ faq ][ full-width content-grid section--padding ]">
+  </div>
+
+  <div class="[ service--block grid middle gap--2 ]">
+    <div class="[ md:o--2 ]">
+    <h2>Why Choose XPS for {{ .Title }}</h2>
+    {{ with .Params.why }}
+      {{ .content | markdownify }}
+    {{ end }}
+    </div>
+    <figure class="[ ratio--4:7 md:o--1 ]">
+
+    </figure>
+  </div>
+
+</section>
+
+  <section class="[ faq ][ full-width content-grid ]">
     <div class="[ wrapper ][ grid ]">
       <div>
         <h2>Frequently Asked Questions</h2>
       </div>
       <div>
-        {{ range .Params.faqs }}
+        {{ range .Params.faq }}
           <details class="[ details ]" name="faqs">
             <summary class="[ details__summary ]">{{ .question }}</summary>
             <div class="[ details__content ]">
@@ -45,9 +63,14 @@
       </div>
     </div>
   </section>
-  <section class="[ callout bg-dark text-light text--center py--2 ]">
-    <h2 class="[ font--xl ]">Need help with {{ .Title | lower }}?</h2>
-    <p>Let's talk about how XPS can support your business with reliable, scalable logistics services in The Bahamas.</p>
-    <a class="[ btn btn--lg btn--red ]" href="/contact-us/">Get in Touch</a>
+  <section class="[ content-grid ]">
+    <b class="[ line ]"></b>
+    <div class="[ grid center text--center section--padding-top ]">
+      <h2 class="[ font--xl ]">Need help with {{ .Title | lower }}?</h2>
+      <p class="[ ch--54 ]">Let's talk about how XPS can support your business with reliable, scalable logistics services in The Bahamas.</p>
+      <div>
+        <a class="[ btn btn--lg btn--red ]" href="/contact-us/">Get in Touch</a>
+      </div>
+    </div>
   </section>
 {{ end }}

@@ -17,17 +17,73 @@ text = "We manage every leg of the shipment—from booking and documentation to 
 title = "On-Time Delivery"
 text = "Timely, cost-effective freight forwarding built around your timeline and cargo needs."
 
-[[faqs]]
-title = ""
-text = ""
+[offers]
+title = "What We Offer"
+content = """
+We provide end-to-end freight forwarding for your imports and exports—by air, sea, or land. Whether you’re moving raw materials or finished goods, our team manages every stage of the shipment process.
 
-[[faqs]]
-title = ""
-text = ""
+- **Air and Ocean Freight Coordination**  
+  We arrange full or consolidated cargo through trusted carriers, ensuring reliable schedules and capacity.
 
-[[faqs]]
-title = ""
-text = ""
+- **Import & Export Documentation**  
+  From bills of lading to commercial invoices and certificates of origin—we prepare all required paperwork.
+
+- **Port-to-Door Delivery**  
+  Once cleared, we coordinate last-mile distribution to your warehouse or end customer across Nassau or the Family Islands.
+
+- **Cross-Border & Transshipment Solutions**  
+  Need to route through U.S. or Caribbean hubs? We handle transshipment logistics to optimize speed and cost.
+"""
+
+[why]
+title = "Why Businesses Choose XPS"
+content = """
+Freight forwarding is more than moving cargo—it’s about confidence in your supply chain. Here’s what sets us apart:
+
+- **Regional Expertise**  
+  Deep knowledge of Caribbean, U.S., and Latin American freight corridors.
+
+- **Integrated Logistics**  
+  Seamless service across brokerage, warehousing, and delivery—from one provider.
+
+- **Compliance-First Approach**  
+  Every shipment is handled in full alignment with Bahamian customs and port protocols.
+
+- **Clear Communication**  
+  You’ll always know where your cargo is and what’s happening next.
+"""
+
+[[faq]]
+question = "What types of freight do you handle?"
+answer = """We manage both **air and ocean freight**, including full container loads (FCL), less-than-container loads (LCL), and consolidated shipments. For specialized cargo such as vehicles or heavy equipment, we also coordinate **RoRo (Roll-on/Roll-off)** shipping where appropriate. Whether you're importing raw materials or exporting finished goods, XPS ensures the most efficient method for your cargo."""
+
+[[faq]]
+question = "Can you consolidate multiple shipments into one?"
+answer = """Yes. We offer **freight consolidation services**, allowing you to combine multiple shipments into a single container or palletized load. This is especially useful for businesses importing from several suppliers or locations."""
+
+[[faq]]
+question = "Can I track my shipment?"
+answer = """Absolutely. XPS provides **tracking updates at every major milestone**, including departure, arrival at port, customs clearance, and final delivery. You’ll always know where your shipment is and what to expect next."""
+
+[[faq]]
+question = "What documents are needed for freight forwarding?"
+answer = """To properly forward your shipment, we typically need:
+
+- A **commercial invoice**
+- A **bill of lading** or **airway bill**
+- A **packing list** (if applicable)
+- Any necessary **permits or certificates** for regulated items
+
+If XPS is also handling your customs brokerage, we’ll take care of preparing and submitting these through the Click2Clear system."""
+
+[[faq]]
+question = "Do you offer port-to-door delivery?"
+answer = """Yes. We provide **full port-to-door logistics**, managing the handoff from international ports to your warehouse, storefront, or customer location throughout Nassau and the Family Islands."""
+
+[[faq]]
+question = "Can you forward cargo routed through the U.S. or other regions?"
+answer = """Yes. We regularly coordinate **transshipment and cross-border forwarding** through strategic hubs like Miami, Panama, and other Caribbean points. We'll recommend the best route based on your cargo, timeline, and budget."""
+
 
 [params]
   hasTwic = false

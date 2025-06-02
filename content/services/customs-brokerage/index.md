@@ -16,11 +16,11 @@ text = "We manage every leg of the shipment—from booking and documentation to 
 title = "On-Time Delivery"
 text = "Timely, cost-effective freight forwarding built around your timeline and cargo needs."
 
-[[faqs]]
+[[faq]]
 question = "How long does customs clearance take in The Bahamas?"
 answer = "Clearance times can range from a few hours to 1–2 business days, depending on the type of goods, completeness of documentation, and traffic volume at the port. As your licensed broker, XPS Logistics ensures declarations are pre-filed in the Click2Clear system, enabling faster processing and minimizing delays. Air freight is typically cleared same-day; ocean freight may take longer depending on carrier schedules and cargo inspection."
 
-[[faqs]]
+[[faq]]
 question = "What documents do I need to provide?"
 answer = """To clear goods through Bahamian Customs using XPS as your agent, we require:
 
@@ -38,7 +38,7 @@ answer = """To clear goods through Bahamian Customs using XPS as your agent, we 
 
 We'll review and submit these on your behalf through Click2Clear to ensure compliance and minimize the risk of penalties or inspection delays."""
 
-[[faqs]]
+[[faq]]
 question = "Are there duties on personal items or gifts?"
 answer = """Yes. For B2B shipments, all imported goods—regardless of whether they're gifts, samples, or promotional items—are subject to customs duty unless covered by a valid exemption or incentive.
 

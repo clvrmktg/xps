@@ -14,6 +14,22 @@
 li::marker
   color: color('xps-red')
 
+.service
+
+  &--blocks
+    background-color: color('neutral-grey-lightest')
+
+    figure
+      outline: $bg
+
+  &--block
+    grid-template-columns: 2fr 1fr
+
+    &:nth-of-type(even)
+      grid-template-columns: 1fr 2fr
+      
+      
+
 .faq
   // background-color: color('neutral-grey-lightest')
 
@@ -39,3 +55,6 @@ summary
   &[open]::details-content
     block-size: auto
     block-size: calc-size(auto, size)
+
+.text--center
+  text-align: center
