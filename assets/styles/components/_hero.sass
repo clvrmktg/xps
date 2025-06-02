@@ -1,7 +1,7 @@
 @use '../abstracts' as *
 
 .hero
-  +clamp(min-height, 400, 500)
+  +clamp(min-height, 350, 400)
 
   &.hero--home
     min-height:  100svh
@@ -10,7 +10,7 @@
 
     @supports not (min-height: 100svh)
       min-height: 100vh
-
+  
   > .wrapper
     min-height: inherit
 
@@ -29,7 +29,7 @@
       background-color: color('xps-red')
       position: absolute
       top: -20%
-      right: -20%
+      right: -5%
       z-index: -1
 
 $color: #9395A1

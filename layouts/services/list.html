@@ -1,0 +1,50 @@
+{{ define "main" }}
+<div>
+  <header class="[ hero hero--service ][ py--5 ]">
+    <div class="[ wrapper ][ flex middle ]">
+      <div class="[ hero__content ][ ch--54 ]">
+        <h1>{{ .Title }}</h1>
+        <p class="[ font--4 ]">{{ .Description }}</p>
+      </div>
+    </div>
+  </header>
+  {{ partial "breadcrumbs.html" . }}
+</div>
+<section class="[ service-highlights ][ grid col-gap--2 row-gap--2 md:col--3 ]">
+    {{ range .Params.highlights }}
+      <div class="[ card ]">
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </div>
+    {{ end }}
+  </section>
+<ul class="[ grid md:col--2 row-gap--3 ]">
+  {{ range .Pages.ByWeight }}
+    <li class="[ card card--stacked row-gap--2 ]">
+
+      <figure class="[ ratio--16:9 ]"></figure>
+      <div class="[ flow ]">
+        <h2 class="[ font--2 ]">
+          <a class="[ heading-link ]" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+        <p class="[ o--2 ]">{{ .Params.summary }}</p>
+      </div>
+
+      <div class="[ grid col-gap--3 row-gap--2 md:grid-cols-2 ]">
+        {{ with .Params.points }}
+          {{ range . }}
+            <div class="[ flow row-gap--0.5 ]">
+              <h3 class="[ font--1 ]">{{ .title }}</h3>
+              <p class="[ o--2 ]">{{ .text }}</p>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+
+      <div>
+        <a class="[ btn btn--lg btn--red ]" href="{{ .RelPermalink }}">Learn More</a>
+      </div>
+    </li>
+  {{ end }}
+</ul>
+{{ end }}

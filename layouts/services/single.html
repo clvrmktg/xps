@@ -1,0 +1,36 @@
+{{ define "main"}}
+  <div>
+    <header class="[ hero hero--service ][ py--5 ]">
+      <div class="[ wrapper ][ flex middle ]">
+        <div class="[ hero__content ][ ch--54 ]">
+          <h1>{{ .Title }}</h1>
+          <p class="[ font--4 ]">{{ .Description }}</p>
+        </div>
+      </div>
+    </header>
+    {{ partial "breadcrumbs.html" . }}
+  </div>
+  <section class="[ service-highlights ][ grid col-gap--2 row-gap--2 md:col--3 ]">
+    {{ range .Params.highlights }}
+      <div class="[ card ]">
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </div>
+    {{ end }}
+  </section>
+  <section class="[ grid md:col--2 ][ middle row-gap--1 col-gap--2 ]">
+    <div>
+      <h2>Why Choose XPS for {{ .Title }}</h2>
+      {{ .Content }}
+    </div>
+    <figure class="[ ratio--4:7 bg ]">
+      <!-- Use twic image logic -->
+      <img data-twic-src="image:/uploads/{{ .Params.feature.image }}" alt="{{ .Params.feature.alt }}" width="1920" height="1080" />
+    </figure>
+  </section>
+  <section class="[ callout bg-dark text-light text--center py--2 ]">
+    <h2 class="[ font--xl ]">Need help with {{ .Title | lower }}?</h2>
+    <p>Let’s talk about how XPS can support your business with reliable, scalable logistics services in The Bahamas.</p>
+    <a class="[ btn btn--lg btn--red ]" href="/contact-us/">Get in Touch</a>
+  </section>
+{{ end }}
