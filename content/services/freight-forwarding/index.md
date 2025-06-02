@@ -17,6 +17,18 @@ text = "We manage every leg of the shipment—from booking and documentation to 
 title = "On-Time Delivery"
 text = "Timely, cost-effective freight forwarding built around your timeline and cargo needs."
 
+[[faqs]]
+title = ""
+text = ""
+
+[[faqs]]
+title = ""
+text = ""
+
+[[faqs]]
+title = ""
+text = ""
+
 [params]
   hasTwic = false
 

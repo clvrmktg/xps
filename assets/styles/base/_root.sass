@@ -10,7 +10,13 @@
   // --black: #191919
   // --color: rgb(163, 163, 163)
   // --color: rgb(145 152 161)
-  +oklch('text-grey', rgb(145 152 161))
+  // +oklch('text-grey', rgb(145 152 161))
+  +hsl('text-grey', rgb(145 152 161))
+  +hsl('neutral-grey-dark', #a0a0a0)       // For muted text, less prominent dividers
+  +hsl('neutral-grey', #d0d0d0)            // Updated base border color (more modern than #d9)
+  +hsl('neutral-grey-light', #e5e6e8)      // Surface contrast (replaces #f2f3f5)
+  +hsl('neutral-grey-lighter', #f2f3f5)    // Use for input backgrounds or subtle sections
+  +hsl('neutral-grey-lightest', #fafafa)   // Use sparingly for softest contrast
 
   +hsl('xps-red', #C00C00)
   +hsl('xps-red-darker', #a00000)

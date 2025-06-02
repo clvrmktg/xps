@@ -28,9 +28,26 @@
       <img data-twic-src="image:/uploads/{{ .Params.feature.image }}" alt="{{ .Params.feature.alt }}" width="1920" height="1080" />
     </figure>
   </section>
+  <section class="[ faq ][ full-width content-grid section--padding ]">
+    <div class="[ wrapper ][ grid ]">
+      <div>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div>
+        {{ range .Params.faqs }}
+          <details class="[ details ]" name="faqs">
+            <summary class="[ details__summary ]">{{ .question }}</summary>
+            <div class="[ details__content ]">
+            {{ .answer | markdownify }}
+            </div>
+          </details>
+        {{ end }}
+      </div>
+    </div>
+  </section>
   <section class="[ callout bg-dark text-light text--center py--2 ]">
     <h2 class="[ font--xl ]">Need help with {{ .Title | lower }}?</h2>
-    <p>Let’s talk about how XPS can support your business with reliable, scalable logistics services in The Bahamas.</p>
+    <p>Let's talk about how XPS can support your business with reliable, scalable logistics services in The Bahamas.</p>
     <a class="[ btn btn--lg btn--red ]" href="/contact-us/">Get in Touch</a>
   </section>
 {{ end }}

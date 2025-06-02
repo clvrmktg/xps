@@ -10,3 +10,32 @@
 +ratio(4,7)
 
 +ch(54)
+
+li::marker
+  color: color('xps-red')
+
+.faq
+  // background-color: color('neutral-grey-lightest')
+
+  > .wrapper
+    grid-template-columns: 1fr 2fr
+
+summary
+  cursor: pointer
+
+  +hover
+    background-color: color('neutral-grey-lighter')
+
+.details
+  
+  &::details-content
+    display: block
+    margin-inline: 2rem
+    block-size: 0
+    overflow: hidden
+    +transition((block-size, content-visibility))
+    transition-behavior: allow-discrete
+
+  &[open]::details-content
+    block-size: auto
+    block-size: calc-size(auto, size)
