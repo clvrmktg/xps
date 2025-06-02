@@ -3,47 +3,66 @@
 <article class="[ post-single post-grid h-entry ][ row-gap--3 section--padding-top ]">
   <div class="[ post-grid post-breakout ]">
     {{ partial "breadcrumbs.html" . }}
-    <header class="[ post__header post-grid post-breakout ]">
+    <header class="[ post__header post-grid post-breakout py--2 ]">
       <h1>{{ .Title }}</h1>
       {{- $format := "January 2, 2006" -}}
       {{- $iso := "2006-01-02T15:04:05Z07:00" -}}
       {{- $timeFormat := "3:04pm" -}}
-      
       {{- $published := .Date -}}
       {{- $lastModified := .Lastmod | default .Date -}}
       {{- $hourDiff := div (sub $lastModified.Unix $published.Unix) 3600 -}}
       <p class="[ meta{{ if .Params.feature.image }} meta--spaced{{ end }} ]">
-        {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply Chain" "Logistics & Supply Chain" -}}
-        {{ range sort .Params.categories }}
-        <span><a href="{{ "/categories/" | relURL }}{{ . | urlize }}">{{- index $categoryLabels . | default . -}}</a></span>
-        {{ end }}
+        {{- range sort .Params.categories }}
+        {{- $cat := . -}}
+        {{- with index site.Data.categories $cat }}
+          <span><a href="{{ .url }}">{{ .title }}</a></span>
+        {{- end }}
+      {{- end }}
         | <time datetime="{{ $published.Format $iso }}">
             {{ $published.Format $format }}
           </time>
         | {{ .ReadingTime }} min read
       </p>
   
-      {{- with .Params.feature -}}
-      {{- if .image -}}
-      {{- $image := (printf "/uploads/%s" .image) -}}
-      <figure class="[ post-grid post-breakout row-gap--0.5 pb--2 ]">
-        <picture id="feature" class="[ post-breakout ratio--16:9 ][ bg ]">
-          <style>#feature { background-image: url('https://{{ $.Site.Params.twic }}.twic.pics{{ $image }}?twic=v1/output=preview'); }</style>
-          <img data-twic-src="image:{{ $image }}" data-twic-focus="auto" alt="{{ if .alt }}{{ .alt }}{{ end }}" width="{{ .Width }}" height="{{ .Height }}"/>
-          <noscript>
-          <img class="[ script ]" src="https://{{ $.Site.Params.twic }}.twic.pics{{ $image }}?twic=v1/output=preview" alt="{{ if .alt }}{{ .alt }}{{ end }}" width="{{ .Width }}" height="{{ .Height }}"/></noscript>
-        </picture>
-        {{- if .figcaption -}}
-        <figcaption class="[ pt--0.5 ]">{{ .figcaption }}</figcaption>
-        {{- end -}}
-      </figure>
+      {{- with .Params.feature.image -}}
+      {{- $img := $.Resources.GetMatch . -}}
+      {{- if $img -}}
+        <figure class="[ post-grid post-breakout row-gap--0.5 ]">
+          <picture id="feature" class="[ post-breakout ratio--16:9 ][ bg ]">
+            <style>
+              #feature {
+                background-image: url('https://{{ $.Site.Params.twic }}.twic.pics{{ $img.RelPermalink }}?twic=v1/output=preview');
+              }
+            </style>
+            <img
+              data-twic-src="image:{{ $img.RelPermalink }}"
+              data-twic-focus="auto"
+              alt="{{ $.Params.feature.alt | default "" }}"
+              width="{{ $img.Width }}"
+              height="{{ $img.Height }}"
+            />
+            <noscript>
+              <img
+                class="[ script ]"
+                src="https://{{ $.Site.Params.twic }}.twic.pics{{ $img.RelPermalink }}?twic=v1/output=preview"
+                alt="{{ $.Params.feature.alt | default "" }}"
+                width="{{ $img.Width }}"
+                height="{{ $img.Height }}"
+              />
+            </noscript>
+          </picture>
+          {{ with $.Params.feature.figcaption }}
+            <figcaption class="[ pt--0.5 ]">{{ . }}</figcaption>
+          {{ end }}
+        </figure>
       {{- end -}}
-      {{- end -}}
+    {{- end -}}
+    
     </header>
     <div class="[ content ]">
       {{ .Content }}
     </div>
-    <footer class="[ post-breakout ][  ]">
+    <footer class="[ post-breakout ]">
       {{- if gt $hourDiff 1 -}}
       <div class="[ original-publish-date ]"> 
         <p class="[ font--small ]">Last Updated: 
@@ -70,16 +89,66 @@
           <section class="[ grid row-gap--3 section--padding-top ]">
             <h2 class="[ tag-header ]">More from {{ index $currentCategories 0 }}</h2>
             <ul class="[ posts ][ grid md:col--3 gap--2 ]">
+              {{ $counter := 0 }}
               {{ range first 2 $related }}
+              {{ $counter := add $counter 1 }}
                 <li class="[ post ]">
                   <a class="[ post__link ][ grid row-gap--0.5 ]" href="{{ .RelPermalink }}" data-prefetch>
-                    <figure class="[ post__img ][ ratio--16:9 ]"></figure>
+                    {{- $featureImage := .Params.feature.image -}}
+                    {{- $fallbackPath := "/uploads/xps-feature-fallback.jpg" -}}
+                    {{- $fallbackWidth := 1920 -}}
+                    {{- $fallbackHeight := 1080 -}}
+        
+                    {{- $img := "" -}}
+                    {{- $imgSrc := "" -}}
+                    {{- $imgWidth := 0 -}}
+                    {{- $imgHeight := 0 -}}
+        
+                    {{- if $featureImage }}
+                      {{- $img = $.Resources.GetMatch $featureImage -}}
+                      {{- if $img }}
+                        {{- $imgSrc = $img.RelPermalink -}}
+                        {{- $imgWidth = $img.Width -}}
+                        {{- $imgHeight = $img.Height -}}
+                      {{- else }}
+                        {{- $imgSrc = $fallbackPath -}}
+                        {{- $imgWidth = $fallbackWidth -}}
+                        {{- $imgHeight = $fallbackHeight -}}
+                      {{- end }}
+                    {{- else }}
+                      {{- $imgSrc = $fallbackPath -}}
+                      {{- $imgWidth = $fallbackWidth -}}
+                      {{- $imgHeight = $fallbackHeight -}}
+                    {{- end }}
+                    <figure class="[ post__img ][ ratio--16:9 ]">
+                      <picture id="image-{{ $counter }}" class="[ post-breakout ratio--16:9 ][ bg ]">
+                        <style>#image-{{ $counter }} {background-image: url('https://{{ $.Site.Params.twic }}.twic.pics{{ $imgSrc }}?twic=v1/output=preview');}</style>
+                        <img
+                          data-twic-src="image:{{ $imgSrc }}"
+                          data-twic-focus="auto"
+                          alt="{{ .Params.feature.alt | default .Title }}"
+                          width="{{ $imgWidth }}"
+                          height="{{ $imgHeight }}"
+                        />
+                        <noscript>
+                          <img
+                            class="[ script ]"
+                            src="https://{{ $.Site.Params.twic }}.twic.pics{{ $imgSrc }}?twic=v1/output=preview"
+                            alt="{{ .Params.feature.alt | default .Title }}"
+                            width="{{ $imgWidth }}"
+                            height="{{ $imgHeight }}"
+                          />
+                        </noscript>
+                      </picture>
+                    </figure>
                     <div class="[ grid ]">
                       <h2 class="[ font--3 o--2 ]">{{ .LinkTitle }}</h2>
                       <div class="[ o--1 ]">
-                        {{- $page := . -}}
-                        {{- range sort $page.Params.categories }}
-                        <small>{{- index $categoryLabels . | default . -}}</small>
+                        {{- range sort .Params.categories }}
+                          {{- $cat := . -}}
+                          {{- with index site.Data.categories $cat }}
+                            <small>{{ .title }}</small>
+                          {{- end }}
                         {{- end }}
                         | <small>{{ .ReadingTime }} min read</small>
                       </div>

@@ -6,11 +6,11 @@ title = 'The Hidden Costs of Poor Warehousing'
 description = "Poor warehousing can quietly drain your business—through delays, damaged goods, and lost inventory. Learn how XPS Logistics tackles these 3PL challenges with secure, cost-effective solutions in The Bahamas."
 
 # Trade-Industry
-# Logistics-Supply Chain
+# Logistics-Supply
 # Inside-XPS
 
 # Use `-` for spaces or to replace symbols
-categories = ['Logistics-Supply Chain']
+categories = ['Logistics-Supply-Chain']
 # tags = []
 
 

@@ -1,17 +1,35 @@
-<nav>
-  {{ $paginator := .Paginator }}
-  <ul class="[ pagination ]">
+{{ $paginator := .Paginator }}
+{{ if gt $paginator.TotalPages 1 }}
+<nav aria-label="Pagination">
+  <ul class="[ pagination gap--1 ]">
+
     {{ if $paginator.HasPrev }}
-    <li class="[ newer ]">
-      <a class="[ btn btn--sm btn--white--ghost ]" href="{{ $paginator.Prev.URL }}" data-prefetch>
-        <abbr title="Previous" aria-label="Previous">Prev</abbr>
-      </a>
-    </li>
+      <li class="[ newer ]">
+        <a class="[ btn btn--sm btn--red ]" href="{{ $paginator.Prev.URL }}" aria-label="Previous Page">Prev</a>
+      </li>
     {{ end }}
+    
+    <ul class="[ range ][ flex col-gap--1 ]">
+      {{ range $page := $paginator.Pagers }}
+        <li>
+          <a 
+            class="[ btn btn--sm btn--red--ghost ]{{ if eq $page.PageNumber $paginator.PageNumber }}[ current ]{{ end }}" 
+            href="{{ $page.URL }}"
+            {{ if eq $page.PageNumber $paginator.PageNumber }}aria-current="page"{{ end }}
+            aria-label="Page {{ $page.PageNumber }}"
+          >
+            {{ $page.PageNumber }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+
     {{ if $paginator.HasNext }}
-    <li class="[ older ]">
-      <a class="[ btn btn--sm btn--white--ghost ]" href="{{ $paginator.Next.URL }}" data-prefetch>Next</a>
-    </li>
+      <li class="[ older ]">
+        <a class="[ btn btn--sm btn--red ]" href="{{ $paginator.Next.URL }}" aria-label="Next Page">Next</a>
+      </li>
     {{ end }}
+
   </ul>
 </nav>
+{{ end }}

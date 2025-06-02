@@ -1,20 +1,33 @@
 {{- define "main" -}}
 
 <div class="[ grid layout--spacing section--padding-top ]">
-  <header>
-    {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply" "Logistics & Supply Chain" "Inside-XPS" "Inside XPS" -}}
-    <h1>{{- index $categoryLabels .Title | default .Title -}}</h1>
-    {{ partial "breadcrumbs.html" . }}
+  <header class="[ grid row-gap--1 ]">
+    <div>
+      <h1>{{- .Title -}}</h1>
+      {{ partial "breadcrumbs.html" . }}
+    </div>
+    {{- $cat := index site.Data.categories "default" }}
+    {{- with $cat }}
+    <p class="[ x--700 pb--0 ]">{{ .description }}</p>
+    {{- end }}
   </header>
-  {{ if eq .Kind "taxonomy" }}
-   <ul>
-     {{ range .Data.Terms.Alphabetical }}
+  <ul>
+    {{ range .Data.Terms.Alphabetical }}
+      {{- $key := "" -}}
+      {{- with .Page.File }}
+        {{- $key = .BaseFileName -}}
+      {{- else }}
+        {{- $key = .Page.Title -}}
+      {{- end }}
+      {{- $cat := index site.Data.categories $key -}}
       <li>
-        <a href="{{ .Page.RelPermalink }}">{{- index $categoryLabels .Page.Title | default .Page.Title -}}</a>
+        <a href="{{ .Page.RelPermalink }}">
+          {{- $cat.title | default .Page.Title -}}
+        </a>
       </li>
     {{ end }}
-   </ul>
-  {{end}}
+  </ul>
+  
 </div>
 
 {{- end -}}

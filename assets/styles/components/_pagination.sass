@@ -1,0 +1,15 @@
+@use 'abstracts' as *
+
+.pagination
+  display: grid
+  grid-template-columns: [newer-start] max-content [newer-end] 1fr [range-start] max-content [range-end] 1fr [older-start] max-content [older-end]
+  column-gap: 1em
+  
+.newer
+  grid-column: newer
+
+.range
+  grid-column: range
+
+.older
+  grid-column: older

@@ -3,7 +3,7 @@ date = '2025-05-29T16:19:15-04:00'
 lastMod = '2025-05-29T16:19:15-04:00'
 draft = false
 title = 'Insights'
-description = ""
+description = "Discover expert insights on logistics, trade, and supply chain solutions in The Bahamas. Stay ahead with updates, tips, and analysis from the team at XPS Logistics."
 
 [feature]
   image = ""

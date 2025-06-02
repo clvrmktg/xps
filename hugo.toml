@@ -14,12 +14,12 @@ public_path = "/uploads"
   # tag = "tags"
 
 [pagination]
-  pagerSize = 6
+  pagerSize = 9
 
 [ params ]
   version = "1738220434631"
   twic = "jsphpndr"
-  share = "/uploads/joseph-pinder-share.jpg"
+  share = "/uploads/xps-share-fallback.jpg"
   logo = "/uploads/joseph-pinder-logo.png"
   # Facebook App ID
   app_id = "223848628924279"

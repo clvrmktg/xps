@@ -1,0 +1,21 @@
+default:
+  title: "All Categories"
+  description: "Browse logistics and trade insights from XPS Logistics, covering 3PL solutions, warehouse strategy, and economic updates in The Bahamas."
+
+Logistics-Supply-Chain:
+  title: "Logistics & Supply Chain"
+  description: "Insights on freight forwarding, warehousing, and fulfillment strategies in The Bahamas and beyond."
+  url: "/categories/logistics-supply-chain/"
+  layout: "term"
+
+Trade-Industry:
+  title: "Trade & Industry"
+  description: "Articles exploring trade policy, international logistics, and economic shifts impacting businesses operating in The Bahamas."
+  url: "/categories/trade-industry/"
+  layout: "term"
+
+Newsroom:
+  title: "Newsroom"
+  description: "Company updates, warehouse expansions, and operational insights from the XPS Logistics team."
+  url: "/categories/newsroom/"
+  layout: "term"

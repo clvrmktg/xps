@@ -6,11 +6,11 @@ title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 description = ""
 
 # Trade-Industry
-# Logistics-Supply Chain
+# Logistics-Supply-Chain
 # Inside-XPS
 
 # Use `-` for spaces or to replace symbols
-categories = ['Trade-Industry']
+categories = ['']
 # tags = []
 
 
@@ -30,9 +30,6 @@ categories = ['Trade-Industry']
 #   id = 1
 #   content = ""
 
-# Trade & Industry
-# Logistics & Supply Chain
-# XPS Updates
 
 [params]
 #  hasTwic = true
