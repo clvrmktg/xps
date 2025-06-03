@@ -6,7 +6,10 @@
       <h2>Smart Shipping Starts Here — <br>Join Our Mailing List</h2>
       <p>Get expert logistics tips, tariff updates, and industry news straight to your inbox.</p>
     </div>
-    <form class="[ grid row-gap--2 ]" action="" method="">
+    <form class="[ grid row-gap--2 ]" name="newsletter" action="/thank-you" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-validate>
+      <div class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+      </div>
       <div class="[ form__field ][ grid row-gap--0.25 ]">
         <label class="[ form__label ][ font--500 font--600 ]" for="name">First Name<abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr>
         </label>
