@@ -1,0 +1,82 @@
+<ul class="[ posts ][ grid md:col--3 col-gap--1 row-gap--2 ]">
+  {{- $format := "January 2, 2006" -}}
+  {{- $iso := "2006-01-02T15:04:05Z07:00" -}}
+  {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply Chain" "Logistics & Supply Chain" -}}
+
+  {{ $pages := .Pages }}
+  {{ $site := .Site }}
+  {{ $counter := 0 }}
+
+  {{ range $pages }}
+    {{ $counter = add $counter 1 }}
+    <li id="post-{{$counter}}" class="[ post ]">
+      <a class="[ post__link ][ grid row-gap--0.5 ]" href="{{ .RelPermalink }}" data-prefetch>
+        {{- $featureImage := .Params.feature.image -}}
+        {{- $fallbackPath := "/uploads/xps-feature-fallback.jpg" -}}
+        {{- $fallbackWidth := 1920 -}}
+        {{- $fallbackHeight := 1080 -}}
+
+        {{- $img := "" -}}
+        {{- $imgSrc := "" -}}
+        {{- $imgWidth := 0 -}}
+        {{- $imgHeight := 0 -}}
+
+        {{- if $featureImage }}
+          {{- $img = $.Resources.GetMatch $featureImage -}}
+          {{- if $img }}
+            {{- $imgSrc = $img.RelPermalink -}}
+            {{- $imgWidth = $img.Width -}}
+            {{- $imgHeight = $img.Height -}}
+          {{- else }}
+            {{- $imgSrc = $fallbackPath -}}
+            {{- $imgWidth = $fallbackWidth -}}
+            {{- $imgHeight = $fallbackHeight -}}
+          {{- end }}
+        {{- else }}
+          {{- $imgSrc = $fallbackPath -}}
+          {{- $imgWidth = $fallbackWidth -}}
+          {{- $imgHeight = $fallbackHeight -}}
+        {{- end }}
+
+        <figure class="[ post__img ][ ratio--16:9 ]">
+          <picture id="image-{{ $counter }}" class="[ bg ]">
+            <style>
+              #image-{{ $counter }} {
+                background-image: url('https://{{ $site.Params.twic }}.twic.pics{{ $imgSrc }}?twic=v1/output=preview');
+              }
+            </style>
+            <img
+              data-twic-src="image:{{ $imgSrc }}"
+              data-twic-focus="auto"
+              alt="{{ .Params.feature.alt | default .Title }}"
+              width="{{ $imgWidth }}"
+              height="{{ $imgHeight }}"
+            />
+            <noscript>
+              <img
+                class="[ script ]"
+                src="https://{{ $site.Params.twic }}.twic.pics{{ $imgSrc }}?twic=v1/output=preview"
+                alt="{{ .Params.feature.alt | default .Title }}"
+                width="{{ $imgWidth }}"
+                height="{{ $imgHeight }}"
+              />
+            </noscript>
+          </picture>
+        </figure>
+
+        <div class="[ grid ]">
+          <h2 class="[ font--3 o--2 ]">{{ .LinkTitle }}</h2>
+          <div class="[ o--1 ]">
+            {{ range sort .Params.categories }}
+              {{ with index site.Data.categories . }}
+                <small>{{ .title }}</small>
+              {{ end }}
+            {{ end }}
+            | <small>{{ .ReadingTime }} min read</small>
+          </div>
+          <p class="[ o--3 ]">{{ .Description | truncate 145 "[...]" | plainify }}</p>
+        </div>
+      </a>
+    </li>
+  {{ end }}
+</ul>

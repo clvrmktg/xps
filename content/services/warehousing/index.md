@@ -1,5 +1,6 @@
 +++
 date = '2025-06-02T21:15:25-04:00'
+weight = 3
 draft = false
 title = 'Warehousing'
 summary = "Secure storage solutions in western New Providence with 24/7 monitoring, on-site staff, and scalable capacity. Ideal for short- or long-term storage of commercial goods."

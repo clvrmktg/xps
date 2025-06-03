@@ -9,87 +9,31 @@
       <h2 class="[ font--1 ]">Trusted <abbr title="Third Party Logistics">3PL</abbr> Warehousing, <br>Distribution, and Supply <br>Chain Solutions for you</h2>
       <p class="[ ch--48 color--white ]">XPS Logistics specializes in warehousing, distribution, and last-mile delivery services in Nassau and throughout The Bahamas, leveraging over two decades of expertise as a trusted third-party logistics provider.</p><a class="[ btn btn--solid--lg bg:color--red--200 ]">Request A Quote</a>
     </div>
-  </div>
-  <section class="[ grid section--spacing ]">
-    <h2>Insights</h2>
-
-    <ul class="[ posts ][ grid md:col--3 col-gap--1 row-gap--2 ]">
-      {{- $format := "January 2, 2006" -}}
-      {{- $iso := "2006-01-02T15:04:05Z07:00" -}}
-      {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply Chain" "Logistics & Supply Chain" -}}
-      {{ $counter := 0 }}
-      {{ $insights := where .Site.RegularPages "Section" "insights" | first 3 }}
-      {{ range $insights }}
-      {{ $counter := add $counter 1 }}
-      <li id="post-{{$counter}}" class="[ post ]">
-        <a class="[ post__link ][ grid row-gap--0.5 ]" href="{{ .RelPermalink }}" data-prefetch>
-          {{- $featureImage := .Params.feature.image -}}
-          {{- $fallbackPath := "/uploads/xps-feature-fallback.jpg" -}}
-          {{- $fallbackWidth := 1920 -}}
-          {{- $fallbackHeight := 1080 -}}
-
-          {{- $img := "" -}}
-          {{- $imgSrc := "" -}}
-          {{- $imgWidth := 0 -}}
-          {{- $imgHeight := 0 -}}
-
-          {{- if $featureImage }}
-            {{- $img = $.Resources.GetMatch $featureImage -}}
-            {{- if $img }}
-              {{- $imgSrc = $img.RelPermalink -}}
-              {{- $imgWidth = $img.Width -}}
-              {{- $imgHeight = $img.Height -}}
-            {{- else }}
-              {{- $imgSrc = $fallbackPath -}}
-              {{- $imgWidth = $fallbackWidth -}}
-              {{- $imgHeight = $fallbackHeight -}}
-            {{- end }}
-          {{- else }}
-            {{- $imgSrc = $fallbackPath -}}
-            {{- $imgWidth = $fallbackWidth -}}
-            {{- $imgHeight = $fallbackHeight -}}
-          {{- end }}
-          <figure class="[ post__img ][ ratio--16:9 ]">
-            <picture id="image-{{ $counter }}" class="[ bg ]">
-              <style>#image-{{ $counter }} {background-image: url('https://{{ $.Site.Params.twic }}.twic.pics{{ $imgSrc }}?twic=v1/output=preview');}</style>
-              <img
-                data-twic-src="image:{{ $imgSrc }}"
-                data-twic-focus="auto"
-                alt="{{ .Params.feature.alt | default .Title }}"
-                width="{{ $imgWidth }}"
-                height="{{ $imgHeight }}"
-              />
-              <noscript>
-                <img
-                  class="[ script ]"
-                  src="https://{{ $.Site.Params.twic }}.twic.pics{{ $imgSrc }}?twic=v1/output=preview"
-                  alt="{{ .Params.feature.alt | default .Title }}"
-                  width="{{ $imgWidth }}"
-                  height="{{ $imgHeight }}"
-                />
-              </noscript>
-            </picture>
-          </figure>
-          <div class="[ grid ]">
-            <h2 class="[ font--3 o--2 ]">{{ .LinkTitle }}</h2>
-            <div class="[ o--1 ]">
-              <!-- Categories -->
-              {{- range sort .Params.categories }}
-                {{- $cat := . -}}
-                {{- with index site.Data.categories $cat }}
-                  <small>{{ .title }}</small>
-                {{- end }}
-              {{- end }}
-              | <small>{{ .ReadingTime }} min read</small>
-            </div>
-            <p class="[ o--3 ]">{{ .Description | truncate 145 "[...]" | plainify }}</p>
-          </div>
-        </a>
-      </li>
-      {{ end }}
-    </ul>
-  </section>
-
+  </div>  
 </header>
+{{ $services := site.GetPage "section" "services" }}
+{{ partial "service-list.html" $services }}
+
+<section class="[ full-width content-grid banner--black ]">
+  <div class="[ wrapper ][ grid md:col--2 gap--2 ]">
+    <div>
+      <h2>Why XPS?</h2>
+      <p>We’re more than a freight handler—we’re your logistics partner. From customs clearance to delivery, XPS ensures your goods move efficiently and compliantly.</p>
+      <div class="grid md:col--4 gap--2">
+        <div class="card"><strong>Licensed & Compliant</strong></div>
+        <div class="card"><strong>Local & Regional Reach</strong></div>
+        <div class="card"><strong>Integrated 3PL Services</strong></div>
+        <div class="card"><strong>Transparent, Hands-on Support</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="[ grid section--spacing ]">
+  <h2>Insights</h2>
+  {{ $posts := (site.GetPage "section" "insights").RegularPages | first 3 }}
+{{ partial "posts.html" (dict "Pages" $posts "Site" .Site) }}
+
+</section>
 <!-- Hero - END  -->
 {{- end -}}

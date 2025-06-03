@@ -1,10 +1,20 @@
 +++
 date = '2025-06-02T03:55:33-04:00'
+weight = 2
 draft = false
 title = 'Customs Brokerage'
 summary = "Licensed brokerage services to ensure your goods clear Bahamian customs quickly, compliantly, and without delays."
 description = "Licensed Bahamian customs brokers managing your cargo clearance from start to finish. We handle Click2Clear submissions, duty assessments, and regulatory compliance to ensure your goods move through customs smoothly and without delay."
 
+# Social Media Cover - 1200 x 1200
+# Crop the hero 1:1 ratio
+[cover]
+  image = ""
+  alt = ""
+
+[hero]
+  image = ""
+  alt= ""
 
 [[highlights]]
 title = "Accurate"

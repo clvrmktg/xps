@@ -1,0 +1,64 @@
+<ul class="[ grid md:col--2 col-gap--2 row-gap--3 ]">
+  {{ $pages := .Pages }}
+  {{ $counter := 0 }}
+  {{ range $pages.ByWeight }}
+  {{ $counter := add $counter 1 }}
+    <li>
+      <a class="[ grid row-gap--1 ]" href="{{ .RelPermalink }}">
+        {{- $heroImage := .Params.hero.image -}}
+        {{- $fallbackPath := "/uploads/xps-feature-fallback.jpg" -}}
+        {{- $fallbackWidth := 1920 -}}
+        {{- $fallbackHeight := 1080 -}}
+
+        {{- $img := "" -}}
+        {{- $imgSrc := "" -}}
+        {{- $imgWidth := 0 -}}
+        {{- $imgHeight := 0 -}}
+
+        {{- if $heroImage }}
+          {{- $img = $.Resources.GetMatch $heroImage -}}
+          {{- if $img }}
+            {{- $imgSrc = $img.RelPermalink -}}
+            {{- $imgWidth = $img.Width -}}
+            {{- $imgHeight = $img.Height -}}
+          {{- else }}
+            {{- $imgSrc = $fallbackPath -}}
+            {{- $imgWidth = $fallbackWidth -}}
+            {{- $imgHeight = $fallbackHeight -}}
+          {{- end }}
+        {{- else }}
+          {{- $imgSrc = $fallbackPath -}}
+          {{- $imgWidth = $fallbackWidth -}}
+          {{- $imgHeight = $fallbackHeight -}}
+        {{- end }}
+        <figure class="[ post__img ][ ratio--16:9 ]">
+          <picture id="image-{{ $counter }}" class="[ bg ]">
+            <style>#image-{{ $counter }} {background-image: url('https://{{ $.Site.Params.twic }}.twic.pics{{ $imgSrc }}?twic=v1/output=preview');}</style>
+            <img
+              data-twic-src="image:{{ $imgSrc }}"
+              data-twic-focus="auto"
+              alt="{{ .Params.feature.alt | default .Title }}"
+              width="{{ $imgWidth }}"
+              height="{{ $imgHeight }}"
+            />
+            <noscript>
+              <img
+                class="[ script ]"
+                src="https://{{ $.Site.Params.twic }}.twic.pics{{ $imgSrc }}?twic=v1/output=preview"
+                alt="{{ .Params.feature.alt | default .Title }}"
+                width="{{ $imgWidth }}"
+                height="{{ $imgHeight }}"
+              />
+            </noscript>
+          </picture>
+        </figure>
+        <div class="[ flow ]">
+          <h2>{{ .Title }}</h2>
+          <p class="[ o--2 ]">{{ .Summary }}</p>
+        </div>
+      </a>
+
+        <a class="[ font--700 ]">Learn More</a>
+    </li>
+  {{ end }}
+</ul>
