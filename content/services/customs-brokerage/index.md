@@ -9,12 +9,13 @@ description = "Licensed Bahamian customs brokers managing your cargo clearance f
 # Social Media Cover - 1200 x 1200
 # Crop the hero 1:1 ratio
 [cover]
-  image = ""
-  alt = ""
+image = ""
+alt = ""
 
 [hero]
-  image = ""
-  alt= ""
+image = "xps-customs-brokerage.jpg"
+alt = "XPS customs broker"
+
 
 [[highlights]]
 title = "Accurate"
@@ -103,15 +104,6 @@ Nassau, The Bahamas
 
 This allows XPS to act as your authorized clearing agent, streamlining the brokerage process and ensuring full compliance with Bahamian import regulations.
 """
-
-[cover]
-image = ""
-alt = ""
-
-[hero]
-image = "xps-customs-brokerage.jpg"
-alt = "XPS customs broker"
-
 
 [params]
   hasTwic = false
