@@ -1,13 +1,6 @@
 {{ define "main" }}
 <div>
-  <header class="[ hero hero--service ][ py--5 ]">
-    <div class="[ wrapper ][ flex middle ]">
-      <div class="[ hero__content ][ ch--54 ]">
-        <h1>{{ .Title }}</h1>
-        <p class="[ font--4 ]">{{ .Description }}</p>
-      </div>
-    </div>
-  </header>
+  {{ partial "hero.html" . }}
   {{ partial "breadcrumbs.html" . }}
 </div>
 <section class="[ service-highlights ][ grid col-gap--2 row-gap--2 md:col--3 ]">

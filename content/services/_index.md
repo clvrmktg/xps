@@ -22,7 +22,7 @@ text = "Every service we provide meets or exceeds Bahamian regulatory standards.
   image = 'services-social-cover.jpg'
   alt = 'Arial view of container vessel being offloaded'
 
-[feature]
+[hero]
   image = 'arial-quay-view.jpg'
   alt = 'Arial view of container vessel being offloaded'
 
