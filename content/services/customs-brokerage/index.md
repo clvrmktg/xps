@@ -101,7 +101,17 @@ c/o XPS Logistics
 Nassau, The Bahamas
 ```
 
-This allows XPS to act as your authorized clearing agent, streamlining the brokerage process and ensuring full compliance with Bahamian import regulations."""
+This allows XPS to act as your authorized clearing agent, streamlining the brokerage process and ensuring full compliance with Bahamian import regulations.
+"""
+
+[cover]
+image = ""
+alt = ""
+
+[hero]
+image = "xps-customs-brokerage.jpg"
+alt = "XPS customs broker"
+
 
 [params]
   hasTwic = false

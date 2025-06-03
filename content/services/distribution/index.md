@@ -37,6 +37,8 @@ XPS distribution services are built to connect your supply chain directly to you
 - **Commercial & Government Delivery**  
   Whether you're supplying a retail chain or a government agency, we deliver with accuracy and professionalism.
 """
+image = ""
+alt = ""
 
 [why]
 content = """
@@ -54,6 +56,8 @@ Logistics doesn’t end when the shipment lands. That’s why businesses across 
 - **Flexible Options**  
   From one-off dispatches to recurring delivery routes, we scale with your operation and timeline.
 """
+image = ""
+alt = ""
 
 [[faq]]
 question = "Where do you deliver?"
@@ -83,6 +87,13 @@ answer = """Absolutely. Many clients store goods in our facility and use our dis
 question = "Do you deliver to government agencies or retail chains?"
 answer = """Yes. We serve both public- and private-sector clients, including deliveries to government agencies, retail stores, and corporate facilities. Our team ensures deliveries are accurate, professional, and well-documented."""
 
+[cover]
+image = ""
+alt = ""
+
+[hero]
+image = "xps-driver-loading-vehicle.jpg"
+alt = "XPS driver loading vehicle"
 
 [params]
   hasTwic = false

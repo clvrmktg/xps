@@ -21,24 +21,25 @@
     {{ end }}
     </div>
     {{- with .Params.offers.image -}}
-    <figure class="[ ratio--4:7 md:o--1 ]">
-      <picture id="feature" class="[ post-breakout ratio--16:9 ][ bg ]">
-        <style>
-          #feature {
-            background-image: url('https://{{ $.Site.Params.twic }}.twic.pics/uploads/{{ . }}?twic=v1/output=preview');
-          }
-        </style>
-        <img
-          data-twic-src="image:/uploads/{{ . }}"
-          data-twic-focus="auto"
-          alt="{{ $.Params.why.alt | default "" }}"
-        />
-        {{ with $.Params.why.figcaption }}
-          <figcaption class="[ pt--0.5 ]">{{ . }}</figcaption>
-        {{ end }}
-      </picture>
-    </figure>
-    {{ end }}
+      {{- $img := $.Resources.GetMatch . -}}
+      {{- if $img -}}
+        <figure class="[ ratio--4:7 md:o--1 ]">
+          <picture id="why" class="[ bg ]">
+            <style>#why {background-image: url('https://{{ $.Site.Params.twic }}.twic.pics{{ $img.RelPermalink }}?twic=v1/output=preview');}</style>
+            <img
+              data-twic-src="image:{{ $img.RelPermalink }}"
+              data-twic-focus="auto"
+              alt="{{ $.Params.why.alt | default "" }}"
+              width="{{ $img.Width }}"
+              height="{{ $img.Height }}"
+            />
+            {{ with $.Params.why.figcaption }}
+              <figcaption class="[ pt--0.5 ]">{{ . }}</figcaption>
+            {{ end }}
+          </picture>
+        </figure>
+      {{- end }}
+    {{- end }}
   </div>
 
   <div class="[ service--block grid middle gap--2 ]">
@@ -50,24 +51,25 @@
     </div>
     
     {{- with .Params.why.image -}}
-    <figure class="[ ratio--4:7 md:o--1 ]">
-      <picture id="feature" class="[ post-breakout ratio--16:9 ][ bg ]">
-        <style>
-          #feature {
-            background-image: url('https://{{ $.Site.Params.twic }}.twic.pics/uploads/{{ . }}?twic=v1/output=preview');
-          }
-        </style>
-        <img
-          data-twic-src="image:/uploads/{{ . }}"
-          data-twic-focus="auto"
-          alt="{{ $.Params.why.alt | default "" }}"
-        />
-        {{ with $.Params.why.figcaption }}
-          <figcaption class="[ pt--0.5 ]">{{ . }}</figcaption>
-        {{ end }}
-      </picture>
-    </figure>
-    {{ end }}
+      {{- $img := $.Resources.GetMatch . -}}
+      {{- if $img -}}
+        <figure class="[ ratio--4:7 md:o--1 ]">
+          <picture id="why" class="[ bg ]">
+            <style>#why {background-image: url('https://{{ $.Site.Params.twic }}.twic.pics{{ $img.RelPermalink }}?twic=v1/output=preview');}</style>
+            <img
+              data-twic-src="image:{{ $img.RelPermalink }}"
+              data-twic-focus="auto"
+              alt="{{ $.Params.why.alt | default "" }}"
+              width="{{ $img.Width }}"
+              height="{{ $img.Height }}"
+            />
+            {{ with $.Params.why.figcaption }}
+              <figcaption class="[ pt--0.5 ]">{{ . }}</figcaption>
+            {{ end }}
+          </picture>
+        </figure>
+      {{- end }}
+    {{- end }}
     
   </div>
 
