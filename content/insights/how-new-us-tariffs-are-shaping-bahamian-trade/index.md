@@ -13,7 +13,7 @@ description = "Learn how new 2025 U.S. tariffs are affecting Bahamian importers,
 categories = ['Trade-Industry']
 # tags = []
 
-[hero]
+[cover]
   image = 'cover.jpg'
   alt = 'Arawak Port Development arial view'
 

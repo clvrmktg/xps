@@ -1,7 +1,6 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  {{- $feature := .Params.feature -}}
-  {{- $cover := .Params.cover -}}
+  {{- $share := .Params.cover -}}
   {{- $page := . -}}
   {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply Chain" "Logistics & Supply Chain" "Inside-XPS" "Newsroom" -}}
   {{- $baseTitle := .Site.Title -}}
@@ -53,7 +52,6 @@
     <meta name="description" content="{{ .Description }}">
   {{- end }}
 
-  
   {{- if or (and (eq $page.Kind "section") (eq $page.Section "insights")) (eq $page.Kind "term") -}}
     {{- with $page.Paginator -}}
       <link rel="canonical" href="{{ if eq .PageNumber 1 }}{{ $page.Permalink }}{{ else }}{{ $page.Permalink }}page/{{ .PageNumber }}/{{ end }}">
@@ -69,7 +67,6 @@
   {{- else }}
     <link rel="canonical" href="{{ $page.Permalink }}">
   {{- end }}
-  
   
   {{- if eq .Page.Kind "404" -}}
   <meta name="robots" content="noindex">
@@ -105,17 +102,6 @@
   {{ if .Params.hasTwic -}}
   <script src="https://{{- .Site.Params.twic -}}.twic.pics/?v1" async defer></script>
   {{- end -}}
-  {{- if .IsHome -}}
-  {{- if $cover.image -}}
-  <link rel="preload" href="https://{{- .Site.Params.twic -}}.twic.pics{{- (printf "/uploads/%s" $cover.image) -}}?twic=v1/focus=auto/cover=700x300" as="image">
-  {{- end }}
-  {{- end -}}
-  {{- if $feature.image -}}
-  <link rel="preload" href="https://{{- .Site.Params.twic -}}.twic.pics{{- (printf "/uploads/%s" $feature.image) -}}?twic=v1/focus=auto/resize=700" as="image">
-  {{- end }}
-  {{- if .Store.Get "hasCode" -}}
-  <script src="/scripts/prism-{{- .Site.Params.Version -}}.min.js" async></script>
-  {{- end -}} 
   <!-- Default Icon - Use SVG for highest quality display - Use `media` attribute for light or dark mode (i.e. media="(prefers-color-scheme: dark)") - All browsers -->
   <link rel="icon" type="image/svg" href="/xps-favicon.svg">
   <!-- Mask Icon - 512 x 512 - PNG - Use `color` attribute with SVG (i.e. color="#000000") - Safari --> 
@@ -130,8 +116,8 @@
   <meta property="og:url" content="{{ .Permalink  }}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ $title }}">
-  {{- $image := $feature.image | default .Site.Params.share -}}
-  {{- $alt := $feature.alt | default "XPS Logistics logo" -}}
+  {{- $image := $share.image | default .Site.Params.share -}}
+  {{- $alt := $share.alt | default "XPS Logistics logo" -}}
   <meta property="og:description" content="{{- .Description -}}">
   <meta property="og:image" content="{{- $image | absURL -}}">
   <meta property="og:image:alt" content="{{ $alt  }}">

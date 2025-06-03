@@ -1,1 +1,0 @@
-window.lazySizesConfig=window.lazySizesConfig||{},window.lazySizesConfig.rias=window.lazySizesConfig.rias||{prefix:"https://res.cloudinary.com/filiio/image/fetch/c_fill,q_auto,f_auto,w_{width}/",absUrl:!0},window.addEventListener("resize",(function(){window.matchMedia("(min-width: 1025px)").matches&&(document.getElementById("click").checked=!1)}),!0);
