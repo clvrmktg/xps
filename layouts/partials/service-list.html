@@ -2,7 +2,7 @@
   {{ $pages := .Pages }}
   {{ $counter := 0 }}
   {{ range $pages.ByWeight }}
-  {{ $counter := add $counter 1 }}
+    {{ $counter = add $counter 1 }}
     <li>
       <a class="[ grid row-gap--1 ]" href="{{ .RelPermalink }}">
         {{- $heroImage := .Params.hero.image -}}
