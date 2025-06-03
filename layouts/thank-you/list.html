@@ -1,0 +1,14 @@
+{{- define "main" -}}
+{{ $.Store.Set "hasThankYou" true }}
+<div class="[ section--padding ]">
+
+  <h1>Thank You</h1>
+
+  <p>We're happy to have received your message. We'll get back to you as soon as we can. </p>
+  
+  <p>Have a great <span id="timeOfDay">day</span>!</p>
+
+  <a class="[ btn btn--lg btn--red ]" href="/">Back To Homepage</a>
+
+</div>
+{{- end -}}

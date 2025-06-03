@@ -1,4 +1,4 @@
-baseURL = 'https://xpslogistics.net/'
+baseURL = 'https://xpslogistics.netlify.app/'
 languageCode = 'en-us'
 title = 'XPS Logistics'
 
@@ -18,7 +18,7 @@ public_path = "/uploads"
 
 [ params ]
   version = "1738220434631"
-  twic = "jsphpndr"
+  twic = "xpslogistics"
   share = "/uploads/xps-share-fallback.jpg"
   logo = "/uploads/joseph-pinder-logo.png"
   # Facebook App ID
