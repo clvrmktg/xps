@@ -6,6 +6,14 @@ title = 'Warehousing'
 summary = "Secure storage solutions in western New Providence with 24/7 monitoring, on-site staff, and scalable capacity. Ideal for short- or long-term storage of commercial goods."
 description = "Flexible, secure warehousing in western New Providence. XPS offers monitored storage with loading support, inventory oversight, and seamless integration into your delivery or clearance workflow."
 
+[cover]
+image = ""
+alt = ""
+
+[hero]
+image = "xps-warehouse.jpg"
+alt = "XPS warehouse"
+
 [[highlights]]
 title = "Secure"
 text = "Monitored 24/7 with restricted access and on-site staff for safe, reliable storage."
