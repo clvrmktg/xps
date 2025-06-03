@@ -1,7 +1,9 @@
 +++
 date = '2025-06-02T03:54:25-04:00'
+weight = 1
 draft = false
 title = 'Freight Forwarding'
+summary = "We coordinate global air and ocean shipments with full documentation, customs support, and local delivery."
 description = "End-to-end coordination of your imports and exports—by air, sea, or land. We handle carrier bookings, documentation, and compliance to ensure reliable, cost-effective delivery worldwide."
 
 

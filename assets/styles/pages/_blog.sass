@@ -3,54 +3,22 @@
 .loop-wrap
   grid-template-rows: 1fr max-content
 
-.posts
-  // display: grid
-  // grid-template-rows: max-content
-  // gap: 2em
-  // margin-bottom: 2em
+.posts--header
 
-  // > li
-  //   position: relative
-    
-  //   &::before
-  //     content: ''
-  //     width: 104%
-  //     height: 120%
-  //     border-radius: em(5)
-  //     position: absolute
-  //     top: -10%
-  //     left: -2%
-  //     z-index: -1
-  //     +transition(background-color)
-
-  //   &:has(.post__link:hover), &:has(.post__link:focus-visible), &:has(.post__link:active)
-      
-  //     &::before
-  //       background-color: var(--background)
+  +breakpoint('tablet')
+    grid-template-columns: 2fr max-content
 
 .post
 
-  
   &__link
     color: color('black')
-  //     display: block
-
-  //     > h2
-  //       padding-bottom: 0
-
-  //     > time
-  //       display: inline-block
-  //       color: color('text-grey')
-  //       margin-bottom: 1em
-
-  // time
-  //   font-size: 0.9em
 
   &__img
     background-color: color('black')
 
   h2
     line-height: 1.3
+    +transition(text-decoration)
 
   +hover
 

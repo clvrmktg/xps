@@ -18,32 +18,18 @@
       </div>
     {{ end }}
   </section>
-<ul class="[ grid md:col--2 row-gap--3 ]">
+<ul class="[ grid md:col--2 col-gap--2 row-gap--3 ]">
   {{ range .Pages.ByWeight }}
     <li class="[ card card--stacked row-gap--2 ]">
+      <a class="[ heading-link ]" href="{{ .RelPermalink }}">
+        <figure class="[ ratio--16:9 ]"></figure>
+        <div class="[ flow ]">
+          <h2>{{ .Title }}</h2>
+          <p class="[ o--2 ]">{{ .Summary }}</p>
+        </div>
+      </a>
 
-      <figure class="[ ratio--16:9 ]"></figure>
-      <div class="[ flow ]">
-        <h2 class="[ font--2 ]">
-          <a class="[ heading-link ]" href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </h2>
-        <p class="[ o--2 ]">{{ .Params.summary }}</p>
-      </div>
-
-      <div class="[ grid col-gap--3 row-gap--2 md:grid-cols-2 ]">
-        {{ with .Params.points }}
-          {{ range . }}
-            <div class="[ flow row-gap--0.5 ]">
-              <h3 class="[ font--1 ]">{{ .title }}</h3>
-              <p class="[ o--2 ]">{{ .text }}</p>
-            </div>
-          {{ end }}
-        {{ end }}
-      </div>
-
-      <div>
-        <a class="[ btn btn--lg btn--red ]" href="{{ .RelPermalink }}">Learn More</a>
-      </div>
+        <a class="[ font--700 ]">Learn More</a>
     </li>
   {{ end }}
 </ul>

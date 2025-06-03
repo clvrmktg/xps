@@ -2,19 +2,59 @@
 date = '2025-06-02T03:55:33-04:00'
 draft = false
 title = 'Customs Brokerage'
-description = ''
+summary = "Licensed brokerage services to ensure your goods clear Bahamian customs quickly, compliantly, and without delays."
+description = "Licensed Bahamian customs brokers managing your cargo clearance from start to finish. We handle Click2Clear submissions, duty assessments, and regulatory compliance to ensure your goods move through customs smoothly and without delay."
+
 
 [[highlights]]
-title = "Global Reach"
-text = "Connections across major ports, carriers, and regional hubs in the U.S., Caribbean, and Latin America."
+title = "Accurate"
+text = "We classify your goods correctly to ensure accurate duties and prevent costly delays."
 
 [[highlights]]
-title = "Fully Coordinated"
-text = "We manage every leg of the shipment—from booking and documentation to final delivery."
+title = "Streamlined"
+text = "Our team prepares and submits all Click2Clear documentation on your behalf."
 
 [[highlights]]
-title = "On-Time Delivery"
-text = "Timely, cost-effective freight forwarding built around your timeline and cargo needs."
+title = "Trusted"
+text = "Reliable customs brokers licensed to clear commercial and personal cargo."
+
+[offers]
+content = """
+From commercial imports to personal shipments, XPS handles your customs clearance from start to finish. We ensure your cargo clears Bahamian customs quickly, accurately, and with full compliance.
+
+- **Click2Clear Submissions**  
+  We prepare and file customs entries through The Bahamas' official electronic portal on your behalf.
+
+- **Tariff Classification & Duty Assessment**  
+  Proper classification to ensure correct duties, taxes, and exemptions where applicable.
+
+- **Document Preparation**  
+  We handle all required forms—including invoices, packing lists, certificates of origin, and permits if needed.
+
+- **Clearance for Personal & Business Cargo**  
+  Whether you're importing household goods or commercial freight, we manage the clearance process for you.
+
+- **Acting as Authorized Agent**  
+  Ship your cargo to “Your Name / Business c/o XPS Logistics” and let us handle the paperwork, coordination, and final delivery.
+"""
+
+[why]
+content = """
+Customs brokerage is a critical step in the logistics chain—and small mistakes can mean big delays. Here’s why clients choose XPS:
+
+- **Licensed & Compliant**  
+  XPS is a licensed customs broker, fully authorized to act on your behalf and ensure your shipments meet all regulatory requirements.
+
+- **Proactive Communication**  
+  We don’t leave you guessing—our team keeps you informed every step of the way.
+
+- **Integrated Services**  
+  Brokerage is just one part of what we do. With warehousing, distribution, and freight forwarding under one roof, we offer end-to-end support.
+
+- **Support for First-Time Importers**  
+  New to importing? We guide you through the process and handle the complexity so you can focus on your business.
+"""
+
 
 [[faq]]
 question = "How long does customs clearance take in The Bahamas?"
