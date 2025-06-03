@@ -2,10 +2,7 @@
 {{- .Scratch.Set "hasTwic" true -}}
 {{ end }}
 {{ define "main" }}
-<div class="[ full-width content-grid ]">
   {{ partial "hero.html" . }}
-  {{ partial "breadcrumbs.html" . }}
-</div>
 <section class="[ service-highlights ][ grid col-gap--2 row-gap--2 md:col--3 ]">
     {{ range .Params.highlights }}
       <div class="[ card ]">

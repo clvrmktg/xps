@@ -1,15 +1,8 @@
+{{ define "variables" }}
+{{- .Scratch.Set "hasTwic" true -}}
+{{ end }}
 {{ define "main"}}
-  <div>
-    <header class="[ hero hero--service ][ py--5 ]">
-      <div class="[ wrapper ][ flex middle ]">
-        <div class="[ hero__content ][ ch--54 ]">
-          <h1>{{ .Title }}</h1>
-          <p class="[ font--4 ]">{{ .Description }}</p>
-        </div>
-      </div>
-    </header>
-    {{ partial "breadcrumbs.html" . }}
-  </div>
+  {{ partial "hero.html" . }}
   <section class="[ service-highlights ][ grid col-gap--2 row-gap--2 md:col--3 ]">
     {{ range .Params.highlights }}
       <div class="[ card ]">
@@ -27,9 +20,25 @@
       {{ .content | markdownify }}
     {{ end }}
     </div>
-    <figure class="[ ratio--4:7 ]">
-
+    {{- with .Params.offers.image -}}
+    <figure class="[ ratio--4:7 md:o--1 ]">
+      <picture id="feature" class="[ post-breakout ratio--16:9 ][ bg ]">
+        <style>
+          #feature {
+            background-image: url('https://{{ $.Site.Params.twic }}.twic.pics/uploads/{{ . }}?twic=v1/output=preview');
+          }
+        </style>
+        <img
+          data-twic-src="image:/uploads/{{ . }}"
+          data-twic-focus="auto"
+          alt="{{ $.Params.why.alt | default "" }}"
+        />
+        {{ with $.Params.why.figcaption }}
+          <figcaption class="[ pt--0.5 ]">{{ . }}</figcaption>
+        {{ end }}
+      </picture>
     </figure>
+    {{ end }}
   </div>
 
   <div class="[ service--block grid middle gap--2 ]">
@@ -39,9 +48,27 @@
       {{ .content | markdownify }}
     {{ end }}
     </div>
+    
+    {{- with .Params.why.image -}}
     <figure class="[ ratio--4:7 md:o--1 ]">
-
+      <picture id="feature" class="[ post-breakout ratio--16:9 ][ bg ]">
+        <style>
+          #feature {
+            background-image: url('https://{{ $.Site.Params.twic }}.twic.pics/uploads/{{ . }}?twic=v1/output=preview');
+          }
+        </style>
+        <img
+          data-twic-src="image:/uploads/{{ . }}"
+          data-twic-focus="auto"
+          alt="{{ $.Params.why.alt | default "" }}"
+        />
+        {{ with $.Params.why.figcaption }}
+          <figcaption class="[ pt--0.5 ]">{{ . }}</figcaption>
+        {{ end }}
+      </picture>
     </figure>
+    {{ end }}
+    
   </div>
 
 </section>

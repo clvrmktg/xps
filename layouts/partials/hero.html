@@ -1,12 +1,15 @@
 {{- $twic := .Site.Params.twic -}}
-{{ with .Resources.GetMatch (.Params.hero.image) }}
-<header class="[ hero hero--service ][ full-width content-grid py--5 ]" data-twic-background="url(image:{{ .RelPermalink }})">
-    <style>.hero {background-image: url('https://{{- $twic -}}.twic.pics{{ .RelPermalink }}?twic=v1/output=preview');}</style>
-  {{ end }}
-  <div class="[ wrapper ][ flex middle ]">
-    <div class="[ hero__content ][ ch--54 ]">
-      <h1>{{ .Title }}</h1>
-      <p class="[ font--4 ]">{{ .Description }}</p>
+<div class="[ full-width content-grid row-gap--1 ]">
+  <header class="[ hero hero--service ][ full-width content-grid py--5 bg ]" {{ with .Resources.GetMatch (.Params.hero.image) }}data-twic-background="url(image:{{ .RelPermalink }})"{{- end -}}>
+    {{ with .Resources.GetMatch (.Params.hero.image) }}
+      <style>.hero {background-image: url('https://{{- $twic -}}.twic.pics{{ .RelPermalink }}?twic=v1/output=preview');}</style>
+    {{ end }}
+    <div class="[ wrapper ][ flex middle ]">
+      <div class="[ hero__content ][ ch--54 ]">
+        <h1>{{ .Title }}</h1>
+        <p class="[ font--4 ]">{{ .Description }}</p>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
+  {{ partial "breadcrumbs.html" . }}
+</div>
