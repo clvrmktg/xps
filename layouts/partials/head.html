@@ -72,9 +72,9 @@
   <meta name="robots" content="noindex">
   <meta name="googlebot" content="noindex">
   {{- end -}}
-  {{- if .Params.hasTwic }}
-  <link rel="preconnect" href="https://{{- .Site.Params.twic -}}.twic.pics/?v1">
-  <link rel="preload" href="https://{{- .Site.Params.twic -}}.twic.pics/?v1" as="script">
+  {{- if or (.Scratch.Get "hasTwic") .Params.hasTwic }}
+  <link rel="preconnect" href="https://{{ .Site.Params.twic }}.twic.pics/?v1">
+  <link rel="preload" href="https://{{ .Site.Params.twic }}.twic.pics/?v1" as="script">
   {{- end }}
   {{- with resources.Get "styles/style.sass" -}}
     {{- $opts := dict

@@ -1,3 +1,6 @@
+{{ define "variables" }}
+{{- .Scratch.Set "hasTwic" true -}}
+{{ end }}
 {{ define "main" }}
 <div>
   {{ partial "hero.html" . }}
