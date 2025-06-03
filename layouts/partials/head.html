@@ -102,9 +102,9 @@
   <noscript>
     <style>.script { display: none; visibility: hidden }</style>
   </noscript>
-  {{ if .Params.hasTwic -}}
+  {{- if or (.Scratch.Get "hasTwic") .Params.hasTwic }}
   <script src="https://{{- .Site.Params.twic -}}.twic.pics/?v1" async defer></script>
-  {{- end -}}
+  {{- end }}
   <!-- Default Icon - Use SVG for highest quality display - Use `media` attribute for light or dark mode (i.e. media="(prefers-color-scheme: dark)") - All browsers -->
   <link rel="icon" type="image/svg" href="/xps-favicon.svg">
   <!-- Mask Icon - 512 x 512 - PNG - Use `color` attribute with SVG (i.e. color="#000000") - Safari --> 

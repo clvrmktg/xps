@@ -16,7 +16,7 @@
         {{- $imgHeight := 0 -}}
 
         {{- if $heroImage }}
-          {{- $img = $.Resources.GetMatch $heroImage -}}
+          {{- $img = .Resources.GetMatch $heroImage -}}
           {{- if $img }}
             {{- $imgSrc = $img.RelPermalink -}}
             {{- $imgWidth = $img.Width -}}
