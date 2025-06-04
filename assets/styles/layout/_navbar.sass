@@ -1,35 +1,327 @@
+@use 'sass:math'
 @use '../abstracts' as *
   
+// .navbar
+//   padding-block: 0.5em
+//   border-bottom: 0.1rem solid #f0f0f0
+//   height: var(--navbar-height)
+
+//   > .wrapper
+//     z-index: 15
+
+// .logo
+//   width: em(200)
+
+// .nav
+//   height: inherit
+
+// .menu
+//   gap: 2em
+
+//   &__link
+//     color: color('black')
+//     padding: 0.25em 0.5em
+//     border: 0.2em
+//     position: relative
+//     +transition('color')
+
+//     +hover
+//       color: color('white')
+//       background-color: var(--background)
+
+//     &.current
+//       // color: color('white')
+//       background-color: var(--background)
+//       position: relative      
+
 .navbar
-  padding-block: 0.5em
-  border-bottom: 0.1rem solid #f0f0f0
+  --_animationStartsAfter: 50vh
+  --_animationDistance: 400px
+  background-color: color('white')
+  width: 100%
   height: var(--navbar-height)
+  position: fixed
+  z-index: 15
 
   > .wrapper
+    height: inherit
+    position: relative
     z-index: 15
+
+.backdrop
+  height: inherit
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
 
 .logo
   width: em(200)
 
-.nav
+.navigation--main
+  height: inherit
+  background-color: color('white')
+
+  +device(tablet)
+    display: block
+    width: 100vw
+    height: 100vh
+    background-color: color('xps-red')
+    padding:
+      top: 1em
+      right: 2em
+      left: 2em
+    border-top: em(4) solid color('xps-red')
+    visibility: hidden
+    position: absolute
+    top: var(--height)
+    left: 200vw
+    z-index: -5
+    +transition((visibility, left, background-color))
+
+.down-arrow
+  width: 0.75em
+  transform: rotate(0deg)
+  +transition(transform)
+
+.arrow
+
+  &--tablet
+    width: 3em
+    display: flex
+    position: relative
+    cursor: pointer
+
+    &::before
+      content: ''
+      width: em(2)
+      height: 80%
+      background-color: color('white')
+      position: absolute
+      left: 0
+      top: 10%
+
+    &:has(#submenu:focus-visible)
+      outline: -webkit-focus-ring-color auto 1px
+
+    +device(desktop)
+      display: none
+      visibility: hidden
+  
+  &--desktop
+    +device(tablet)
+      display: none
+      visibility: hidden
+
+  
+.menu
+  display: flex
+  gap: 2em
   height: inherit
 
-.menu
-  gap: 2em
+  +device(tablet)
+    flex-direction: column
+    +clamp(padding-right, 10, 20)
+    +clamp(padding-left, 10, 20)
+  
+
+  &__item
+    color: color('white')
+    align-items: center
+
+    +device(desktop)
+      color: color('black')
+      display: flex
+
+      > div
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+
+      &:focus-within
+        color: color('xps-red')
+
+      +hover
+        color: color('xps-red')
+        
+        &::after
+          width: 100%
+
+        > .submenu
+          top: 100%
+          z-index: -2
+
+        .down-arrow
+          transform: rotate(180deg)
+
+    +device(tablet)
+      border-bottom: em(2) solid  color('xps-red-lightest')
+
+      > div
+        display: grid
+        grid-template-columns: 1fr min-content
+
+      &:has(#submenu)
+        padding:
+          top: 0
+          bottom: 0
+
+        > div
+          justify-content: space-between
+
+      &:has(#submenu:checked)
+
+        .down-arrow
+          transform: rotate(-180deg)
+
+        .submenu
+          max-height: 2000em
+          visibility: visible
+        
+  &__link
+    color: inherit
+    position: relative
+    +transition(color)
+
+    +device(tablet)
+      display: block
+      padding:
+        top: 1em
+        bottom: 1em
+  +device(desktop)
+
+    .current
+      color: color('xps-red')
+      
+      &::after
+        width: 100%
+
+
+.submenu
+
+  +device(desktop)
+    
+    background-color: color('xps-red')
+    box-shadow: 0 em(4) em(4) color('black-5')
+    border-radius: em(10)
+    position: absolute
+    top: -500%
+    left: 0.1em
+    z-index: -2
+
+    +transition(top)
+
+  +device(tablet)
+    max-height: 0
+    visibility: hidden
+    overflow: hidden
+    +transition((max-height, visibility))
+  
+  &__item
+
+    +device(desktop)
+      &:first-of-type
+        border-top-left-radius: em(10)
+        border-top-right-radius: em(10)
+
+      &:last-of-type
+        border-bottom-left-radius: em(10)
+        border-bottom-right-radius: em(10)
 
   &__link
-    color: color('black')
-    padding: 0.25em 0.5em
-    border: 0.2em
-    position: relative
-    +transition('color')
+    color: color('white')
+    white-space: nowrap
+    border-top-left-radius: inherit
+    border-top-right-radius: inherit
+    border-bottom-left-radius: inherit
+    border-bottom-right-radius: inherit
 
-    +hover
-      color: color('white')
-      background-color: var(--background)
+    +device(tablet)
+      color: color('xps-red')
+      background-color: color('xps-red-lightest')
+      position: relative
+      +clamp(padding-right, 10, 20)
+      +clamp(padding-left, 10, 20)
+      +transition((color, background-color))
 
-    &.current
-      // color: color('white')
-      background-color: var(--background)
-      position: relative      
 
+      +hover
+        background-color: color('xps-red-lighter')
+      
+    +device(desktop)
+      padding: 
+        right: 1em
+        left: 1em
+      +transition((color, background-color))
+
+      +hover
+        color: color('xps-red')
+        background-color: color('xps-red-lightest')
+
+    
+.navicon
+  display: flex
+  width: em(25)
+  height: em(20)
+  position: relative
+  z-index: 2
+  cursor: pointer
+
+  +device(desktop)
+    display: none
+
+  &:has(#click:focus-visible)
+    outline: -webkit-focus-ring-color auto 1px
+
+.bar
+  width: inherit
+  height: em(2)
+  background-color: color('xps-red')
+  border-radius: em(1)
+  position: relative
+  +transition((transform, background-color))
+  cursor: inherit
+
+  &::before, &::after
+    content: ''
+    width: inherit
+    height: inherit
+    background-color: inherit
+    border-radius: inherit
+    position: absolute
+    right: 0
+    z-index: 1
+  
+  &::before
+    top: em(math.div(25, 2) - 3)
+    +transition((top, opacity))
+
+  &::after
+    bottom: em(math.div(25, 2) - 3)
+    +transition((bottom, transform)) 
+
+
+.container:has(#click:checked)
+  overflow: hidden
+  position: fixed
+
+  .navigation--main
+    // background-color: var(--black--4)
+    visibility: visible
+    left: -2em
+
+
+    > ul
+      opacity: 1
+  
+  .bar
+    transform: rotate(225deg)
+  
+    &::before
+      top: 0
+      opacity: 0
+
+    &::after
+      bottom: 0
+      transform: rotate(-90deg)

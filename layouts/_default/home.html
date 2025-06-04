@@ -12,11 +12,9 @@
         <a class="[ btn btn--lg btn--white ]" href="/contact-us" data-prefetch>Get In Touch</a>
       </div>
     </div>
-  </div>  
-  {{/* 
-    <video class="[ video-bg ]" src="/videos/msc-vessel-flyover.mp4" autoplay muted loop playsinline></video>
-   */}}
+  </div>
 </header>
+<!-- Hero - END  -->
 <section class="[ section--spacing bg--light text--center ]">
   <div class="[ wrapper ][ flow text--center ch--56 ]">
     <h2>Your Freight. Our Priority.</h2>
@@ -32,7 +30,7 @@
     <div class="[ grid gap--1 section--padding ]">
       <div>
         <h2>Why XPS?</h2>
-        {{ .Summary }}
+        {{ .Summary | safeHTML }}
       </div>
       <div>
         <a class="[ btn btn--lg btn--red ]" href="/company" data-prefetch>Learn More
@@ -48,5 +46,5 @@
   {{ $posts := (site.GetPage "section" "insights").RegularPages | first 3 }}
   {{ partial "posts.html" (dict "Pages" $posts "Site" .Site) }}
 </section>
-<!-- Hero - END  -->
+
 {{- end -}}

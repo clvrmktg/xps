@@ -1,5 +1,8 @@
 @use '../abstracts' as *
 
+main
+  padding-top: var(--navbar-height)
+
 .banner
 
   &--black
@@ -18,14 +21,13 @@ li::marker
 
   &--blocks
     background-color: color('neutral-grey-lightest')
-    
+
   &--block
     grid-template-columns: 2fr 1fr
 
     &:nth-of-type(even)
       grid-template-columns: 1fr 2fr
-      
-      
+
 
 .faq
   // background-color: color('neutral-grey-lightest')
@@ -59,3 +61,9 @@ summary
 .bg
   background: color('black') no-repeat center center
   background-size: cover
+
+.none
+  display: none
+
+.block
+  display: block
