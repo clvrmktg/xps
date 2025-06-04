@@ -1,7 +1,10 @@
+{{- define "variables" -}}
+{{ .Scratch.Set "hasTwic" true }}
+{{- end -}}
 {{- define "main" -}}
 <div>
   <header class="[ hero ][ py--5 ]">
-    <h1 class="[ hidden ]">About Us</h1>
+    <h1 class="[ hidden ]">Company</h1>
     <div class="[ wrapper ][ flex middle ]">
       <div class="[ hero__content ][ flex middle ]">
         <h2 class="[ font--1 color--white ]">3PL. <br> Made simple.</h2>
@@ -11,7 +14,7 @@
   {{ partial "breadcrumbs.html" .}}
 </div>
   <section class="[ grid section--spacing ]">
-    <div class="[ lead ][ grid gap--2 ]">
+    <div class="[ lead ][ grid row-gap--2 ]">
       <div class="[ lead__heading ]">
         <h2 class="[ bar-before ][ flex--col row-gap--1 ]">Your trusted 3PL partner</h2>
       </div>
@@ -38,107 +41,30 @@
       </li>
     </ul>
   </section>
-  <!--
-  <section>
-    <div class="[ ]">
-      <h2 class="[ font--1 ]">Keeping it simple with solutions that work</h2>
-      <p class="[ font--4 ]">We're more than just a logistics provider, we're a strategic partner in simplifying and optimizing your supply chain.</p>
-      <ul class="[ propositions ][ grid md:x2 g--2 ]">
-        <li class="[ proposition ][ grid ]">
-          <h3 class="[ o--2 ]">Growing the network</h3>
-          <p class="[ o--3 ]">We’re one of the largest LTL carriers in North America, and we’re investing in more growth: adding equipment and doors, and training drivers to expand our team.</p>
-          <figure class="[ ratio--16:9 o--1 mb--1 ]">
-            <style>
-              figure {
-                background-image: url('https://filiio.twic.pics/uploads/.jpg?twic=v1/output=preview');
-              }
-              
-            </style><img data-twic-src="image:uploads/.jpg" data-twic-preview="image:uploads/.jpg" data-twic-focus="auto" alt="" image="image"/>
-            <noscript><img class="[ script ]" src="https://filiio.twic.pics/uploads/.jpg?twic=v1/output=preview"/></noscript>
-          </figure>
-        </li>
-        <li class="[ proposition ][ grid ]">
-          <h3 class="[ o--2 ]">Connecting with you</h3>
-          <p class="[ o--3 ]">Our job is to help you succeed. We understand your business needs and treat your freight like it’s our own.</p>
-          <figure class="[ ratio--16:9 o--1 mb--1 ]">
-            <style>
-              figure {
-                background-image: url('https://filiio.twic.pics/uploads/.jpg?twic=v1/output=preview');
-              }
-              
-            </style><img data-twic-src="image:uploads/.jpg" data-twic-preview="image:uploads/.jpg" data-twic-focus="auto" alt="" image="image"/>
-            <noscript><img class="[ script ]" src="https://filiio.twic.pics/uploads/.jpg?twic=v1/output=preview"/></noscript>
-          </figure>
-        </li>
-        <li class="[ proposition ][ grid ]">
-          <h3 class="[ o--2 ]">Delivering efficiency</h3>
-          <p class="[ o--3 ]">We’re always working on the next great idea to deliver value for customers with our LTL network technology, web tools and EDI/API integrations.</p>
-          <figure class="[ ratio--16:9 o--1 mb--1 ]">
-            <style>
-              figure {
-                background-image: url('https://filiio.twic.pics/uploads/.jpg?twic=v1/output=preview');
-              }
-              
-            </style><img data-twic-src="image:uploads/.jpg" data-twic-preview="image:uploads/.jpg" data-twic-focus="auto" alt="" image="image"/>
-            <noscript><img class="[ script ]" src="https://filiio.twic.pics/uploads/.jpg?twic=v1/output=preview"/></noscript>
-          </figure>
-        </li>
-        <li class="[ proposition ][ grid ]">
-          <h3 class="[ o--2 ]">Pushing for excellence</h3>
-          <p class="[ o--3 ]">We communicate constantly with customers to make sure you’re getting the excellent service you deserve.</p>
-          <figure class="[ ratio--16:9 o--1 mb--1 ]">
-            <style>
-              figure {
-                background-image: url('https://filiio.twic.pics/uploads/.jpg?twic=v1/output=preview');
-              }
-              
-            </style><img data-twic-src="image:uploads/.jpg" data-twic-preview="image:uploads/.jpg" data-twic-focus="auto" alt="" image="image"/>
-            <noscript><img class="[ script ]" src="https://filiio.twic.pics/uploads/.jpg?twic=v1/output=preview"/></noscript>
-          </figure>
-        </li>
-      </ul>
-    </div>
-  </section>
-  -->
+
   <section class="[ banner--black full-width content-grid section--spacing py--5 ]">
       <h2 class="[ font--1 mb--0.5 ]">Driven by our values</h2>
       <ul class="[ grid md:col--2 lg:col--3 gap--2 ]">
+        {{ range .Params.values }}
         <li> 
-          <h3 class="[ bar-before ][ flex--col gr--1 mb--0.5 ]">Put people first</h3>
-          <p>Putting people first in everything we do, from our customers to our team members. Building lasting relationships is the foundation of our success.</p>
+          <h3 class="[ bar-before ][ flex--col row-gap--0.5 ]">{{ .title }}</h3>
+          <p>{{ .text }}</p>
         </li>
-        <li> 
-          <h3 class="[ bar-before ][ flex--col gr--1 mb--0.5 ]">Be safe</h3>
-          <p>We prioritize the safety and well-being of our team. By upholding high standards, we ensure everyone returns home safely, while also delivering our best service to customers.</p>
-        </li>
-        <li> 
-          <h3 class="[ bar-before ][ flex--col gr--1 mb--0.5 ]">Be responsible</h3>
-          <p>We speak up when there are opportunities to improve and take ownership of our mistakes because we believe in doing things the right way. <!-- Prioritizing accountability and integrity ensures a job well done, fosters trust within our team, and inspires confidence in our customers. --></p>
-        </li>
-        <li> 
-          <h3 class="[ bar-before ][ flex--col gr--1 mb--0.5 ]">Be better</h3>
-          <p>We believe in giving our best, which is why we're forward-thinking and invest in our people, technology, and equipment. Innovation provides us with opportunities to improve performance for our customers and employees alike.</p>
-        </li>
-        <li> 
-          <h3 class="[ bar-before ][ flex--col gr--1 row-gap--0.5 ]">Be respectful</h3>
-          <p>We're committed to fostering a culture of honesty and respect, where everyone has a voice. That's why we work hard to ensure that our team feels valued and their opinions are heard.</p>
-        </li>
-        <li> 
-          <h3 class="[ bar-before ][ flex--col gr--1 row-gap--0.5 ]">Be world-class</h3>
-          <p>We're determined to be #1 in 3PL. Competitive and driven to win, we don't settle for less than best— for ourselves or our customers.</p>
-        </li>
+        {{ end }}
       </ul>
   </section>
   <section>
     <div class="[ ]">
       <h2 class="[ font--1 ]">Our Team</h2>
       <div class="[ split-sub ][ pb--5 ]">
-        <p class="[ font--4 ]">We're a team that prioritizes safety, a customer-focused approach, and operational excellence. That's why our team is comprised of industry professionals with a wealth of experience in operations and technology</p>
+        <p class="[ font--4 ]">We're a team that prioritizes safety, a customer-focused approach, and operational excellence. That's why our team is comprised of industry professionals with a wealth of experience in operations and logistics.</p>
       </div>
       <ul class="[ team ][ grid md:col--2 lg:col--4 gap--2 ]">
+        {{- $team := .Params.team  -}}
+        {{ range $team }}
         <li class="[ member ][ grid row-gap--0.5 ]">
-          <h3 class="[ member__name ][ o--3 ]">Joseph Pinder</h3>
-          <p class="[ member__role ][ font--small o--2 ]">General Manager</p>
+          <h3 class="[ member__name ][ o--3 ]">{{ .member }}</h3>
+          <p class="[ member__role ][ font--small o--2 ]">{{ .role }}</p>
           <figure class="[ member__photo ][ ratio--1:1 o--1 mb--1 ]">
             <style>
               figure {
@@ -149,6 +75,7 @@
             <noscript><img class="[ script ]" src="https://filiio.twic.pics/uploads/.jpg?twic=v1/output=preview"/></noscript>
           </figure>
         </li>
+        {{ end }}
       </ul>
     </div>
   </section>

@@ -15,11 +15,11 @@ categories = ['Trade-Industry']
 
 [cover]
   image = 'cover.jpg'
-  alt = 'Arawak Port Development arial view'
+  alt = 'Arawak Port Development aerial view'
 
 [feature]
-  image = "arawak-port-development-nassau-bahamas.jpg"
-  alt= "Arawak port development arial view"
+  image = "nassau-container-port-bahamas.jpg"
+  alt= "Arawak port development aerial view"
   figcaption = "Nassau Container Port (NCP), operated by Arawak Port Development, serves as The Bahamas’ primary cargo gateway—and a key node affected by shifting U.S. trade policies."
 
 # Footnotes will be added based on this front matter. Shortcode for footnote reference in text: {{< footnote id="1" >}}.

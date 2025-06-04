@@ -31,7 +31,7 @@
           {{- $imgWidth = $fallbackWidth -}}
           {{- $imgHeight = $fallbackHeight -}}
         {{- end }}
-        <figure class="[ post__img ][ ratio--16:9 ]">
+        <figure class="[ post__img ][ ratio--16:9 scale ]">
           <picture id="image-{{ $counter }}" class="[ bg ]">
             <style>#image-{{ $counter }} {background-image: url('https://{{ $.Site.Params.twic }}.twic.pics{{ $imgSrc }}?twic=v1/output=preview');}</style>
             <img

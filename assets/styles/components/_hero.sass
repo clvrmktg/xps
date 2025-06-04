@@ -4,8 +4,8 @@
   +clamp(min-height, 350, 400)
 
   &.hero--home
-    min-height:  100svh
-
+    min-height:  calc(100vh - var(--navbar-height))
+    position: relative
     // outline: $bg
 
     @supports not (min-height: 100svh)
@@ -13,13 +13,14 @@
   
   > .wrapper
     min-height: inherit
+    position: relative
+    z-index: 2
 
   &__content
     color: color('white')
     position: relative
     z-index: 1
 
-    // outline: $bg
 
     &::after
       content: ''
@@ -32,20 +33,31 @@
       right: -5%
       z-index: -1
 
+.video-bg
+  min-width: 100%
+  min-height: 100%
+  height: 100%
+  max-height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 1
+  object-fit: cover
+
++ch(48)
+
 $color: #9395A1
 .lead
-  grid-template-columns: [heading-start content-start] repeat(2, 1fr) [heading-end] 1fr [content-end]
-  grid-template-rows: [heading-start] max-content [heading-end content-start] max-content [content-end]
-
-  +device(desktop)
-    grid-template-columns: [heading-start] 1fr [heading-end] 1fr [content-start] repeat(2, 1fr) [content-end]
-    grid-template-rows: [heading-start content-start] max-content [heading-end content-end]
-
+ 
+  +breakpoint(tablet)
+    grid-template-columns: [heading-start] 1fr [heading-end content-start] repeat(2, 1fr) [content-end]
+    column-gap: 2em
+    
   &__heading
-    grid-area: heading
+    grid-column: heading
 
   &__content
-    grid-area: content
+    grid-column: content
 
 .bar-before
   

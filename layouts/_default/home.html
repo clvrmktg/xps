@@ -2,28 +2,42 @@
 {{- .Store.Set "hasTwic" true -}}
 {{- .Store.Set "hasObscure" true -}}
 <!-- Hero - START -->
-<header class="[ hero hero--home ]">
+<header class="[ hero hero--home ][ full-width py--5 bg ]" {{ with .Resources.GetMatch (.Params.hero.image) }}data-twic-background="url(image:{{ .RelPermalink }})"{{- end -}}>
   <h1 class="[ hidden ]">XPS Logistics</h1>
-  <div class="[ wrapper ][ flex middle py--5 ]">
-    <div class="[ hero__content ] ">
-      <h2 class="[ font--1 ]">Trusted <abbr title="Third Party Logistics">3PL</abbr> Warehousing, <br>Distribution, and Supply <br>Chain Solutions for you</h2>
-      <p class="[ ch--48 color--white ]">XPS Logistics specializes in warehousing, distribution, and last-mile delivery services in Nassau and throughout The Bahamas, leveraging over two decades of expertise as a trusted third-party logistics provider.</p><a class="[ btn btn--solid--lg bg:color--red--200 ]">Request A Quote</a>
+  <div class="[ wrapper ][ content-grid middle py--5 ]">
+    <div class="[ grid md:col--2 ]">
+      <div class="[ hero__content ] ">
+        <h2 class="[ font--1 ]">{{ .Params.heading }}</h2>
+        <p class="[ ch--48 ]">{{ .Params.subheading | safeHTML }}</p>
+        <a class="[ btn btn--lg btn--white ]" href="/contact-us" data-prefetch>Get In Touch</a>
+      </div>
     </div>
   </div>  
+  {{/* 
+    <video class="[ video-bg ]" src="/videos/msc-vessel-flyover.mp4" autoplay muted loop playsinline></video>
+   */}}
 </header>
-{{ $services := site.GetPage "section" "services" }}
+<section class="[ section--spacing bg--light text--center ]">
+  <div class="[ wrapper ][ flow text--center ch--56 ]">
+    <h2>Your Freight. Our Priority.</h2>
+    <p>
+      We coordinate every link in your logistics chain—freight forwarding, customs clearance, and delivery—we manage the logistics so your supply chain runs smoothly.
+    </p>
+  </div>
+  {{ $services := site.GetPage "section" "services" }}
+</section>
 {{ partial "service-list.html" $services }}
-
 <section class="[ full-width content-grid banner--black ]">
   <div class="[ wrapper ][ grid md:col--2 gap--2 ]">
-    <div>
-      <h2>Why XPS?</h2>
-      <p>We’re more than a freight handler—we’re your logistics partner. From customs clearance to delivery, XPS ensures your goods move efficiently and compliantly.</p>
-      <div class="grid md:col--4 gap--2">
-        <div class="card"><strong>Licensed & Compliant</strong></div>
-        <div class="card"><strong>Local & Regional Reach</strong></div>
-        <div class="card"><strong>Integrated 3PL Services</strong></div>
-        <div class="card"><strong>Transparent, Hands-on Support</strong></div>
+    <div class="[ grid gap--1 section--padding ]">
+      <div>
+        <h2>Why XPS?</h2>
+        {{ .Summary }}
+      </div>
+      <div>
+        <a class="[ btn btn--lg btn--red ]" href="/company" data-prefetch>Learn More
+          <span class="[ hidden ]">About XPS Logistics</span>
+        </a>
       </div>
     </div>
   </div>
@@ -32,8 +46,7 @@
 <section class="[ grid section--spacing ]">
   <h2>Insights</h2>
   {{ $posts := (site.GetPage "section" "insights").RegularPages | first 3 }}
-{{ partial "posts.html" (dict "Pages" $posts "Site" .Site) }}
-
+  {{ partial "posts.html" (dict "Pages" $posts "Site" .Site) }}
 </section>
 <!-- Hero - END  -->
 {{- end -}}
