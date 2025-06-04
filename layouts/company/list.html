@@ -2,12 +2,15 @@
 {{ .Scratch.Set "hasTwic" true }}
 {{- end -}}
 {{- define "main" -}}
-<div>
-  <header class="[ hero ][ py--5 ]">
-    <h1 class="[ hidden ]">Company</h1>
-    <div class="[ wrapper ][ flex middle ]">
-      <div class="[ hero__content ][ flex middle ]">
-        <h2 class="[ font--1 color--white ]">3PL. <br> Made simple.</h2>
+<div class="[ full-width content-grid row-gap--1 ]">
+  <header class="[ hero ][ full-width py--5 bg ]" {{ with .Resources.GetMatch (.Params.hero.image) }}data-twic-background="url(image:{{ .RelPermalink }})"{{- end -}}>
+    <h1 class="[ hidden ]">XPS Logistics</h1>
+    <div class="[ wrapper ][ content-grid middle py--5 ]">
+      <div class="[ grid md:col--2 ]">
+        <div class="[ hero__content ] ">
+          <h2 class="[ font--1 ]">{{ .Params.heading }}</h2>
+          <p class="[ ch--48 ]">{{ .Params.subheading | safeHTML }}</p>
+        </div>
       </div>
     </div>
   </header>

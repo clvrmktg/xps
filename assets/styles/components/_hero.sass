@@ -1,15 +1,15 @@
 @use '../abstracts' as *
 
 .hero
-  +clamp(min-height, 350, 400)
+  +clamp(min-height, 350, 390)
 
   &.hero--home
-    min-height:  calc(100vh - var(--navbar-height))
+    min-height: calc(100svh - var(--navbar-height))
     position: relative
     // outline: $bg
 
     @supports not (min-height: 100svh)
-      min-height: 100vh
+      min-height: calc(100vh - var(--navbar-height))
   
   > .wrapper
     min-height: inherit
@@ -21,7 +21,6 @@
     position: relative
     z-index: 1
 
-
     &::after
       content: ''
       width: 200vw
@@ -30,7 +29,7 @@
       background-color: color('xps-red')
       position: absolute
       top: -20%
-      right: -5%
+      right: -10%
       z-index: -1
 
 .video-bg

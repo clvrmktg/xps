@@ -3,8 +3,8 @@
   {{ $counter := 0 }}
   {{ range $pages.ByWeight }}
     {{ $counter = add $counter 1 }}
-    <li>
-      <a class="[ grid row-gap--1 ]" href="{{ .RelPermalink }}">
+    <li id="service-{{$counter}}" class="[ post ]">
+      <a class="[ post__link ][ grid row-gap--1 ]" href="{{ .RelPermalink }}">
         {{- $heroImage := .Params.hero.image -}}
         {{- $fallbackPath := "/uploads/xps-feature-fallback.jpg" -}}
         {{- $fallbackWidth := 1920 -}}
