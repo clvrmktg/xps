@@ -2,7 +2,7 @@
 {{- .Store.Set "hasTwic" true -}}
 {{- .Store.Set "hasObscure" true -}}
 <!-- Hero - START -->
-<header class="[ hero hero--home ][ full-width py--5 bg ]" {{ with .Resources.GetMatch (.Params.hero.image) }}data-twic-background="url(image:{{ .RelPermalink }})"{{- end -}}>
+<header class="[ hero hero--home ][ full-width bg ]" {{ with .Resources.GetMatch (.Params.hero.image) }}data-twic-background="url(image:{{ .RelPermalink }})"{{- end -}}>
   <h1 class="[ hidden ]">XPS Logistics</h1>
   <div class="[ wrapper ][ content-grid middle py--5 ]">
     <div class="[ grid md:col--2 ]">

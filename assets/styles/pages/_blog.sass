@@ -10,18 +10,33 @@
 
 .post
 
-  &__link
-    color: color('black')
 
   &__img
     background-color: color('black')
 
+    > picture
+      overflow: hidden
+
+      > img
+        scale: 1
+        +transition(scale)
+
   h2
     line-height: 1.3
-    +transition(text-decoration)
+    text-decoration: underline
+    text-decoration-color: transparent
+    +transition(text-decoration-color)
 
-  +hover
+  &__link
+    color: color('black')
 
-    h2
-      text-decoration: underline
+    +hover
+      .post
+
+        &__img > picture > img
+          scale: 1.1
+
+      h2
+        text-decoration-color: color('black')
+      
 

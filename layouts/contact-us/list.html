@@ -91,7 +91,7 @@
           <template id="dropdown-template">
             <div class="[ form__input ][ dropdown py--0.25 ]" role="combobox" aria-haspopup="listbox" aria-expanded="false" tabindex="0">
               <div class="[ dropdown_value ]" aria-live="polite" aria-atomic="true"></div>
-              <div class="[ dropdown_arrow ][ flex middle ]">{{ readFile "static/icons/dropdown_arrow.svg" | safeHTML }}</div>
+              <div class="[ dropdown_arrow ][ flex middle ]"><x-icon :name="dropdown_arrow"/></div>
               <div class="[ dropdown_panel ]" role="listbox">
                 <div class="[ dropdown_items ][ font--700 ]" role="option" tabindex="-1" aria-selected="false"></div>
               </div>

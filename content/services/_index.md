@@ -1,5 +1,4 @@
 +++
-
 date = 2025-05-24T14:25:33-04:00
 draft = false
 
@@ -26,5 +25,6 @@ text = "Every service we provide meets or exceeds Bahamian regulatory standards.
   image = 'arial-quay-view.jpg'
   alt = 'Arial view of container vessel being offloaded'
 
+[params]
+  hasSubmenu = true
 +++
-

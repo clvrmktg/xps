@@ -4,7 +4,7 @@
   {{ range $pages.ByWeight }}
     {{ $counter = add $counter 1 }}
     <li id="service-{{$counter}}" class="[ post ]">
-      <a class="[ post__link ][ grid row-gap--1 ]" href="{{ .RelPermalink }}">
+      <a class="[ post__link ][ grid row-gap--1 ]" href="{{ .RelPermalink }}" data-prefetch>
         {{- $heroImage := .Params.hero.image -}}
         {{- $fallbackPath := "/uploads/xps-feature-fallback.jpg" -}}
         {{- $fallbackWidth := 1920 -}}
@@ -58,7 +58,9 @@
         </div>
       </a>
 
-        <a class="[ font--700 ]">Learn More</a>
+        <a href="{{ .RelPermalink }}" data-prefetch>Learn More 
+          <span class="[ hidden ]">About {{ .Title }}</span>
+        </a>
     </li>
   {{ end }}
 </ul>

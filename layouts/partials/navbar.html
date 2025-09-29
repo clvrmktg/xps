@@ -16,6 +16,13 @@
           {{ range .Site.Menus.main }}
           <li class="[ menu__item ][ grid font--700 ]">
             <a class="[ menu__link link--navbar ]{{ if eq $.currentPage.RelPermalink .URL }}[ current ]{{ end }}" href="{{ .URL }}" {{ if eq $.currentPage.RelPermalink .URL }}aria-current="page"{{ end }} data-prefetch>{{ .Name }}</a>
+            {{ if .HasChildren }}
+            <ul class="[ submenu ]">
+              {{ range .Children }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+              {{ end }}
+            </ul>
+          {{ end }}
           </li>
           {{ end }}
         {{end}}

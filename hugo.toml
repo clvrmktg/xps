@@ -33,29 +33,54 @@ public_path = "/uploads"
     x = "jsphpndr"
 
 
- [[menu.main]]
-    identifier = "about"
-    name = "Company"
-    url = "/company/"
-    weight = 2
+[[menu.main]]
+  identifier = "about"
+  name = "Company"
+  url = "/company/"
+  weight = 3
 
-  [[menu.main]]
-    identifier = "services"
-    name = "Services"
-    url = "/services/"
-    weight = 3
+[[menu.main]]
+  identifier = "services"
+  name = "Services"
+  url = "/services/"
+  weight = 3
+  hasSubmenu = true
 
-  [[menu.main]]
-    identifier = "insights"
-    name = "Insights"
-    url = "/insights/"
-    weight = 4
+[[menu.main]]
+  parent = "services"
+  name = "Customs Brokerage"
+  url = "/services/customs-brokerage/"
+  weight = 1
 
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact Us"
-    url = "/contact-us/"
-    weight = 5
+[[menu.main]]
+  parent = "services"
+  name = "Freight Forwarding"
+  url = "/services/freight-forwarding/"
+  weight = 2
+
+[[menu.main]]
+  parent = "services"
+  name = "Warehousing"
+  url = "/services/warehousing/"
+  weight = 1
+
+[[menu.main]]
+  parent = "services"
+  name = "Distribution"
+  url = "/services/distribution/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "insights"
+  name = "Insights"
+  url = "/insights/"
+  weight = 4
+
+[[menu.main]]
+  identifier = "contact"
+  name = "Contact Us"
+  url = "/contact-us/"
+  weight = 5
 
 [markup]
   [markup.goldmark]
