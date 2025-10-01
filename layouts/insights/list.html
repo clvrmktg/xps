@@ -31,16 +31,13 @@
         </ul>
       </div>
     </div>
-    {{ $paginator := .Paginator }}
+    {{ $paginator := .Paginate (.RegularPages) }}
 
     <div class="{{ if gt $paginator.TotalPages 1 }}[ loop-wrap ]{{ end }}[ grid section--spacing ]">
-      {{ $posts := .RegularPages }}
-      {{ partial "posts.html" (dict "Pages" $posts "Site" .Site) }}
-
-      
-      {{ partial "pagination.html" . }}
-  
+      {{ partial "posts.html" (dict "Pages" $paginator.Pages "Site" .Site) }}
+      {{ partial "pagination.html" (dict "Paginator" $paginator "Context" .) }}
     </div>
+
   </div>
   
 {{ end }}
