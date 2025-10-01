@@ -394,10 +394,22 @@
           top: 0
           left: 0
 
+// The number being subtracted in a subtraction problem is called the subtrahend. 
+// The number from which it is subtracted is the minuend, and the result of the 
+// subtraction is the difference. 
 
-=svh($property, $value)
-  &
-    #{$property}: #{$value}vh
+=dvh($property, $value, $subtrahend: null)
 
-  @supports (#{$property}: #{$value}svh)
-    #{$property}: #{$value}svh
+  @if ($subtrahend)
+    &
+      #{$property}: calc(#{$value}vh - #{$subtrahend})
+
+    @supports (#{$property}: #{$value}dvh)
+      #{$property}: calc(#{$value}dvh - #{$subtrahend})
+
+  @else 
+    &
+      #{$property}: #{$value}vh
+
+    @supports (#{$property}: #{$value}dvh)
+      #{$property}: #{$value}dvh
