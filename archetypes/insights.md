@@ -1,13 +1,12 @@
 +++
-date = '{{ .Date }}'
-lastMod = '{{ .Date }}'
+date = {{ .Date }}
 draft = true
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+title = "{{ replace .File.ContentBaseName "-" " " | title }}"
 description = ""
 
 # Trade-Industry
 # Logistics-Supply-Chain
-# Inside-XPS
+# Newsroom
 
 # Use `-` for spaces or to replace symbols
 categories = ['']

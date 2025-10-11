@@ -1,0 +1,9 @@
+<aside class="[ series ][ p--1 mb--2 ]">
+  <div class="[ series__header ][ flex middle col-gap--0.5 ]">
+    {{ readFile "static/tabler/news.svg" | safeHTML }}
+    <h3 class="[ font--5 ]">{{ .Get "title" }}</h3>
+  </div>
+  <div class="series-body">
+    {{ .Inner | markdownify }}
+  </div>
+</aside>

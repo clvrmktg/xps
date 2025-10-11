@@ -17,6 +17,16 @@
   +hsl('xps-red-darker', #a00000)
   +hsl('xps-red', #C00C00, 1)
 
+  // Text grayscale (good + safe progression)
+  +hsl('ink-900', #2E2E2E)  // 1 → Headings
+  +hsl('ink-700', #4E4E4E)  // 2 → Paragraph/body
+  +hsl('ink-500', #6E6E6E)  // 3 → Labels/secondary
+
+  // Optional semantic aliases for convenience
+  --text-heading: #{color('ink-900')}
+  --text-body:    #{color('ink-700')}
+  --text-muted:   #{color('ink-500')}
+
   --navbar-height: #{rem(65)}
   --monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace
   

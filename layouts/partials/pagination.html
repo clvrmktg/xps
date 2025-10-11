@@ -5,7 +5,7 @@
 
     {{ if $paginator.HasPrev }}
       <li class="[ newer ]">
-        <a class="[ btn btn--sm btn--red ]" href="{{ $paginator.Prev.URL }}" aria-label="Previous Page">Prev</a>
+        <a class="[ btn btn--sm btn--red ]" href="{{ $paginator.Prev.URL }}" aria-label="Previous Page">&larr; Prev</a>
       </li>
     {{ end }}
     
@@ -26,7 +26,7 @@
 
     {{ if $paginator.HasNext }}
       <li class="[ older ]">
-        <a class="[ btn btn--sm btn--red ]" href="{{ $paginator.Next.URL }}" aria-label="Next Page">Next</a>
+        <a class="[ btn btn--sm btn--red ]" href="{{ $paginator.Next.URL }}" aria-label="Next Page">Next &rarr;</a>
       </li>
     {{ end }}
 
