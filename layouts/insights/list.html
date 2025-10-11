@@ -37,7 +37,6 @@
       {{ $posts := .RegularPages }}
       {{ partial "posts.html" (dict "Pages" $posts "Site" .Site) }}
 
-      
       {{ partial "pagination.html" . }}
   
     </div>
