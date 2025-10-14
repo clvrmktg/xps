@@ -44,31 +44,30 @@ public_path = "/uploads"
   name = "Services"
   url = "/services/"
   weight = 3
-  hasSubmenu = true
-
-[[menu.main]]
-  parent = "services"
-  name = "Customs Brokerage"
-  url = "/services/customs-brokerage/"
-  weight = 1
 
 [[menu.main]]
   parent = "services"
   name = "Freight Forwarding"
   url = "/services/freight-forwarding/"
+  weight = 1
+
+[[menu.main]]
+  parent = "services"
+  name = "Customs Brokerage"
+  url = "/services/customs-brokerage/"
   weight = 2
 
 [[menu.main]]
   parent = "services"
   name = "Warehousing"
   url = "/services/warehousing/"
-  weight = 1
+  weight = 3
 
 [[menu.main]]
   parent = "services"
   name = "Distribution"
   url = "/services/distribution/"
-  weight = 2
+  weight = 4
 
 [[menu.main]]
   identifier = "insights"
@@ -82,6 +81,40 @@ public_path = "/uploads"
   url = "/contact-us/"
   weight = 5
 
+# -------------------------------------------------
+# POLICIES MENU
+# -------------------------------------------------
+# Defines the legal/utility links in the footer (bottom bar).
+# - Includes Privacy Policy, Terms of Service, Cookie Policy, Accessibility.
+# - Keeps compliance pages grouped and accessible sitewide.
+# - Weights control left-to-right order in the footer.
+# -------------------------------------------------
+
+[[menu.policies]]
+  identifier = "privacy-policy"
+  name = "Privacy Policy"
+  url = "/privacy-policy/"
+  weight = 1
+
+[[menu.policies]]
+  identifier = "terms-of-service"
+  name = "Terms of Service"
+  url = "/terms-of-service/"
+  weight = 2
+
+[[menu.policies]]
+  identifier = "cookie-policy"
+  name = "Cookie Policy"
+  url = "/cookie-policy/"
+  weight = 3
+
+[[menu.policies]]
+  identifier = "accessibility-statement"
+  name = "Accessibility Statement"
+  url = "/accessibility-statement/"
+  weight = 4
+
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.parser]
@@ -94,9 +127,13 @@ public_path = "/uploads"
       [markup.goldmark.renderHooks.link]
         enableDefault = true        
 
+[security.funcs]
+  getenv = ['^HUGO_', '^GA_TRACKING_ID$', '^META_PIXEL_ID$']
+
+
 enableGitInfo = true
 
 [sitemap]
-  filename = "sitemap"  # Remove .xml
+  filename = "sitemap.xml"
   changefreq = "monthly"
   priority = 0.5

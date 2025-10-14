@@ -36,12 +36,15 @@ li > p
 
 a:not([class])
   +unstyled-link
-  // color: color('xps-red')
-  // border-bottom: em(2) solid color('xps-red')
-  // +transition((color, background-color))
 
-  // +hover
-  //   background-color: color('xps-red-1')
+a, a:not([class])
+
+  &:focus-visible
+    background-color: hsl(0 0 0 / 0)
+    border-bottom: hsl(0 0 0 / 0)
+    outline: rem(0.1) solid color(xps-red)
+    outline-offset: em(2)
+    border-radius: em(0.2)
 
 small, figcaption, .font--small
   font-size: var(--step--1)

@@ -521,15 +521,22 @@
       display: $value
 
 =direction($value, $breakpoint: null)
-  $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
-  @if map.get($breakpoints, $breakpoint) != null
-    .#{$breakpoint}\:flex--#{$value}
-      +breakpoint(map.get($breakpoints, $breakpoint))
-        flex-direction: $value
+  // Shorthand map
+  $map: (row: row, col: column)
 
+  // Translate shorthand if it exists, else keep as-is
+  $resolved: if(map-has-key($map, $value), map-get($map, $value), $value)
+
+  $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
+
+  @if map-has-key($breakpoints, $breakpoint)
+    .#{$breakpoint}\:flex--#{$value}
+      +breakpoint(map-get($breakpoints, $breakpoint))
+        flex-direction: $resolved
   @else
     .flex--#{$value}
-      flex-direction: $value
+      flex-direction: $resolved
+
 
 =radius($value)
   .r--#{$value}

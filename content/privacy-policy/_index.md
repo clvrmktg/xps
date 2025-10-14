@@ -2,16 +2,12 @@
 date = '2025-01-27T10:11:24-05:00'
 draft = false
 title = 'Privacy Policy'
-
-[params]
-  hasTwic = false
-  hasObscure = true
   
 +++
 
 **Effective Date:** [Insert Date]
 
-XPS Logistics (“we,” “our,” or “us”) respects your privacy and is committed to protecting the personal information you provide when using our website.
+XPS Logistics ("we", "our", or "us") respects your privacy and is committed to protecting the personal information you provide when using our website.
 
 ## 1. Information We Collect
 

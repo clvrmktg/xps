@@ -16,7 +16,7 @@
     {{- end -}}
 
     <li class="[ breadcrumb ][ font--700 ]" aria-current="page">
-      <a class="[ breadcrumb__link--last ]" href="{{ .RelPermalink }}">{{- index $categoryLabels .LinkTitle  | default .LinkTitle  -}}</a>
+      <a class="[ breadcrumb__link--last ]" href="{{ .RelPermalink }}" tabindex="-1">{{- index $categoryLabels .LinkTitle  | default .LinkTitle  -}}</a>
     </li>
 
   </ol>

@@ -65,27 +65,58 @@
 
   +device(tablet)
     display: block
-    width: 100vw
+    width: em(338)
     height: 100vh
-    background-color: color('xps-red')
-    padding:
-      top: 1em
-      right: 2em
-      left: 2em
+    // padding-top: 1em
     border-top: em(4) solid color('xps-red')
     visibility: hidden
     position: absolute
-    top: var(--height)
+    top: var(--navbar-height)
     left: 200vw
     z-index: -5
     +transition((visibility, left, background-color))
 
-.down-arrow
-  width: 0.75em
+.icon.icon--arrow
+  width: rem(24)
   transform: rotate(0deg)
   +transition(transform)
 
+  > svg
+    stroke: color('xps-red')
+    +transition(stroke)
+
 .arrow
+
+  +device(tablet)
+    width: 3em
+    position: relative
+    cursor: pointer
+
+    &::before
+      content: ''
+      width: em(2)
+      height: 100%
+      background-color: color('black')
+      position: absolute
+      left: 0
+      top: 0
+
+    &:has(#submenu:focus-visible)
+      outline: -webkit-focus-ring-color auto 1px
+
+  +device(desktop)
+    display: block
+    pointer-events: none
+    user-select: none
+    cursor: not-allowed
+
+    > input
+      display: none
+      visibility: hidden
+      pointer-events: inherit
+      user-select: inherit
+      cursor: inherit
+
 
   &--tablet
     width: 3em
@@ -114,35 +145,43 @@
       display: none
       visibility: hidden
 
-  
 .menu
   display: flex
-  gap: 2em
-  height: inherit
+  background-color: color('white')
 
   +device(tablet)
     flex-direction: column
-    +clamp(padding-right, 10, 20)
-    +clamp(padding-left, 10, 20)
-  
+
+  +device(desktop)
+    height: inherit
+    padding-left: 1em
+    grid-column: menu
 
   &__item
-    color: color('white')
+    color: var(--text-body)
     align-items: center
     position: relative
 
     +device(desktop)
-      color: color('black')
       display: flex
 
       > div
-        width: 100%
         height: 100%
         display: flex
         align-items: center
 
       &:focus-within
         color: color('xps-red')
+
+      &::after
+        content: ''
+        background-color: color('xps-red')
+        width: 0
+        height: em(4)
+        position: absolute
+        bottom: 0
+        left: 0
+        +transition(width)
 
       +hover
         color: color('xps-red')
@@ -154,33 +193,23 @@
           top: 100%
           z-index: -2
 
-        .down-arrow
+        .icon--arrow
           transform: rotate(180deg)
+          
+          > svg
+            stroke: color('xps-red')
 
-    +device(tablet)
-      border-bottom: em(2) solid  color('xps-red-lightest')
-
-      > div
-        display: grid
-        grid-template-columns: 1fr min-content
-
-      &:has(#submenu)
-        padding:
-          top: 0
-          bottom: 0
-
-        > div
-          justify-content: space-between
-
-      &:has(#submenu:checked)
-
-        .down-arrow
-          transform: rotate(-180deg)
-
-        .submenu
-          max-height: 2000em
-          visibility: visible
+      &.current
+        color: color('xps-red')
         
+        &::after
+          width: 100%
+
+        .icon--arrow
+          
+          > svg
+            stroke: color('xps-red')
+
   &__link
     color: inherit
     position: relative
@@ -188,27 +217,23 @@
 
     +device(tablet)
       display: block
-      padding:
-        top: 1em
-        bottom: 1em
-  +device(desktop)
+      +clamp(padding-right, 10, 20)
+      +clamp(padding-left, 10, 20)
 
-    .current
-      color: color('xps-red')
-      
-      &::after
-        width: 100%
 
 
 .submenu
+  visibility: hidden
+  overflow: hidden
 
   +device(desktop)
-    
-    background-color: color('xps-red')
+    min-width: fit-content
+    color: var(--text-body)
+    background-color: color('white')
     box-shadow: 0 em(4) em(4) color('black-5')
-    border-radius: em(10)
+    border-radius: em(2)
     position: absolute
-    top: -500%
+    top: 105%
     left: 0.1em
     z-index: -2
 
@@ -216,8 +241,7 @@
 
   +device(tablet)
     max-height: 0
-    visibility: hidden
-    overflow: hidden
+
     +transition((max-height, visibility))
   
   &__item
@@ -232,7 +256,7 @@
         border-bottom-right-radius: em(10)
 
   &__link
-    color: color('white')
+    color: var(--text-body)
     white-space: nowrap
     border-top-left-radius: inherit
     border-top-right-radius: inherit

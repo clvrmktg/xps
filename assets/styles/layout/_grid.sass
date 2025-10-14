@@ -49,28 +49,15 @@
 .flex
   display: flex
 
-.lg\:flex
-  +breakpoint('desktop')
-    display: flex
++display(flex, lg)
 
-.flex--col
-  @extend .flex
-  flex-direction: column
++direction(col)
++direction(col, 'md')
++direction(col, 'lg')
 
-.lg\:flex--col
-  +breakpoint('desktop')
-  @extend .flex
-  flex-direction: column
-
-.flex--row
-  @extend .flex
-  flex-direction: row
-
-.lg\:flex--row
-  +breakpoint('desktop')
-  @extend .flex
-  flex-direction: row
-
++direction(row)
++direction(row, 'md')
++direction(row, 'lg')
 
 // X Axis
 .middle
@@ -83,7 +70,6 @@
 // Spacing
 .between
   justify-content: space-between
-
 
 .end
   justify-content: flex-end

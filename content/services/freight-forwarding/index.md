@@ -4,7 +4,7 @@ weight = 1
 draft = false
 title = 'Freight Forwarding'
 summary = "We coordinate global air and ocean shipments with full documentation, customs support, and local delivery."
-description = "End-to-end coordination of your imports and exports—by air, sea, or land. We handle carrier bookings, documentation, and compliance to ensure reliable, cost-effective delivery worldwide."
+description = "Reliable imports and exports by air, sea, and land freight forwarding, fully compliant with Bahamian customs and ISPS Code security standards."
 
 [[highlights]]
 title = "Global Reach"
@@ -52,6 +52,9 @@ content = """Freight forwarding is more than moving cargo—it’s about confide
 
 - **Clear Communication**  
   You’ll always know where your cargo is and what’s happening next.
+- **ISPS-Compliant Operations**  
+  Our port-side activities follow the International Ship and Port Facility Security (ISPS) Code, ensuring every ocean shipment is handled within secure, internationally recognized standards.
+
 """
 image = "nassau-container-port-loading-vessel-crane.jpg"
 alt = "Nassau Container Port vessel loading"

@@ -3,9 +3,11 @@
   color: color('white')
   background-color: color('black')
   
-  a
+  a 
+    color: inherit
+
     > svg
-      fill: color('white')
+      fill: currentcolor
 
   +breakpoint(desktop)
     .wrapper
@@ -27,7 +29,7 @@
       justify-self: end
 
 .submark
-  +clamp(width, 80, 100)
+  +clamp(width, 80, 120)
 
 .navigation
   grid-template-columns: repeat(3,max-content)
@@ -52,6 +54,15 @@
     br
       display: none
 
+
+.policies
+  line-height: 1
+
+.policy
+
+  &__link
+    white-space: nowrap
+
 .line
   background: rgba(lighten(lightgrey, 5%), 0.7)
   height: em(1)
@@ -61,8 +72,6 @@
   &__link
     +transition('fill')
 
-    @media (hover:hover)
-      &:hover
-
-        > svg
-          fill: color('xps-red')
+    +hover
+      > svg
+        fill: color('xps-red')

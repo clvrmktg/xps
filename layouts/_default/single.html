@@ -1,15 +1,11 @@
 {{ define "main" }}
-<header>
-  <h1>Bahamas Web Design</h1>
-  {{ $steps := .Params.steps }}
-  <ul class="[ steps ][ grid ]">
-    {{ range $index, $step := $steps }}
-      <li class="[ grid ]">
-        <span>0{{add $index 1 }}</span>
-        <h2 class="[ font--4 ]">{{$step.title}}</h2>
-        <p>{{$step.description}}</p>
-      </li>
-    {{end}}
-  </ul>
-</header>
+<article class="[ x--700 grid layout--spacing section--padding-top ]">
+  <header>
+    <h1>{{ .Title }}</h1>
+    {{ partial "breadcrumbs.html" . }}
+  </header>
+  <div class="[ content ]">
+    {{ .Content }}
+  </div>
+</article>
 {{ end }}
