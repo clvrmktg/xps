@@ -78,15 +78,17 @@
 
 .icon.icon--arrow
   width: rem(24)
-  transform: rotate(0deg)
+  transform-origin: center
   +transition(transform)
 
   > svg
-    stroke: color('xps-red')
+    stroke: currentcolor
     +transition(stroke)
 
 .arrow
-
+  perspective: em(800)
+  transform-origin: center
+  
   +device(tablet)
     width: 3em
     position: relative
@@ -117,33 +119,6 @@
       user-select: inherit
       cursor: inherit
 
-
-  &--tablet
-    width: 3em
-    display: flex
-    position: relative
-    cursor: pointer
-
-    &::before
-      content: ''
-      width: em(2)
-      height: 80%
-      background-color: color('white')
-      position: absolute
-      left: 0
-      top: 10%
-
-    &:has(#submenu:focus-visible)
-      outline: -webkit-focus-ring-color auto 1px
-
-    +device(desktop)
-      display: none
-      visibility: hidden
-  
-  &--desktop
-    +device(tablet)
-      display: none
-      visibility: hidden
 
 .menu
   display: flex
@@ -194,7 +169,8 @@
           z-index: -2
 
         .icon--arrow
-          transform: rotate(180deg)
+          // transform: rotate(180deg)
+          transform: rotateX(180deg)
           
           > svg
             stroke: color('xps-red')
