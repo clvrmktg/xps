@@ -1,10 +1,13 @@
+{{- define "variables" -}}
+{{ .Store.Set "hasTwic" true }}
+{{- end -}}
 {{ define "main" }}
   <div class="[ grid layout--spacing section--padding-top ]">
     <div class="[ posts--header ][ grid col-gap--4 row-gap--2 ]">
 
       <header class="[ grid row-gap--1 ]">
         <div>
-          <h1>{{ .Title }}  </h1>    
+          <h1>{{ .Title }}</h1>    
           {{ partial "breadcrumbs.html" . }}
         </div>
         <p class="[ x--700 pb--0 ]">{{- .Description -}}</p>

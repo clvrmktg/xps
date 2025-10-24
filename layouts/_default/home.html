@@ -1,6 +1,8 @@
-{{- define "main" -}}
-{{- .Store.Set "hasTwic" true -}}
+{{- define "variables" -}}
+{{ .Store.Set "hasTwic" true }}
 {{- .Store.Set "hasObscure" true -}}
+{{- end -}}
+{{- define "main" -}}
 <!-- Hero - START -->
 <header class="[ hero hero--home ][ full-width bg ]" {{ with .Resources.GetMatch (.Params.hero.image) }}data-twic-background="url(image:{{ .RelPermalink }})"{{- end -}}>
   <h1 class="[ hidden ]">XPS Logistics</h1>

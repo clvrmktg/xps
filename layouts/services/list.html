@@ -1,6 +1,6 @@
-{{ define "variables" }}
-{{- .Scratch.Set "hasTwic" true -}}
-{{ end }}
+{{- define "variables" -}}
+{{ .Store.Set "hasTwic" true }}
+{{- end -}}
 {{ define "main" }}
   {{ partial "hero.html" . }}
 <section class="[ service-highlights ][ grid col-gap--2 row-gap--2 md:col--3 ]">
