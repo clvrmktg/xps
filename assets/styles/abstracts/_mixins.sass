@@ -488,8 +488,15 @@
     max-width: rem($value)
 
 =dock($side, $value)
+  // Basic positioning
   #{$side}: #{$value}
 
-  @if $side == 'top' or $side == 'right' or $side == 'bottom' or $side == 'left'
+  // Safe area aware positioning
+  @if $side == 'top' or $side == 'bottom'
     @supports (#{$side}: max(0px))
-      #{$side}: max(#{$value}, env(safe-area-inset-#{$side}))
+        #{$side}: max(#{$value}, env(safe-area-inset-#{$side}))
+        
+  @else if $side == 'left' or $side == 'right'
+    @supports (#{$side}: max(0px))
+        #{$side}: calc(env(safe-area-inset-#{$side}) + #{$value})
+
