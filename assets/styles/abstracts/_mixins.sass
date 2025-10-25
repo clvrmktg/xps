@@ -491,5 +491,5 @@
   #{$side}: #{$value}
 
   @if $side == 'top' or $side == 'right' or $side == 'bottom' or $side == 'left'
-    @supports (#{$side}: min(0px))
-      #{$side}: min(#{$value}, env(safe-area-inset-#{$side}))
+    @supports (#{$side}: max(0px))
+      #{$side}: max(#{$value}, env(safe-area-inset-#{$side}))
