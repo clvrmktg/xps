@@ -65,9 +65,8 @@
 
   +device(tablet)
     display: block
-    width: em(338)
-    height: 100vh
-    // padding-top: 1em
+    width: 100vw
+    +dvh(height, 100)
     border-top: em(4) solid color('xps-red')
     visibility: hidden
     position: absolute
@@ -314,11 +313,12 @@
   .navigation--main
     // background-color: var(--black--4)
     visibility: visible
+    opacity: 1
     left: -2em
 
 
-    > ul
-      opacity: 1
+    // > ul
+    //   opacity: 1
   
   .bar
     transform: rotate(225deg)
