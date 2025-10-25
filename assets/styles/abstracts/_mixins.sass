@@ -486,3 +486,10 @@
 =width($value)
   .x--#{$value}
     max-width: rem($value)
+
+=dock($side, $value)
+  #{$side}: #{$value}
+
+  @if $side == 'top' or $side == 'right' or $side == 'bottom' or $side == 'left'
+    @supports (#{$side}: min(0px))
+      #{$side}: min(#{$value}, env(safe-area-inset-#{$side}))
