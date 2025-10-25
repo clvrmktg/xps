@@ -492,4 +492,4 @@
 
   @if $side == 'top' or $side == 'right' or $side == 'bottom' or $side == 'left'
     @supports (#{$side}: max(0px))
-      #{$side}: min(#{$value}, calc(-2 * env(safe-area-inset-#{$side})))
+      #{$side}: calc((env(safe-area-inset-#{$side}) * -1) - $value)
