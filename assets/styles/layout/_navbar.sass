@@ -66,7 +66,6 @@
   +device(tablet)
     display: block
     width: 100vw
-    +dvh(height, 100)
     border-top: em(4) solid color('xps-red')
     visibility: hidden
     position: absolute
@@ -74,6 +73,8 @@
     left: 200vw
     z-index: -5
     +transition((visibility, left, background-color))
+    +dvh(height, 100)
+
 
 .icon.icon--arrow
   width: rem(24)
@@ -187,6 +188,9 @@
           > svg
             stroke: color('xps-red')
 
+    +device(tablet)
+      +p(2, 'inline')
+      
   &__link
     color: inherit
     position: relative

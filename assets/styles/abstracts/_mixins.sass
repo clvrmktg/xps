@@ -66,19 +66,18 @@
   @content
   /* purgecss ignore */
 
+
+
 =padding($value, $prop: null, $breakpoint: null)
   $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
   $side: null
 
   @if $prop == 'top'
     $side: 't'
-  
   @if $prop == 'right'
     $side: 'r'
-
   @if $prop == 'bottom'
     $side: 'b'
-
   @if $prop == 'left'
     $side: 'l'
 
@@ -86,74 +85,100 @@
 
   @if $side
     $class-prefix: if($breakpoint, "#{$breakpoint}\\:p#{$side}--", "p#{$side}--")
-    
+
     .#{$class-prefix}#{$escaped-value}
-      @if map.get($breakpoints, $breakpoint) != null
+      @if $breakpoint != null and map.has-key($breakpoints, $breakpoint)
         +breakpoint(map.get($breakpoints, $breakpoint))
           padding-#{$prop}: #{$value}em
 
           @supports (padding: max(0px))
             padding-#{$prop}: max(#{$value}em, env(safe-area-inset-#{$prop}))
-
       @else
         padding-#{$prop}: #{$value}em
 
         @supports (padding: max(0px))
           padding-#{$prop}: max(#{$value}em, env(safe-area-inset-#{$prop}))
 
-
   @else if $prop == 'x'
     $class-prefix: if($breakpoint, "#{$breakpoint}\\:px--", "px--")
-    
+
     .#{$class-prefix}#{$escaped-value}
-      @if map.get($breakpoints, $breakpoint) != null
+      @if $breakpoint != null and map.has-key($breakpoints, $breakpoint)
         +breakpoint(map.get($breakpoints, $breakpoint))
           padding-inline: #{$value}em
 
           @supports (padding: max(0px))
             padding-inline: max(#{$value}em, env(safe-area-inset-left)) max(#{$value}em, env(safe-area-inset-right))
-
       @else
         padding-inline: #{$value}em
 
         @supports (padding: max(0px))
           padding-inline: max(#{$value}em, env(safe-area-inset-left)) max(#{$value}em, env(safe-area-inset-right))
 
-
   @else if $prop == 'y'
     $class-prefix: if($breakpoint, "#{$breakpoint}\\:py--", "py--")
 
     .#{$class-prefix}#{$escaped-value}
-      @if map.get($breakpoints, $breakpoint) != null
+      @if $breakpoint != null and map.has-key($breakpoints, $breakpoint)
         +breakpoint(map.get($breakpoints, $breakpoint))
           padding-block: #{$value}em
 
           @supports (padding: max(0px))
             padding-block: max(#{$value}em, env(safe-area-inset-top)) max(#{$value}em, env(safe-area-inset-bottom))
-
       @else
         padding-block: #{$value}em
 
         @supports (padding: max(0px))
           padding-block: max(#{$value}em, env(safe-area-inset-top)) max(#{$value}em, env(safe-area-inset-bottom))
 
-
   @else
     $class-prefix: if($breakpoint, "#{$breakpoint}\\:p--", "p--")
 
     .#{$class-prefix}#{$escaped-value}
-      @if map.get($breakpoints, $breakpoint) != null
+      @if $breakpoint != null and map.has-key($breakpoints, $breakpoint)
         +breakpoint(map.get($breakpoints, $breakpoint))
           padding: #{$value}em
 
           @supports (padding: max(0px))
             padding: max(#{$value}em, env(safe-area-inset-top)) max(#{$value}em, env(safe-area-inset-right)) max(#{$value}em, env(safe-area-inset-bottom)) max(#{$value}em, env(safe-area-inset-left))
-
       @else
         padding: #{$value}em
 
         @supports (padding: max(0px))
           padding: max(#{$value}em, env(safe-area-inset-top)) max(#{$value}em, env(safe-area-inset-right)) max(#{$value}em, env(safe-area-inset-bottom)) max(#{$value}em, env(safe-area-inset-left))
+
+=p($value, $side: null)
+  // All sides
+  @if $side == null or $side == 'all'
+    padding: #{$value}em
+
+    @supports (padding: max(0px))
+      padding: max(#{$value}em, env(safe-area-inset-top)) max(#{$value}em, env(safe-area-inset-right)) max(#{$value}em, env(safe-area-inset-bottom)) max(#{$value}em, env(safe-area-inset-left))
+
+  @else if $side == 'block' or $side == 'y'
+    padding-block: #{$value}em
+    
+    @supports (padding: max(0px))
+      // padding-block takes two values: block-start block-end
+      padding-block: max(#{$value}em, env(safe-area-inset-top)) max(#{$value}em, env(safe-area-inset-bottom))
+
+  @else if $side == 'inline' or $side == 'x'
+    padding-inline: #{$value}em
+
+    @supports (padding: max(0px))
+      // padding-inline takes two values: inline-start inline-end
+      // We assume LTR here, so start≈left, end≈right
+      padding-inline: max(#{$value}em, env(safe-area-inset-left)) max(#{$value}em, env(safe-area-inset-right))
+
+  @else if $side == 'top' or $side == 'right' or $side == 'bottom' or $side == 'left'
+    padding-#{$side}: #{$value}em
+
+    @supports (padding: max(0px))
+      padding-#{$side}: max(#{$value}em, env(safe-area-inset-#{$side}))
+
+  @else
+    padding-#{$side}: #{$value}em
+
 
 =margin($value, $prop: null, $breakpoint: null)
   $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
@@ -161,13 +186,10 @@
 
   @if $prop == 'top'
     $side: 't'
-  
   @if $prop == 'right'
     $side: 'r'
-
   @if $prop == 'bottom'
     $side: 'b'
-
   @if $prop == 'left'
     $side: 'l'
 
@@ -175,9 +197,9 @@
 
   @if $side
     $class-prefix: if($breakpoint, "#{$breakpoint}\\:m#{$side}--", "m#{$side}--")
-    
+
     .#{$class-prefix}#{$escaped-value}
-      @if map.get($breakpoints, $breakpoint) != null
+      @if $breakpoint != null and map.has-key($breakpoints, $breakpoint)
         +breakpoint(map.get($breakpoints, $breakpoint))
           margin-#{$prop}: #{$value}em
       @else
@@ -185,9 +207,9 @@
 
   @else if $prop == 'x'
     $class-prefix: if($breakpoint, "#{$breakpoint}\\:mx--", "mx--")
-    
+
     .#{$class-prefix}#{$escaped-value}
-      @if map.get($breakpoints, $breakpoint) != null
+      @if $breakpoint != null and map.has-key($breakpoints, $breakpoint)
         +breakpoint(map.get($breakpoints, $breakpoint))
           margin-inline: #{$value}em
       @else
@@ -197,7 +219,7 @@
     $class-prefix: if($breakpoint, "#{$breakpoint}\\:my--", "my--")
 
     .#{$class-prefix}#{$escaped-value}
-      @if map.get($breakpoints, $breakpoint) != null
+      @if $breakpoint != null and map.has-key($breakpoints, $breakpoint)
         +breakpoint(map.get($breakpoints, $breakpoint))
           margin-block: #{$value}em
       @else
@@ -207,109 +229,11 @@
     $class-prefix: if($breakpoint, "#{$breakpoint}\\:m--", "m--")
 
     .#{$class-prefix}#{$escaped-value}
-      @if map.get($breakpoints, $breakpoint) != null
+      @if $breakpoint != null and map.has-key($breakpoints, $breakpoint)
         +breakpoint(map.get($breakpoints, $breakpoint))
           margin: #{$value}em
       @else
         margin: #{$value}em
-
-// Padding mixin with breakpoints
-=padding($value, $prop: null, $breakpoint: null)
-  $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
-  $side: null
-
-  @if $prop == 'top'
-    $side: 't'
-  
-  @if $prop == 'right'
-    $side: 'r'
-
-  @if $prop == 'bottom'
-    $side: 'b'
-
-  @if $prop == 'left'
-    $side: 'l'
-
-  $escaped-value: split-decimal($value)
-
-  @if $side
-    $class-prefix: if($breakpoint, "#{$breakpoint}\\:p#{$side}--", "p#{$side}--")
-    
-    // Check for breakpoint
-    @if map.get($breakpoints, $breakpoint) != null
-      .#{$class-prefix}#{$escaped-value}
-        +breakpoint(map.get($breakpoints, $breakpoint))
-          padding-#{$prop}: #{$value}em
-
-          @supports (padding: max(0px))
-            padding-#{$prop}: max(#{$value}em, env(safe-area-inset-#{$prop}))
-
-    @else
-      .#{$class-prefix}#{$escaped-value}
-        padding-#{$prop}: #{$value}em
-
-        @supports (padding: max(0px))
-          padding-#{$prop}: max(#{$value}em, env(safe-area-inset-#{$prop}))
-
-
-  @else if $prop == 'x'
-    $class-prefix: if($breakpoint, "#{$breakpoint}\\:px--", "px--")
-
-    // Check for breakpoint
-    @if $breakpoint and map.get($breakpoints, $breakpoint) != null
-      .#{$class-prefix}#{$escaped-value}
-        +breakpoint(map.get($breakpoints, $breakpoint))
-          padding-inline: #{$value}em
-
-          @supports (padding: max(0px))
-            padding-inline: max(#{$value}em, env(safe-area-inset-left)) max(#{$value}em, env(safe-area-inset-right))
-    
-    @else
-      .#{$class-prefix}#{$escaped-value}
-        padding-inline: #{$value}em
-
-        @supports (padding: max(0px))
-          padding-inline: max(#{$value}em, env(safe-area-inset-left)) max(#{$value}em, env(safe-area-inset-right))
-
-
-  @else if $prop == 'y'
-    $class-prefix: if($breakpoint, "#{$breakpoint}\\:py--", "py--")
-
-    // Check for breakpoint
-    @if map.get($breakpoints, $breakpoint) != null
-      .#{$class-prefix}#{$escaped-value}
-        +breakpoint(map.get($breakpoints, $breakpoint))
-          padding-block: #{$value}em
-
-          @supports (padding: max(0px))
-            padding-block: max(#{$value}em, env(safe-area-inset-top)) max(#{$value}em, env(safe-area-inset-bottom))
-
-    @else
-      .#{$class-prefix}#{$escaped-value}
-        padding-block: #{$value}em
-
-        @supports (padding: max(0px))
-          padding-block: max(#{$value}em, env(safe-area-inset-top)) max(#{$value}em, env(safe-area-inset-bottom))
-
-
-  @else
-    $class-prefix: if($breakpoint, "#{$breakpoint}\\:p--", "p--")
-
-    // Check for breakpoint
-    @if $breakpoint and map.get($breakpoints, $breakpoint) != null
-      .#{$class-prefix}#{$escaped-value}
-        +breakpoint(map.get($breakpoints, $breakpoint))
-          padding: #{$value}em
-
-          @supports (padding: max(0px))
-            padding: max(#{$value}em, env(safe-area-inset-top)) max(#{$value}em, env(safe-area-inset-right)) max(#{$value}em, env(safe-area-inset-bottom)) max(#{$value}em, env(safe-area-inset-left))
-
-    @else
-      .#{$class-prefix}#{$escaped-value}
-        padding: #{$value}em
-
-        @supports (padding: max(0px))
-          padding: max(#{$value}em, env(safe-area-inset-top)) max(#{$value}em, env(safe-area-inset-right)) max(#{$value}em, env(safe-area-inset-bottom)) max(#{$value}em, env(safe-area-inset-left))
 
 =block($width, $height)
   aspect-ratio: $width/$height
@@ -334,14 +258,48 @@
 =ratio($width, $height, $breakpoint: null)
   $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
 
-  @if map.get($breakpoints, $breakpoint) != null
+  @if $breakpoint != null and map.has-key($breakpoints, $breakpoint)
     .#{$breakpoint}\:ratio--#{$width}\:#{$height}
       +breakpoint(map.get($breakpoints, $breakpoint))
-        +block($width, $height)
+        aspect-ratio: #{$width} / #{$height}
+
+        picture
+          display: block
+          height: 100%
+
+          > img, > noscript > img
+            height: inherit
+            object-fit: cover
+
+        @supports not (aspect-ratio: auto)
+          padding-top: math.percentage(math.div($width, $height))
+          position: relative
+
+          > img, > noscript > img
+            position: absolute
+            top: 0
+            left: 0
 
   @else
     .ratio--#{$width}\:#{$height}
-      +block($width, $height)
+      aspect-ratio: #{$width} / #{$height}
+
+      picture
+        display: block
+        height: 100%
+
+        > img, > noscript > img
+          height: inherit
+          object-fit: cover
+
+      @supports not (aspect-ratio: auto)
+        padding-top: math.percentage(math.div($width, $height))
+        position: relative
+
+        > img, > noscript > img
+          position: absolute
+          top: 0
+          left: 0
 
 =transition($properties, $duration: null)
   @if $duration
@@ -359,11 +317,10 @@
 =col($count, $breakpoint: null)
   $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
 
-  @if map.get($breakpoints, $breakpoint) != null
+  @if $breakpoint != null and map.has-key($breakpoints, $breakpoint)
     .#{$breakpoint}\:col--#{$count}
       +breakpoint(map.get($breakpoints, $breakpoint))
         grid-template-columns: repeat(#{$count}, 1fr)
-
   @else
     .col--#{$count}
       grid-template-columns: repeat(#{$count}, 1fr)
@@ -371,13 +328,12 @@
 =row($count, $breakpoint: null)
   $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
 
-  @if map.get($breakpoints, $breakpoint) != null
+  @if $breakpoint != null and map.has-key($breakpoints, $breakpoint)
     .#{$breakpoint}\:row--#{$count}
       +breakpoint(map.get($breakpoints, $breakpoint))
         grid-template-rows: repeat(#{$count}, 1fr)
-
   @else
-    .row--#{$count}  // Fixed incorrect selector
+    .row--#{$count}
       grid-template-rows: repeat(#{$count}, 1fr)
 
 =gap($value)
@@ -399,7 +355,6 @@
     .col-gap--#{$escaped-value}
       column-gap: #{$value}em
 
-
 =row-gap($value, $breakpoint: null)
   $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
   $escaped-value: split-decimal($value)
@@ -412,11 +367,10 @@
     .row-gap--#{$escaped-value}
       row-gap: #{$value}em
 
-
 =order($value, $breakpoint: null)
   $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
 
-  @if map.get($breakpoints, $breakpoint) != null
+  @if $breakpoint != null and map.has-key($breakpoints, $breakpoint)
     .#{$breakpoint}\:o--#{$value}
       +breakpoint(map.get($breakpoints, $breakpoint))
         order: $value
@@ -453,53 +407,6 @@
   .font--#{$value}
     font-weight: $value
 
-=ratio($width, $height, $breakpoint: null)
-  $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
-
-  @if map.get($breakpoints, $breakpoint) != null
-    .#{$breakpoint}\:ratio--#{$width}\:#{$height}
-      +breakpoint(map.get($breakpoints, $breakpoint))
-
-        aspect-ratio: #{$width} / #{$height}
-
-        picture
-          display: block
-          height: 100%
-
-          > img, > noscript > img
-            height: inherit
-            object-fit: cover
-
-        @supports not (aspect-ratio: auto)
-          padding-top: math.percentage(math.div($width, $height))
-          position: relative
-
-          > img, > noscript > img
-            position: absolute
-            top: 0
-            left: 0
-
-  @else
-    .ratio--#{$width}\:#{$height} 
-      aspect-ratio: #{$width} / #{$height}
-
-      picture
-        display: block
-        height: 100%
-
-        > img, > noscript > img
-          height: inherit
-          object-fit: cover
-
-      @supports not (aspect-ratio: auto)
-        padding-top: math.percentage(math.div($width, $height))
-        position: relative
-
-        > img, > noscript > img
-          position: absolute
-          top: 0
-          left: 0
-
 
 =dvh($property, $value)
   &
@@ -511,32 +418,32 @@
 
 =display($value, $breakpoint: null)
   $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
-  @if map.get($breakpoints, $breakpoint) != null
+
+  @if $breakpoint != null and map.has-key($breakpoints, $breakpoint)
     .#{$breakpoint}\:#{$value}
       +breakpoint(map.get($breakpoints, $breakpoint))
         display: $value
-
   @else
     .#{$value}
       display: $value
 
+
 =direction($value, $breakpoint: null)
   // Shorthand map
-  $map: (row: row, col: column)
+  $dir-map: (row: row, col: column)
 
   // Translate shorthand if it exists, else keep as-is
-  $resolved: if(map-has-key($map, $value), map-get($map, $value), $value)
+  $resolved: if(map.has-key($dir-map, $value), map.get($dir-map, $value), $value)
 
   $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
 
-  @if map-has-key($breakpoints, $breakpoint)
+  @if $breakpoint != null and map.has-key($breakpoints, $breakpoint)
     .#{$breakpoint}\:flex--#{$value}
-      +breakpoint(map-get($breakpoints, $breakpoint))
+      +breakpoint(map.get($breakpoints, $breakpoint))
         flex-direction: $resolved
   @else
     .flex--#{$value}
       flex-direction: $resolved
-
 
 =radius($value)
   .r--#{$value}
@@ -544,35 +451,35 @@
 
 =align($value, $breakpoint: null)
   $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
-  @if map.get($breakpoints, $breakpoint) != null
+
+  @if $breakpoint != null and map.has-key($breakpoints, $breakpoint)
     .#{$breakpoint}\:#{$value}
       +breakpoint(map.get($breakpoints, $breakpoint))
         align-items: $value
-
   @else
     .#{$value}
       align-items: $value
 
 =justify($value, $breakpoint: null)
   $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
-  @if map.get($breakpoints, $breakpoint) != null
+
+  @if $breakpoint != null and map.has-key($breakpoints, $breakpoint)
     .#{$breakpoint}\:align-#{$value}
       +breakpoint(map.get($breakpoints, $breakpoint))
         justify-content: $value
-
   @else
-    .align-#value
+    .align-#{$value}
       justify-content: $value
 
 =text-align($value, $breakpoint: null)
   $breakpoints: (sm: phone, md: tablet, lg: desktop, xl: xl)
-  @if map.get($breakpoints, $breakpoint) != null
+
+  @if $breakpoint != null and map.has-key($breakpoints, $breakpoint)
     .#{$breakpoint}\:text--#{$value}
       +breakpoint(map.get($breakpoints, $breakpoint))
         text-align: $value
-
   @else
-    .text--#value
+    .text--#{$value}
       text-align: $value
 
 
