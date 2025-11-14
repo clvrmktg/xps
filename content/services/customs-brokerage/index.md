@@ -4,7 +4,7 @@ weight = 2
 draft = false
 title = 'Customs Brokerage'
 summary = "Licensed brokerage services to ensure your goods clear Bahamian customs quickly, compliantly, and without delays."
-description = "Licensed Bahamian customs brokers managing your cargo clearance from start to finish. We handle Click2Clear submissions, duty assessments, and regulatory compliance to ensure your goods move through customs smoothly and without delay."
+description = "Licensed Bahamian customs brokers managing your cargo clearance from start to finish."
 
 # Social Media Cover - 1200 x 1200
 # Crop the hero 1:1 ratio
@@ -68,42 +68,54 @@ Customs brokerage is a critical step in the logistics chain—and small mistakes
 
 
 [[faq]]
+question = "What does a customs broker do?"
+answer = """A licensed customs broker represents you during the import process—submitting declarations through the **Click2Clear** system, calculating duties and VAT, arranging inspections if required, and securing release of your goods.
+
+At **XPS Logistics**, we act as your official liaison with Bahamas Customs, ensuring your entries are accurate, compliant, and cleared as quickly as possible."""
+
+[[faq]]
 question = "How long does customs clearance take in The Bahamas?"
-answer = "Clearance times can range from a few hours to 1–2 business days, depending on the type of goods, completeness of documentation, and traffic volume at the port. As your licensed broker, XPS Logistics ensures declarations are pre-filed in the Click2Clear system, enabling faster processing and minimizing delays. Air freight is typically cleared same-day; ocean freight may take longer depending on carrier schedules and cargo inspection."
+answer = """Customs clearance can take anywhere from a few hours to a few days, depending on shipment complexity and documentation.
+
+**Air freight** can often be cleared the same day, while **ocean freight** may take longer—especially for consolidated or inspected cargo.
+
+**XPS Logistics** pre-files entries in **Click2Clear** and works closely with Customs officers to ensure your goods are cleared as quickly as possible."""
+
 
 [[faq]]
-question = "What documents do I need to provide?"
-answer = """To clear goods through Bahamian Customs using XPS as your agent, we require:
-
-- Commercial invoice with a clear description and declared value  
-- Bill of lading / airway bill listing consignee as:  
-  ```
-  Your Business Name  
-  c/o XPS Logistics  
-  Nassau, The Bahamas
-  ```
-  
-- Packing list (if applicable)  
-- Import permits or certificates for restricted goods (e.g. food, electronics, chemicals)  
-- Identification or business TIN for proper declaration  
-
-We'll review and submit these on your behalf through Click2Clear to ensure compliance and minimize the risk of penalties or inspection delays."""
-
-[[faq]]
-question = "Are there duties on personal items or gifts?"
-answer = """Yes. For B2B shipments, all imported goods—regardless of whether they're gifts, samples, or promotional items—are subject to customs duty unless covered by a valid exemption or incentive.
-
-XPS will help determine applicable duty rates and VAT based on tariff classification and declared use.
-
-We recommend consigning shipments to:
+question = "What documents do I need to provide for customs clearance?"
+answer = """To authorize XPS to clear your goods, you’ll need:
+- **Commercial invoice** listing item descriptions and declared values  
+- **Bill of lading or airway bill**, addressed to:  
 ```
 Your Business Name
 c/o XPS Logistics
 Nassau, The Bahamas
 ```
+- **Packing list** (for multi-box shipments)  
+- **Business Licence** and **Tax Compliance Certificate** (for companies)  
+- **Form C-44** – Standing Authority for Declaration of Value  
+- **Import permits or certificates** if your goods are regulated (e.g., food, plants, chemicals)
 
-This allows XPS to act as your authorized clearing agent, streamlining the brokerage process and ensuring full compliance with Bahamian import regulations.
-"""
+Once received, we review and submit everything electronically through Click2Clear for you."""
+
+[[faq]]
+question = "Are duties charged on personal items, gifts, or samples?"
+answer = """Yes. All imports entering The Bahamas are subject to customs duty and VAT unless specifically exempt by law.  
+Even gifts or promotional items require a proper declaration.  
+XPS can help you determine the correct tariff classification and duty rate before arrival so you can budget accurately."""
+
+[[faq]]
+question = "Can international suppliers use XPS to ship to Bahamian clients?"
+answer = """Absolutely. Overseas vendors can consign shipments **“c/o XPS Logistics”** when sending goods to local customers.  
+We’ll receive, clear, and deliver the cargo to the final consignee while the Bahamian buyer remains the importer of record.  
+This arrangement simplifies logistics and ensures compliance for both parties."""
+
+[[faq]]
+question = "How can I start the customs clearance process with XPS?"
+answer = """Simply email your shipping documents—invoice, bill of lading, and any permits—to **[ops@xpslogistics.com](mailto:ops@xpslogistics.com)**.  
+Our operations team will review them, confirm requirements, and guide you through the next steps.  
+You can also [contact us](/contact-us) if you’d like to discuss your shipment before sending documentation."""
 
 [params]
   hasTwic = false

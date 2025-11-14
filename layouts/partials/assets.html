@@ -29,9 +29,9 @@
 <link rel="preload" href="{{ $fingerprinted.RelPermalink }}" as="style"
   {{- if hugo.IsProduction }} integrity="{{ $fingerprinted.Data.Integrity }}" crossorigin="anonymous"{{- end }}>
 
-{{ if and (eq .Section "insights") (not .IsSection) (ne .Kind "404") }}
+{{/*  {{ if and (eq .Section "insights") (not .IsSection) (ne .Kind "404") }}
 {{ partial "feature/preload.html" . }}
-{{ end }}
+{{ end }}  */}}
 
 {{- /* 5. Preload Twic script AFTER styles (low priority) */ -}}
 {{- if .Store.Get "hasTwic"}}
