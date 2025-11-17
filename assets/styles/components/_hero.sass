@@ -1,7 +1,22 @@
 @use '../abstracts' as *
 
+$min: $min-font-size * 5
+$max: $max-font-size * 10
+
 .hero
   +clamp(min-height, 350, 390)
+
+  &__inner
+    background: linear-gradient(115deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.05) 100%)
+    +clamp(padding-top, $min, $max)
+
+  &__eyebrow
+    text-transform: uppercase
+    letter-spacing: 0.12em
+    font-size: 0.8rem
+    font-weight: 600
+    opacity: 0.9
+    margin-bottom: 0.6rem
 
   &.hero--home
     min-height: calc(100dvh - var(--navbar-height))
@@ -21,19 +36,26 @@
     position: relative
     z-index: 1
 
-    &::after
-      content: ''
-      width: 200vw
-      height: 140%
-      // background-color: rgba($black, 0.9)
-      background-color: color('xps-red')
-      position: absolute
-      top: -20%
-      right: -10%
-      z-index: -1
+    // &::after
+    //   content: ''
+    //   width: 200vw
+    //   height: 140%
+    //   // background-color: rgba($black, 0.9)
+    //   background-color: color('xps-red')
+    //   position: absolute
+    //   top: -20%
+    //   right: -10%
+    //   z-index: -1
 
     > h1, h2
       color: inherit
+
+.bg
+  background: color('black') 
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
 
 .video-bg
   min-width: 100%
@@ -49,6 +71,7 @@
 +ch(48)
 
 $color: #9395A1
+
 .lead
  
   +breakpoint(tablet)

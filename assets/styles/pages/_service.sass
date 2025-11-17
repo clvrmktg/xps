@@ -1,0 +1,63 @@
+@use 'abstracts' as *
+
+.highlights
+
+  &--service
+    
+    .icon
+      width: em(36)
+      height: em(36)
+      stroke: color('xps-red')
+
+.service
+
+  &--blocks
+
+    &:nth-of-type(even)
+      background-color: color('neutral-grey-lightest')
+    
+
+    +breakpoint(desktop)
+
+      &:nth-of-type(odd)
+      
+        .service--block
+          grid-template-columns: minmax(#{em(375), 1fr}) 2fr
+
+  &--block
+
+    +breakpoint(desktop)
+      grid-template-columns: 2fr 1fr
+
+      &:nth-of-type(even)
+        grid-template-columns: minmax(#{em(375), 1fr}) 2fr
+
+    ul
+      list-style: none
+      margin-left: 0
+      padding-left: 1em
+      border-left: em(3) solid color('xps-red')
+
+
+  &__img
+    border-radius: 0.5em
+    box-shadow: 0 14px 35px rgba(15, 23, 42, 0.2)
+
++ratio(16, 9)
++ratio(4, 7, lg)
+
+.faq
+  background-color: color('neutral-grey-lightest')
+  
+.service
+
+  &-cta
+    color: color('white')
+    background-color: color('black')
+
+    h2
+      color: inherit
+
+    +breakpoint(tablet)
+      > div
+        grid-template-columns: 1fr auto

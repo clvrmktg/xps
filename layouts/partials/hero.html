@@ -1,13 +1,20 @@
 {{- $twic := .Site.Params.twic -}}
 <div class="[ full-width content-grid row-gap--1 ]">
-  <header class="[ hero hero--service ][ full-width content-grid bg ]" {{ with .Resources.GetMatch (.Params.hero.image) }}data-twic-background="url(image:{{ .RelPermalink }})"{{- end -}}>
+  <header class="[ hero hero--service ][ full-width bg ]" {{ with .Resources.GetMatch (.Params.hero.image) }}data-twic-background="url(image:{{ .RelPermalink }})"{{- end -}}>
     {{ with .Resources.GetMatch (.Params.hero.image) }}
       <style>.hero {background-image: url('https://{{- $twic -}}.twic.pics{{ .RelPermalink }}?twic=v1/output=preview');}</style>
     {{ end }}
-    <div class="[ wrapper ][ flex middle py--5 ]">
-      <div class="[ hero__content ][ ch--54 ]">
-        <h1>{{ .Title }}</h1>
-        <p class="[ font--4 ]">{{ .Description }}</p>
+
+    <div class="[ hero__inner ][ full-width content-grid ]">
+      <div class="[ wrapper ][ flex middle section--padding-bottom ]">
+        <div class="[ hero__content ][ ch--54 ]">
+          <p class="[ hero__eyebrow ][ font--1- upper ]">XPS Logistics • {{ .Title }}</p>
+          <h1>{{ .Title }}</h1>
+          <p class="[ font--4 ]">{{ .Params.subheading | markdownify }}</p>
+          {{ if .Params.cta }}
+          <a class="[ btn btn--lg btn--red ]" href="/contact-us" data-prefetch>Talk to freight specialist</a>
+          {{ end }}
+        </div>
       </div>
     </div>
   </header>

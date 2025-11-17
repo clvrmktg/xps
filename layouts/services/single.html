@@ -3,88 +3,94 @@
 {{- end -}}
 {{ define "main"}}
   {{ partial "hero.html" . }}
-  <section class="[ service-highlights ][ grid col-gap--2 row-gap--2 md:col--3 ]">
+  <section class="[ highlights--service ][ grid col-gap--2 row-gap--2 md:col--3 section--padding ]">
     {{ range .Params.highlights }}
-      <div class="[ card ]">
-        <h3>{{ .title }}</h3>
+      <div class="[ card ][ flex flex--col gap--1 ]">
+        {{ $icon := printf "static/tabler/%s.svg" .icon }}
+        {{ readFile $icon | safeHTML }}
+        <h2 class="[ font--4 ]">{{ .title }}</h2>
         <p>{{ .text }}</p>
       </div>
     {{ end }}
   </section>
-<section class="[ service--blocks ][ full-width content-grid section--padding section--spacing ]">
 
-  <div class="[ service--block grid middle gap--2 ]">
-    <div>
-    <h2>What We Offer</h2>
-    {{ with .Params.offers }}
-      {{ .content | markdownify }}
-    {{ end }}
-    </div>
-    {{- with .Params.offers.image -}}
-      {{- $img := $.Resources.GetMatch . -}}
-      {{- if $img -}}
-        <figure class="[ ratio--4:7 md:o--1 ]">
-          <picture id="offers" class="[ bg ]">
-            <style>#why {background-image: url('https://{{ $.Site.Params.twic }}.twic.pics{{ $img.RelPermalink }}?twic=v1/output=preview');}</style>
-            <img
-              data-twic-src="image:{{ $img.RelPermalink }}"
-              data-twic-focus="auto"
-              alt="{{ $.Params.why.alt | default "" }}"
-              width="{{ $img.Width }}"
-              height="{{ $img.Height }}"
-            />
-            {{ with $.Params.why.figcaption }}
-              <figcaption class="[ pt--0.5 ]">{{ . }}</figcaption>
-            {{ end }}
-          </picture>
-        </figure>
-      {{- end }}
-    {{- end }}
-  </div>
+  <section class="[ service--blocks ][ full-width content-grid section--padding section--spacing ]">
 
-  <div class="[ service--block grid middle gap--2 ]">
-    <div class="[ md:o--2 ]">
-    <h2>Why Choose XPS for {{ .Title }}</h2>
-    {{ with .Params.why }}
-      {{ .content | markdownify }}
-    {{ end }}
-    </div>
-    
-    {{- with .Params.why.image -}}
-      {{- $img := $.Resources.GetMatch . -}}
-      {{- if $img -}}
-        <figure class="[ ratio--4:7 md:o--1 ]">
-          <picture id="why" class="[ bg ]">
-            <style>#why {background-image: url('https://{{ $.Site.Params.twic }}.twic.pics{{ $img.RelPermalink }}?twic=v1/output=preview');}</style>
-            <img
-              data-twic-src="image:{{ $img.RelPermalink }}"
-              data-twic-focus="auto"
-              alt="{{ $.Params.why.alt | default "" }}"
-              width="{{ $img.Width }}"
-              height="{{ $img.Height }}"
-            />
-            {{ with $.Params.why.figcaption }}
-              <figcaption class="[ pt--0.5 ]">{{ . }}</figcaption>
-            {{ end }}
-          </picture>
-        </figure>
-      {{- end }}
-    {{- end }}
-    
-  </div>
-
-</section>
-
-  <section class="[ faq ][ full-width content-grid ]">
-    <div class="[ wrapper ][ grid ]">
-      <div>
-        <h2>Frequently Asked Questions</h2>
+    <div class="[ service--block grid middle gap--2 ]">
+      <div class="[ o--2 lg:o--1 ]">
+        <h2>What We Offer</h2>
+        {{ with .Params.offers }}
+          {{ .content | markdownify }}
+        {{ end }}
       </div>
-      <div>
-        {{ range .Params.faq }}
-          <details class="[ details ]" name="faqs">
-            <summary class="[ details__summary ]">{{ .question }}</summary>
-            <div class="[ details__content ]">
+
+      {{- with .Params.offers.image -}}
+        {{- $img := $.Resources.GetMatch . -}}
+        {{- if $img -}}
+          <figure class="[ service__img ][ ratio--16:9 lg:ratio--4:7 md:o--1 ]">
+            <picture id="offers" class="[ bg ]">
+              <style>#why {background-image: url('https://{{ $.Site.Params.twic }}.twic.pics{{ $img.RelPermalink }}?twic=v1/output=preview');}</style>
+              <img
+                data-twic-src="image:{{ $img.RelPermalink }}"
+                data-twic-focus="auto"
+                alt="{{ $.Params.why.alt | default "" }}"
+                width="{{ $img.Width }}"
+                height="{{ $img.Height }}"
+              />
+              {{ with $.Params.why.figcaption }}
+                <figcaption class="[ pt--0.5 ]">{{ . }}</figcaption>
+              {{ end }}
+            </picture>
+          </figure>
+        {{- end }}
+      {{- end }}
+    </div>
+  </section>
+
+  <section class="[ service--blocks ][ section--padding ]">
+    <div class="[ service--block grid middle col-gap--3 row-gap--2 ]">
+      <div class="[ md:o--2 ]">
+        <h2>Why Choose XPS for {{ .Title }}</h2>
+        {{ with .Params.why }}
+          {{ .content | markdownify }}
+        {{ end }}
+      </div>
+      
+      {{- with .Params.why.image -}}
+        {{- $img := $.Resources.GetMatch . -}}
+        {{- if $img -}}
+          <figure class="[ service__img ][ ratio--16:9 lg:ratio--4:7 o--1 ]">
+            <picture id="why" class="[ bg ]">
+              <style>#why {background-image: url('https://{{ $.Site.Params.twic }}.twic.pics{{ $img.RelPermalink }}?twic=v1/output=preview');}</style>
+              <img
+                data-twic-src="image:{{ $img.RelPermalink }}"
+                data-twic-focus="auto"
+                alt="{{ $.Params.why.alt | default "" }}"
+                width="{{ $img.Width }}"
+                height="{{ $img.Height }}"
+              />
+              {{ with $.Params.why.figcaption }}
+                <figcaption class="[ pt--0.5 ]">{{ . }}</figcaption>
+              {{ end }}
+            </picture>
+          </figure>
+        {{- end }}
+      {{- end }}
+      
+    </div>
+  </section>
+
+  <section class="[ faq ][ full-width content-grid section--padding ]">
+    <div class="[ wrapper ][ grid col-gap--3 row-gap--2 ]">
+      <div class="[ flex flex--col gap--1 pb--0 ]">
+        <h2>Frequently Asked Questions</h2>
+        <p class="[ faq__intro ]">Quick answers to common questions about our {{ .Title | lower }} process.</p>
+      </div>
+      <div class="[ flex flex--col row-gap--1 ]">
+        {{ range $index, $faq := .Params.faq }}
+          <details class="[ details ]" name="faqs" {{if (eq $index 0)}}open{{end}}>
+            <summary class="[ details__summary ][ font--600 ]">{{ .question }}</summary>
+            <div class="[ details__content ][ pt--1 ]">
             {{ .answer | markdownify }}
             </div>
           </details>
@@ -92,11 +98,12 @@
       </div>
     </div>
   </section>
-  <section class="[ content-grid ]">
-    <b class="[ line ]"></b>
-    <div class="[ grid center text--center section--padding-top ]">
-      <h2 class="[ font--xl ]">Need help with {{ .Title | lower }}?</h2>
-      <p class="[ ch--54 ]">Let's talk about how XPS can support your business with reliable, scalable logistics services in The Bahamas.</p>
+  <section class="[ service-cta ][ full-width content-grid ]">
+    <div class="[ grid middle section--padding ]">
+      <div>
+        <h2 class="[ font--3 ]">Need help with {{ .Title | lower }}?</h2>
+        <p class="[ ch--54 ]">Let's talk about how XPS can support your business with reliable, scalable logistics services in The Bahamas.</p>
+      </div>
       <div>
         <a class="[ btn btn--lg btn--red ]" href="/contact-us/">Get in Touch</a>
       </div>

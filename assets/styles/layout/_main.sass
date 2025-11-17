@@ -17,54 +17,9 @@ main
 li::marker
   color: color('xps-red')
 
-.service
-
-  &--blocks
-    background-color: color('neutral-grey-lightest')
-
-  &--block
-    +breakpoint(desktop)
-      grid-template-columns: 2fr 1fr
-
-      &:nth-of-type(even)
-        grid-template-columns: 1fr 2fr
-
-
-.faq
-  // background-color: color('neutral-grey-lightest')
-
-  > .wrapper
-    grid-template-columns: 1fr 2fr
-
-summary
-  font-size: var(--step-1)
-  cursor: pointer
-
-  +hover
-    background-color: color('neutral-grey-lighter')
-
-.details
-  border-bottom: 0.1em solid color('xps-red')
-  padding-block: 1em
-
-  &::details-content
-    display: block
-    margin-inline: 2rem
-    block-size: 0
-    overflow: hidden
-    +transition((block-size, content-visibility))
-    transition-behavior: allow-discrete
-
-  &[open]::details-content
-    block-size: auto
-    block-size: calc-size(auto, size)
-
 .text--center
   text-align: center
 
-.bg
-  background: color('black') no-repeat center center
-  background-size: cover
 
 .none
   display: none
