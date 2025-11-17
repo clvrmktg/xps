@@ -6,6 +6,14 @@ title = 'Customs Brokerage'
 summary = "Licensed brokerage services to ensure your goods clear Bahamian customs quickly, compliantly, and without delays."
 description = "Licensed Bahamian customs brokers managing your cargo clearance from start to finish."
 
+subheading = """
+Licensed Bahamian customs brokers managing your cargo clearance from start to finish.
+
+From commercial imports to personal shipments, XPS manages your customs clearance from start to finish. We classify your goods correctly, prepare your documents, submit your entries through Click2Clear, and ensure your cargo is cleared quickly and compliantly.
+"""
+
+cta = "Talk to a customs broker"
+
 # Social Media Cover - 1200 x 1200
 # Crop the hero 1:1 ratio
 [cover]
@@ -20,14 +28,17 @@ alt = "XPS customs broker"
 [[highlights]]
 title = "Accurate"
 text = "We classify your goods correctly to ensure accurate duties and prevent costly delays."
+icon = "clipboard-check"
 
 [[highlights]]
 title = "Streamlined"
 text = "Our team prepares and submits all Click2Clear documentation on your behalf."
+icon = "arrows-right"
 
 [[highlights]]
 title = "Trusted"
 text = "Reliable customs brokers licensed to clear commercial and personal cargo."
+icon = "scale"
 
 [offers]
 content = """
@@ -51,13 +62,13 @@ From commercial imports to personal shipments, XPS handles your customs clearanc
 
 [why]
 content = """
-Customs brokerage is a critical step in the logistics chain—and small mistakes can mean big delays. Here’s why clients choose XPS:
+Customs brokerage is a critical step in the logistics chain—and small mistakes can mean big delays. Here's why clients choose XPS:
 
 - **Licensed & Compliant**  
   XPS is a licensed customs broker, fully authorized to act on your behalf and ensure your shipments meet all regulatory requirements.
 
 - **Proactive Communication**  
-  We don’t leave you guessing—our team keeps you informed every step of the way.
+  We don't leave you guessing—our team keeps you informed every step of the way.
 
 - **Integrated Services**  
   Brokerage is just one part of what we do. With warehousing, distribution, and freight forwarding under one roof, we offer end-to-end support.
@@ -84,7 +95,7 @@ answer = """Customs clearance can take anywhere from a few hours to a few days, 
 
 [[faq]]
 question = "What documents do I need to provide for customs clearance?"
-answer = """To authorize XPS to clear your goods, you’ll need:
+answer = """To authorize XPS to clear your goods, you'll need:
 - **Commercial invoice** listing item descriptions and declared values  
 - **Bill of lading or airway bill**, addressed to:  
 ```
@@ -108,14 +119,14 @@ XPS can help you determine the correct tariff classification and duty rate befor
 [[faq]]
 question = "Can international suppliers use XPS to ship to Bahamian clients?"
 answer = """Absolutely. Overseas vendors can consign shipments **“c/o XPS Logistics”** when sending goods to local customers.  
-We’ll receive, clear, and deliver the cargo to the final consignee while the Bahamian buyer remains the importer of record.  
+We'll receive, clear, and deliver the cargo to the final consignee while the Bahamian buyer remains the importer of record.  
 This arrangement simplifies logistics and ensures compliance for both parties."""
 
 [[faq]]
 question = "How can I start the customs clearance process with XPS?"
 answer = """Simply email your shipping documents—invoice, bill of lading, and any permits—to **[ops@xpslogistics.com](mailto:ops@xpslogistics.com)**.  
 Our operations team will review them, confirm requirements, and guide you through the next steps.  
-You can also [contact us](/contact-us) if you’d like to discuss your shipment before sending documentation."""
+You can also [contact us](/contact-us) if you'd like to discuss your shipment before sending documentation."""
 
 [params]
   hasTwic = false

@@ -12,7 +12,7 @@
           <h1>{{ .Title }}</h1>
           <p class="[ font--4 ]">{{ .Params.subheading | markdownify }}</p>
           {{ if .Params.cta }}
-          <a class="[ btn btn--lg btn--red ]" href="/contact-us" data-prefetch>Talk to freight specialist</a>
+          <a class="[ btn btn--lg btn--red ]" href="/contact-us" data-prefetch>{{ .Params.cta }}</a>
           {{ end }}
         </div>
       </div>
