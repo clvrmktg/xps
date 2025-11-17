@@ -68,7 +68,7 @@ content = """Freight forwarding is more than moving cargo—it's about confidenc
   Our port-side activities follow the International Ship and Port Facility Security (ISPS) Code, ensuring every ocean shipment is handled within secure, internationally recognized standards.
 
 """
-image = "nassau-container-port-loading-vessel-crane.jpg"
+image = "nassau-container-port-arawak-cay.jpg"
 alt = "Nassau Container Port vessel loading"
 
 [[faq]]
