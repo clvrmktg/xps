@@ -69,7 +69,7 @@ content = """Freight forwarding is more than moving cargo—it's about confidenc
 
 """
 image = "truck-outgate-nassau-container-port-arawak-cay.jpg"
-alt = "Nassau Container Port vessel loading"
+alt = "Outgating an LCL shipment at Nassau Container Port"
 
 [[faq]]
 question = "What types of freight do you handle?"
