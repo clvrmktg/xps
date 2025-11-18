@@ -73,7 +73,7 @@ alt = "XPS driver delivering parcel"
 
 [[faq]]
 question = "Where do you deliver?"
-answer = """We provide delivery throughout New Providence and coordinate shipments to all major Family Islands. Whether you need local dispatch or inter-island distribution, we’ve got you covered."""
+answer = """We provide delivery throughout New Providence and coordinate shipments to all major Family Islands. Whether you need local dispatch, inter-island logistics, or trucking services for larger loads, we’ve got you covered."""
 
 [[faq]]
 question = "Can you deliver directly to my customers?"
@@ -81,19 +81,19 @@ answer = """Yes. We offer last-mile delivery services from our warehouse to your
 
 [[faq]]
 question = "How are Family Island deliveries handled?"
-answer = """We prepare and coordinate Family Island shipments via mailboat, air freight, or ferry, depending on your needs and schedule. We’ll handle packaging, documentation, and dispatch from Nassau."""
+answer = """We prepare and coordinate Family Island shipments via mailboat, air freight, or ferry, depending on your needs and schedule. We’ll handle packaging, documentation, and dispatch from Nassau for a smooth island-to-island workflow."""
 
 [[faq]]
 question = "Do you offer scheduled delivery routes?"
-answer = """Yes. We operate regular delivery routes in Nassau and can schedule recurring pickups or drop-offs to fit your operation. Family Island dispatches are coordinated according to vessel schedules."""
+answer = """Yes. We operate regular delivery routes in Nassau and can schedule recurring pickups or drop-offs to fit your operation. Family Island dispatches are coordinated according to vessel schedules and freight availability."""
 
 [[faq]]
 question = "What size shipments can you handle?"
-answer = """We handle a wide range of shipment sizes—from single boxes to pallets and containerized cargo. For specialized or oversized items, contact us to confirm availability and handling options."""
+answer = """We handle a wide range of shipment sizes—from single boxes to pallets, LCL (less-than-container-load) cargo, and full container loads (FCL) once cleared or received at our warehouse. For oversized or specialized items, contact us to confirm handling and trucking options."""
 
 [[faq]]
 question = "Can I store my goods at your warehouse before distribution?"
-answer = """Absolutely. Many clients store goods in our facility and use our distribution service to fulfill orders on demand. This creates a seamless warehousing-to-delivery pipeline."""
+answer = """Absolutely. Many clients store goods in our facility and use our distribution service to fulfill orders on demand. This creates a seamless warehousing-to-delivery pipeline, supported by our local trucking network."""
 
 [[faq]]
 question = "Do you deliver to government agencies or retail chains?"
