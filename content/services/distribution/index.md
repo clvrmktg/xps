@@ -67,8 +67,8 @@ Logistics doesn’t end when the shipment lands. That’s why businesses across 
 - **Flexible Options**  
   From one-off dispatches to recurring delivery routes, we scale with your operation and timeline.
 """
-image = ""
-alt = ""
+image = "freight-distribution.jpg"
+alt = "Bahamas Freight vessel carrying cargo containers to the Family Islands"
 
 [[faq]]
 question = "Where do you deliver?"
