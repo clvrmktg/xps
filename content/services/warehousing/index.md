@@ -19,7 +19,7 @@ image = ""
 alt = ""
 
 [hero]
-image = "warehousing.jpg"
+image = "warehouse.jpg"
 alt = "XPS warehouse"
 
 [[highlights]]
@@ -46,7 +46,7 @@ Our warehousing facility in western New Providence is designed for flexibility, 
   24/7 monitoring, gated access, and on-site staff ensure your goods remain safe and accounted for.
 
 - **Flexible Storage Terms**  
-  We offer both shortterm and long-term storage solutions to match your project, inventory cycle, or transit needs.
+  We offer both short-term and long-term storage solutions to match your project, inventory cycle, or transit needs.
 
 - **Receiving & Handling**  
   We offload, inspect, and store your cargo—ensuring accuracy and condition before shelving.
@@ -57,6 +57,8 @@ Our warehousing facility in western New Providence is designed for flexibility, 
 - **Inventory Oversight**  
   Keep track of your goods with basic tracking and coordinated fulfillment support.
 """
+image = "xps-warehouse-clerk-inspecting-cargo.jpg"
+alt = "XPS warehouse clerk inspecting inventory"
 
 [why]
 content = """
@@ -74,6 +76,8 @@ Storing your goods shouldn't be a risk—it should be part of a reliable logisti
 - **Hands-on Support**  
   Our on-site staff is available to coordinate shipments, assist with loading, and provide real-time updates.
 """
+image = "xps-warehouse-clerk-helping-customer.jpg"
+alt = "XPS warehouse clerk helping customer"
 
 [[faq]]
 question = "Where is your warehouse located?"
