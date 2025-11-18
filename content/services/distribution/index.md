@@ -48,8 +48,9 @@ XPS distribution services are built to connect your supply chain directly to you
 - **Commercial & Government Delivery**  
   Whether you're supplying a retail chain or a government agency, we deliver with accuracy and professionalism.
 """
-image = ""
-alt = ""
+image = "freight-distribution.jpg"
+alt = "Bahamas Freight vessel carrying cargo containers to the Family Islands"
+
 
 [why]
 content = """
@@ -67,8 +68,8 @@ Logistics doesn’t end when the shipment lands. That’s why businesses across 
 - **Flexible Options**  
   From one-off dispatches to recurring delivery routes, we scale with your operation and timeline.
 """
-image = "freight-distribution.jpg"
-alt = "Bahamas Freight vessel carrying cargo containers to the Family Islands"
+image = "xps-driver-holding-parcel-box"
+alt = "XPS driver delivering parcel"
 
 [[faq]]
 question = "Where do you deliver?"
