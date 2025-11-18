@@ -4,10 +4,10 @@ weight = 4
 draft = false
 title = 'Distribution'
 summary = "From our warehouse to your customers—across Nassau and the Family Islands—we handle local delivery and island-wide coordination with speed and reliability."
-description = "XPS provides fast, reliable distribution across New Providence and the Family Islands. We handle warehouse dispatch, local trucking, multi-stop coordination, and time-sensitive deliveries to get your goods where they need to be—on time and intact."
+description = "Reliable last-mile distribution across New Providence and the Family Islands, with scheduled deliveries, flexible routing, and real-time communication."
 
 subheading = """
-Reliable last-mile distribution across New Providence and the Family Islands. XPS provides scheduled deliveries, flexible routing, and real-time communication you can count on.
+Reliable last-mile distribution across New Providence and the Family Islands, with scheduled deliveries, flexible routing, and real-time communication.
 
 Whether you're moving small parcels, palletized freight, or full container loads, our team dispatches daily routes, handles inter-island coordination, and connects your cargo seamlessly with warehousing and customs brokerage for a complete end-to-end workflow.
 """
