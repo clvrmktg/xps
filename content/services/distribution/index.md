@@ -68,7 +68,7 @@ Logistics doesn’t end when the shipment lands. That’s why businesses across 
 - **Flexible Options**  
   From one-off dispatches to recurring delivery routes, we scale with your operation and timeline.
 """
-image = "xps-driver-holding-parcel-box"
+image = "xps-driver-holding-parcel-box.jpg"
 alt = "XPS driver delivering parcel"
 
 [[faq]]
