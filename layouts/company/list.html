@@ -3,9 +3,9 @@
 {{- end -}}
 {{- define "main" -}}
 <div class="[ full-width content-grid row-gap--1 ]">
-  <header class="[ hero ][ full-width py--5 bg ]" {{ with .Resources.GetMatch (.Params.hero.image) }}data-twic-background="url(image:{{ .RelPermalink }})"{{- end -}}>
+  <header class="[ hero ][ full-width section--padding bg ]" {{ with .Resources.GetMatch (.Params.hero.image) }}data-twic-background="url(image:{{ .RelPermalink }})"{{- end -}}>
     <h1 class="[ hidden ]">XPS Logistics</h1>
-    <div class="[ wrapper ][ content-grid middle py--5 ]">
+    <div class="[ wrapper ][ content-grid middle ]">
       <div class="[ grid md:col--2 ]">
         <div class="[ hero__content ] ">
           <h2 class="[ font--1 ]">{{ .Params.heading }}</h2>
@@ -16,7 +16,7 @@
   </header>
   {{ partial "breadcrumbs.html" .}}
 </div>
-  <section class="[ grid section--spacing ]">
+  <section class="[ grid section--padding section--spacing ]">
     <div class="[ lead ][ grid row-gap--2 ]">
       <div class="[ lead__heading ]">
         <h2 class="[ bar-before ][ flex--col row-gap--1 ]">Your trusted 3PL partner</h2>
@@ -45,7 +45,7 @@
     </ul>
   </section>
 
-  <section class="[ banner--black full-width content-grid section--spacing py--5 ]">
+  <section class="[ banner--black full-width content-grid section--spacing section--padding ]">
       <h2 class="[ font--1 mb--0.5 ]">Driven by our values</h2>
       <ul class="[ grid md:col--2 lg:col--3 gap--2 ]">
         {{ range .Params.values }}
@@ -57,7 +57,7 @@
       </ul>
   </section>
   <section>
-    <div class="[ ]">
+    <div class="[ section--padding ]">
       <h2 class="[ font--1 ]">Our Team</h2>
       <div class="[ split-sub ][ pb--5 ]">
         <p class="[ font--4 ]">We're a team that prioritizes safety, a customer-focused approach, and operational excellence. That's why our team is comprised of industry professionals with a wealth of experience in operations and logistics.</p>
@@ -84,7 +84,7 @@
   </section>
   <section class="[ banner--black full-width content-grid ]">
     <div class="[ grid middle md:col--2 gap--2 ]">
-      <div class="[ py--5 ]">
+      <div class="[ section--padding ]">
         <h2>Join our world class team</h2>
         <p>At XPS we value every employee because every employee is critical to our success. Let's connect!</p>
         <button class="[ btn btn--lg btn--red ]">Work with us</button>
