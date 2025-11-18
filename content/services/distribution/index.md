@@ -103,8 +103,8 @@ image = ""
 alt = ""
 
 [hero]
-image = "xps-driver-loading-vehicle.jpg"
-alt = "XPS driver loading vehicle"
+image = "xps-box-truck-in-front-of-warehouse.jpg"
+alt = "XPS box truck in front of warehouse"
 
 [params]
   hasTwic = false
