@@ -59,6 +59,8 @@ From commercial imports to personal shipments, XPS handles your customs clearanc
 - **Acting as Authorized Agent**  
   Ship your cargo to “Your Name / Business c/o XPS Logistics” and let us handle the paperwork, coordination, and final delivery.
 """
+image = "xps-customs-broker-processing-entry.jpg"
+alt = "Customs broker reviewing import documents and preparing Click2Clear submissions"
 
 [why]
 content = """
@@ -76,6 +78,8 @@ Customs brokerage is a critical step in the logistics chain—and small mistakes
 - **Support for First-Time Importers**  
   New to importing? We guide you through the process and handle the complexity so you can focus on your business.
 """
+image = "xps-customs-broker-handing-off-paperwork.jpg"
+alt = "XPS customs broker handing a cleared customs release to a client inside a warehouse"
 
 
 [[faq]]
