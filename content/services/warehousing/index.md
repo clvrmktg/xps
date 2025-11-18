@@ -3,28 +3,40 @@ date = '2025-06-02T21:15:25-04:00'
 weight = 3
 draft = false
 title = 'Warehousing'
-summary = "Secure storage solutions in western New Providence with 24/7 monitoring, on-site staff, and scalable capacity. Ideal for short- or long-term storage of commercial goods."
-description = "Flexible, secure warehousing in western New Providence. XPS offers monitored storage with loading support, inventory oversight, and seamless integration into your delivery or clearance workflow."
+summary = "Secure storage solutions in western New Providence with 24/7 monitoring, on-site staff, and scalable capacity. Ideal for short or long-term storage of commercial goods."
+description = "Secure, flexible warehousing in western New Providence. XPS offers monitored storage with loading support, inventory oversight, and integrated logistics."
+
+subheading="""
+Secure, flexible warehousing in western New Providence. XPS offers monitored storage with loading support, inventory oversight, and integrated logistics. 
+
+Whether you need short-term transit storage or long-term inventory support, our on-site team handles receiving, inspection, and coordination—keeping your goods moving through clearance, storage, and final delivery.
+"""
+
+cta = "Talk to a warehouse specialist"
 
 [cover]
 image = ""
 alt = ""
 
 [hero]
-image = "xps-warehouse.jpg"
+image = "warehousing.jpg"
 alt = "XPS warehouse"
 
 [[highlights]]
 title = "Secure"
-text = "Monitored 24/7 with restricted access and on-site staff for safe, reliable storage."
+text = "Monitored 24/7 with restricted access and on-site staff to keep your cargo safe and protected."
+icon = "shield-lock"
 
 [[highlights]]
 title = "Flexible"
-text = "Short- or long-term options available, with space that scales to your business needs."
+text = "Short or long-term storage options with space that scales to your inventory and operational needs."
+icon = "arrows-horizontal"
 
 [[highlights]]
 title = "Connected"
-text = "Integrated with our customs clearance and distribution services for full supply chain visibility."
+text = """Integrated with our [customs brokerage](/services/customs-brokerage)  
+and [distribution](/services/distribution) services for a seamless, end-to-end workflow."""
+icon = "route"
 
 [offers]
 content = """
@@ -34,7 +46,7 @@ Our warehousing facility in western New Providence is designed for flexibility, 
   24/7 monitoring, gated access, and on-site staff ensure your goods remain safe and accounted for.
 
 - **Flexible Storage Terms**  
-  We offer both short-term and long-term storage solutions to match your project, inventory cycle, or transit needs.
+  We offer both shortterm and long-term storage solutions to match your project, inventory cycle, or transit needs.
 
 - **Receiving & Handling**  
   We offload, inspect, and store your cargo—ensuring accuracy and condition before shelving.
@@ -48,13 +60,13 @@ Our warehousing facility in western New Providence is designed for flexibility, 
 
 [why]
 content = """
-Storing your goods shouldn’t be a risk—it should be part of a reliable logistics plan. Here’s why businesses trust XPS for warehousing:
+Storing your goods shouldn't be a risk—it should be part of a reliable logistics plan. Here's why businesses trust XPS for warehousing:
 
 - **Location Advantage**  
   Our warehouse is located near major freight routes and Customs facilities in western New Providence for faster turnarounds.
 
 - **One Partner, Full Chain**  
-  We don’t just store your goods—we can clear, deliver, and distribute them too.
+  We don't just store your goods—we can clear, deliver, and distribute them too.
 
 - **Customizable Solutions**  
   We work with you to build a storage plan that fits your space, timing, and access requirements.
@@ -68,8 +80,8 @@ question = "Where is your warehouse located?"
 answer = """Our facility is in western New Providence, strategically positioned near major ports, Customs, and delivery routes for faster cargo handling and distribution."""
 
 [[faq]]
-question = "Do you offer both short- and long-term storage?"
-answer = """Yes. We provide flexible storage options—from a few days to several months—depending on your needs. Whether you're staging shipments or storing overflow inventory, we’ve got space for you."""
+question = "Do you offer both short and long-term storage?"
+answer = """Yes. We provide flexible storage options—from a few days to several months—depending on your needs. Whether you're staging shipments or storing overflow inventory, we've got space for you."""
 
 [[faq]]
 question = "Is the warehouse secure?"
@@ -81,7 +93,7 @@ answer = """Yes. Our warehousing services start at a minimum of **100 square fee
 
 [[faq]]
 question = "Can you receive shipments on my behalf?"
-answer = """Yes. You can consign shipments to your name or business ‘c/o XPS Logistics,’ and our team will receive, inspect, and store your cargo. We can also notify you upon arrival."""
+answer = """Yes. You can consign shipments to your name or business ‘c/o XPS Logistics,' and our team will receive, inspect, and store your cargo. We can also notify you upon arrival."""
 
 [[faq]]
 question = "Do you provide inventory tracking?"

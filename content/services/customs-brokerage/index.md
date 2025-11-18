@@ -24,20 +24,19 @@ alt = ""
 image = "xps-customs-brokerage.jpg"
 alt = "XPS customs broker"
 
-
 [[highlights]]
 title = "Accurate"
-text = "We classify your goods correctly to ensure accurate duties and prevent costly delays."
+text = "We classify your goods correctly the first time to prevent mischarges, penalties, and avoidable delays."
 icon = "clipboard-check"
 
 [[highlights]]
-title = "Streamlined"
-text = "Our team prepares and submits all Click2Clear documentation on your behalf."
-icon = "arrows-right"
+title = "Fast"
+text = "Your documents are reviewed early and your entry is submitted promptly through Click2Clear for the fastest possible clearance."
+icon = "stopwatch"
 
 [[highlights]]
 title = "Trusted"
-text = "Reliable customs brokers licensed to clear commercial and personal cargo."
+text = "Licensed Bahamian customs brokers you can rely on to manage your commercial or personal cargo with full compliance."
 icon = "scale"
 
 [offers]
@@ -84,52 +83,65 @@ alt = "XPS customs broker handing a cleared customs release to a client inside a
 
 [[faq]]
 question = "What does a customs broker do?"
-answer = """A licensed customs broker represents you during the import process—submitting declarations through the **Click2Clear** system, calculating duties and VAT, arranging inspections if required, and securing release of your goods.
+answer = """A licensed customs broker represents you during the import or export process, ensuring your shipment is properly declared, documented, and cleared through Bahamas Customs. This includes preparing and submitting entries through the **Click2Clear** system, classifying your goods correctly, calculating duties and VAT, arranging inspections if required, and securing the release of your cargo.
 
-At **XPS Logistics**, we act as your official liaison with Bahamas Customs, ensuring your entries are accurate, compliant, and cleared as quickly as possible."""
+At **XPS Logistics**, we act as your official liaison with Customs, making sure your entries are accurate, compliant, and cleared as quickly and smoothly as possible."""
 
 [[faq]]
 question = "How long does customs clearance take in The Bahamas?"
-answer = """Customs clearance can take anywhere from a few hours to a few days, depending on shipment complexity and documentation.
+answer = """Clearance times depend on the type of shipment and whether everything is documented correctly. A simple entry with complete paperwork may clear the same day, especially for **air freight**, while **ocean freight**—particularly consolidated cargo—can take longer due to inspections or processing volume.
 
-**Air freight** can often be cleared the same day, while **ocean freight** may take longer—especially for consolidated or inspected cargo.
-
-**XPS Logistics** pre-files entries in **Click2Clear** and works closely with Customs officers to ensure your goods are cleared as quickly as possible."""
-
+XPS minimizes delays by reviewing your documents in advance, pre-filing your entry in **Click2Clear**, and working directly with Customs officers to keep your shipment moving."""
 
 [[faq]]
 question = "What documents do I need to provide for customs clearance?"
 answer = """To authorize XPS to clear your goods, you'll need:
-- **Commercial invoice** listing item descriptions and declared values  
+- **Commercial invoice** with item descriptions and declared values  
 - **Bill of lading or airway bill**, addressed to:  
 ```
 Your Business Name
 c/o XPS Logistics
 Nassau, The Bahamas
 ```
-- **Packing list** (for multi-box shipments)  
-- **Business Licence** and **Tax Compliance Certificate** (for companies)  
-- **Form C-44** – Standing Authority for Declaration of Value  
-- **Import permits or certificates** if your goods are regulated (e.g., food, plants, chemicals)
 
-Once received, we review and submit everything electronically through Click2Clear for you."""
+- **Packing list** (if applicable)  
+- **Business Licence** and **Tax Compliance Certificate** (for commercial imports)  
+- **Form C-44** – Standing Authority for Declaration of Value  
+- **ID** - A valid government-issued photo ID (Passport or Driver's Licence) for the importer or authorized business representative. (An NIB card may be requested as supporting identification)
+- **Import permits or certificates** for regulated items (e.g., food, plants, chemicals)
+
+These requirements may vary for OGA-regulated goods or concession applications. 
+
+The Bahamas is a tightly regulated import/export jurisdiction, so proper documentation is essential to ensure accurate duty assessment, compliance with OGA rules, and timely clearance.
+
+Once received, we confirm requirements and submit everything electronically through Click2Clear on your behalf."""
 
 [[faq]]
 question = "Are duties charged on personal items, gifts, or samples?"
-answer = """Yes. All imports entering The Bahamas are subject to customs duty and VAT unless specifically exempt by law.  
-Even gifts or promotional items require a proper declaration.  
-XPS can help you determine the correct tariff classification and duty rate before arrival so you can budget accurately."""
+answer = """Yes. All imports entering The Bahamas are subject to customs duty and VAT unless specifically exempt by law. Even gifts, promotional items, and personal effects must be declared.
+
+If you're unsure of the duty rate, XPS can classify your goods in advance so you know exactly what to expect before your shipment arrives."""
 
 [[faq]]
-question = "Can international suppliers use XPS to ship to Bahamian clients?"
-answer = """Absolutely. Overseas vendors can consign shipments **“c/o XPS Logistics”** when sending goods to local customers.  
-We'll receive, clear, and deliver the cargo to the final consignee while the Bahamian buyer remains the importer of record.  
-This arrangement simplifies logistics and ensures compliance for both parties."""
+question = "Can XPS deliver my goods after customs clearance?"
+answer = """Yes. After your goods are released by Customs, we can deliver them directly to your home, business, warehouse, or job site. Whether your shipment is **FCL, LCL, or air freight**, XPS provides reliable last-mile delivery anywhere in Nassau, and through partners, throughout the Family Islands."""
 
 [[faq]]
-question = "How can I start the customs clearance process with XPS?"
-answer = """Simply email your shipping documents—invoice, bill of lading, and any permits—to **[ops@xpslogistics.com](mailto:ops@xpslogistics.com)**.  
-Our operations team will review them, confirm requirements, and guide you through the next steps.  
+question = "Can international suppliers ship goods to Bahamian clients using XPS?"
+answer = """Absolutely. Overseas suppliers can consign shipments **“c/o XPS Logistics”** when sending goods to local customers. We'll receive, clear, and deliver the cargo while the Bahamian buyer remains the importer of record. This keeps the process compliant and significantly simplifies logistics for both sides."""
+
+[[faq]]
+question = "Can XPS help with export shipments?"
+answer = """Yes. XPS can prepare and submit export declarations, coordinate delivery to the port or airport, and ensure your goods meet all export requirements. Whether you're shipping commercial cargo or personal items out of Nassau, we handle the paperwork and logistics for you."""
+
+[[faq]]
+question = "What should I do if my shipment is delayed?"
+answer = """If your shipment is experiencing a delay, contact us immediately. We'll review the status of your entry in Click2Clear, check for documentation issues or inspection holds, and work with Customs and the carrier to resolve the delay as quickly as possible."""
+
+[[faq]]
+question = "How do I start the customs clearance process with XPS?"
+answer = """Simply email your shipping documents—invoice, bill of lading, and any permits—to **ops@xpslogistics.com**. Our operations team will review everything, confirm what's required, and guide you through the next steps.
+
 You can also [contact us](/contact-us) if you'd like to discuss your shipment before sending documentation."""
 
 [params]

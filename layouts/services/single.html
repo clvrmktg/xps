@@ -9,7 +9,7 @@
         {{ $icon := printf "static/tabler/%s.svg" .icon }}
         {{ readFile $icon | safeHTML }}
         <h2 class="[ font--4 ]">{{ .title }}</h2>
-        <p>{{ .text }}</p>
+        <p>{{ .text | markdownify }}</p>
       </div>
     {{ end }}
   </section>
