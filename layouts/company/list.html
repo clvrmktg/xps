@@ -100,10 +100,13 @@
       </figure>
     </div>
   </section>
-  <section class="[ grid section--spacing ]">
-    <h2>Newsroom</h2>
+  <section class="[ grid section--spacing section--padding ]">
+    <div>
+      <h2>Newsroom</h2>
+      <p>Stay up to date with what's happening at XPS—new capacity, customer stories, and updates from across our network.</p>
+    </div>
 
-    <ul class="[ posts ][ grid md:col--3 col-gap--1 row-gap--2 ]">
+    <ul class="[ posts ][ grid md:col--3 col-gap--1 gap--2 ]">
       {{- $format := "January 2, 2006" -}}
       {{- $iso := "2006-01-02T15:04:05Z07:00" -}}
       {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply Chain" "Logistics & Supply Chain" "Newsroom" "Newsroom" -}}
@@ -178,10 +181,15 @@
       {{ end }}
     </ul>
   </section>
-  <section class="[ grid center row-gap--3 ]">
-    <h2 class="[ font--2 ]">Ready to start shipping with confidence?</h2>
-    <div class="[ text--center ]">
-      <a href="/contact-us" class="[ btn btn--lg btn--red ]" data-prefetch>Let’s Talk</a>
+  <section class="[ service-cta ][ full-width content-grid ]">
+    <div class="[ grid middle section--padding ]">
+      <div>
+        <h2 class="[ font--3 ]">Ready to start shipping with confidence?</h2>
+        <p class="[ ch--54 ]">Let's talk about how XPS can support your next move—whether it's a single shipment or a full 3PL program.</p>
+      </div>
+      <div>
+        <a class="[ btn btn--lg btn--red ]" href="/contact-us/">Talk to our team</a>
+      </div>
     </div>
   </section>
 
