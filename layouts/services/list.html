@@ -3,7 +3,7 @@
 {{- end -}}
 {{ define "main" }}
   {{ partial "hero.html" . }}
-<section class="[ service-highlights ][ grid col-gap--2 row-gap--2 md:col--3 ]">
+<section class="[ service-highlights ][ grid col-gap--2 row-gap--2 md:col--3 section--padding ]">
     {{ range .Params.highlights }}
       <div class="[ card ]">
         <h3>{{ .title }}</h3>
@@ -14,4 +14,16 @@
 
   {{ partial "service-list.html" . }}
   
+  <section class="[ service-cta ][ full-width content-grid ]">
+    <div class="[ grid middle section--padding ]">
+      <div>
+        <h2 class="[ font--3 ]">Ready to start shipping with confidence?</h2>
+        <p class="[ ch--54 ]">Let's talk about how XPS can support your next move—whether it's a single shipment or a full 3PL program.</p>
+      </div>
+      <div>
+        <a class="[ btn btn--lg btn--red ]" href="/contact-us/">Talk to our team</a>
+      </div>
+    </div>
+  </section>
+
 {{ end }}

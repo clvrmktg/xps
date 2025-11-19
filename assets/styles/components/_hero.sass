@@ -72,25 +72,28 @@ $max: $max-font-size * 10
 
 $color: #9395A1
 
-.lead
+// .lead
  
-  +breakpoint(tablet)
-    grid-template-columns: [heading-start] 1fr [heading-end content-start] repeat(2, 1fr) [content-end]
-    column-gap: 2em
+//   +breakpoint(tablet)
+//     grid-template-columns: [heading-start] 1fr [heading-end content-start] repeat(2, 1fr) [content-end]
+//     column-gap: 2em
     
-  &__heading
-    grid-column: heading
+//   &__heading
+//     grid-column: heading
 
-  &__content
-    grid-column: content
+//   &__content
+//     grid-column: content
 
-.bar-before
+// .bar-before
   
 
-  &::before
-    content: ''
-    display: block
-    width: em(66)
-    height: em(2)
-    background-color: color('xps-red')
-    order: 1
+//   &::before
+//     content: ''
+//     display: block
+//     width: em(66)
+//     height: em(2)
+//     background-color: color('xps-red')
+//     order: 1
+
+.lead
+  max-width: 44em

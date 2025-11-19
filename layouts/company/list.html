@@ -4,11 +4,9 @@
 {{- define "main" -}}
   {{partial "hero.html" . }}
   <section class="[ grid section--padding section--spacing ]">
-    <div class="[ lead ][ grid row-gap--2 ]">
-      <div class="[ lead__heading ]">
-        <h2 class="[ bar-before ][ flex--col row-gap--1 ]">Your trusted 3PL partner</h2>
-      </div>
-      <p class="[ lead__content ][ font--3 font--500 ]">At XPS Logistics, we're dedicated to making things simple for those looking for 3PL solutions in The Bahamas. No matter what you need — freight forwarding, customs brokerage, warehousing, distribution, or fulfillment — we've got you covered.</p>
+    <div>
+      <h2 class="[ bar-before ][ flex--col row-gap--1 ]">Your trusted 3PL partner</h2>
+      <p class="[ lead ]">At XPS Logistics, we're dedicated to making things simple for those looking for 3PL solutions in The Bahamas. No matter what you need — freight forwarding, customs brokerage, warehousing, distribution, or fulfillment — we've got you covered.</p>
     </div>
     <ul class="[ grid md:col--2 lg:col--3 gap--2 ]">
       <li>
@@ -33,7 +31,10 @@
   </section>
 
   <section class="[ banner--black full-width content-grid section--spacing section--padding ]">
+    <div>
       <h2 class="[ font--1 mb--0.5 ]">Driven by our values</h2>
+      <p class="[ lead ]">We believe reliable logistics starts with how we show up—for customers, partners, and our team. These values guide the decisions we make every day.</p>
+    </div>
       <ul class="[ grid md:col--2 lg:col--3 gap--2 ]">
         {{ range .Params.values }}
         <li> 
@@ -47,7 +48,7 @@
     <div class="[ section--padding ]">
       <h2 class="[ font--1 ]">Our Team</h2>
       <div class="[ split-sub ][ pb--5 ]">
-        <p class="[ font--4 ]">We're a team that prioritizes safety, a customer-focused approach, and operational excellence. That's why our team is comprised of industry professionals with a wealth of experience in operations and logistics.</p>
+        <p class="[ lead ]">We're a team that prioritizes safety, a customer-focused approach, and operational excellence. That's why our team is comprised of industry professionals with a wealth of experience in operations and logistics.</p>
       </div>
       <ul class="[ team ][ grid md:col--2 lg:col--4 gap--2 ]">
         {{- $team := .Params.team  -}}
@@ -90,7 +91,7 @@
   <section class="[ grid section--spacing section--padding ]">
     <div>
       <h2>Newsroom</h2>
-      <p>Stay up to date with what's happening at XPS—new capacity, customer stories, and updates from across our network.</p>
+      <p class="[ lead ]">Stay up to date with what's happening at XPS—new capacity, customer stories, and updates from across our network.</p>
     </div>
 
     <ul class="[ posts ][ grid md:col--3 col-gap--1 gap--2 ]">

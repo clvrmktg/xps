@@ -4,7 +4,7 @@ title = "Company"
 date = 2025-05-24T14:32:49-04:00
 draft = false
 
-heading = "Your Trusted 3PL Partner"
+heading = "Your Trusted 3PL Partner in The Bahamas"
 
 description = "XPS provides full-service freight forwarding, customs brokerage, warehousing, and distribution—backed by licensed expertise and local insight."
 
