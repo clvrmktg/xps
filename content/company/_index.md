@@ -6,7 +6,13 @@ draft = false
 
 heading = "Your Trusted 3PL Partner"
 
-subheading = "XPS provides full-service freight forwarding, customs brokerage, warehousing, and distribution—backed by licensed expertise and local insight."
+description = "XPS provides full-service freight forwarding, customs brokerage, warehousing, and distribution—backed by licensed expertise and local insight."
+
+subheading = """
+XPS Logistics provides full-service freight forwarding, customs brokerage, warehousing, and distribution—backed by licensed expertise and local insight. We keep your supply chain moving across New Providence, the Family Islands, and beyond.
+
+Founded and led by Bahamian logistics professionals with more than 50 years of combined industry experience.
+"""
 
 # Values
 [[values]]

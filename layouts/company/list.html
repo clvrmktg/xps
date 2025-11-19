@@ -2,20 +2,7 @@
 {{ .Store.Set "hasTwic" true }}
 {{- end -}}
 {{- define "main" -}}
-<div class="[ full-width content-grid row-gap--1 ]">
-  <header class="[ hero ][ full-width section--padding bg ]" {{ with .Resources.GetMatch (.Params.hero.image) }}data-twic-background="url(image:{{ .RelPermalink }})"{{- end -}}>
-    <h1 class="[ hidden ]">XPS Logistics</h1>
-    <div class="[ wrapper ][ content-grid middle ]">
-      <div class="[ grid md:col--2 ]">
-        <div class="[ hero__content ] ">
-          <h2 class="[ font--1 ]">{{ .Params.heading }}</h2>
-          <p class="[ ch--48 ]">{{ .Params.subheading | safeHTML }}</p>
-        </div>
-      </div>
-    </div>
-  </header>
-  {{ partial "breadcrumbs.html" .}}
-</div>
+  {{partial "hero.html" . }}
   <section class="[ grid section--padding section--spacing ]">
     <div class="[ lead ][ grid row-gap--2 ]">
       <div class="[ lead__heading ]">
