@@ -14,6 +14,24 @@ XPS Logistics provides full-service freight forwarding, customs brokerage, wareh
 Founded and led by Bahamian logistics professionals with more than 50 years of combined industry experience.
 """
 
+
+[[highlights]]
+title = "Regional Reach"
+icon  = "world"
+text  = "Our reach extends throughout The Bahamas, Caribbean, North, and South America, allowing us to provide reliable logistics solutions tailored to your needs."
+
+[[highlights]]
+title = "Strategic Growth"
+icon  = "trending-up"
+text  = "We’re increasing our warehouse capacity and refining our routes while investing in onboarding and training our team to meet increasing demand."
+
+[[highlights]]
+title = "Proven Experience"
+icon  = "shield-check"
+text  = "Leveraging over five decades of industry experience in freight forwarding, warehousing, and distribution, we have exactly what it takes to deliver results."
+
+
+
 # Values
 [[values]]
 title = "Put people first"
