@@ -74,7 +74,7 @@
       </div>
       {{ with .Params.image }}
         {{ partial "image.html" (dict
-            "image"  (dict "path" .path)
+            "image"  .
             "ratio"  "1:1"
             "helper" "o--1 mb--1"
             "page"   $.Page
