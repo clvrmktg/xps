@@ -51,11 +51,11 @@
           <figure class="[ member__photo ][ ratio--1:1 o--1 mb--1 ]">
             <style>
               figure {
-                background-image: url('https://filiio.twic.pics/uploads/.jpg?twic=v1/output=preview');
+                background-image: url('https://filiio.twic.pics/uploads/{{ .image }}?twic=v1/output=preview');
               }
               
-            </style><img data-twic-src="image:uploads/.jpg" data-twic-preview="image:uploads/.jpg" data-twic-focus="auto" alt="" image="image"/>
-            <noscript><img class="[ script ]" src="https://filiio.twic.pics/uploads/.jpg?twic=v1/output=preview"/></noscript>
+            </style><img data-twic-src="image:uploads/{{ .image }}" data-twic-preview="image:uploads/{{ .image }}" data-twic-focus="auto" alt="" image="image"/>
+            <noscript><img class="[ script ]" src="https://filiio.twic.pics/uploads/{{ .image }}?twic=v1/output=preview"/></noscript>
           </figure>
         </li>
         {{ end }}
