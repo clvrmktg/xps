@@ -5,8 +5,10 @@
   {{partial "hero.html" . }}
   <section class="[ grid section--padding section--spacing ]">
     <div>
-      <h2 class="[ bar-before ][ flex--col row-gap--1 ]">Your trusted 3PL partner</h2>
-      <p class="[ lead ]">At XPS Logistics, we're dedicated to making things simple for those looking for 3PL solutions in The Bahamas. No matter what you need — freight forwarding, customs brokerage, warehousing, distribution, or fulfillment — we've got you covered.</p>
+      <h2 class="[ bar-before ][ flex--col row-gap--1 ]">Extending your supply chain</h2>
+
+      <p class="[ lead ]">At XPS Logistics, we make 3PL simple for businesses operating in or shipping to The Bahamas. Whether you need freight forwarding, customs brokerage, warehousing, or distribution, we provide reliable support across your entire supply chain.</p>
+      
     </div>
     <div class="[ highlights--service ][ grid col-gap--2 row-gap--2 md:col--3 ]">
       {{ range .Params.highlights }}
@@ -36,7 +38,7 @@
   </section>
   <section>
     <div class="[ section--padding ]">
-      <h2 class="[ font--1 ]">Our Team</h2>
+      <h2 class="[ font--1 ]">Our leadership team</h2>
       <div class="[ split-sub ][ pb--5 ]">
         <p class="[ lead ]">We're a team that prioritizes safety, a customer-focused approach, and operational excellence. That's why our team is comprised of industry professionals with a wealth of experience in operations and logistics.</p>
       </div>
@@ -159,16 +161,5 @@
       {{ end }}
     </ul>
   </section>
-  <section class="[ service-cta ][ full-width content-grid ]">
-    <div class="[ grid middle section--padding ]">
-      <div>
-        <h2 class="[ font--3 ]">Ready to start shipping with confidence?</h2>
-        <p class="[ ch--54 ]">Let's talk about how XPS can support your next move—whether it's a single shipment or a full 3PL program.</p>
-      </div>
-      <div>
-        <a class="[ btn btn--lg btn--red ]" href="/contact-us/">Talk to our team</a>
-      </div>
-    </div>
-  </section>
-
+  {{ partial "cta.html" . }}
 {{- end -}}

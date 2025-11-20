@@ -43,10 +43,12 @@
   </div>
 </section>
 
-<section class="[ grid section--spacing ]">
+<section class="[ grid section--spacing section--padding ]">
   <h2>Insights</h2>
   {{ $posts := (site.GetPage "section" "insights").RegularPages | first 3 }}
   {{ partial "posts.html" (dict "Pages" $posts "Site" .Site) }}
 </section>
+
+{{ partial "cta.html" . }}
 
 {{- end -}}
