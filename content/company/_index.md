@@ -14,6 +14,7 @@ XPS Logistics provides full-service freight forwarding, customs brokerage, wareh
 Founded and led by Bahamian logistics professionals with more than 50 years of combined industry experience.
 """
 
+cta = "Talk to our team"
 
 [[highlights]]
 title = "Regional Reach"
@@ -34,28 +35,38 @@ text  = "Leveraging over five decades of industry experience in freight forwardi
 [[values]]
 title = "Put people first"
 text = "We put people at the center of everything we do—supporting our customers, valuing our team, and building relationships that last."
+icon = "users"
 
 [[values]]
 title = "Be safe"
 text = "We protect the safety and well-being of our team by maintaining high standards, ensuring everyone works—and returns home—safely."
+icon = "shield-check"
 
 [[values]]
 title = "Be responsible"
 text = "We take ownership of our work, speak up when improvements are needed, and stay focused on doing what’s right for our customers and our team."
+icon = "checkbox"
 
 [[values]]
 title = "Be better"
 text = "We invest in our people, technology, and equipment, always looking for smarter ways to improve performance and deliver stronger results."
+icon = "trending-up"
 
 [[values]]
 title = "Be respectful"
 text = "We foster a culture where every voice matters. We listen, communicate honestly, and ensure our team feels valued and respected."
+icon = "heart-handshake"
 
 [[values]]
 title = "Be world-class"
 text = "We aim to lead the 3PL industry—competitive, committed, and focused on delivering best-in-class service in everything we do."
+# icon = "laurel-wreath-1"
+icon = "medal"
 
-
+#careers
+[image]
+path = "xps-team-photo.jpeg"
+alt = "XPS staff photo"
 
 
 # Team
