@@ -11,53 +11,22 @@
     {{ $counter = add $counter 1 }}
     <li id="post-{{$counter}}" class="[ post ]">
       <a class="[ post__link ][ grid row-gap--0.5 ]" href="{{ .RelPermalink }}" data-prefetch>
-        {{- $featureImage := .Params.feature.image -}}
+        {{- $feature := .Params.feature -}}
+        {{- $cover   := .Params.cover -}}
+        {{- $imgPath := $feature.image | default $feature.path | default $cover.image -}}
         {{- $fallbackPath := "/uploads/xps-feature-fallback.jpg" -}}
         {{- $fallbackWidth := 1920 -}}
         {{- $fallbackHeight := 1080 -}}
+        {{- $alt := ($feature.alt | default $cover.alt) | default .Title -}}
 
-        {{- $img := "" -}}
-        {{- $imgSrc := "" -}}
-        {{- $imgWidth := 0 -}}
-        {{- $imgHeight := 0 -}}
-
-        {{- if $featureImage }}
-          {{- $img = .Resources.GetMatch $featureImage -}}
-          {{- if $img }}
-            {{- $imgSrc = $img.RelPermalink -}}
-            {{- $imgWidth = $img.Width -}}
-            {{- $imgHeight = $img.Height -}}
-          {{- else }}
-            {{- $imgSrc = $fallbackPath -}}
-            {{- $imgWidth = $fallbackWidth -}}
-            {{- $imgHeight = $fallbackHeight -}}
-          {{- end }}
-        {{- else }}
-          {{- $imgSrc = $fallbackPath -}}
-          {{- $imgWidth = $fallbackWidth -}}
-          {{- $imgHeight = $fallbackHeight -}}
-        {{- end }}
-        <figure class="[ post__img ][ ratio--16:9 scale ]">
-          <picture id="image-{{ $counter }}" class="[ bg ]">
-            <style>#image-{{ $counter }} {background-image: url('https://{{ $.Site.Params.twic }}.twic.pics{{ $imgSrc }}?twic=v1/output=preview');}</style>
-            <img
-              data-twic-src="image:{{ $imgSrc }}"
-              data-twic-focus="auto"
-              alt="{{ .Params.feature.alt | default .Title }}"
-              width="{{ $imgWidth }}"
-              height="{{ $imgHeight }}"
-            />
-            <noscript>
-              <img
-                class="[ script ]"
-                src="https://{{ $.Site.Params.twic }}.twic.pics{{ $imgSrc }}?twic=v1/output=preview"
-                alt="{{ .Params.feature.alt | default .Title }}"
-                width="{{ $imgWidth }}"
-                height="{{ $imgHeight }}"
-              />
-            </noscript>
-          </picture>
-        </figure>
+        {{ partial "image.html" (dict
+            "image"    (dict "path" $imgPath "alt" $alt)
+            "fallback" (dict "path" $fallbackPath "width" $fallbackWidth "height" $fallbackHeight)
+            "class"    "post__img"
+            "ratio"    "16:9"
+            "helper"   "scale"
+            "page"     .
+        ) }}
 
         <div class="[ grid ]">
           <h2 class="[ font--3 o--2 ]">{{ .LinkTitle }}</h2>

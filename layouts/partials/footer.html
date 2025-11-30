@@ -1,9 +1,10 @@
 <!-- CTA - START -->
+{{ if ne .context.Section "contact-us"}}
 <section class="[ cta ][ content-grid section--padding ]">
   <b class="[ line ]"></b>
   <div class="[ grid md:col--2 gap--2 ]">
     <div>
-      <h2>Smart Shipping Starts Here — <br>Join Our Mailing List</h2>
+      <h2>Smart shipping starts here—<br>join our mailing list</h2>
       <p>Get expert logistics tips, tariff updates, and industry news straight to your inbox.</p>
     </div>
     <form class="[ grid row-gap--2 ]" name="newsletter" action="/thank-you" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-validate>
@@ -26,6 +27,7 @@
     </form>
   </div>
 </section>
+{{end}}
 <!-- CTA - END -->
 <!-- Footer - START -->
 <footer class="[ footer ][ full-width content-grid section--spacing section--padding-top pb--2 ]">
