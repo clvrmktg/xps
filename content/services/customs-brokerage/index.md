@@ -4,6 +4,7 @@ weight = 2
 draft = false
 title = 'Customs Brokerage'
 summary = "Licensed brokerage services to ensure your goods clear Bahamian customs quickly, compliantly, and without delays."
+
 description = "Licensed Bahamian customs brokers managing your cargo clearance from start to finish."
 
 subheading = """
@@ -24,17 +25,21 @@ alt = ""
 image = "xps-customs-brokerage.jpg"
 alt = "XPS customs broker"
 
-[[highlights]]
+[highlights]
+title = "Why shippers trust our brokerage"
+lead  = "Licensed Bahamian brokers who classify accurately, file fast, and keep your cargo compliant from entry to release."
+
+[[highlights.items]]
 title = "Accurate"
 text = "We classify your goods correctly the first time to prevent mischarges, penalties, and avoidable delays."
 icon = "clipboard-check"
 
-[[highlights]]
+[[highlights.items]]
 title = "Fast"
-text = "Your documents are reviewed early and your entry is submitted promptly through Click2Clear for the fastest possible clearance."
+text = "Your documents are reviewed early and your entry is submitted promptly for the fastest possible clearance."
 icon = "stopwatch"
 
-[[highlights]]
+[[highlights.items]]
 title = "Trusted"
 text = "Licensed Bahamian customs brokers you can rely on to manage your commercial or personal cargo with full compliance."
 icon = "scale"

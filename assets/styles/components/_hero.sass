@@ -4,9 +4,9 @@ $min: $min-font-size * 5
 $max: $max-font-size * 7
 
 .hero
-  +clamp(min-height, 350, 390)
-
+  
   &__inner
+    +clamp(min-height, 350, 390)
     background: linear-gradient(115deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.4) 65%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0.05) 100%)
     +clamp(padding-top, $min, $max)
 
@@ -18,14 +18,16 @@ $max: $max-font-size * 7
     opacity: 0.9
     margin-bottom: 0.6rem
 
-  &.hero--home
-    min-height: calc(100dvh - var(--navbar-height))
+  &--home
     position: relative
     // outline: $bg
-
-    @supports not (min-height: 100dvh)
-      min-height: calc(100vh - var(--navbar-height))
-  
+    
+    > .hero__inner
+      min-height: calc(100dvh - var(--navbar-height))
+      
+      @supports not (min-height: 100dvh)
+        min-height: calc(100vh - var(--navbar-height))
+    
   > .wrapper
     min-height: inherit
     position: relative

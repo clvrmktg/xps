@@ -1,66 +1,80 @@
-<ul class="[ grid md:col--2 col-gap--2 row-gap--3 section--padding ]">
-  {{ $pages := .Pages }}
-  {{ $counter := 0 }}
-  {{ range $pages.ByWeight }}
-    {{ $counter = add $counter 1 }}
-    <li id="service-{{$counter}}" class="[ post ]">
-      <a class="[ post__link ][ grid row-gap--1 ]" href="{{ .RelPermalink }}" data-prefetch>
-        {{- $heroImage := .Params.hero.image -}}
-        {{- $fallbackPath := "/uploads/xps-feature-fallback.jpg" -}}
-        {{- $fallbackWidth := 1920 -}}
-        {{- $fallbackHeight := 1080 -}}
+{{ $page := .page | default . }}
+{{ $serviceList := $page.Params.serviceList }}
+{{ $title := or .title (and $serviceList $serviceList.title) "Customs to delivery, made simple" }}
+{{ $lead := or .lead (and $serviceList $serviceList.lead) "We coordinate every link in your logistics chain—from freight forwarding and customs clearance to storage and final delivery—so your supply chain runs smoothly." }}
 
-        {{- $img := "" -}}
-        {{- $imgSrc := "" -}}
-        {{- $imgWidth := 0 -}}
-        {{- $imgHeight := 0 -}}
+<section class="[ full-width content-grid bg--light section--spacing section--padding ]">
+  <div>
+    <h2>{{ $title }}</h2>
+    <p class="[ lead ]">{{ $lead }}</p>
+  </div>
+  <ul class="[ grid md:col--2 col-gap--2 row-gap--3 ]">
+    {{ $pages := $page.Pages }}
+    {{ $counter := 0 }}
+    {{ range $pages.ByWeight }}
+      {{ $counter = add $counter 1 }}
+      <li id="service-{{$counter}}" class="[ post ]">
+        <a class="[ post__link ][ grid row-gap--1 ]" href="{{ .RelPermalink }}" data-prefetch>
+          {{- $heroImage := .Params.hero.image -}}
+          {{- $fallbackPath := "/uploads/xps-feature-fallback.jpg" -}}
+          {{- $fallbackWidth := 1920 -}}
+          {{- $fallbackHeight := 1080 -}}
 
-        {{- if $heroImage }}
-          {{- $img = .Resources.GetMatch $heroImage -}}
-          {{- if $img }}
-            {{- $imgSrc = $img.RelPermalink -}}
-            {{- $imgWidth = $img.Width -}}
-            {{- $imgHeight = $img.Height -}}
+          {{- $img := "" -}}
+          {{- $imgSrc := "" -}}
+          {{- $imgWidth := 0 -}}
+          {{- $imgHeight := 0 -}}
+
+          {{- if $heroImage }}
+            {{- $img = .Resources.GetMatch $heroImage -}}
+            {{- if $img }}
+              {{- $imgSrc = $img.RelPermalink -}}
+              {{- $imgWidth = $img.Width -}}
+              {{- $imgHeight = $img.Height -}}
+            {{- else }}
+              {{- $imgSrc = $fallbackPath -}}
+              {{- $imgWidth = $fallbackWidth -}}
+              {{- $imgHeight = $fallbackHeight -}}
+            {{- end }}
           {{- else }}
             {{- $imgSrc = $fallbackPath -}}
             {{- $imgWidth = $fallbackWidth -}}
             {{- $imgHeight = $fallbackHeight -}}
           {{- end }}
-        {{- else }}
-          {{- $imgSrc = $fallbackPath -}}
-          {{- $imgWidth = $fallbackWidth -}}
-          {{- $imgHeight = $fallbackHeight -}}
-        {{- end }}
-        <figure class="[ post__img ][ ratio--16:9 scale ]">
-          <picture id="image-{{ $counter }}" class="[ bg ]">
-            <style>#image-{{ $counter }} {background-image: url('https://{{ $.Site.Params.twic }}.twic.pics{{ $imgSrc }}?twic=v1/output=preview');}</style>
-            <img
-              data-twic-src="image:{{ $imgSrc }}"
-              data-twic-focus="auto"
-              alt="{{ .Params.feature.alt | default .Title }}"
-              width="{{ $imgWidth }}"
-              height="{{ $imgHeight }}"
-            />
-            <noscript>
+          <figure class="[ post__img ][ ratio--16:9 scale ]">
+            <picture id="image-{{ $counter }}" class="[ bg ]">
+              <style>#image-{{ $counter }} {background-image: url('https://{{ $.Site.Params.twic }}.twic.pics{{ $imgSrc }}?twic=v1/output=preview');}</style>
               <img
-                class="[ script ]"
-                src="https://{{ $.Site.Params.twic }}.twic.pics{{ $imgSrc }}?twic=v1/output=preview"
+                data-twic-src="image:{{ $imgSrc }}"
+                data-twic-focus="auto"
                 alt="{{ .Params.feature.alt | default .Title }}"
                 width="{{ $imgWidth }}"
                 height="{{ $imgHeight }}"
               />
-            </noscript>
-          </picture>
-        </figure>
-        <div class="[ flow ]">
-          <h2>{{ .Title }}</h2>
-          <p class="[ o--2 ]">{{ .Summary }}</p>
-        </div>
-      </a>
-
-        <a href="{{ .RelPermalink }}" data-prefetch>Learn More 
-          <span class="[ hidden ]">About {{ .Title }}</span>
+              <noscript>
+                <img
+                  class="[ script ]"
+                  src="https://{{ $.Site.Params.twic }}.twic.pics{{ $imgSrc }}?twic=v1/output=preview"
+                  alt="{{ .Params.feature.alt | default .Title }}"
+                  width="{{ $imgWidth }}"
+                  height="{{ $imgHeight }}"
+                />
+              </noscript>
+            </picture>
+          </figure>
+          <div class="[ flow ]">
+            <h2>{{ .Title }}</h2>
+            <p class="[ o--2 ]">{{ .Summary }}</p>
+          </div>
         </a>
-    </li>
-  {{ end }}
-</ul>
+
+        <span>
+          <a href="{{ .RelPermalink }}" data-prefetch>Learn More 
+            <span class="[ hidden ]">About {{ .Title }}</span>
+          </a>
+          &#9654;
+        </span>
+      </li>
+    {{ end }}
+  </ul>
+</section>

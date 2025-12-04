@@ -32,10 +32,30 @@ subheading = """
 Trusted <abbr title="Third Party Logistics" aria-label="Third Party Logistics">3PL</abbr> provider offering customs brokerage, ocean and air freight, warehousing, distribution, and last-mile delivery across The Bahamas.
 """
 
+[highlights]
+title = "Why XPS stands out"
+lead  = "A licensed, local, and fully integrated logistics partner — built for businesses shipping into, out of, and across The Bahamas."
+
+[[highlights.items]]
+title = "Licensed & Compliant"
+text  = "Registered customs brokerage with deep knowledge of Bahamian regulations."
+icon  = "shield-check"
+
+[[highlights.items]]
+title = "Regional Reach"
+text  = "Coverage across New Providence, the Family Islands, and key regional hubs."
+icon  = "world"
+
+[[highlights.items]]
+title = "Integrated 3PL"
+text  = "Freight, brokerage, warehousing, and distribution—coordinated under one roof."
+icon  = "packages"
+
 [hero]
   image = "nassau-container-port-bahamas.jpg"
 
-[params]
-  hasTwic = true
+[serviceList]
+title = "Customs to delivery, made simple"
+lead  = "We coordinate every link in your logistics chain—from freight forwarding and customs clearance to storage and final delivery—so your supply chain runs smoothly."
 
 +++

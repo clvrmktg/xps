@@ -12,9 +12,9 @@
       {{- partial "footer.html"  (dict "context" . "currentPage" $currentPage) -}}
     </div>
     <!-- <script src="/scripts/app-{{ .Site.Params.Version }}.min.js" defer></script> -->
-    {{partial "script.html" (dict "path" "scripts/components/prefetch.js" "targetPath" "scripts/prefetch.js")}}
+    {{partial "script.html" (dict "path" "scripts/components/prefetch.js" "targetPath" "scripts/prefetch.js" "attributes" (dict "defer" true))}}
     {{- if $.Store.Get "hasObscure"  -}}
-    {{ partial "script.html" (dict "path" "scripts/components/obscure.js" "targetPath" "scripts/obscure.js") }}
+    {{ partial "script.html" (dict "path" "scripts/components/obscure.js" "targetPath" "scripts/obscure.js" "attributes" (dict "defer" true)) }}
     {{- end -}}
     {{- if $.Store.Get "hasBouncer"  -}}
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/bouncer/dist/bouncer.polyfills.min.js"></script>

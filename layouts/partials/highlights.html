@@ -1,0 +1,31 @@
+{{/* sections/highlights.html */}}
+
+{{- $hl := .Params.highlights -}}
+
+{{- if $hl }}
+<section class="[ highlights--service section--padding section--spacing ]">
+  <div class="[ wrapper ][ grid section--spacing ]">
+    <header class="[ section__header text-center ]">
+      <h2>{{ $hl.title | default "Highlights" }}</h2>
+      {{ with $hl.lead }}
+        <p class="[ lead ]">{{ . }}</p>
+      {{ end }}
+    </header>
+
+    <ul class="[ highlights ][ grid col-gap--2 row-gap--2 md:col--3 ]">
+      {{ range $hl.items }}
+        <li class="[ highlight ][ flex flex--col gap--1 ]">
+          
+          {{ with .icon }}
+          {{ readFile (printf "static/tabler/%s.svg" .) | safeHTML }}
+          {{ end }}
+
+          <h3 class="[ font--4 ]">{{ .title }}</h3>
+          <p>{{ .text | markdownify }}</p>
+        </li>
+      {{ end }}
+    </ul>
+
+  </div>
+</section>
+{{ end }}

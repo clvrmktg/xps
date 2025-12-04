@@ -10,7 +10,7 @@
         <div class="[ hero__content ][ ch--54 ]">
           <p class="[ hero__eyebrow ][ font--1- upper ]">XPS Logistics • {{ .Title }}</p>
           <h1>{{ if .Params.heading }}{{ .Params.heading }}{{else}}{{ .Title }}{{end}}</h1>
-          <p class="[ font--4 ]">{{ .Params.subheading | markdownify }}</p>
+          <div>{{ .Params.subheading | markdownify }}</div>
           {{ if .Params.cta }}
           <a class="[ btn btn--lg btn--red ]" href="/contact-us" data-prefetch>{{ .Params.cta }}</a>
           {{ end }}

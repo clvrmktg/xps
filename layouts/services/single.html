@@ -3,7 +3,8 @@
 {{- end -}}
 {{ define "main"}}
   {{ partial "hero.html" . }}
-  <section class="[ highlights--service ][ grid col-gap--2 row-gap--2 md:col--3 section--padding ]">
+  {{ partial "highlights.html" .}}
+  {{/*  <section class="[ highlights--service ][ grid col-gap--2 row-gap--2 md:col--3 section--padding ]">
     {{ range .Params.highlights }}
       <div class="[ card ][ flex flex--col gap--1 ]">
         {{ $icon := printf "static/tabler/%s.svg" .icon }}
@@ -12,7 +13,7 @@
         <p>{{ .text | markdownify }}</p>
       </div>
     {{ end }}
-  </section>
+  </section>  */}}
 
   <section class="[ service--blocks ][ full-width content-grid section--padding section--spacing ]">
 

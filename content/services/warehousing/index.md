@@ -22,17 +22,21 @@ alt = ""
 image = "warehouse.jpg"
 alt = "XPS warehouse"
 
-[[highlights]]
+[highlights]
+title = "Why businesses store with XPS"
+lead  = "Secure, flexible storage integrated with brokerage, forwarding, and delivery for a seamless logistics flow."
+
+[[highlights.items]]
 title = "Secure"
 text = "Monitored 24/7 with restricted access and on-site staff to keep your cargo safe and protected."
 icon = "shield-lock"
 
-[[highlights]]
+[[highlights.items]]
 title = "Flexible"
 text = "Short or long-term storage options with space that scales to your inventory and operational needs."
 icon = "arrows-horizontal"
 
-[[highlights]]
+[[highlights.items]]
 title = "Connected"
 text = """Integrated with our [customs brokerage](/services/customs-brokerage)  
 and [distribution](/services/distribution) services for a seamless, end-to-end workflow."""

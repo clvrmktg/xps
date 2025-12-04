@@ -15,17 +15,21 @@ From Nassau Container Port to regional hubs across the Caribbean and the America
 cta = "Talk to a freight specialist"
 
 
-[[highlights]]
+[highlights]
+title = "Why our freight forwarding works"
+lead  = "End-to-end air, ocean, and land coordination—with compliant documentation and on-time delivery across The Bahamas."
+
+[[highlights.items]]
 title = "Global Reach"
 text = "Connections across major ports, carriers, and regional hubs in the U.S., Caribbean, and Latin America."
 icon = "world"
 
-[[highlights]]
+[[highlights.items]]
 title = "Fully Coordinated"
 text = "We manage every leg of the shipment—from booking and documentation to final delivery."
 icon = "route"
 
-[[highlights]]
+[[highlights.items]]
 title = "On-Time Delivery"
 text = "Timely, cost-effective freight forwarding built around your timeline and cargo needs."
 icon = "clock-check"

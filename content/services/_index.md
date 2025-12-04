@@ -3,19 +3,36 @@ date = 2025-05-24T14:25:33-04:00
 draft = false
 
 title = "Services"
-description = "From customs clearance to last-mile delivery, XPS offers integrated 3PL services built for business in The Bahamas."
+description = "Freight forwarding, customs brokerage, warehousing, and delivery across The Bahamas. Reliable logistics support throughout Nassau and New Providence."
 
-[[highlights]]
+subheading = """
+Freight forwarding, customs brokerage, warehousing, and delivery across The Bahamas. Reliable logistics support throughout Nassau and New Providence.
+
+We manage the details that keep your supply chain moving: documentation, Click2Clear submissions, storage, routing, and on-time delivery for every shipment.
+"""
+
+cta = "Talk to our team"
+
+[highlights]
+title = "How we deliver better service"
+lead  = "Reliable, licensed logistics support for businesses shipping into, out of, and across The Bahamas — with full coverage in Nassau, New Providence, and the Family Islands."
+
+[[highlights.items]]
 title = "Reliable"
-text = "A seasoned team with decades of hands-on experience in Bahamian logistics."
+icon  = "truck-delivery"
+text  = "On-time pickups, accurate handling, and consistent communication at every step."
 
-[[highlights]]
-title = "Integrated"
-text = "From customs to delivery—we offer complete, end-to-end solutions."
+[[highlights.items]]
+title = "Licensed expertise"
+icon  = "id"
+text  = "Customs-certified professionals ensuring compliance and smooth clearance."
 
-[[highlights]]
-title = "Compliant"
-text = "Every service we provide meets or exceeds Bahamian regulatory standards."
+[[highlights.items]]
+title = "Coordinated logistics"
+icon  = "arrows-exchange"
+text  = "Forwarding, brokerage, warehousing, and delivery—fully connected under one team."
+
+
 
 [cover]
   image = 'services-social-cover.jpg'
@@ -24,6 +41,10 @@ text = "Every service we provide meets or exceeds Bahamian regulatory standards.
 [hero]
   image = 'arial-quay-view.jpg'
   alt = 'Arial view of container vessel being offloaded'
+
+[serviceList]
+title = "Explore our services"
+lead  = "Freight forwarding, customs brokerage, warehousing, and distribution—tailored for reliable logistics across Nassau, New Providence, and the Family Islands."
 
 [params]
   hasSubmenu = true

@@ -14,17 +14,21 @@ Whether you're moving small parcels, palletized freight, or full container loads
 
 cta = "Talk to a distribution specialist"
 
-[[highlights]]
+[highlights]
+title = "Why our distribution delivers"
+lead  = "Local expertise, dependable scheduling, and island-wide coordination to keep your freight moving smoothly."
+
+[[highlights.items]]
 title = "Reliable"
 text = "Scheduled pickups, confirmed deliveries, and real-time updates that keep your operation moving smoothly."
 icon = "truck-delivery"
 
-[[highlights]]
+[[highlights.items]]
 title = "Local"
 text = "Coverage across New Providence and all major Family Islands, with flexible routing tailored to your delivery needs."
 icon = "map-pin"
 
-[[highlights]]
+[[highlights.items]]
 title = "Integrated"
 text = "Seamlessly connected with our [warehousing](/services/warehousing) and [customs brokerage](/services/customs-brokerage) services for end-to-end logistics coordination."
 icon = "arrows-transfer-up-down"
