@@ -1,0 +1,121 @@
+{{- $page := . -}}
+
+{{/* 1) Overview: optional image + who we help */}}
+<section class="[ landing-overview section--padding section--spacing ]">
+  <div class="[ wrapper ][ grid lg:col--2 gap--3 items-start ]">
+
+    {{ with .Params.landing.image }}
+    <div class="landing-overview__media">
+      {{ partial "image.html" (dict
+          "image"  .
+          "class"  "landing-overview__img"
+          "ratio"  "4:3"
+          "helper" "o--1"
+          "page"   $page
+      ) }}
+    </div>
+    {{ end }}
+
+    {{ with .Params.landing.who }}
+    <article class="[ landing-block landing-block--who ]">
+      <h2 class="font--3">{{ .title }}</h2>
+      {{ with .lead }}<p class="o--2">{{ . }}</p>{{ end }}
+      <ul class="landing-list">
+        {{ range .items }}
+        <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </article>
+    {{ end }}
+
+  </div>
+</section>
+
+{{/* 2) How it works – full-width, light background */}}
+{{ with .Params.landing.how }}
+  <section class="[ landing-how full-width content-grid bg--light ]">
+    <div class="[ wrapper ][ grid section--padding section--spacing row-gap--2 ]">
+
+      <header class="landing-how__header">
+        <h2 class="font--3">{{ .title }}</h2>
+        {{ with .lead }}<p class="o--2">{{ . }}</p>{{ end }}
+      </header>
+
+      <ol class="[ landing-steps ][ grid md:col--2 lg:col--4 gap--2 ]">
+        {{ range $i, $step := .steps }}
+        <li class="[ landing-step ][ flex flex--col gap--1 ]">
+          <span class="landing-step__badge">{{ printf "%02d" (add $i 1) }}</span>
+          <div class="landing-step__body">
+            <strong>{{ $step.title }}</strong>
+            <p>{{ $step.text }}</p>
+          </div>
+        </li>
+        {{ end }}
+      </ol>
+
+    </div>
+  </section>
+{{ end }}
+
+{{/* 3) What we handle + Why choose XPS */}}
+<section class="[ landing-summary section--padding section--spacing ]">
+  <div class="[ wrapper ][ grid md:col--2 gap--3 ]">
+
+    {{ with .Params.landing.what }}
+    <article class="[ landing-block landing-block--what ]">
+      <h2 class="font--3">{{ .title }}</h2>
+      {{ with .lead }}<p class="o--2">{{ . }}</p>{{ end }}
+      <ul class="landing-list">
+        {{ range .items }}
+        <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </article>
+    {{ end }}
+
+    {{ with .Params.landing.why }}
+    <article class="[ landing-block landing-block--why ]">
+      <h2 class="font--3">{{ .title }}</h2>
+      {{ with .lead }}<p class="o--2">{{ . }}</p>{{ end }}
+      <ul class="landing-list landing-list--accent">
+        {{ range .items }}
+        <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </article>
+    {{ end }}
+
+  </div>
+</section>
+
+<style>
+  .landing-step {
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.landing-step__badge {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px; /* Soft pill/circle */
+  background: #C8102E; /* XPS red */
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.landing-step__body strong {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.landing-steps {
+  row-gap: 2rem; /* more breathing room */
+}
+
+</style>

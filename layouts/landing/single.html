@@ -1,0 +1,55 @@
+{{- define "variables" -}}
+{{ .Store.Set "hasTwic" true }}
+{{- end -}}
+{{- define "main" -}}
+  {{- $lead := .Params.lead -}}
+  {{- $cta := .Params.cta -}}
+
+  <section class="[ hero hero--service ][ full-width bg ]">
+    <div class="[ hero__inner ][ full-width content-grid ]">
+      <div class="[ wrapper ][ flex middle section--padding-bottom ]">
+        <div class="[ hero__content ][ ch--54 ]">
+          <p class="[ hero__eyebrow ][ font--1- upper ]">XPS Logistics • {{ .Title }}</p>
+          <h1>{{ or $lead.heading .Title }}</h1>
+          {{ with $lead.text }}
+            <p class="[ lead ]">{{ . }}</p>
+          {{ end }}
+          {{ with $cta }}
+            <a class="[ btn btn--lg btn--red ]" href="{{ .href | default "/contact-us" }}" data-prefetch>{{ .label | default "Talk to our team" }}</a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "landing-block.html" . }}
+  <section class="[ faq ][ full-width content-grid section--padding ]">
+    <div class="[ wrapper ][ grid col-gap--3 row-gap--2 ]">
+      <div class="[ flex flex--col gap--1 pb--0 ]">
+        <h2>Frequently Asked Questions</h2>
+        <p class="[ faq__intro ]">{{ .Params.faqIntro }}</p>
+      </div>
+      <div class="[ flex flex--col row-gap--1 ]">
+        {{ range $index, $faq := .Params.faq }}
+          <details class="[ details ]" name="faqs" {{if (eq $index 0)}}open{{end}}>
+            <summary class="[ details__summary ][ font--600 ]">{{ .question }}</summary>
+            <div class="[ details__content ][ pt--1 ]">
+            {{ .answer | markdownify }}
+            </div>
+          </details>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <section class="[ service-cta ][ full-width content-grid ]">
+    <div class="[ grid middle section--padding ]">
+      <div>
+        <h2 class="[ font--3 ]">Need help with {{ .Title | lower }}?</h2>
+        <p class="[ ch--54 ]">Let's talk about how XPS can support your business with reliable, scalable logistics services in The Bahamas.</p>
+      </div>
+      <div>
+        <a class="[ btn btn--lg btn--red ]" href="/contact-us/">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+{{- end -}}
