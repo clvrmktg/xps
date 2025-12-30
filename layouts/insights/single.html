@@ -72,16 +72,18 @@
         </div>
         {{ end }}
         {{/*  {{- partial "footnotes.html" . -}}  */}}
-        {{ if or .Prev .Next }}
-          <nav class="post-nav [ grid col--2 ]">
-            <ul>
-              {{ with .Prev }}
-                <li class="prev">
+
+
+        {{ if or .NextInSection .PrevInSection }}
+          <nav class="[ post-nav ][ section--padding-top ]">
+            <ul class="[ grid col--2 ]">
+              {{ with .NextInSection }}
+                <li class="[ next ]">
                   <a href="{{ .RelPermalink }}">&larr; {{ .Title }}</a>
                 </li>
               {{ end }}
-              {{ with .Next }}
-                <li class="next">
+              {{ with .PrevInSection }}
+                <li class="[ prev ]">
                   <a href="{{ .RelPermalink }}">{{ .Title }} &rarr;</a>
                 </li>
               {{ end }}

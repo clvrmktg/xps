@@ -1,5 +1,5 @@
 +++
-date = '2025-06-01T04:47:40-04:00'
+date = 2025-05-15T14:57:23-04:00
 lastMod = '2025-06-01T04:47:40-04:00'
 draft = false
 title = 'The Hidden Costs of Poor Warehousing'
