@@ -1,6 +1,6 @@
 +++
 date = 2025-04-24T14:57:23-04:00
-draft = false
+draft = true
 title = "From Warehouse to Shelf: Distribution Under the New VAT Regime"
 description = "With VAT reduced to 5% on unprepared food items, businesses must rethink distribution strategies. Here’s how logistics partners can keep goods moving efficiently."
 

@@ -1,6 +1,6 @@
 +++
 date = 2025-07-17T14:57:23-04:00
-draft = false
+draft = true
 title = "Incoterms 2020 and Customs: Who Clears and Who Pays"
 description = "How Incoterms influence clearance tasks, cost, and risk on international shipments."
 

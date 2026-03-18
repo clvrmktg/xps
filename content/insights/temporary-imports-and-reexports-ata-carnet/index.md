@@ -1,6 +1,6 @@
 +++
 date = 2025-09-25T14:57:23-04:00
-draft = false
+draft = true
 title = "Temporary Imports and Re-exports: When a Carnet Fits"
 description = "Use cases for ATA Carnet and temporary admission of goods for short term use."
 

@@ -1,7 +1,7 @@
 +++
 date = 2025-05-15T14:57:23-04:00
 lastMod = '2025-06-01T04:47:40-04:00'
-draft = false
+draft = true
 title = 'The Hidden Costs of Poor Warehousing'
 description = "Poor warehousing can quietly drain your business—through delays, damaged goods, and lost inventory. Learn how XPS Logistics tackles these 3PL challenges with secure, cost-effective solutions in The Bahamas."
 

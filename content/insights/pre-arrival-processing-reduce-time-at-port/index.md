@@ -1,6 +1,6 @@
 +++
 date = 2025-07-24T14:57:23-04:00
-draft = false
+draft = true
 title = "Pre Arrival Processing: How to Reduce Time at Port"
 description = "Why early data submission shortens release times and how to prepare."
 

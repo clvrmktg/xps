@@ -1,6 +1,6 @@
 +++
 date = 2025-09-04T14:57:23-04:00
-draft = false
+draft = true
 title = "LCL vs FCL: How Shipment Type Changes Your Clearance Plan"
 description = "How consolidated and full container shipments affect documentation and timelines."
 

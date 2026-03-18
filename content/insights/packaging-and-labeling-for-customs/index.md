@@ -1,6 +1,6 @@
 +++
 date = 2025-10-23T14:57:23-04:00
-draft = false
+draft = true
 title = "Packaging and Labeling for Customs: Avoiding Misdeclaration"
 description = "How consistent packaging and labeling prevent holds and rework."
 

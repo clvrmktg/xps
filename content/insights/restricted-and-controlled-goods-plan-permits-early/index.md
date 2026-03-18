@@ -1,6 +1,6 @@
 +++
 date = 2025-08-07T14:57:23-04:00
-draft = false
+draft = true
 title = "Restricted and Controlled Goods: Plan Permits Early"
 description = "How to identify controlled items and build lead time into your import plan."
 

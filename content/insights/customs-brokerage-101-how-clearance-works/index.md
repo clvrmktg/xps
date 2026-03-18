@@ -1,72 +1,137 @@
 +++
 date = 2025-06-12T14:57:23-04:00
 draft = false
-title = "Customs Brokerage 101: How Clearance Really Works"
-description = "A clear overview of customs brokerage, from entry to release, and what importers should prepare."
+title = "From Ship to Release: How Imports Actually Clear Customs in The Bahamas"
+description = "A practical guide to how cargo moves through the Bahamian customs process—from arrival to final clearance."
 
-# Trade-Industry
-# Logistics-Supply-Chain
-# Newsroom
-
-# Use `-` for spaces or to replace symbols
 categories = ["Trade-Industry"]
-# tags = []
-
 
 [cover]
-  image = ''
-  alt = ''
-
-
-[feature]
-  image = ""
-  alt= ""
-  figcaption = ""
-
-# Footnotes will be added based on this front matter. Shortcode for footnote reference in text: {{< footnote id="1" >}}.
-
-# [[footnotes]]
-#   id = 1
-#   content = ""
-
+image = ""
+alt = ""
 
 [params]
-#  hasTwic = true
-#  post = true
-
 +++
 
-Customs brokerage is the work of translating a shipment into a compliant customs entry. It connects your commercial documents, product classification, and declared value to the rules that govern import clearance. When that translation is accurate, cargo moves. When it is not, delays and extra costs follow.
+Most people think importing into The Bahamas begins when a broker pays duty and ends when the cargo is released.
 
-## TL;DR
+In reality, the customs process starts **long before the broker prepares the entry**. By the time your shipment arrives in Nassau, a chain of systems, documents, and manifest records must already line up correctly.
 
-- A broker aligns classification, value, and documents so Customs can release cargo quickly.
-- Most delays come from missing data, inconsistent invoices, or unclear product descriptions.
-- Importers control the inputs. Brokers make those inputs usable.
+Understanding this process can help importers avoid delays and better prepare their shipments for clearance.
 
-## What a broker actually does
+## Step 1: The shipment leaves the supplier
 
-A customs broker prepares and submits the entry, verifies the data that supports it, and coordinates with the carrier and port to release the shipment. That includes confirming the Harmonized System (HS) code, applying the correct duty and tax treatment, and matching commercial invoices to shipment details.
+Every import begins with the supplier preparing a **commercial invoice** and arranging transportation.
 
-## Core steps in a typical entry
+The invoice becomes the foundation of the customs entry. It should clearly state:
 
-1. Collect documents: invoice, packing list, transport document, permits if required.
-2. Classify products using HS codes and confirm any exemptions or special treatment.
-3. Declare customs value and calculate duties, VAT, and fees.
-4. Submit the entry and respond to any Customs questions.
-5. Secure release and coordinate delivery.
+- The seller and buyer  
+- A description of the goods  
+- Quantities and values  
+- The country of origin  
 
-## What importers control
+At the same time, the carrier or freight forwarder issues a **transport document** confirming that the cargo has been accepted for shipment:
 
-Importers own the accuracy of product descriptions, supplier invoices, and valuations. If those inputs are vague, even a skilled broker cannot fix them quickly. Clean data before the shipment departs is the fastest way to protect lead time.
+- **Bill of Lading (B/L)** for ocean freight  
+- **Air Waybill (AWB)** for air cargo  
 
-## How XPS helps
+This document provides the shipment reference used by carriers, freight agents, and brokers to track the cargo during transport.
 
-XPS Logistics combines brokerage with freight coordination and local delivery so entries, release, and distribution align. We help you standardize documentation, validate classifications, and clear cargo without surprise delays.
+If the invoice or transport document is incomplete or inconsistent, the customs process becomes significantly more difficult.
 
-[Contact XPS Logistics](/contact-us/) to review your current import documentation process.
+## Step 2: The carrier files the cargo manifest
 
-## Sources
+Before the shipment arrives in The Bahamas, the airline or shipping line submits a **cargo manifest** to Customs.
 
-- [WTO Trade Facilitation](https://www.wto.org/english/tratop_e/tradfa_e/tradfa_e.htm)
-- [WCO Harmonized System overview](https://www.wcoomd.org/en/topics/nomenclature/overview/what-is-the-harmonized-system.aspx)
+The manifest lists all cargo aboard the vessel or aircraft and links each shipment to its **Bill of Lading or Air Waybill**.
+
+During this process, the system generates reference numbers that brokers use to locate shipments.
+
+For example:
+
+| Shipment Type | Example Reference |
+|---|---|
+| Ocean LCL shipments | HSEN numbers |
+| Ocean FCL containers | MSTRN numbers |
+| Air cargo shipments | MAM references |
+
+These references connect the **transport document, the manifest record, and the shipment itself**.
+
+Without a Bill of Lading, Air Waybill, or manifest reference, it may be difficult to locate the shipment in the system.
+
+## Step 3: The broker prepares the customs entry
+
+Once the shipment arrives and the manifest becomes available, a customs broker prepares the **customs entry**.
+
+To do this, the broker verifies several key elements:
+
+- The **commercial invoice**
+- The **Bill of Lading or Air Waybill**
+- The **manifest reference**
+- The **product classification (HS code)**
+
+The broker must also determine the **customs value of the shipment**. In The Bahamas, duties and VAT are typically calculated based on the **CIF value**, which includes:
+
+- The **cost of the goods** (from the commercial invoice)
+- **Insurance**, where applicable
+- The **freight charges**
+
+If the freight cost is not included on the supplier’s invoice, the broker may request a **freight invoice from the carrier or freight forwarder** in order to determine the correct value for customs purposes.
+
+For example, if goods cost **$5,000** and freight charges total **$1,000**, duties and VAT may be calculated on a declared value of **$6,000**, not just the price of the goods.
+
+Once the value and classification are confirmed, the broker:
+
+- Calculates duties and VAT
+- Prepares the entry
+- Submits it electronically to Customs
+
+## Step 4: Customs reviews the entry
+
+After submission, Customs reviews the declaration.
+
+Many shipments move quickly through the system, but Customs may request clarification or select cargo for inspection if:
+
+- Descriptions are unclear  
+- Values appear inconsistent  
+- The goods require permits  
+- The shipment is selected for routine verification  
+
+When the information aligns with the manifest and supporting documents, the entry is approved for release.
+
+## Step 5: Cargo release
+
+Once duties and taxes are paid and Customs releases the entry, the cargo can be collected from the port, airline terminal, or warehouse.
+
+At this stage the shipment moves from **customs control to local logistics**, where it may be delivered directly to the importer or transferred to a warehouse for storage or distribution.
+
+## Why shipments get delayed
+
+In many cases, delays do not come from Customs itself.
+
+They usually stem from missing or inconsistent information such as:
+
+- Missing Bills of Lading or Air Waybills  
+- Incomplete invoices  
+- Incorrect product descriptions  
+- Consignee names that do not match the shipping documents  
+- Missing freight information  
+
+When documents are accurate and consistent from the beginning, most shipments move through the system without difficulty.
+
+## The role of the customs broker
+
+A customs broker’s role is to connect all of these elements—documents, classification, manifest records, and customs valuation—so that Customs can confidently release the cargo.
+
+When that translation is accurate, clearance is straightforward.
+
+When the information is incomplete, the process slows down.
+
+## Next in this series
+
+In the next article, we’ll explore one of the most important elements of the customs process:
+
+**HS Codes — the classification system that determines duty rates on imported goods.**
+
+If you have questions about preparing shipments for import into The Bahamas,  
+[contact XPS Logistics](/contact-us/).

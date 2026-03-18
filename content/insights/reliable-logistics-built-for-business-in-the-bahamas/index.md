@@ -1,7 +1,7 @@
 +++
 date = 2025-05-01T14:57:23-04:00
 lastMod = '2025-05-31T22:13:43-04:00'
-draft = false
+draft = true
 title = 'Reliable Logistics: Built for Business in the Bahamas'
 description = "Whether you're shipping into The Bahamas or distributing across the islands, XPS Logistics provides dependable freight, customs, and delivery support built for business."
 

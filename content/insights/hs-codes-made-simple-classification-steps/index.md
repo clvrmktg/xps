@@ -1,6 +1,6 @@
 +++
 date = 2025-06-19T14:57:23-04:00
-draft = false
+draft = true
 title = "HS Codes Made Simple: Classification Steps for Importers"
 description = "A practical checklist for classifying goods using the Harmonized System and avoiding rework."
 

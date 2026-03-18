@@ -1,6 +1,6 @@
 +++
 date = 2025-07-31T14:57:23-04:00
-draft = false
+draft = true
 title = "Avoiding Holds and Exams: Common Triggers and Fixes"
 description = "Reduce inspections by improving data quality, consistency, and packaging discipline."
 
