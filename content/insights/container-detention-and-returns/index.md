@@ -1,6 +1,6 @@
 +++
 date = 2025-08-14T09:00:00-04:00
-draft = false
+draft = true
 title = "Container Detention and Returns: Avoiding Per Diem Charges"
 description = "Learn how container detention (per diem) charges work in The Bahamas and how to avoid extra costs by returning containers on time."
 

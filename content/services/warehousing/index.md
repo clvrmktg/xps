@@ -1,7 +1,7 @@
 +++
 date = '2025-06-02T21:15:25-04:00'
 weight = 3
-draft = false
+draft = true
 title = 'Warehousing'
 summary = "Secure storage solutions in western New Providence with 24/7 monitoring, on-site staff, and scalable capacity. Ideal for short or long-term storage of commercial goods."
 description = "Secure, flexible warehousing in western New Providence. XPS offers monitored storage with loading support, inventory oversight, and integrated logistics."

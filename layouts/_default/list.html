@@ -1,11 +1,25 @@
 {{ define "main" }}
 <article class="[ x--700 grid layout--spacing section--padding-top ]">
+  {{ if .Params.minimal }}
+  <nav class="[ minimal-nav ]" aria-label="Page">
+    <a href="/">Back to homepage</a>
+  </nav>
+  {{ end }}
   <header>
     <h1>{{ .Title }}</h1>
-    {{ partial "breadcrumbs.html" . }}
+    {{ if not .Params.minimal }}
+      {{ partial "breadcrumbs.html" . }}
+    {{ end }}
   </header>
   <div class="[ content ]">
+    <p><strong>Effective Date:</strong> {{ .Lastmod.Format "January 2, 2006" }}</p>
+
     {{ .Content }}
   </div>
+  {{ if .Params.minimal }}
+  <nav class="[ minimal-nav minimal-nav--bottom section--padding-bottom ]" aria-label="Page">
+    <a href="/">Back to homepage</a>
+  </nav>
+  {{ end }}
 </article>
 {{ end }}

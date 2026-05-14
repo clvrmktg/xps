@@ -3,13 +3,12 @@ date = '2025-05-30T08:32:35-04:00'
 draft = false
 title = 'Terms of Use'
 description = ''
+minimal = true
 
 [params]
   hasTwic = false
 
 +++
-
-**Effective Date:** [Insert Date]
 
 Welcome to the website of XPS Logistics (“we,” “our,” or “us”). By accessing or using this website (the “Site”), you agree to be bound by the following Terms of Use. If you do not agree to these terms, please do not use the Site.
 
@@ -43,4 +42,4 @@ These Terms shall be governed by and construed in accordance with the laws of th
 
 ## 8. Contact
 
-If you have any questions about these Terms of Use, please [visit our Contact Page](/contact-us).
+If you have any questions about these Terms of Use, please email [info@xpslogistics.net](mailto:info@xpslogistics.net).

@@ -1,6 +1,6 @@
 +++
 date = 2025-10-09T09:00:00-04:00
-draft = false
+draft = true
 title = "Warehousing in The Bahamas: Storage, Handling, and Cost Considerations"
 description = "Learn when warehousing is needed in The Bahamas and how storage, handling, and cost considerations affect inventory and logistics planning."
 

@@ -1,6 +1,6 @@
 +++
 date = 2025-04-10T14:57:23-04:00
-draft = false
+draft = true
 title = 'Vat Reduction Freight Forwarding Food Imports'
 description = "The Bahamas' VAT cut to 5% on unprepared food items may drive higher import volumes. Here's how freight forwarders can prepare for rising demand."
 

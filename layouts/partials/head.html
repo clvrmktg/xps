@@ -6,7 +6,9 @@
   {{- $baseTitle := .Site.Title -}}
   {{- $title := "" -}}
   
-  {{- if $page.IsHome -}}
+  {{- if $page.Params.holding -}}
+    {{- $title = $baseTitle -}}
+  {{- else if $page.IsHome -}}
     {{- $title = printf "%s | 3PL | Third-Party Logistics | Nassau, Bahamas" $baseTitle -}}
   {{- else if eq $page.Kind "term" -}}
     {{- $label := index $categoryLabels $page.Title | default $page.Title -}}

@@ -1,13 +1,13 @@
 baseURL = 'https://xpslogistics.netlify.app/'
 languageCode = 'en-us'
 title = 'XPS Logistics'
+disableKinds = [ "taxonomy", "term", "RSS" ]
 
 [sass]
   use_dart_sass = true
 
 upload_dir = "assets/uploads"
 public_path = "/uploads"
-# disableKinds = [ "taxonomy", "term" ]
 
 [taxonomies]
   category = "categories"

@@ -74,4 +74,60 @@
   display: inline-block
   margin-bottom: 1em
 
+.holding-main
+  min-height: calc(100vh - var(--navbar-height))
+  align-content: center
 
+// .minimal-main
+//   padding-top: clamp(3rem, 8vh, 5rem)
+
+.minimal-nav
+  //   font-size: var(--step--1)
+
+  a
+    color: color('xps-red')
+    font-weight: 700
+
+// .minimal-nav--bottom
+//   border-top: rem(1) solid color('border')
+//   padding-top: 1.5rem
+
+.holding-page
+  width: min(100%, 42rem)
+  padding-block: clamp(3rem, 10vh, 6rem)
+  grid-template-rows: [content-start] 1fr [content-end links-start] max-content [links-end]
+
+  h1
+    max-width: 12em
+    padding-bottom: 0.65em
+
+  p
+    color: var(--text-body)
+
+  a
+    color: color('xps-red')
+    font-weight: 700
+
+  &__content
+    grid-row: content
+
+  &__links
+    grid-row: links
+
+.holding-page__copy
+  max-width: 36rem
+
+.holding-page__contact
+  display: grid
+  gap: 0.25rem
+  margin-top: 1rem
+
+  span
+    color: var(--text-muted)
+
+.holding-page__links
+  display: flex
+  flex-wrap: wrap
+  gap: 0.75rem 1.25rem
+  margin-top: 2rem
+  font-size: var(--step--1)

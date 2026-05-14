@@ -1,6 +1,6 @@
 +++
 date = 2025-09-11T09:00:00-04:00
-draft = false
+draft = true
 title = "Managed vs Standard Clearance: What You’re Really Paying For"
 description = "Understand the difference between standard and managed customs clearance in The Bahamas and how each approach affects delays, costs, and coordination."
 

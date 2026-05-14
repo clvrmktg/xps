@@ -1,7 +1,7 @@
 +++
 date = '2025-06-02T21:34:48-04:00'
 weight = 4
-draft = false
+draft = true
 title = 'Distribution'
 summary = "From our warehouse to your customers—across Nassau and the Family Islands—we handle local delivery and island-wide coordination with speed and reliability."
 description = "Reliable last-mile distribution across New Providence and the Family Islands, with scheduled deliveries, flexible routing, and real-time communication."

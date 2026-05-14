@@ -5,7 +5,10 @@ title = 'Homepage'
 
 ######
 
-description = "I'm a web designer, developer, educator, and business owner based in Nassau, Bahamas. I'm passionate about creating websites that look great and perform even better."
+description = "XPS Logistics is preparing to launch customs brokerage and logistics support services in The Bahamas."
+layout = "home"
+holding = true
+contact_email = "info@xpslogistics.net"
 
 ######
 
@@ -26,10 +29,10 @@ We're more than just a freight handler—we're your full-service logistics partn
 """
 ######
 
-heading = "Simplify Your Supply Chain"
+heading = "Website currently under development."
 
 subheading = """
-Trusted <abbr title="Third Party Logistics" aria-label="Third Party Logistics">3PL</abbr> provider offering customs brokerage, ocean and air freight, warehousing, distribution, and last-mile delivery across The Bahamas.
+XPS Logistics is preparing to launch customs brokerage and logistics support services in The Bahamas.
 """
 
 [highlights]

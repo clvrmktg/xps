@@ -5,11 +5,14 @@
   <body>
     <div class="[ container ]">
       {{ $currentPage := . }}
+      {{ $hideChrome := or .Params.holding .Params.minimal }}
       {{ partial "navbar.html" (dict "context" . "currentPage" $currentPage) }}
-      <main class="[ main ][ content-grid {{ if eq .Page.Kind "404" }}error {{ end }}]" id="main">
+      <main class="[ main ][ content-grid {{ if eq .Page.Kind "404" }}error {{ end }}{{ if .Params.holding }} holding-main{{ end }}{{ if .Params.minimal }} minimal-main{{ end }}]" id="main">
         {{- block "main" . -}}{{- end -}}
       </main>
-      {{- partial "footer.html"  (dict "context" . "currentPage" $currentPage) -}}
+      {{ if not $hideChrome }}
+        {{- partial "footer.html"  (dict "context" . "currentPage" $currentPage) -}}
+      {{ end }}
     </div>
     <!-- <script src="/scripts/app-{{ .Site.Params.Version }}.min.js" defer></script> -->
     {{partial "script.html" (dict "path" "scripts/components/prefetch.js" "targetPath" "scripts/prefetch.js" "attributes" (dict "defer" true))}}

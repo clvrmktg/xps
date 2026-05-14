@@ -2,10 +2,9 @@
 date = '2025-01-27T10:11:24-05:00'
 draft = false
 title = 'Privacy Policy'
+minimal = true
   
 +++
-
-**Effective Date:** [Insert Date]
 
 XPS Logistics ("we", "our", or "us") respects your privacy and is committed to protecting the personal information you provide when using our website.
 
@@ -59,4 +58,4 @@ We may update this Privacy Policy from time to time. Changes will be posted on t
 
 ## 9. Contact
 
-For any questions regarding this policy or your data, please [visit our Contact Page](/contact-us).
+For any questions regarding this policy or your data, please email [info@xpslogistics.net](mailto:info@xpslogistics.net).

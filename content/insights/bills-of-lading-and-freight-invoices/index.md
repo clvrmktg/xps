@@ -1,6 +1,6 @@
 +++
 date = 2025-05-08T00:48:58-04:00
-draft = false
+draft = true
 title = "Bills of Lading and Freight Invoices"
 description = "Understand how missing Bills of Lading and freight invoices delay customs clearance in The Bahamas and lead to added costs and storage charges."
 

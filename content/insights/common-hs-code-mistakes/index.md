@@ -1,6 +1,6 @@
 +++
 date = 2025-06-12T01:02:34-04:00
-draft = false
+draft = true
 title = "Common Hs Code Mistakes"
 description = "Learn how HS code classification affects duty and VAT in The Bahamas and how common mistakes can lead to delays, reassessment, and added costs."
 

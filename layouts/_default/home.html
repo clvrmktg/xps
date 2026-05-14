@@ -1,8 +1,33 @@
 {{- define "variables" -}}
-{{ .Store.Set "hasTwic" true }}
-{{- .Store.Set "hasObscure" true -}}
+{{- if not .Params.holding -}}
+  {{ .Store.Set "hasTwic" true }}
+  {{- .Store.Set "hasObscure" true -}}
+{{- end -}}
 {{- end -}}
 {{- define "main" -}}
+{{- if .Params.holding -}}
+<section class="[ holding-page ][ grid ]">
+  <div class="[ holding-page__content ]">
+    <h1>{{ .Params.heading }}</h1>
+    <div class="[ holding-page__copy ]">
+      <p>{{ .Params.subheading }}</p>
+      <p>The company is currently in the process of formal incorporation and operational setup.</p>
+      <p>Please check back soon.</p>
+    </div>
+    <div class="[ holding-page__contact ]">
+      <span>Contact:</span>
+      <div>
+        <a href="mailto:{{ .Params.contact_email }}">{{ .Params.contact_email }}</a>
+      </div>
+    </div>
+  </div>
+  <nav class="[ holding-page__links ]" aria-label="Legal">
+    <a href="/privacy-policy/">Privacy Policy</a>
+    <a href="/cookie-policy/">Cookie Policy</a>
+    <a href="/terms-use/">Terms of Use</a>
+  </nav>
+</section>
+{{- else -}}
 {{- $twic := .Site.Params.twic -}}
 <!-- Hero - START -->
 <header class="[ hero hero--home ][ full-width bg ]" {{ with .Resources.GetMatch (.Params.hero.image) }}data-twic-background="url(image:{{ .RelPermalink }})"{{- end -}}>
@@ -56,4 +81,5 @@
 
 {{ partial "cta.html" . }}
 
+{{- end -}}
 {{- end -}}

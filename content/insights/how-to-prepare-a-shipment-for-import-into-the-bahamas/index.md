@@ -1,6 +1,6 @@
 +++
 date = 2025-07-10T20:00:58-04:00
-draft = false
+draft = true
 title = "How to Prepare a Shipment for Import into The Bahamas"
 description = "Learn how to prepare a shipment for import into The Bahamas and avoid delays, extra costs, and documentation issues during customs clearance."
 

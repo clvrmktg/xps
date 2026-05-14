@@ -1,7 +1,7 @@
 +++
 date = '2025-06-02T03:54:25-04:00'
 weight = 1
-draft = false
+draft = true
 title = 'Freight Forwarding'
 summary = "We coordinate global air and ocean shipments with full documentation, customs support, and local delivery."
 description = "Reliable imports and exports by air, sea, and land freight forwarding, fully compliant with Bahamian customs and ISPS Code security standards."

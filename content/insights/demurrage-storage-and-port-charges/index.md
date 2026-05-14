@@ -1,6 +1,6 @@
 +++
 date = 2025-04-10T00:22:48-04:00
-draft = false
+draft = true
 title = "Demurrage, Storage, and Port Charges: What Delays Really Cost"
 description = "Understand demurrage and storage charges in The Bahamas, when they apply, and how delays in clearance and documentation can increase import costs."
 

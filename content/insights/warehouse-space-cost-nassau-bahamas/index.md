@@ -1,7 +1,7 @@
 +++
 date = 2025-05-22T14:57:23-04:00
 lastMod = '2025-06-01T14:44:15-04:00'
-draft = false
+draft = true
 title = 'How Much Does Warehouse Space Cost in Nassau, Bahamas?'
 description= "Warehouse space in Nassau is expensive and scarce. XPS Logistics offers secure, well-located, and affordable 3PL warehousing services at just $12 per sq ft."
 

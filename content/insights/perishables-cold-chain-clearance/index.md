@@ -1,6 +1,6 @@
 +++
 date = 2025-09-11T14:57:23-04:00
-draft = false
+draft = true
 title = "Perishables and Cold Chain Clearance: Timing and Documentation"
 description = "How to reduce dwell time for perishable imports and protect temperature control."
 

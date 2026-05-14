@@ -1,7 +1,7 @@
 +++
 date = 2025-05-08T14:57:23-04:00
 lastMod = '2025-06-01T04:28:02-04:00'
-draft = false
+draft = true
 title = 'XPS Expands Warehouse Capacity in Nassau'
 description = "XPS Logistics doubles its warehouse capacity in Nassau, adding 2,000 sq ft of secure, cost-effective storage to support growing logistics demand in The Bahamas."
 

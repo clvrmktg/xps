@@ -3,13 +3,12 @@ date = '2025-05-30T08:32:12-04:00'
 draft = false
 title = 'Cookie Policy'
 description = ''
+minimal = true
 
 [params]
   hasTwic = false
 
 +++
-
-**Effective Date:** [Insert Date]
 
 This Cookie Policy explains how XPS Logistics (“we,” “our,” or “us”) uses cookies and similar technologies when you visit our website.
 
@@ -52,4 +51,4 @@ We may update this Cookie Policy from time to time. Any changes will be posted o
 
 ## 6. Contact
 
-If you have any questions about our use of cookies, please [visit our Contact Page](/contact-us).
+If you have any questions about our use of cookies, please email [info@xpslogistics.net](mailto:info@xpslogistics.net).

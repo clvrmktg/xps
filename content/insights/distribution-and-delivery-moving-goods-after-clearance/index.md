@@ -1,6 +1,6 @@
 +++
 date = 2025-10-09T09:00:00-04:00
-draft = false
+draft = true
 title = "Distribution and Delivery: Moving Goods After Clearance"
 description = "Understand how goods move after customs clearance in The Bahamas, including delivery, coordination, and common challenges in local distribution."
 
