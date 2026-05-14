@@ -25,6 +25,7 @@ These cookies are necessary for basic site functionality. Without them, the webs
 These cookies help us understand how visitors use our site, which pages are popular, and how users navigate through the website.  
 We use:
 - **Google Analytics** to analyze website traffic and usage patterns.
+- **Microsoft Clarity** to understand page interactions and improve usability.
 
 ### Marketing & Advertising Cookies  
 These cookies allow us to show relevant ads to users who have visited our site.  

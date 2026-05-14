@@ -13,7 +13,7 @@ XPS Logistics ("we", "our", or "us") respects your privacy and is committed to p
 We may collect the following types of information:
 - **Contact details** (e.g., name, email address, phone number) submitted via our contact form
 - **Company information** (if provided)
-- **Website usage data**, collected automatically via cookies and tracking tools like Google Analytics and Facebook Pixel
+- **Website usage data**, collected automatically via cookies and tracking tools like Google Analytics, Microsoft Clarity, and Facebook Pixel
 
 ## 2. How We Use Your Information
 
@@ -29,6 +29,7 @@ We do **not** sell or rent your personal information. We may share data with tru
 
 Third-party services we use include:
 - **Google Analytics** – to understand how visitors use our site
+- **Microsoft Clarity** – to understand how visitors interact with our pages
 - **Facebook Pixel** – to serve relevant ads based on site usage
 
 Each provider has its own privacy practices; we encourage you to review their respective policies.

@@ -130,7 +130,7 @@ public_path = "/uploads"
         enableDefault = true        
 
 [security.funcs]
-  getenv = ['^HUGO_', '^GA_TRACKING_ID$', '^META_PIXEL_ID$']
+  getenv = ['^HUGO_', '^GA_TRACKING_ID$', '^META_PIXEL_ID$', '^CLARITY_PROJECT_ID$']
 
 
 enableGitInfo = true
