@@ -1,8 +1,8 @@
 {{- define "variables" -}}
 {{- if not .Params.holding -}}
   {{ .Store.Set "hasTwic" true }}
+  {{- end -}}
   {{- .Store.Set "hasObscure" true -}}
-{{- end -}}
 {{- end -}}
 {{- define "main" -}}
 {{- if .Params.holding -}}
@@ -17,7 +17,7 @@
     <div class="[ holding-page__contact ]">
       <span>Contact:</span>
       <div>
-        <a href="mailto:{{ .Params.contact_email }}">{{ .Params.contact_email }}</a>
+        {{ partial "email.html" (dict "local" "info" "domain" "xpslogistics.net") }}
       </div>
     </div>
   </div>
