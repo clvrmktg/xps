@@ -50,11 +50,13 @@ for = "/*"
 
   Content-Security-Policy-Report-Only = """
     default-src 'none';
+    script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.clarity.ms;
+    script-src-elem 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.clarity.ms;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-    img-src 'self' data: https://*.twic.pics https://*.googleusercontent.com https://maps.gstatic.com https://www.facebook.com https://*.facebook.com https://www.gstatic.com;
+    img-src 'self' data: https://*.twic.pics https://*.googleusercontent.com https://maps.gstatic.com https://www.facebook.com https://*.facebook.com https://www.gstatic.com https://*.clarity.ms https://c.bing.com;
     font-src 'self' https://fonts.gstatic.com;
     media-src 'self';
-    connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://www.google.com https://www.recaptcha.net https://www.facebook.com https://graph.facebook.com;
+    connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://stats.g.doubleclick.net https://www.googletagmanager.com https://www.google.com https://www.recaptcha.net https://www.facebook.com https://graph.facebook.com https://*.clarity.ms;
     frame-src 'self' https://www.google.com https://www.recaptcha.net;
     form-action 'self';
     frame-ancestors 'none';
