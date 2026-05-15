@@ -35,6 +35,10 @@ subheading = """
 XPS Logistics is preparing to launch customs brokerage and logistics support services in The Bahamas.
 """
 
+# heading = "Simplify Your Supply Chain"
+
+# subheading = """ Trusted 3PL provider offering customs brokerage, ocean and air freight, warehousing, distribution, and last-mile delivery across The Bahamas. """
+
 [highlights]
 title = "Why XPS stands out"
 lead  = "A licensed, local, and fully integrated logistics partner — built for businesses shipping into, out of, and across The Bahamas."
