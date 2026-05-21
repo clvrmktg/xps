@@ -56,9 +56,9 @@ Advance rulings improve pricing accuracy and inventory planning because duty and
 
 Provide detailed product descriptions, technical data, and intended use. The better the description, the faster the decision.
 
-XPS Logistics can help assemble the documentation needed for a strong ruling request.
+XPS can help assemble the documentation needed for a strong ruling request.
 
-[Contact XPS Logistics](/contact-us/) to discuss classification certainty.
+[Contact XPS](/contact-us/) to discuss classification certainty.
 
 ## Sources
 

@@ -1,7 +1,7 @@
 +++
 date = '2025-06-10T00:00:00-04:00'
 draft = true
-title = "Customs Broker in Nassau | XPS Logistics"
+title = "Customs Broker in Nassau | XPS"
 url = "/customs-broker-nassau/"
 description = "Nassau-based customs broker handling Click2Clear declarations, duties, and delivery across New Providence and the Family Islands."
 type = "landing"
@@ -40,7 +40,7 @@ why = [
 
 [lead]
 heading = "Licensed customs broker in Nassau"
-text = "Based in Nassau, XPS Logistics prepares and submits your Click2Clear entries, coordinates inspections at Nassau Container Port and LPIA, and delivers across New Providence and the Family Islands."
+text = "Based in Nassau, XPS prepares and submits your Click2Clear entries, coordinates inspections at Nassau Container Port and LPIA, and delivers across New Providence and the Family Islands."
 
 [cta]
 label = "Talk to a customs broker"

@@ -80,7 +80,7 @@ The VAT change does not remove logistical constraints. It shifts them:
 
 ## How XPS Supports Clients
 
-As an integrated 3PL provider in The Bahamas, XPS Logistics helps clients navigate this shift with:
+As an integrated 3PL provider in The Bahamas, XPS helps clients navigate this shift with:
 
 - Freight forwarding by air and sea  
 - In-house customs brokerage  
@@ -89,7 +89,7 @@ As an integrated 3PL provider in The Bahamas, XPS Logistics helps clients naviga
 
 We keep paperwork aligned with the new VAT schedules, coordinate space across the supply chain, and reduce the risk of delays.
 
-[Contact XPS Logistics](/contact-us/) to align your upcoming food import program with the new VAT regime.
+[Contact XPS](/contact-us/) to align your upcoming food import program with the new VAT regime.
 
 ## Sources
 

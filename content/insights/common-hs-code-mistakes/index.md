@@ -164,4 +164,4 @@ When it is incorrect, the cost may not be immediately visible—but it will even
 ---
 
 If you need assistance reviewing classifications or preparing entries,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

@@ -91,9 +91,9 @@ If entries are misclassified, goods can be assessed at the wrong VAT rate or hel
 
 ## How XPS Helps
 
-XPS Logistics supports importers with customs brokerage, freight forwarding, and compliance checks. We help verify classifications, coordinate documentation, and keep shipments moving so VAT savings are reflected at the shelf. If you need help aligning shipments with the new VAT regime, we are ready to assist.
+XPS supports importers with customs brokerage, freight forwarding, and compliance checks. We help verify classifications, coordinate documentation, and keep shipments moving so VAT savings are reflected at the shelf. If you need help aligning shipments with the new VAT regime, we are ready to assist.
 
-[Contact XPS Logistics](/contact-us/) to review your product list or upcoming import schedule.
+[Contact XPS](/contact-us/) to review your product list or upcoming import schedule.
 
 ## Sources
 

@@ -161,4 +161,4 @@ Managed clearance focuses on ensuring the shipment is ready to be cleared.
 ---
 
 If you need assistance coordinating your shipments from documentation through clearance,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

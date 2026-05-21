@@ -154,4 +154,4 @@ When shipments are properly prepared and processed without delay, these charges 
 ---
 
 If you need assistance preparing shipments or avoiding unnecessary delays and costs,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

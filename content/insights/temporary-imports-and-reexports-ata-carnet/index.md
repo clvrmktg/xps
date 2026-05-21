@@ -58,9 +58,9 @@ Even with a carnet, you need accurate documents and coordinated logistics. Confi
 - Losing track of the re export schedule
 - Using the carnet for goods that will remain in country
 
-XPS Logistics can advise on temporary import strategies and documentation planning.
+XPS can advise on temporary import strategies and documentation planning.
 
-[Contact XPS Logistics](/contact-us/) to discuss a temporary import plan.
+[Contact XPS](/contact-us/) to discuss a temporary import plan.
 
 ## Sources
 

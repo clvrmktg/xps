@@ -1,7 +1,7 @@
 +++
 date = '2025-06-10T00:00:00-04:00'
 draft = true
-title = "Customs Broker in The Bahamas | XPS Logistics"
+title = "Customs Broker in The Bahamas | XPS"
 url = "/customs-broker-bahamas/"
 description = "Licensed customs broker in The Bahamas handling Click2Clear declarations, duties, and delivery. Serving Nassau, New Providence, and the Family Islands."
 type = "landing"
@@ -41,7 +41,7 @@ why = [
 
 [lead]
 heading = "Licensed customs broker in The Bahamas"
-text = "XPS Logistics provides licensed customs brokerage for cargo arriving into The Bahamas, handling Click2Clear entries, duties, VAT, and delivery so your shipments clear without unnecessary delays."
+text = "XPS provides licensed customs brokerage for cargo arriving into The Bahamas, handling Click2Clear entries, duties, VAT, and delivery so your shipments clear without unnecessary delays."
 
 [cta]
 label = "Talk to a customs broker"

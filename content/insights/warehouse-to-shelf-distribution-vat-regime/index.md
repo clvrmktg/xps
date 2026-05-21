@@ -83,13 +83,13 @@ To adapt, importers and distributors should:
 
 ## How XPS Supports Distribution
 
-XPS Logistics provides integrated solutions that connect freight, customs, warehousing, and last-mile delivery. Our distribution services cover Nassau with a reliable trucking network and extend to the Family Islands through established carrier partnerships. With in-house brokerage and scalable warehousing in western New Providence, we reduce handoff delays and keep supply chains moving from port to shelf.
+XPS provides integrated solutions that connect freight, customs, warehousing, and last-mile delivery. Our distribution services cover Nassau with a reliable trucking network and extend to the Family Islands through established carrier partnerships. With in-house brokerage and scalable warehousing in western New Providence, we reduce handoff delays and keep supply chains moving from port to shelf.
 
 ## Why This Matters
 
 The VAT reduction is designed to ease the cost of living, but tax policy alone cannot deliver that benefit. Logistics is what makes the savings real at the checkout counter. Businesses that plan ahead and rely on integrated partners will be best positioned to meet demand and maintain availability.
 
-[Contact XPS Logistics](/contact-us/) to build a distribution plan that keeps goods moving under the new VAT regime.
+[Contact XPS](/contact-us/) to build a distribution plan that keeps goods moving under the new VAT regime.
 
 ## Sources
 

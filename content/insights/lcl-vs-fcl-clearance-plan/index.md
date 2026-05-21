@@ -56,9 +56,9 @@ FCL allows more control over packing and timing, but the entry still depends on 
 
 Use LCL for smaller volumes and predictable products. Use FCL when you need control, faster release, or have consistent volume.
 
-XPS Logistics can help you evaluate mode choice and prepare documentation for either approach.
+XPS can help you evaluate mode choice and prepare documentation for either approach.
 
-[Contact XPS Logistics](/contact-us/) to plan your next shipment.
+[Contact XPS](/contact-us/) to plan your next shipment.
 
 ## Sources
 

@@ -58,9 +58,9 @@ Create a single source of truth for product descriptions and HS codes. Use a doc
 
 Customs risk management systems rely on data quality. Clean, consistent entries reduce the likelihood of inspections and speed release.
 
-XPS Logistics reviews entries for consistency and can flag risk issues early.
+XPS reviews entries for consistency and can flag risk issues early.
 
-[Contact XPS Logistics](/contact-us/) to reduce holds on your next shipment.
+[Contact XPS](/contact-us/) to reduce holds on your next shipment.
 
 ## Sources
 

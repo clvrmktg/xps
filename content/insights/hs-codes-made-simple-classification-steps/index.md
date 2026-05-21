@@ -62,9 +62,9 @@ If a product is new, complex, or high value, request an advance ruling. It provi
 - Matching by product name only
 - Ignoring the material or finished state
 
-XPS Logistics can help review classifications and build a library of consistent HS codes for your recurring imports.
+XPS can help review classifications and build a library of consistent HS codes for your recurring imports.
 
-[Contact XPS Logistics](/contact-us/) to validate your classifications.
+[Contact XPS](/contact-us/) to validate your classifications.
 
 ## Sources
 

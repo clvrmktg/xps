@@ -79,7 +79,7 @@ More inventory only helps if it is managed well. Common pain points include:
 
 ## How XPS Supports Importers
 
-XPS Logistics provides secure, scalable warehousing in western New Providence that connects directly to customs clearance, freight forwarding, and distribution. Our services include:
+XPS provides secure, scalable warehousing in western New Providence that connects directly to customs clearance, freight forwarding, and distribution. Our services include:
 
 - Flexible short-term and long-term storage  
 - Secure facilities with on-site staff and monitoring  
@@ -87,7 +87,7 @@ XPS Logistics provides secure, scalable warehousing in western New Providence th
 
 This helps clients hold the right inventory levels without tying up capital in facilities they do not own.
 
-[Contact XPS Logistics](/contact-us/) to review your inventory plan or to secure space ahead of peak demand.
+[Contact XPS](/contact-us/) to review your inventory plan or to secure space ahead of peak demand.
 
 ## Sources
 

@@ -54,7 +54,7 @@ items = [
 
 [lead]
 heading = "Third-party logistics (3PL) in The Bahamas"
-text = "XPS Logistics is a Bahamas-based 3PL partner—combining freight forwarding, customs brokerage, warehousing, and distribution so your shipments move smoothly into, out of, and across the islands."
+text = "XPS is a Bahamas-based 3PL partner—combining freight forwarding, customs brokerage, warehousing, and distribution so your shipments move smoothly into, out of, and across the islands."
 
 [cta]
 label = "Talk to our 3PL team"

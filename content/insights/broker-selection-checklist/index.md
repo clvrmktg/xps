@@ -59,9 +59,9 @@ A low fee does not help if it leads to delays or penalties. Evaluate a broker ba
 
 Start with a smaller shipment and evaluate performance. Track clearance time, responsiveness, and accuracy before committing long term.
 
-XPS Logistics offers integrated brokerage with freight, warehousing, and distribution support so all steps stay aligned.
+XPS offers integrated brokerage with freight, warehousing, and distribution support so all steps stay aligned.
 
-[Contact XPS Logistics](/contact-us/) to discuss brokerage support.
+[Contact XPS](/contact-us/) to discuss brokerage support.
 
 ## Sources
 

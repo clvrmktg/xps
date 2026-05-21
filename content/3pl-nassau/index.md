@@ -1,7 +1,7 @@
 +++
 date = '2025-06-10T00:00:00-04:00'
 draft = true
-title = "3PL in Nassau | XPS Logistics"
+title = "3PL in Nassau | XPS"
 url = "/3pl-nassau/"
 description = "Nassau-based 3PL services combining freight, customs brokerage, warehousing, and delivery across New Providence and the Family Islands."
 type = "landing"
@@ -40,7 +40,7 @@ why = [
 
 [lead]
 heading = "Nassau-based 3PL partner"
-text = "From our base in Nassau, XPS Logistics combines forwarding, customs brokerage, warehousing, and delivery—supporting businesses across New Providence with Family Island dispatch."
+text = "From our base in Nassau, XPS combines forwarding, customs brokerage, warehousing, and delivery—supporting businesses across New Providence with Family Island dispatch."
 
 [cta]
 label = "Talk to our 3PL team"

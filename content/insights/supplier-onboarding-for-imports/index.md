@@ -56,9 +56,9 @@ Review the supplier document set before cargo ships. Correcting errors at origin
 
 Share issues found at clearance with suppliers so the next shipment improves.
 
-XPS Logistics can help build supplier onboarding checklists and review first shipments.
+XPS can help build supplier onboarding checklists and review first shipments.
 
-[Contact XPS Logistics](/contact-us/) to improve supplier documentation.
+[Contact XPS](/contact-us/) to improve supplier documentation.
 
 ## Sources
 

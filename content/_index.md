@@ -5,10 +5,11 @@ title = 'Homepage'
 
 ######
 
-description = "XPS Logistics is preparing to launch customs brokerage and logistics support services in The Bahamas."
+description = "XPS provides customs brokerage, freight coordination, warehousing support, distribution, and third-party logistics (3PL) services throughout The Bahamas."
 layout = "home"
 holding = true
 contact_email = "info@xpslogistics.net"
+seo_title = "XPS | Customs Brokerage & Freight Services in The Bahamas"
 
 ######
 
@@ -29,10 +30,16 @@ We're more than just a freight handler—we're your full-service logistics partn
 """
 ######
 
-heading = "Website currently under development."
+heading = "XPS"
 
 subheading = """
-XPS Logistics is preparing to launch customs brokerage and logistics support services in The Bahamas.
+Customs Brokerage, Freight & 3PL Services in The Bahamas
+"""
+
+holding_copy = """
+XPS provides customs brokerage, freight coordination, warehousing support, distribution, and third-party logistics (3PL) services throughout The Bahamas.
+
+Our website is currently under development as we complete our operational setup and service rollout.
 """
 
 # heading = "Simplify Your Supply Chain"

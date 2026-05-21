@@ -6,7 +6,7 @@ minimal = true
   
 +++
 
-XPS Logistics ("we", "our", or "us") respects your privacy and is committed to protecting the personal information you provide when using our website.
+XPS Holdings Ltd. T/A XPS ("we", "our", or "us") respects your privacy and is committed to protecting the personal information you provide when using our website.
 
 ## 1. Information We Collect
 

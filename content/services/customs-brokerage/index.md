@@ -61,7 +61,7 @@ From commercial imports to personal shipments, XPS handles your customs clearanc
   Whether you're importing household goods or commercial freight, we manage the clearance process for you.
 
 - **Acting as Authorized Agent**  
-  Ship your cargo to “Your Name / Business c/o XPS Logistics” and let us handle the paperwork, coordination, and final delivery.
+  Ship your cargo to “Your Name / Business c/o XPS” and let us handle the paperwork, coordination, and final delivery.
 """
 image = "xps-customs-broker-processing-entry.jpg"
 alt = "Customs broker reviewing import documents and preparing Click2Clear submissions"
@@ -90,7 +90,7 @@ alt = "XPS customs broker handing a cleared customs release to a client inside a
 question = "What does a customs broker do?"
 answer = """A licensed customs broker represents you during the import or export process, ensuring your shipment is properly declared, documented, and cleared through Bahamas Customs. This includes preparing and submitting entries through the **Click2Clear** system, classifying your goods correctly, calculating duties and VAT, arranging inspections if required, and securing the release of your cargo.
 
-At **XPS Logistics**, we act as your official liaison with Customs, making sure your entries are accurate, compliant, and cleared as quickly and smoothly as possible."""
+At **XPS**, we act as your official liaison with Customs, making sure your entries are accurate, compliant, and cleared as quickly and smoothly as possible."""
 
 [[faq]]
 question = "How long does customs clearance take in The Bahamas?"
@@ -105,7 +105,7 @@ answer = """To authorize XPS to clear your goods, you'll need:
 - **Bill of lading or airway bill**, addressed to:  
 ```
 Your Business Name
-c/o XPS Logistics
+c/o XPS
 Nassau, The Bahamas
 ```
 
@@ -133,7 +133,7 @@ answer = """Yes. After your goods are released by Customs, we can deliver them d
 
 [[faq]]
 question = "Can international suppliers ship goods to Bahamian clients using XPS?"
-answer = """Absolutely. Overseas suppliers can consign shipments **“c/o XPS Logistics”** when sending goods to local customers. We'll receive, clear, and deliver the cargo while the Bahamian buyer remains the importer of record. This keeps the process compliant and significantly simplifies logistics for both sides."""
+answer = """Absolutely. Overseas suppliers can consign shipments **“c/o XPS”** when sending goods to local customers. We'll receive, clear, and deliver the cargo while the Bahamian buyer remains the importer of record. This keeps the process compliant and significantly simplifies logistics for both sides."""
 
 [[faq]]
 question = "Can XPS help with export shipments?"

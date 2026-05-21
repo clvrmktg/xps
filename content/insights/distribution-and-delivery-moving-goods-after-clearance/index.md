@@ -128,4 +128,4 @@ When managed properly, it ensures that shipments move quickly, safely, and witho
 ---
 
 If you need support coordinating delivery or managing post-clearance logistics,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

@@ -8,10 +8,10 @@
 {{- if .Params.holding -}}
 <section class="[ holding-page ][ grid ]">
   <div class="[ holding-page__content ]">
-    <h1>{{ .Params.heading }}</h1>
+    <h1 class="[ hidden ]">{{ .Params.heading }}</h1>
+    <h2>{{ .Params.subheading }}</h2>
     <div class="[ holding-page__copy ]">
-      <p>{{ .Params.subheading }}</p>
-      <p>The company is currently in the process of formal incorporation and operational setup.</p>
+      {{ .Params.holding_copy | markdownify }}
       <p>Please check back soon.</p>
     </div>
     <div class="[ holding-page__contact ]">
@@ -34,7 +34,7 @@
   {{ with .Resources.GetMatch (.Params.hero.image) }}
     <style>.hero {background-image: url('https://{{- $twic -}}.twic.pics{{ .RelPermalink }}?twic=v1/output=preview');}</style>
   {{ end }}
-  <h1 class="[ hidden ]">XPS Logistics</h1>
+  <h1 class="[ hidden ]">XPS</h1>
   <div class="[ hero__inner ][ full-width content-grid ]">
     <div class="[ wrapper ][ flex middle section--padding-bottom ]">
       <div class="[ hero__content ][ ch--54 ]">
@@ -63,7 +63,7 @@
       </div>
       <div>
         <a class="[ btn btn--lg btn--red ]" href="/company" data-prefetch>Learn More
-          <span class="[ hidden ]">About XPS Logistics</span>
+          <span class="[ hidden ]">About XPS</span>
         </a>
       </div>
     </div>
@@ -73,7 +73,7 @@
 <section class="[ grid section--spacing section--padding ]">
   <div>
     <h2>Insights</h2>
-    <p class="[ lead ]">Discover expert insights on logistics, trade, and supply chain solutions in The Bahamas. Stay ahead with updates, tips, and analysis from the team at XPS Logistics.</p>
+    <p class="[ lead ]">Discover expert insights on logistics, trade, and supply chain solutions in The Bahamas. Stay ahead with updates, tips, and analysis from the team at XPS.</p>
   </div>
   {{ $posts := (site.GetPage "section" "insights").RegularPages | first 3 }}
   {{ partial "posts.html" (dict "Pages" $posts "Site" .Site) }}

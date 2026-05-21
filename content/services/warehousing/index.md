@@ -101,7 +101,7 @@ answer = """Yes. Our warehousing services start at a minimum of **100 square fee
 
 [[faq]]
 question = "Can you receive shipments on my behalf?"
-answer = """Yes. You can consign shipments to your name or business ‘c/o XPS Logistics,' and our team will receive, inspect, and store your cargo. We can also notify you upon arrival."""
+answer = """Yes. You can consign shipments to your name or business ‘c/o XPS,' and our team will receive, inspect, and store your cargo. We can also notify you upon arrival."""
 
 [[faq]]
 question = "Do you provide inventory tracking?"

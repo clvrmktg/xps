@@ -135,4 +135,4 @@ Preparation reduces the need for corrections, avoids unnecessary costs, and allo
 ---
 
 If you need assistance preparing shipments or coordinating documentation before arrival,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

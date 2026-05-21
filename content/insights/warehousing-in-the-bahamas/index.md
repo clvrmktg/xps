@@ -149,4 +149,4 @@ When used effectively, it provides flexibility, supports distribution, and helps
 ---
 
 If you need storage solutions or support managing your inventory after clearance,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

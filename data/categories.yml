@@ -1,6 +1,6 @@
 default:
   title: "All Categories"
-  description: "Browse logistics and trade insights from XPS Logistics, covering 3PL solutions, warehouse strategy, and economic updates in The Bahamas."
+  description: "Browse logistics and trade insights from XPS, covering 3PL solutions, warehouse strategy, and economic updates in The Bahamas."
 
 Logistics-Supply-Chain:
   title: "Logistics & Supply Chain"
@@ -16,6 +16,6 @@ Trade-Industry:
 
 Newsroom:
   title: "Newsroom"
-  description: "Company updates, warehouse expansions, and operational insights from the XPS Logistics team."
+  description: "Company updates, warehouse expansions, and operational insights from the XPS team."
   url: "/categories/newsroom/"
   layout: "term"

@@ -2,7 +2,7 @@
 date = '2025-05-30T08:32:54-04:00'
 draft = true
 title = 'Accessibility Statement'
-description = "XPS Logistics is committed to making our website accessible to all users. Learn about our efforts to ensure a user-friendly experience for everyone, including individuals with disabilities."
+description = "XPS Holdings Ltd. T/A XPS is committed to making our website accessible to all users. Learn about our efforts to ensure a user-friendly experience for everyone, including individuals with disabilities."
 
 [params]
   hasTwic = false
@@ -12,7 +12,7 @@ description = "XPS Logistics is committed to making our website accessible to al
 
 **Effective Date:** [Insert Date]
 
-XPS Logistics is committed to providing a website that is accessible to all users, including those with disabilities. We aim to ensure that our content is easy to navigate and interact with, regardless of technology or ability.
+XPS Holdings Ltd. T/A XPS is committed to providing a website that is accessible to all users, including those with disabilities. We aim to ensure that our content is easy to navigate and interact with, regardless of technology or ability.
 
 ## Our Commitment
 

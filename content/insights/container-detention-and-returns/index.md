@@ -137,4 +137,4 @@ Managing the return of containers is just as important as clearing them.
 ---
 
 If you need assistance coordinating delivery, unloading, and container returns,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

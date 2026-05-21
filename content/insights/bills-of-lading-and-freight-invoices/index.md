@@ -152,4 +152,4 @@ When the Bill of Lading, freight invoice, and supporting documents are available
 ---
 
 If you need assistance coordinating documentation or preparing shipments for clearance,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

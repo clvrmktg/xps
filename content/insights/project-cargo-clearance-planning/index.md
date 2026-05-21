@@ -56,9 +56,9 @@ Project cargo often includes similar items shipped at different times. Use consi
 
 Large items require specialized handling after release. Coordinate with transport partners so delivery happens immediately after clearance.
 
-XPS Logistics can plan project cargo clearance and coordinate delivery from port to site.
+XPS can plan project cargo clearance and coordinate delivery from port to site.
 
-[Contact XPS Logistics](/contact-us/) to discuss a project cargo plan.
+[Contact XPS](/contact-us/) to discuss a project cargo plan.
 
 ## Sources
 

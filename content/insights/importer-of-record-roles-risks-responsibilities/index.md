@@ -146,4 +146,4 @@ Understanding this distinction helps prevent delays and ensures that shipments m
 ---
 
 If you have questions about your responsibilities as an importer,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

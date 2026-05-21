@@ -3,7 +3,7 @@ date = 2025-05-22T14:57:23-04:00
 lastMod = '2025-06-01T14:44:15-04:00'
 draft = true
 title = 'How Much Does Warehouse Space Cost in Nassau, Bahamas?'
-description= "Warehouse space in Nassau is expensive and scarce. XPS Logistics offers secure, well-located, and affordable 3PL warehousing services at just $12 per sq ft."
+description= "Warehouse space in Nassau is expensive and scarce. XPS offers secure, well-located, and affordable 3PL warehousing services at just $12 per sq ft."
 
 # Trade-Industry
 # Logistics-Supply-Chain
@@ -46,7 +46,7 @@ At these rates, self-managed warehousing becomes cost-prohibitive for many busin
 
 ## A More Cost-Effective Approach
 
-**XPS Logistics** offers a smarter alternative: **3PL warehousing** as part of our broader logistics services.
+**XPS** offers a smarter alternative: **3PL warehousing** as part of our broader logistics services.
 
 Instead of leasing and managing your own facility, XPS handles your goods within our secure, professionally managed warehouse as part of your shipping, fulfillment, or distribution solution. This means no long-term leases, no maintenance concerns, and no capital outlay—just space that scales with your business needs.
 

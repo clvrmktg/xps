@@ -150,7 +150,7 @@ When that translation is accurate, clearance is straightforward. When it is not,
 ---
 
 If you have questions about preparing shipments for import into The Bahamas,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).
 
 <!-- ## Next in this series
 

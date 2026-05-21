@@ -56,9 +56,9 @@ Perishables are often inspected more closely. Use clear descriptions, correct HS
 
 The clearance plan should include immediate pickup and delivery. The fewer handoffs, the better.
 
-XPS Logistics offers integrated brokerage and distribution to protect cold chain timing.
+XPS offers integrated brokerage and distribution to protect cold chain timing.
 
-[Contact XPS Logistics](/contact-us/) to plan perishable imports.
+[Contact XPS](/contact-us/) to plan perishable imports.
 
 ## Sources
 

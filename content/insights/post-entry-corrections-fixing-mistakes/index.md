@@ -145,4 +145,4 @@ Accurate documentation from the beginning remains the most effective way to avoi
 ---
 
 If you need assistance correcting an entry or resolving an issue with a shipment,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

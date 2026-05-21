@@ -10,7 +10,7 @@ minimal = true
 
 +++
 
-This Cookie Policy explains how XPS Logistics (“we,” “our,” or “us”) uses cookies and similar technologies when you visit our website.
+This Cookie Policy explains how XPS Holdings Ltd. T/A XPS (“we,” “our,” or “us”) uses cookies and similar technologies when you visit our website.
 
 ## 1. What Are Cookies?
 

@@ -56,9 +56,9 @@ Coordinate with carriers, brokers, and delivery partners so each handoff is read
 
 During peak season, Customs has less tolerance for rework. Clean entries keep cargo moving.
 
-XPS Logistics can help plan peak season clearance and delivery capacity.
+XPS can help plan peak season clearance and delivery capacity.
 
-[Contact XPS Logistics](/contact-us/) to prepare for peak volume.
+[Contact XPS](/contact-us/) to prepare for peak volume.
 
 ## Sources
 
