@@ -3,6 +3,7 @@
 {{- end -}}
 {{ define "main" }}
   {{ partial "hero.html" . }}
+  
   {{ partial "highlights.html" .}}
 
   {{ partial "service-list.html" (dict "page" .) }}

@@ -1,0 +1,875 @@
+{{- define "variables" -}}
+{{ .Store.Set "hasTwic" true }}
+{{- end -}}
+
+{{- define "main" -}}
+  {{- $lead := .Params.lead -}}
+
+  <section class="[ hero hero--service ][ full-width bg ]">
+    <div class="[ hero__inner ][ full-width content-grid ]">
+      <div class="[ wrapper ][ flex middle section--padding-bottom ]">
+        <div class="[ hero__content ][ ch--54 ]">
+          <p class="[ hero__eyebrow ][ font--1- upper ]">{{ .Params.eyebrow | default (printf "XPS Logistics • %s" .Title) }}</p>
+          <h1>{{ $lead.heading | default .Title }}</h1>
+          {{ with $lead.text }}
+            <p class="[ lead ]">{{ . }}</p>
+          {{ end }}
+          {{ with .Params.heroCtas }}
+            <div class="[ flex flex--wrap gap--1 ]">
+              {{ range . }}
+                <a class="[ btn btn--lg {{ if eq .style "secondary" }}btn--red--ghost{{ else }}btn--red{{ end }} ]" href="{{ .href }}" data-prefetch>{{ .label }}</a>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ with .Params.trustBar }}
+    <section class="[ full-width content-grid bg--light ]">
+      <div class="[ wrapper ][ trust-bar ]">
+        {{ range . }}
+          <span>{{ . }}</span>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with .Params.definition }}
+    <section class="[ section--padding section--spacing ]">
+      <div class="[ wrapper ][ grid md:col--2 gap--3 ]">
+        <div>
+          <h2>{{ .heading }}</h2>
+        </div>
+        <div class="[ content ]">
+          {{ range .paragraphs }}
+            <p>{{ . }}</p>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{- with .Params.serviceList -}}
+    {{- $descriptions := dict -}}
+    {{- range $.Params.serviceDescriptions -}}
+      {{- $descriptions = merge $descriptions (dict .slug .text) -}}
+    {{- end -}}
+    {{- $services := site.GetPage "section" "services" -}}
+    {{ partial "service-list.html" (dict
+      "page" $services
+      "title" .heading
+      "lead" .text
+      "include" (.include | default (slice "freight-forwarding" "customs-brokerage" "warehousing" "distribution"))
+      "descriptions" $descriptions
+    ) }}
+  {{- end -}}
+
+  {{ with .Params.painPoints }}
+    <section class="[ outcome-section ][ full-width content-grid ]">
+      <div class="[ wrapper ][ outcome-section__inner ]">
+        <div class="[ outcome-section__header ch--60 ]">
+          <h2>{{ $.Params.painPointsHeading | default "Why Businesses Choose Third-Party Logistics Providers" }}</h2>
+          {{ with $.Params.painPointsLead }}
+            <p class="[ lead ]">{{ . }}</p>
+          {{ end }}
+        </div>
+        <div class="[ outcome-grid ]">
+          {{ range . }}
+            <article class="[ outcome-card {{ if .featured }}outcome-card--featured{{ end }} ]">
+              <div class="[ outcome-card__icon ]" aria-hidden="true">
+                {{ with .icon }}
+                  {{- $icon := printf "static/tabler/%s.svg" . -}}
+                  {{- if fileExists $icon -}}
+                    {{ readFile $icon | safeHTML }}
+                  {{- end -}}
+                {{ end }}
+              </div>
+              <div class="[ outcome-card__content ]">
+                <h3 class="[ font--4 ]">{{ .title }}</h3>
+                <p>{{ .text }}</p>
+              </div>
+              {{ with .outcome }}
+                <p class="[ outcome-card__result ]">{{ . }}</p>
+              {{ end }}
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with .Params.advantages }}
+    <section class="[ advantage-section ][ full-width content-grid banner--black ]">
+      <div class="[ wrapper ][ advantage-section__inner ]">
+        <div class="[ advantage-section__header ch--60 ]">
+          <h2>{{ $.Params.advantagesHeading | default "Why Businesses Choose XPS" }}</h2>
+          {{ with $.Params.advantagesLead }}
+            <p class="[ lead ]">{{ . }}</p>
+          {{ end }}
+        </div>
+        <div class="[ advantage-grid ]">
+          {{ range . }}
+            <article class="[ advantage-card ]">
+              <div class="[ advantage-card__icon ]" aria-hidden="true">
+                {{ with .icon }}
+                  {{- $icon := printf "static/tabler/%s.svg" . -}}
+                  {{- if fileExists $icon -}}
+                    {{ readFile $icon | safeHTML }}
+                  {{- end -}}
+                {{ end }}
+              </div>
+              <div class="[ advantage-card__content ]">
+                <h3 class="[ font--4 ]">{{ .title }}</h3>
+                <p>{{ .text }}</p>
+              </div>
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with .Params.process }}
+    <section class="[ process-section ][ full-width content-grid ]">
+      <div class="[ wrapper ][ process-section__inner ]">
+        <div class="[ process-section__header ch--54 ]">
+          <h2>{{ $.Params.processHeading | default "How XPS Support Works" }}</h2>
+          {{ with $.Params.processLead }}
+            <p class="[ lead ]">{{ . }}</p>
+          {{ end }}
+        </div>
+        <ol class="[ process-timeline ]">
+          {{ range $index, $step := . }}
+            <li class="[ process-step ]">
+              <article class="[ process-step__card ]">
+                <span class="[ process-step__badge ]">{{ printf "%02d" (add $index 1) }}</span>
+                <div class="[ process-step__content ]">
+                  <h3 class="[ font--4 ]">{{ .title }}</h3>
+                  <p>{{ .text }}</p>
+                </div>
+              </article>
+              <span class="[ process-step__node ]" aria-hidden="true"></span>
+            </li>
+          {{ end }}
+        </ol>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with .Params.industries }}
+    <section class="[ industries-section ][ full-width content-grid ]">
+      <div class="[ wrapper ][ industries-section__inner ]">
+        <div class="[ industries-section__header ch--60 ]">
+          <h2>{{ $.Params.industriesHeading | default "Industries We Support" }}</h2>
+          {{ with $.Params.industriesLead }}
+            <p class="[ lead ]">{{ . }}</p>
+          {{ end }}
+        </div>
+      <div class="[ industry-grid ]">
+        {{ range . }}
+          {{- $industry := . -}}
+          <article class="[ industry-card ]">
+            {{ with .image }}
+              {{- $rel := strings.TrimPrefix "/" . -}}
+              {{- $twic := site.Params.Twic | default site.Params.twic -}}
+              <figure class="[ industry-card__media ][ ratio--16:9 scale ]">
+                <picture class="[ bg ]" style="background-image: url('https://{{ $twic }}.twic.pics/{{ $rel }}?twic=v1/output=preview');">
+                  <img
+                    data-twic-src="image:{{ . }}"
+                    data-twic-focus="auto"
+                    alt="{{ $industry.alt | default $industry.title }}"
+                    width="640"
+                    height="360"
+                  />
+                </picture>
+              </figure>
+            {{ end }}
+            <div class="[ industry-card__body ]">
+              {{ with .descriptor }}<p class="[ industry-card__descriptor ]">{{ . }}</p>{{ end }}
+              <h3 class="[ font--4 ]">{{ .title }}</h3>
+              <p>{{ .text }}</p>
+            </div>
+          </article>
+        {{ end }}
+      </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with .Params.faq }}
+    <section class="[ faq ][ full-width content-grid section--padding ]">
+      <div class="[ wrapper ][ grid col-gap--3 row-gap--2 ]">
+        <div class="[ flex flex--col gap--1 pb--0 ]">
+          <h2>Frequently Asked Questions</h2>
+          <p class="[ faq__intro ]">{{ $.Params.faqIntro }}</p>
+        </div>
+        <div class="[ flex flex--col row-gap--1 ]">
+          {{ range $index, $faq := . }}
+            <details class="[ details ]" name="faqs" {{ if eq $index 0 }}open{{ end }}>
+              <summary class="[ details__summary ][ font--600 ]">{{ .question }}</summary>
+              <div class="[ details__content ][ pt--1 ]">
+                {{ .answer | markdownify }}
+              </div>
+            </details>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with .Params.insights }}
+    {{- $category := .category | default "Trade-Industry" -}}
+    {{- $limit := .limit | default 3 -}}
+    {{- $posts := where site.RegularPages "Section" "insights" -}}
+    {{- $posts = where $posts "Params.categories" "intersect" (slice $category) -}}
+    {{- $posts = first $limit $posts -}}
+    {{- if gt (len $posts) 0 -}}
+      <section class="[ full-width content-grid section--padding section--spacing ]">
+          <div class="[ ch--54 ]">
+            <h2>Insights</h2>
+            <p class="[ lead ]">{{ .lead }}</p>
+            {{ with .text }}<p>{{ . }}</p>{{ end }}
+          </div>
+          {{ partial "posts.html" (dict "Pages" $posts "Site" site) }}
+      </section>
+    {{- end -}}
+  {{ end }}
+
+  {{ with .Params.finalCta }}
+    <section class="[ service-cta ][ full-width content-grid ]">
+      <div class="[ grid middle section--padding ]">
+        <div>
+          <h2 class="[ font--3 ]">{{ .heading }}</h2>
+          <p class="[ ch--54 ]">{{ .text }}</p>
+        </div>
+        <div>
+          <a class="[ btn btn--lg btn--red ]" href="{{ .href }}" data-prefetch>{{ .label }}</a>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  <style>
+    .trust-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      padding-block: 1rem;
+      font-weight: 700;
+    }
+
+    .landing-card {
+      display: grid;
+      align-content: start;
+      gap: 0.75rem;
+      padding: 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      background: white;
+    }
+
+    .landing-card p {
+      padding-bottom: 0;
+    }
+
+    .landing-card a {
+      color: var(--xps-red);
+      font-weight: 700;
+    }
+
+    .landing-card--plain {
+      background: transparent;
+    }
+
+    .landing-card--dark {
+      color: white;
+      border-color: rgb(255 255 255 / 0.18);
+      background: rgb(255 255 255 / 0.06);
+    }
+
+    .landing-card--dark h3,
+    .landing-card--dark p {
+      color: inherit;
+    }
+
+    .outcome-section {
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(rgb(255 255 255 / 0.9), rgb(255 255 255 / 0.9)),
+        linear-gradient(90deg, rgb(32 32 32 / 0.035) 1px, transparent 1px),
+        linear-gradient(rgb(32 32 32 / 0.035) 1px, transparent 1px);
+      background-size: auto, 4rem 4rem, 4rem 4rem;
+    }
+
+    .outcome-section::before {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      content: "";
+      background: radial-gradient(circle at 78% 18%, var(--xps-red-1), transparent 24rem);
+    }
+
+    .outcome-section__inner {
+      position: relative;
+      display: grid;
+      gap: clamp(2.5rem, 5vw, 4rem);
+      padding-block: clamp(5rem, 9vw, 7.5rem);
+    }
+
+    .outcome-section__header {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .outcome-section__header p {
+      padding-bottom: 0;
+    }
+
+    .outcome-grid {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+
+    .outcome-card {
+      position: relative;
+      display: grid;
+      grid-column: span 2;
+      align-content: start;
+      gap: 1.1rem;
+      min-height: 18rem;
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      background: rgb(255 255 255 / 0.94);
+      box-shadow: 0 1rem 2.5rem rgb(32 32 32 / 0.045);
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+
+    .outcome-card:hover {
+      border-color: rgb(192 12 0 / 0.28);
+      box-shadow: 0 1.4rem 3.25rem rgb(32 32 32 / 0.08);
+      transform: translateY(-0.2rem);
+    }
+
+    .outcome-card--featured {
+      grid-column: span 4;
+      color: white;
+      border-color: rgb(255 255 255 / 0.16);
+      background:
+        linear-gradient(135deg, rgb(32 32 32 / 0.96), rgb(32 32 32 / 0.9)),
+        var(--black);
+      box-shadow: 0 1.5rem 3.5rem rgb(32 32 32 / 0.16);
+    }
+
+    .outcome-card--featured::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 0.25rem;
+      content: "";
+      background: var(--xps-red);
+    }
+
+    .outcome-card__icon {
+      display: inline-grid;
+      place-items: center;
+      width: 3rem;
+      height: 3rem;
+      border: 1px solid rgb(192 12 0 / 0.18);
+      border-radius: 0.5rem;
+      color: var(--xps-red);
+      background: var(--xps-red-1);
+    }
+
+    .outcome-card__icon svg {
+      width: 1.45rem;
+      height: 1.45rem;
+      stroke: currentcolor;
+    }
+
+    .outcome-card--featured .outcome-card__icon {
+      color: white;
+      border-color: rgb(255 255 255 / 0.18);
+      background: var(--xps-red);
+    }
+
+    .outcome-card__content {
+      display: grid;
+      gap: 0.55rem;
+    }
+
+    .outcome-card__content h3,
+    .outcome-card__content p,
+    .outcome-card__result {
+      padding-bottom: 0;
+    }
+
+    .outcome-card--featured .outcome-card__content h3,
+    .outcome-card--featured .outcome-card__content p {
+      color: inherit;
+    }
+
+    .outcome-card__result {
+      align-self: end;
+      color: var(--xps-red);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .outcome-card__result::before {
+      content: "→ ";
+    }
+
+    .outcome-card--featured .outcome-card__result {
+      color: white;
+    }
+
+    .advantage-section {
+      position: relative;
+      overflow: hidden;
+      background: var(--black);
+    }
+
+    .advantage-section::before {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      content: "";
+      background:
+        linear-gradient(90deg, rgb(255 255 255 / 0.035) 1px, transparent 1px),
+        linear-gradient(rgb(255 255 255 / 0.035) 1px, transparent 1px);
+      background-size: 4rem 4rem;
+      mask-image: linear-gradient(to bottom, transparent, black 18%, black 82%, transparent);
+    }
+
+    .advantage-section__inner {
+      position: relative;
+      display: grid;
+      gap: clamp(2.5rem, 5vw, 4rem);
+      padding-block: clamp(5.5rem, 10vw, 8rem);
+    }
+
+    .advantage-section__header {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .advantage-section__header p {
+      color: rgb(255 255 255 / 0.74);
+      padding-bottom: 0;
+    }
+
+    .advantage-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+
+    .advantage-card {
+      position: relative;
+      display: grid;
+      align-content: start;
+      gap: 1.2rem;
+      min-height: 17rem;
+      padding: 1.5rem;
+      border: 1px solid rgb(255 255 255 / 0.14);
+      border-radius: 0.5rem;
+      background:
+        linear-gradient(180deg, rgb(255 255 255 / 0.075), rgb(255 255 255 / 0.045));
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.08);
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+    }
+
+    .advantage-card::before {
+      position: absolute;
+      top: 0;
+      right: 1rem;
+      left: 1rem;
+      height: 0.1875rem;
+      content: "";
+      background: rgb(192 12 0 / 0.82);
+      opacity: 0.72;
+    }
+
+    .advantage-card:hover {
+      border-color: rgb(192 12 0 / 0.36);
+      background:
+        linear-gradient(180deg, rgb(255 255 255 / 0.09), rgb(255 255 255 / 0.052));
+      box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.1), 0 1rem 2.5rem rgb(0 0 0 / 0.16);
+      transform: translateY(-0.125rem);
+    }
+
+    .advantage-card__icon {
+      display: inline-grid;
+      place-items: center;
+      width: 2.75rem;
+      height: 2.75rem;
+      border: 1px solid rgb(192 12 0 / 0.32);
+      border-radius: 0.5rem;
+      color: var(--xps-red);
+      background: rgb(192 12 0 / 0.1);
+    }
+
+    .advantage-card__icon svg {
+      width: 1.35rem;
+      height: 1.35rem;
+      stroke: currentcolor;
+    }
+
+    .advantage-card__content {
+      display: grid;
+      gap: 0.65rem;
+    }
+
+    .advantage-card__content h3,
+    .advantage-card__content p {
+      padding-bottom: 0;
+    }
+
+    .advantage-card__content h3 {
+      color: white;
+    }
+
+    .advantage-card__content p {
+      color: rgb(255 255 255 / 0.7);
+      line-height: 1.65;
+    }
+
+    @media (max-width: 64rem) {
+      .outcome-card,
+      .outcome-card--featured {
+        grid-column: span 3;
+      }
+    }
+
+    @media (max-width: 42rem) {
+      .outcome-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .outcome-card,
+      .outcome-card--featured {
+        grid-column: auto;
+        min-height: auto;
+      }
+
+      .advantage-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .advantage-card {
+        min-height: auto;
+      }
+    }
+
+    .process-section {
+      background: var(--neutral-grey-lightest);
+    }
+
+    .process-section__inner {
+      display: grid;
+      gap: clamp(3rem, 6vw, 5rem);
+      padding-block: clamp(7.5rem, 12vw, 10rem);
+    }
+
+    .process-section__header {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .process-section__header p {
+      padding-bottom: 0;
+    }
+
+    .process-timeline {
+      position: relative;
+      display: grid;
+      gap: clamp(2rem, 4vw, 3rem);
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .process-timeline::before,
+    .process-timeline::after {
+      position: absolute;
+      top: 0.75rem;
+      bottom: 0.75rem;
+      left: 50%;
+      width: 1px;
+      content: "";
+      transform: translateX(-50%);
+    }
+
+    .process-timeline::before {
+      background: var(--neutral-grey);
+    }
+
+    .process-timeline::after {
+      background: var(--xps-red);
+      transform: translateX(-50%) scaleY(1);
+      transform-origin: top;
+      opacity: 0.55;
+    }
+
+    .process-step {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 3rem minmax(0, 1fr);
+      align-items: center;
+      min-height: 8.5rem;
+    }
+
+    .process-step::before {
+      position: absolute;
+      top: 50%;
+      width: calc(50% - 1.5rem);
+      height: 1px;
+      background: var(--neutral-grey);
+      content: "";
+    }
+
+    .process-step:nth-child(odd)::before {
+      left: 0;
+    }
+
+    .process-step:nth-child(even)::before {
+      right: 0;
+    }
+
+    .process-step__card {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 1rem;
+      align-items: start;
+      width: min(100%, 34rem);
+      padding: 1.1rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      background: white;
+      box-shadow: 0 1rem 2.5rem rgb(32 32 32 / 0.06);
+    }
+
+    .process-step:nth-child(odd) .process-step__card {
+      grid-column: 1;
+      justify-self: end;
+      margin-right: 2rem;
+    }
+
+    .process-step:nth-child(even) .process-step__card {
+      grid-column: 3;
+      justify-self: start;
+      margin-left: 2rem;
+    }
+
+    .process-step__badge {
+      display: inline-grid;
+      place-items: center;
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 999px;
+      color: white;
+      background: var(--xps-red);
+      font-size: 0.8rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .process-step__content {
+      display: grid;
+      gap: 0.25rem;
+    }
+
+    .process-step__content h3,
+    .process-step__content p {
+      padding-bottom: 0;
+    }
+
+    .process-step__content p {
+      max-width: 34ch;
+      color: var(--text-body);
+    }
+
+    .process-step__node {
+      position: relative;
+      z-index: 2;
+      grid-column: 2;
+      grid-row: 1;
+      justify-self: center;
+      width: 0.875rem;
+      height: 0.875rem;
+      border: 2px solid white;
+      border-radius: 999px;
+      background: var(--xps-red);
+      box-shadow: 0 0 0 0.375rem var(--xps-red-1), 0 0.5rem 1.25rem rgb(192 12 0 / 0.25);
+    }
+
+    @supports (animation-timeline: view()) {
+      .process-timeline::after {
+        animation: process-line-grow linear both;
+        animation-timeline: view();
+        animation-range: entry 10% cover 70%;
+      }
+
+      .process-step__card,
+      .process-step__node {
+        animation: process-step-reveal linear both;
+        animation-timeline: view();
+        animation-range: entry 15% cover 35%;
+      }
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      @keyframes process-line-grow {
+        from {
+          transform: translateX(-50%) scaleY(0);
+        }
+      }
+
+      @keyframes process-step-reveal {
+        from {
+          opacity: 0.5;
+          transform: translateY(0.75rem);
+        }
+      }
+    }
+
+    @media (max-width: 48rem) {
+      .process-section__inner {
+        padding-block: 5rem;
+      }
+
+      .process-timeline {
+        gap: 1.5rem;
+      }
+
+      .process-timeline::before,
+      .process-timeline::after {
+        left: 0.4375rem;
+      }
+
+      .process-step {
+        grid-template-columns: 1rem minmax(0, 1fr);
+        min-height: auto;
+        column-gap: 1rem;
+      }
+
+      .process-step::before {
+        left: 0.875rem;
+        right: auto;
+        width: 1rem;
+      }
+
+      .process-step:nth-child(odd)::before,
+      .process-step:nth-child(even)::before {
+        left: 0.875rem;
+        right: auto;
+      }
+
+      .process-step__card,
+      .process-step:nth-child(odd) .process-step__card,
+      .process-step:nth-child(even) .process-step__card {
+        grid-column: 2;
+        justify-self: stretch;
+        width: 100%;
+        margin-inline: 0;
+      }
+
+      .process-step__node {
+        grid-column: 1;
+        justify-self: start;
+      }
+    }
+
+    .industries-section {
+      background: white;
+    }
+
+    .industries-section__inner {
+      display: grid;
+      gap: clamp(2.5rem, 5vw, 4rem);
+      padding-block: clamp(5rem, 9vw, 7.5rem);
+    }
+
+    .industries-section__header {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .industries-section__header p {
+      padding-bottom: 0;
+    }
+
+    .industry-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+
+    .industry-card {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      background: var(--neutral-grey-lightest);
+      box-shadow: 0 1rem 2.5rem rgb(32 32 32 / 0.04);
+      transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+    }
+
+    .industry-card:hover {
+      border-color: var(--neutral-grey);
+      box-shadow: 0 1.25rem 3rem rgb(32 32 32 / 0.08);
+      transform: translateY(-0.1875rem);
+    }
+
+    .industry-card__media {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .industry-card__media img {
+      filter: saturate(0.9) contrast(1.02);
+    }
+
+    .industry-card__body {
+      display: grid;
+      gap: 0.5rem;
+      padding: 1.25rem;
+    }
+
+    .industry-card__body h3,
+    .industry-card__body p {
+      padding-bottom: 0;
+    }
+
+    .industry-card__descriptor {
+      color: var(--xps-red);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .industry-card__body > p:last-child {
+      color: var(--text-body);
+    }
+
+    @media (max-width: 64rem) {
+      .industry-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 42rem) {
+      .industry-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+{{- end -}}

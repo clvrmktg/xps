@@ -2,6 +2,9 @@
 {{ $serviceList := $page.Params.serviceList }}
 {{ $title := or .title (and $serviceList $serviceList.title) "Customs to delivery, made simple" }}
 {{ $lead := or .lead (and $serviceList $serviceList.lead) "We coordinate every link in your logistics chain—from freight forwarding and customs clearance to storage and final delivery—so your supply chain runs smoothly." }}
+{{ $include := .include }}
+{{ $descriptions := .descriptions | default dict }}
+{{ $pages := $page.Pages }}
 
 <section class="[ full-width content-grid bg--light section--spacing section--padding ]">
   <div>
@@ -9,72 +12,42 @@
     <p class="[ lead ]">{{ $lead }}</p>
   </div>
   <ul class="[ grid md:col--2 col-gap--2 row-gap--3 ]">
-    {{ $pages := $page.Pages }}
     {{ $counter := 0 }}
     {{ range $pages.ByWeight }}
+      {{ if or (not $include) (in $include .File.ContentBaseName) }}
       {{ $counter = add $counter 1 }}
+      {{ $description := index $descriptions .File.ContentBaseName | default .Summary }}
       <li id="service-{{$counter}}" class="[ post ]">
         <a class="[ post__link ][ grid row-gap--1 ]" href="{{ .RelPermalink }}" data-prefetch>
-          {{- $heroImage := .Params.hero.image -}}
-          {{- $fallbackPath := "/uploads/xps-feature-fallback.jpg" -}}
-          {{- $fallbackWidth := 1920 -}}
-          {{- $fallbackHeight := 1080 -}}
-
-          {{- $img := "" -}}
-          {{- $imgSrc := "" -}}
-          {{- $imgWidth := 0 -}}
-          {{- $imgHeight := 0 -}}
-
-          {{- if $heroImage }}
-            {{- $img = .Resources.GetMatch $heroImage -}}
-            {{- if $img }}
-              {{- $imgSrc = $img.RelPermalink -}}
-              {{- $imgWidth = $img.Width -}}
-              {{- $imgHeight = $img.Height -}}
-            {{- else }}
-              {{- $imgSrc = $fallbackPath -}}
-              {{- $imgWidth = $fallbackWidth -}}
-              {{- $imgHeight = $fallbackHeight -}}
-            {{- end }}
-          {{- else }}
-            {{- $imgSrc = $fallbackPath -}}
-            {{- $imgWidth = $fallbackWidth -}}
-            {{- $imgHeight = $fallbackHeight -}}
-          {{- end }}
-          <figure class="[ post__img ][ ratio--16:9 scale ]">
-            <picture id="image-{{ $counter }}" class="[ bg ]">
-              <style>#image-{{ $counter }} {background-image: url('https://{{ $.Site.Params.twic }}.twic.pics{{ $imgSrc }}?twic=v1/output=preview');}</style>
-              <img
-                data-twic-src="image:{{ $imgSrc }}"
-                data-twic-focus="auto"
-                alt="{{ .Params.feature.alt | default .Title }}"
-                width="{{ $imgWidth }}"
-                height="{{ $imgHeight }}"
-              />
-              <noscript>
-                <img
-                  class="[ script ]"
-                  src="https://{{ $.Site.Params.twic }}.twic.pics{{ $imgSrc }}?twic=v1/output=preview"
-                  alt="{{ .Params.feature.alt | default .Title }}"
-                  width="{{ $imgWidth }}"
-                  height="{{ $imgHeight }}"
-                />
-              </noscript>
-            </picture>
-          </figure>
+          {{ partial "image.html" (dict
+            "page" .
+            "image" (dict
+              "path" .Params.hero.image
+              "alt" (.Params.hero.alt | default .Title)
+            )
+            "fallback" (dict
+              "path" "/uploads/xps-feature-fallback.jpg"
+              "width" 1920
+              "height" 1080
+            )
+            "class" "post__img"
+            "ratio" "16:9"
+            "helper" "scale"
+          ) }}
           <div class="[ flow ]">
             <h2>{{ .Title }}</h2>
-            <p class="[ o--2 ]">{{ .Summary }}</p>
+            <p class="[ o--2 ]">{{ $description }}</p>
           </div>
         </a>
 
         <span>
-          <a href="{{ .RelPermalink }}" data-prefetch>Learn More 
+          <a href="{{ .RelPermalink }}" data-prefetch>Learn More
             <span class="[ hidden ]">About {{ .Title }}</span>
           </a>
           &#9654;
         </span>
       </li>
+      {{ end }}
     {{ end }}
   </ul>
 </section>
