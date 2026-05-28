@@ -5,21 +5,21 @@
 <div class="[ grid layout--spacing section--padding-top ]">
   <header class="[ grid row-gap--1 ]">
     <div>
-      {{- $slug := .Title -}}
-      {{- with index site.Data.categories $slug }}
-        <h1>{{ .title }}</h1>
-      {{- else }}
-        <h1>{{ .Title }}</h1>
-      {{- end }}
+      {{- $title := partial "category-title.html" .Title -}}
+      {{- $description := partial "category-description.html" .Title -}}
+      <h1>{{ $title }}</h1>
       {{ partial "breadcrumbs.html" . }}
   
     </div>
-    {{- with index site.Data.categories $slug }}
-    <p class="[ x--700 pb--0 ]">{{ .description }}</p>
+    {{- with $description }}
+    <p class="[ x--700 pb--0 ]">{{ . }}</p>
     {{- end }}
   </header>
   <div class="[ loop-wrap ][ grid section--spacing ]">
-    {{ $paginator := .Paginator }}
+    {{ $term := .Params.category | default $title }}
+    {{ $posts := where site.RegularPages "Section" "insights" }}
+    {{ $posts = where $posts "Params.categories" "intersect" (slice $term) }}
+    {{ $paginator := .Paginate $posts }}
     {{ partial "posts.html" (dict "Pages" $paginator.Pages "Site" .Site) }}
 
     

@@ -4,12 +4,12 @@ draft = true
 title = "Packaging and Labeling for Customs: Avoiding Misdeclaration"
 description = "How consistent packaging and labeling prevent holds and rework."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Customs Brokerage
+# Customs Brokerage
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Trade-Industry"]
+categories = ["Customs Brokerage"]
 # tags = []
 
 

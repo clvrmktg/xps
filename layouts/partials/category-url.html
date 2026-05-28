@@ -1,0 +1,7 @@
+{{- $name := . -}}
+{{- $slug := $name | urlize -}}
+{{- with index site.Data.categories $slug -}}
+  {{- .url -}}
+{{- else -}}
+  {{- printf "/categories/%s/" $slug -}}
+{{- end -}}

@@ -4,12 +4,12 @@ draft = false
 title = "Distribution and Delivery: Moving Goods After Clearance"
 description = "Understand how goods move after customs clearance in The Bahamas, including delivery, coordination, and common challenges in local distribution."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Trade & Industry
+# Logistics & Supply Chain
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Logistics-Supply-Chain"]
+categories = ["Logistics & Supply Chain"]
 # tags = []
 
 
@@ -80,6 +80,8 @@ Staged delivery may be required where:
 
 In these cases, distribution becomes more structured and may involve temporary storage or scheduling over time.
 
+For more on storage after clearance, see [Warehousing in The Bahamas: Storage, Handling, and Cost Considerations](/insights/warehousing-in-the-bahamas/).
+
 ## Coordination and timing
 
 Distribution is not only about transport—it is about coordination.
@@ -117,6 +119,8 @@ A logistics provider can manage the movement of goods after clearance by coordin
 
 This reduces the burden on the importer and helps ensure that goods move efficiently from release to final destination.
 
+For businesses coordinating recurring deliveries, see [Distribution Services](/services/distribution/) and [3PL Logistics Bahamas](/3pl-logistics-bahamas/).
+
 ## In simple terms
 
 Distribution is the step that moves goods from clearance to use.
@@ -124,6 +128,12 @@ Distribution is the step that moves goods from clearance to use.
 Even in a relatively small geographic area, it requires planning, timing, and coordination.
 
 When managed properly, it ensures that shipments move quickly, safely, and without unnecessary cost.
+
+## Related reading
+
+- [Container Detention and Returns](/insights/container-detention-and-returns/)
+- [Demurrage, Storage, and Port Charges: What Delays Really Cost](/insights/demurrage-storage-and-port-charges/)
+- [How Much Does Warehouse Space Cost in Nassau, Bahamas?](/insights/warehouse-space-cost-nassau-bahamas/)
 
 ---
 

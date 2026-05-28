@@ -2,14 +2,13 @@
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   {{- $share := .Params.cover -}}
   {{- $page := . -}}
-  {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply Chain" "Logistics & Supply Chain" "Inside-XPS" "Newsroom" -}}
   {{- $baseTitle := .Site.Title -}}
   {{- $title := "" -}}
   
   {{- if $page.IsHome -}}
     {{- $title = printf "%s | 3PL | Third-Party Logistics | Nassau, Bahamas" $baseTitle -}}
   {{- else if eq $page.Kind "term" -}}
-    {{- $label := index $categoryLabels $page.Title | default $page.Title -}}
+    {{- $label := partial "category-title.html" $page.Title -}}
     {{- $title = printf "%s | %s" $label $baseTitle -}}
   {{- else if eq $page.Kind "section" -}}
     {{- $title = printf "%s | %s" ($page.Title | title) $baseTitle -}}
@@ -29,14 +28,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>{{ $title }}</title>
   {{- if eq .Kind "term" -}}
-    {{- $key := "" -}}
-    {{- with .File }}
-      {{- $key = .BaseFileName -}}
-    {{- else }}
-      {{- $key = .Title -}}
-    {{- end }}
-    {{- with index site.Data.categories $key }}
-      <meta name="description" content="{{ .description }}">
+    {{- $description := partial "category-description.html" .Title -}}
+    {{- with $description }}
+      <meta name="description" content="{{ . }}">
     {{- else }}
       <meta name="description" content="{{ $.Description }}">
     {{- end }}
@@ -54,7 +48,11 @@
 
   {{- if or (and (eq $page.Kind "section") (eq $page.Section "insights")) (eq $page.Kind "term") -}}
     {{- with $page.Paginator -}}
-      <link rel="canonical" href="{{ if eq .PageNumber 1 }}{{ $page.Permalink }}{{ else }}{{ $page.Permalink }}page/{{ .PageNumber }}/{{ end }}">
+      {{- $canonicalBase := $page.Permalink -}}
+      {{- if eq $page.Kind "term" -}}
+        {{- $canonicalBase = (partial "category-url.html" $page.Title) | absURL -}}
+      {{- end -}}
+      <link rel="canonical" href="{{ if eq .PageNumber 1 }}{{ $canonicalBase }}{{ else }}{{ $canonicalBase }}page/{{ .PageNumber }}/{{ end }}">
       {{- if .HasPrev }}
         <link rel="prev" href="{{ .Prev.URL | absURL }}">
       {{- end }}
@@ -71,6 +69,8 @@
   {{- if eq .Page.Kind "404" -}}
   <meta name="robots" content="noindex">
   <meta name="googlebot" content="noindex">
+  {{- else if and (eq $page.Kind "term") (ne $page.RelPermalink (partial "category-url.html" $page.Title)) -}}
+  <meta name="robots" content="noindex">
   {{- end -}}
   {{ partial "assets.html" . }}
   <!-- Default Icon - Use SVG for highest quality display - Use `media` attribute for light or dark mode (i.e. media="(prefers-color-scheme: dark)") - All browsers -->
@@ -83,8 +83,12 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#0d1117">
   {{- $iso := "2006-01-02T15:04:05Z07:00" -}}
+  {{- $ogURL := .Permalink -}}
+  {{- if eq $page.Kind "term" -}}
+    {{- $ogURL = (partial "category-url.html" $page.Title) | absURL -}}
+  {{- end -}}
   <meta property="fb:app_id" content="384650276688740">
-  <meta property="og:url" content="{{ .Permalink  }}">
+  <meta property="og:url" content="{{ $ogURL }}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ $title }}">
   {{- $image := $share.image | default .Site.Params.share -}}

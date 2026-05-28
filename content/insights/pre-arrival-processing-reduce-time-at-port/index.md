@@ -4,12 +4,12 @@ draft = true
 title = "Pre Arrival Processing: How to Reduce Time at Port"
 description = "Why early data submission shortens release times and how to prepare."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Customs Brokerage
+# Customs Brokerage
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Trade-Industry"]
+categories = ["Customs Brokerage"]
 # tags = []
 
 

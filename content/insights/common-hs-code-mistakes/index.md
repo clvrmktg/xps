@@ -4,12 +4,12 @@ draft = false
 title = "Common Hs Code Mistakes"
 description = "Learn how HS code classification affects duty and VAT in The Bahamas and how common mistakes can lead to delays, reassessment, and added costs."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Customs Brokerage
+# Customs Brokerage
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ['Logistics-Supply-Chain']
+categories = ['Customs Brokerage']
 # tags = []
 
 
@@ -125,7 +125,7 @@ Where duty is underpaid, the importer may be required to settle the difference a
 Where duty is overpaid, recovery may require additional steps and is not always immediate.
 
 As outlined in  
-[Post Entry Corrections: Fixing Mistakes Without Delays](/insights/post-entry-corrections/),  
+[Post Entry Corrections: Fixing Mistakes Without Delays](/insights/post-entry-corrections-fixing-mistakes/),  
 changes after submission can become more complex depending on the stage of the entry.
 
 ## When mistakes are identified
@@ -153,6 +153,8 @@ Accurate classification depends on:
 - Supporting information where needed  
 - Consistency across documents  
 
+For a simpler classification workflow, see [HS Codes Made Simple: Classification Steps for Importers](/insights/hs-codes-made-simple-classification-steps/).
+
 ## In simple terms
 
 Classification determines how much you pay.
@@ -160,6 +162,12 @@ Classification determines how much you pay.
 When it is correct, duties and VAT are assessed properly and the process moves smoothly.
 
 When it is incorrect, the cost may not be immediately visible—but it will eventually need to be addressed.
+
+## Related reading
+
+- [Importer of Record: Roles, Risks, and Responsibilities](/insights/importer-of-record-roles-risks-responsibilities/)
+- [Advance Rulings and Classification Disputes](/insights/advance-rulings-and-classification-disputes/)
+- [How to Prepare a Shipment for Import into The Bahamas](/insights/how-to-prepare-a-shipment-for-import-into-the-bahamas/)
 
 ---
 

@@ -4,12 +4,12 @@ draft = false
 title = "Importer of Record: Roles, Risks, and Responsibilities"
 description = "Who the importer of record is and why it matters for compliance and cost."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Customs Brokerage
+# Customs Brokerage
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Trade-Industry"]
+categories = ["Customs Brokerage"]
 # tags = []
 
 
@@ -135,6 +135,8 @@ This includes:
 
 When the broker and importer are aligned, the entry process becomes straightforward.
 
+For a more operational look at broker coordination, see [Managed vs Standard Clearance: What You’re Really Paying For](/insights/managed-vs-standard-clearance/).
+
 ## In simple terms
 
 The Importer of Record is the party responsible for the shipment.
@@ -142,6 +144,12 @@ The Importer of Record is the party responsible for the shipment.
 The broker prepares and submits the entry, but the importer is accountable for what is declared.
 
 Understanding this distinction helps prevent delays and ensures that shipments move through Customs without unnecessary issues.
+
+## Related reading
+
+- [How to Prepare a Shipment for Import into The Bahamas](/insights/how-to-prepare-a-shipment-for-import-into-the-bahamas/)
+- [Common HS Code Mistakes](/insights/common-hs-code-mistakes/)
+- [Customs Brokerage Services](/services/customs-brokerage/)
 
 ---
 

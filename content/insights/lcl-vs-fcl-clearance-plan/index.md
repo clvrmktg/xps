@@ -4,12 +4,12 @@ draft = true
 title = "LCL vs FCL: How Shipment Type Changes Your Clearance Plan"
 description = "How consolidated and full container shipments affect documentation and timelines."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Customs Brokerage
+# Customs Brokerage
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Trade-Industry"]
+categories = ["Customs Brokerage"]
 # tags = []
 
 

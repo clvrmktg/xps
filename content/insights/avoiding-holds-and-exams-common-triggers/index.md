@@ -4,12 +4,12 @@ draft = true
 title = "Avoiding Holds and Exams: Common Triggers and Fixes"
 description = "Reduce inspections by improving data quality, consistency, and packaging discipline."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Customs Brokerage
+# Customs Brokerage
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Trade-Industry"]
+categories = ["Customs Brokerage"]
 # tags = []
 
 

@@ -4,12 +4,12 @@ draft = true
 title = "Bonded Storage and Deferred Duties: When It Makes Sense"
 description = "A practical view of bonded storage, cash flow timing, and clearance strategy."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Customs Brokerage
+# Customs Brokerage
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Trade-Industry"]
+categories = ["Customs Brokerage"]
 # tags = []
 
 

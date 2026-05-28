@@ -4,12 +4,12 @@ draft = true
 title = "Supplier Onboarding for Imports: Standardize Data Early"
 description = "How to set supplier requirements that reduce customs errors later."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Customs Brokerage
+# Customs Brokerage
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Trade-Industry"]
+categories = ["Customs Brokerage"]
 # tags = []
 
 

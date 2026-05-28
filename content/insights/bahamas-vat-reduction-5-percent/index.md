@@ -4,12 +4,12 @@ draft = true
 title = "Bahamas Reduces VAT to 5% on Unprepared Food Items"
 description = "As of April 1st, 2025, the Government of The Bahamas reduced VAT to 5% on a wide range of unprepared food items. Here's what you need to know."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Trade & Industry
+# Logistics & Supply Chain
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ['Trade-Industry']
+categories = ['Trade & Industry']
 # tags = []
 
 

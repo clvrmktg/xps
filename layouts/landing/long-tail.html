@@ -220,7 +220,7 @@
   {{ end }}
 
   {{ with .Params.insights }}
-    {{- $category := .category | default "Trade-Industry" -}}
+    {{- $category := .category | default "Trade & Industry" -}}
     {{- $limit := .limit | default 3 -}}
     {{- $posts := where site.RegularPages "Section" "insights" -}}
     {{- $posts = where $posts "Params.categories" "intersect" (slice $category) -}}

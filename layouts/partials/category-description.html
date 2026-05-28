@@ -1,0 +1,5 @@
+{{- $name := . -}}
+{{- $slug := $name | urlize -}}
+{{- with index site.Data.categories $slug -}}
+  {{- .description -}}
+{{- end -}}

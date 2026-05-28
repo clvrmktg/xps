@@ -16,9 +16,7 @@
       <p class="[ meta{{ if .Params.feature.image }} meta--spaced{{ end }} ]">
         {{- range sort .Params.categories }}
         {{- $cat := . -}}
-        {{- with index site.Data.categories $cat }}
-          <span><a href="{{ .url }}">{{ .title }}</a></span>
-        {{- end }}
+        <span><a href="{{ partial "category-url.html" $cat }}">{{ partial "category-title.html" $cat }}</a></span>
       {{- end }}
         | <time datetime="{{ $published.Format $iso }}">
             {{ $published.Format $format }}
@@ -107,7 +105,7 @@
             {{ $related = shuffle $related }}
   
             <section class="[ grid row-gap--3 section--padding-top ]">
-              <h2 class="[ tag-header ]">More from {{ index $currentCategories 0 }}</h2>
+            <h2 class="[ tag-header ]">More from {{ partial "category-title.html" (index $currentCategories 0) }}</h2>
               <ul class="[ posts ][ grid md:col--3 gap--2 ]">
                 {{ $counter := 0 }}
                 {{ range first 2 $related }}
@@ -166,9 +164,7 @@
                         <div class="[ o--1 ]">
                           {{- range sort .Params.categories }}
                             {{- $cat := . -}}
-                            {{- with index site.Data.categories $cat }}
-                              <small>{{ .title }}</small>
-                            {{- end }}
+                            <small>{{ partial "category-title.html" $cat }}</small>
                           {{- end }}
                           | <small>{{ .ReadingTime }} min read</small>
                         </div>

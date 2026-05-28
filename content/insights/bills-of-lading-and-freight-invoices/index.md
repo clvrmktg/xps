@@ -4,12 +4,12 @@ draft = false
 title = "Bills of Lading and Freight Invoices"
 description = "Understand how missing Bills of Lading and freight invoices delay customs clearance in The Bahamas and lead to added costs and storage charges."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Trade & Industry
+# Logistics & Supply Chain
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ['Logistics-Supply-Chain']
+categories = ['Logistics & Supply Chain']
 # tags = []
 
 
@@ -116,6 +116,8 @@ A broker cannot:
 
 Until these elements are in place, the entry cannot be prepared or submitted.
 
+For a broader view of how documents, manifests, and release steps fit together, see [From Ship to Release: How Imports Actually Clear Customs in The Bahamas](/insights/from-ship-to-release-how-imports-actually-clear-customs-in-the-bahamas/).
+
 ## The connection to delays and costs
 
 Documentation issues are one of the most common causes of delay in customs clearance.
@@ -148,6 +150,12 @@ Most shipment delays are not caused by Customs.
 They occur because the shipment cannot be properly identified, valued, or supported with the required documents.
 
 When the Bill of Lading, freight invoice, and supporting documents are available and consistent, the entry process can proceed without interruption.
+
+## Related reading
+
+- [How to Prepare a Shipment for Import into The Bahamas](/insights/how-to-prepare-a-shipment-for-import-into-the-bahamas/)
+- [Managed vs Standard Clearance: What You’re Really Paying For](/insights/managed-vs-standard-clearance/)
+- [Pre-Arrival Processing: Reduce Time at Port](/insights/pre-arrival-processing-reduce-time-at-port/)
 
 ---
 

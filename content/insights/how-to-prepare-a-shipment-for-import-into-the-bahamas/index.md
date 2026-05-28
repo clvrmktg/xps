@@ -4,12 +4,12 @@ draft = false
 title = "How to Prepare a Shipment for Import into The Bahamas"
 description = "Learn how to prepare a shipment for import into The Bahamas and avoid delays, extra costs, and documentation issues during customs clearance."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Trade & Industry
+# Logistics & Supply Chain
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ['Logistics-Supply-Chain']
+categories = ['Logistics & Supply Chain']
 # tags = []
 
 
@@ -56,6 +56,8 @@ This should be a final invoice—not a quote or pro forma—and it must clearly 
 - Country of origin  
 
 Generic descriptions such as “parts” or “supplies” can create problems later when classification is required.
+
+Those description issues often create classification risk. For more on that, see [Common HS Code Mistakes](/insights/common-hs-code-mistakes/).
 
 At this stage, it is also important to ensure that the **consignee name matches exactly** across all documents. Differences between the invoice and shipping documents can delay the entry.
 
@@ -131,6 +133,12 @@ A well-prepared shipment:
 4. Can be processed without delay  
 
 Preparation reduces the need for corrections, avoids unnecessary costs, and allows cargo to move as expected.
+
+## Related reading
+
+- [From Ship to Release: How Imports Actually Clear Customs in The Bahamas](/insights/from-ship-to-release-how-imports-actually-clear-customs-in-the-bahamas/)
+- [Bills of Lading and Freight Invoices](/insights/bills-of-lading-and-freight-invoices/)
+- [Restricted and Controlled Goods: Plan Permits Early](/insights/restricted-and-controlled-goods-plan-permits-early/)
 
 ---
 

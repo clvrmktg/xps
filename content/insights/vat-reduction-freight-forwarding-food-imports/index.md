@@ -4,10 +4,10 @@ draft = false
 title = 'Vat Reduction Freight Forwarding Food Imports'
 description = "The Bahamas' VAT cut to 5% on unprepared food items may drive higher import volumes. Here's how freight forwarders can prepare for rising demand."
 
-# Trade-Industry
-# Logistics-Supply-Chain
-# Inside-XPS
-categories = ["Trade-Industry"]
+# Trade & Industry
+# Logistics & Supply Chain
+# Inside XPS
+categories = ["Trade & Industry"]
 
 [cover]
   image = ''

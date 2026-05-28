@@ -4,12 +4,12 @@ draft = false
 title = "Perishables and Cold Chain Clearance: Timing and Documentation"
 description = "How to reduce dwell time for perishable imports and protect temperature control."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Customs Brokerage
+# Customs Brokerage
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Trade-Industry"]
+categories = ["Customs Brokerage"]
 # tags = []
 
 

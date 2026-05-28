@@ -4,12 +4,12 @@ draft = false
 title = "Demurrage, Storage, and Port Charges: What Delays Really Cost"
 description = "Understand demurrage and storage charges in The Bahamas, when they apply, and how delays in clearance and documentation can increase import costs."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Trade & Industry
+# Logistics & Supply Chain
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ['Logistics-Supply-Chain']
+categories = ['Logistics & Supply Chain']
 # tags = []
 
 
@@ -104,7 +104,7 @@ Demurrage and storage charges are often a downstream effect of issues earlier in
 
 If documents are incomplete or inconsistent, the broker cannot prepare the entry promptly. If the entry is delayed or queried, Customs cannot release the cargo.
 
-As outlined in [From Ship to Release: How Imports Actually Clear Customs in The Bahamas](/customs-clearance-bahamas/), each step in the process depends on the one before it.
+As outlined in [From Ship to Release: How Imports Actually Clear Customs in The Bahamas](/insights/from-ship-to-release-how-imports-actually-clear-customs-in-the-bahamas/), each step in the process depends on the one before it.
 
 Delays at any stage can result in additional costs.
 
@@ -150,6 +150,12 @@ Delays in clearing or collecting cargo result in additional charges.
 These costs are not random—they are the result of time lost during the process.
 
 When shipments are properly prepared and processed without delay, these charges are usually avoided.
+
+## Related reading
+
+- [Bills of Lading and Freight Invoices](/insights/bills-of-lading-and-freight-invoices/)
+- [Container Detention and Returns](/insights/container-detention-and-returns/)
+- [Pre-Arrival Processing: Reduce Time at Port](/insights/pre-arrival-processing-reduce-time-at-port/)
 
 ---
 

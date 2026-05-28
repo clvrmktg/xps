@@ -1,28 +1,41 @@
+<!-- Yes. I linked to these articles that exist in content/ but are draft = true, so they do not exist in the production build:
+
+Advance Rulings and Classification Disputes: Getting Certainty
+HS Codes Made Simple: Classification Steps for Importers
+Restricted and Controlled Goods: Plan Permits Early
+Pre Arrival Processing: How to Reduce Time at Port
+The Hidden Costs of Poor Warehousing
+Container Detention and Returns: Avoiding Per Diem Charges does exist in the production build.
+-->
 <!-- CTA - START -->
 {{ if ne .context.Section "contact-us"}}
 <section class="[ cta ][ content-grid section--padding ]">
   <b class="[ line ]"></b>
-  <div class="[ grid md:col--2 gap--2 ]">
-    <div>
-      <h2>Smart shipping starts here—<br>join our mailing list</h2>
-      <p>Get expert logistics tips, tariff updates, and industry news straight to your inbox.</p>
+  <div class="[ mailer ][ grid md:col--2 gap--3 ]">
+    <div class="[ mailer__text ]">
+      <h2>Smart shipping starts here—<br>join the XPS mailing list</h2>
+      <p>Receive trade updates, logistics insights, tariff guidance, and operational information relevant to businesses importing into The Bahamas.</p>
     </div>
-    <form class="[ grid row-gap--2 ]" name="newsletter" action="/thank-you" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-validate>
+    <form class="[ mailer__form ]" name="newsletter" action="/thank-you" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-validate>
       <div class="hidden">
         <label>Don't fill this out if you're human: <input name="bot-field" /></label>
       </div>
-      <div class="[ form__field ][ grid row-gap--0.25 ]">
-        <label class="[ form__label ][ font--500 font--600 ]" for="name">First Name<abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr>
-        </label>
-        <input class="[ form__input ]" name="name" id="name" type="text"/>
-      </div>
-      <div class="[ form__field ][ grid row-gap--0.25 ]">
-        <label class="[ form__label ][ font--500 font--600 ]" for="email">Email<abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr>
-        </label>
-        <input class="[ form__input ]" name="email" id="email" type="email"/>
-      </div>
-      <div class="[ lg:flex end ]">
-        <button class="[ btn btn--lg btn--red ]" type="submit">Sign Up</button>
+      <div class="[ grid row-gap--1 ]">
+        <div class="[ form__field ][ grid row-gap--0.25 ]">
+          <label class="[ form__label ][ font--500 font--600 ]" for="name">First Name<abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr>
+          </label>
+          <input class="[ form__input ]" name="name" id="name" type="text"/>
+        </div>
+        <div class="[ form__field ][ grid row-gap--0.25 ]">
+          <label class="[ form__label ][ font--500 font--600 ]" for="email">Email<abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr>
+          </label>
+          <input class="[ form__input ]" name="email" id="email" type="email"/>
+        </div>
+        <div>
+          <div class="[ lg:flex end ]">
+            <button class="[ btn btn--lg btn--red ]" type="submit">Sign Up</button>
+          </div>
+        </div>
       </div>
     </form>
   </div>

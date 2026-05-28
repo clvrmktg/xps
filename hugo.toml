@@ -16,6 +16,10 @@ public_path = "/uploads"
 [pagination]
   pagerSize = 9
 
+[permalinks]
+  [permalinks.term]
+    categories = "/categories/:slug/"
+
 [ params ]
   version = "1738220434631"
   twic = "xpslogistics"
@@ -98,8 +102,8 @@ public_path = "/uploads"
 
 [[menu.policies]]
   identifier = "terms-of-service"
-  name = "Terms of Service"
-  url = "/terms-of-service/"
+  name = "Terms of Use"
+  url = "/terms-use/"
   weight = 2
 
 [[menu.policies]]

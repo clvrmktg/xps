@@ -4,12 +4,12 @@ draft = true
 title = "Broker Selection Checklist: Questions That Matter"
 description = "How to evaluate a customs broker for fit, responsiveness, and accuracy."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Customs Brokerage
+# Customs Brokerage
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Trade-Industry"]
+categories = ["Customs Brokerage"]
 # tags = []
 
 

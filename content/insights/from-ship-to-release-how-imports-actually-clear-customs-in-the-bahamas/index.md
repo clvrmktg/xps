@@ -4,7 +4,7 @@ draft = false
 title = "From Ship to Release: How Imports Actually Clear Customs in The Bahamas"
 description = "A practical guide to how cargo moves through the Bahamian customs process—from arrival to final clearance."
 
-categories = ["Trade-Industry"]
+categories = ["Customs Brokerage"]
 
 [cover]
 image = ""
@@ -78,6 +78,8 @@ If the freight cost is not included on the supplier’s invoice, a **freight inv
 
 In practice, how these costs are reflected in the entry may vary depending on how freight is invoiced. For this reason, VAT is typically applied on the combined value of goods and freight, while the duty calculation may depend on how the customs value is declared in the entry.
 
+For more detail on transport and freight documents, see [Bills of Lading and Freight Invoices](/insights/bills-of-lading-and-freight-invoices/).
+
 Once the value and classification are confirmed, the broker calculates duties and VAT, prepares the entry, and submits it electronically to Customs.
 
 ## Step 4: Customs reviews the entry
@@ -146,6 +148,14 @@ Additional charges may apply depending on the type of goods.
 A customs broker connects documents, classification, manifest records, valuation, and system processing so that Customs can confidently release the cargo.
 
 When that translation is accurate, clearance is straightforward. When it is not, the process slows down.
+
+For businesses that need support with entries and release coordination, see [Customs Brokerage Services](/services/customs-brokerage/) or the dedicated [Import Clearance Bahamas](/import-clearance-bahamas/) page.
+
+## Related reading
+
+- [Managed vs Standard Clearance: What You’re Really Paying For](/insights/managed-vs-standard-clearance/)
+- [Common HS Code Mistakes](/insights/common-hs-code-mistakes/)
+- [Demurrage, Storage, and Port Charges: What Delays Really Cost](/insights/demurrage-storage-and-port-charges/)
 
 ---
 

@@ -4,12 +4,12 @@ draft = true
 title = 'Bahamas Customs Clearance for Businesses: What You Need to Know'
 description = "Learn how to clear customs in The Bahamas as a business importer. This guide explains timelines, required documents, duty rules, and how to work with a licensed broker like XPS Logistics."
 
-# Trade-Industry
-# Logistics-Supply-Chain
-# Inside-XPS
+# Customs Brokerage
+# Customs Brokerage
+# Inside XPS
 
 # Use `-` for spaces or to replace symbols
-categories = ['Trade-Industry']
+categories = ['Customs Brokerage']
 # tags = []
 
 

@@ -5,12 +5,12 @@ draft = true
 title = 'Restricted Imports in The Bahamas: What Requires a Permit, License, or Special Clearance?'
 description = "Importing goods into The Bahamas? Learn which items require special permits, licenses, or approvals—and how XPS Logistics can help you stay compliant."
 
-# Trade-Industry
-# Logistics-Supply-Chain
-# Inside-XPS
+# Customs Brokerage
+# Customs Brokerage
+# Inside XPS
 
 # Use `-` for spaces or to replace symbols
-categories = ['Trade-Industry']
+categories = ['Customs Brokerage']
 # tags = []
 
 

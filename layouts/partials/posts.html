@@ -1,7 +1,6 @@
 <ul class="[ posts ][ grid md:col--3 gap--2 ]">
   {{- $format := "January 2, 2006" -}}
   {{- $iso := "2006-01-02T15:04:05Z07:00" -}}
-  {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply Chain" "Logistics & Supply Chain" -}}
 
   {{ $pages := .Pages }}
   {{ $site := .Site }}
@@ -32,9 +31,7 @@
           <h2 class="[ font--3 o--2 ]">{{ .LinkTitle }}</h2>
           <div class="[ o--1 ]">
             {{ range sort .Params.categories }}
-              {{ with index site.Data.categories . }}
-                <small>{{ .title }}</small>
-              {{ end }}
+              <small>{{ partial "category-title.html" . }}</small>
             {{ end }}
             | <small>{{ .ReadingTime }} min read</small>
           </div>

@@ -2,21 +2,21 @@
   <ol class="[ flex middle col-gap--1 ]">
 
     {{- $homeIcon := readFile "static/icons/home.svg" | safeHTML -}}
-    {{- $categoryLabels := dict "Trade-Industry" "Trade & Industry" "Logistics-Supply-Chain" "Logistics & Supply Chain" -}}
     {{- range $index, $ancestor := .Ancestors.Reverse -}}
+      {{- $title := partial "category-title.html" $ancestor.LinkTitle -}}
       <li class="[ breadcrumb ]">
-        <a class="[ breadcrumb__link ]{{- if eq $index 0 -}}[ flex ]{{- end -}}" href="{{ $ancestor.RelPermalink }}" title="{{ $ancestor.LinkTitle }}" aria-label="{{- index $categoryLabels $ancestor.LinkTitle  | default $ancestor.LinkTitle  -}}" data-prefetch>
+        <a class="[ breadcrumb__link ]{{- if eq $index 0 -}}[ flex ]{{- end -}}" href="{{ $ancestor.RelPermalink }}" title="{{ $title }}" aria-label="{{ $title }}" data-prefetch>
           {{- if eq $index 0 -}}
             {{ $homeIcon }}
           {{- else -}}
-          {{- index $categoryLabels $ancestor.LinkTitle  | default $ancestor.LinkTitle  -}}
+          {{- $title -}}
           {{- end -}}
         </a>
       </li>
     {{- end -}}
 
     <li class="[ breadcrumb ][ font--700 ]" aria-current="page">
-      <a class="[ breadcrumb__link--last ]" href="{{ .RelPermalink }}" tabindex="-1">{{- index $categoryLabels .LinkTitle  | default .LinkTitle  -}}</a>
+      <a class="[ breadcrumb__link--last ]" href="{{ .RelPermalink }}" tabindex="-1">{{- partial "category-title.html" .LinkTitle -}}</a>
     </li>
 
   </ol>

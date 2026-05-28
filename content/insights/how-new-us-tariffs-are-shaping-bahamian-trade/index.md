@@ -4,12 +4,12 @@ date = 2025-03-27T14:57:23-04:00
 draft = false
 title = 'How New U.S Tariffs Are Shaping Bahamian Trade'
 description = "Learn how new 2025 U.S. tariffs are affecting Bahamian importers, exporters, and supply chains—and how XPS Logistics can help you adapt."
-# Trade-Industry
-# Logistics-Supply Chain
-# Inside-XPS
+# Trade & Industry
+# Logistics & Supply Chain
+# Inside XPS
 
 # Use `-` for spaces or to replace symbols
-categories = ['Trade-Industry']
+categories = ['Trade & Industry']
 # tags = []
 
 [cover]

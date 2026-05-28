@@ -4,12 +4,12 @@ draft = false
 title = "Project Cargo Clearance: Oversize, Multi-Entry Planning"
 description = "How to plan customs clearance for large, complex, or phased project cargo."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Customs Brokerage
+# Customs Brokerage
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Trade-Industry"]
+categories = ["Customs Brokerage"]
 # tags = []
 
 

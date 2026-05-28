@@ -4,12 +4,12 @@ draft = true
 title = "Peak Season Customs Planning: Capacity and Cutoffs"
 description = "How to prepare for higher volume periods without clearance delays."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Customs Brokerage
+# Customs Brokerage
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Trade-Industry"]
+categories = ["Customs Brokerage"]
 # tags = []
 
 

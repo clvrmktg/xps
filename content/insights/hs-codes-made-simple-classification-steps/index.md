@@ -4,12 +4,12 @@ draft = true
 title = "HS Codes Made Simple: Classification Steps for Importers"
 description = "A practical checklist for classifying goods using the Harmonized System and avoiding rework."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Customs Brokerage
+# Customs Brokerage
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Trade-Industry"]
+categories = ["Customs Brokerage"]
 # tags = []
 
 
@@ -62,7 +62,15 @@ If a product is new, complex, or high value, request an advance ruling. It provi
 - Matching by product name only
 - Ignoring the material or finished state
 
+For examples of classification errors that create clearance problems, see [Common HS Code Mistakes](/insights/common-hs-code-mistakes/).
+
 XPS Logistics can help review classifications and build a library of consistent HS codes for your recurring imports.
+
+## Related reading
+
+- [Advance Rulings and Classification Disputes](/insights/advance-rulings-and-classification-disputes/)
+- [Restricted and Controlled Goods: Plan Permits Early](/insights/restricted-and-controlled-goods-plan-permits-early/)
+- [Customs Brokerage Services](/services/customs-brokerage/)
 
 [Contact XPS Logistics](/contact-us/) to validate your classifications.
 

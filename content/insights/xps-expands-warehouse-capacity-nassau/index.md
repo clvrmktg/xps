@@ -5,9 +5,9 @@ draft = false
 title = 'XPS Expands Warehouse Capacity in Nassau'
 description = "XPS Logistics doubles its warehouse capacity in Nassau, adding 2,000 sq ft of secure, cost-effective storage to support growing logistics demand in The Bahamas."
 
-# Trade-Industry
-# Logistics-Supply Chain
-# Inside-XPS
+# Trade & Industry
+# Logistics & Supply Chain
+# Inside XPS
 
 # Use `-` for spaces or to replace symbols
 categories = ['Newsroom']

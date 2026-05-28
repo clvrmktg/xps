@@ -4,12 +4,12 @@ draft = false
 title = "Post Entry Corrections: Fixing Mistakes Without Delays"
 description = "How to correct declarations and invoices after entry to stay compliant."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Customs Brokerage
+# Customs Brokerage
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Trade-Industry"]
+categories = ["Customs Brokerage"]
 # tags = []
 
 
@@ -141,6 +141,12 @@ Post entry corrections are a normal part of the import process. Not every issue 
 However, delays often occur when information is incomplete, inconsistent, or slow to be provided.
 
 Accurate documentation from the beginning remains the most effective way to avoid corrections altogether.
+
+## Related reading
+
+- [Common HS Code Mistakes](/insights/common-hs-code-mistakes/)
+- [Importer of Record: Roles, Risks, and Responsibilities](/insights/importer-of-record-roles-risks-responsibilities/)
+- [Post-Entry Corrections Support](/post-entry-corrections/)
 
 ---
 

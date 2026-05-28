@@ -4,12 +4,12 @@ draft = true
 title = "Stock Smarter: Why Lower VAT Could Drive More Food Warehousing"
 description = "The Bahamas’ VAT cut to 5% on unprepared food items may encourage importers to increase storage. Here’s how warehousing supports smarter inventory strategies."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Trade & Industry
+# Logistics & Supply Chain
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Trade-Industry"]
+categories = ["Trade & Industry"]
 
 [cover]
   image = ''

@@ -5,12 +5,12 @@ draft = true
 title = 'The Hidden Costs of Poor Warehousing'
 description = "Poor warehousing can quietly drain your business—through delays, damaged goods, and lost inventory. Learn how XPS Logistics tackles these 3PL challenges with secure, cost-effective solutions in The Bahamas."
 
-# Trade-Industry
-# Logistics-Supply
-# Inside-XPS
+# Trade & Industry
+# Logistics & Supply Chain
+# Inside XPS
 
 # Use `-` for spaces or to replace symbols
-categories = ['Logistics-Supply-Chain']
+categories = ['Logistics & Supply Chain']
 # tags = []
 
 
@@ -63,5 +63,13 @@ At XPS, we take a proactive approach to **third-party logistics (3PL)**. Earlier
 Just as importantly, we’ve done it while keeping costs accessible. While many providers charge $15–$20 per square foot, we offer secure, professionally managed space for just $10. It’s part of our commitment to delivering enterprise-grade logistics services without the enterprise-level overhead.
 
 Good warehousing isn’t just storage — it’s structure. It’s predictability. It’s trust. And it’s one of the most important decisions you can make in your supply chain.
+
+For businesses comparing managed storage options, see [Warehousing Services](/services/warehousing/) and [Warehouse Storage Nassau](/warehouse-storage-nassau/).
+
+## Related reading
+
+- [Warehousing in The Bahamas: Storage, Handling, and Cost Considerations](/insights/warehousing-in-the-bahamas/)
+- [How Much Does Warehouse Space Cost in Nassau, Bahamas?](/insights/warehouse-space-cost-nassau-bahamas/)
+- [Distribution and Delivery: Moving Goods After Clearance](/insights/distribution-and-delivery-moving-goods-after-clearance/)
 
 **Looking for a warehousing partner you can count on?**  [Let’s talk →](/contact-us)

@@ -4,12 +4,12 @@ draft = false
 title = "Warehousing in The Bahamas: Storage, Handling, and Cost Considerations"
 description = "Learn when warehousing is needed in The Bahamas and how storage, handling, and cost considerations affect inventory and logistics planning."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Trade & Industry
+# Logistics & Supply Chain
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Logistics-Supply-Chain"]
+categories = ["Logistics & Supply Chain"]
 # tags = []
 
 
@@ -128,6 +128,8 @@ Delays in planning for storage can result in:
 
 When warehousing is considered as part of the overall process, goods can move more smoothly from arrival to final destination.
 
+For post-clearance movement planning, see [Distribution and Delivery: Moving Goods After Clearance](/insights/distribution-and-delivery-moving-goods-after-clearance/).
+
 ## The role of logistics providers
 
 A logistics provider can coordinate:
@@ -138,6 +140,8 @@ A logistics provider can coordinate:
 
 This reduces the need for the importer to manage each step independently.
 
+For businesses evaluating storage as part of a broader supply chain workflow, see [Warehousing Services](/services/warehousing/) and [3PL Logistics Bahamas](/3pl-logistics-bahamas/).
+
 ## In simple terms
 
 Warehousing is not just a place to store goods.
@@ -145,6 +149,12 @@ Warehousing is not just a place to store goods.
 It is part of how shipments are managed after clearance.
 
 When used effectively, it provides flexibility, supports distribution, and helps maintain control over inventory.
+
+## Related reading
+
+- [How Much Does Warehouse Space Cost in Nassau, Bahamas?](/insights/warehouse-space-cost-nassau-bahamas/)
+- [The Hidden Costs of Poor Warehousing](/insights/logistics-supply-chain/hidden-costs-poor-warehousing/)
+- [XPS Expands Warehouse Capacity in Nassau](/insights/xps-expands-warehouse-capacity-nassau/)
 
 ---
 

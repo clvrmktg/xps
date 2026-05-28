@@ -4,12 +4,12 @@ draft = true
 title = "Temporary Imports and Re-exports: When a Carnet Fits"
 description = "Use cases for ATA Carnet and temporary admission of goods for short term use."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Customs Brokerage
+# Customs Brokerage
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Trade-Industry"]
+categories = ["Customs Brokerage"]
 # tags = []
 
 

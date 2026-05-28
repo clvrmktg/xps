@@ -4,12 +4,12 @@ draft = false
 title = "Container Detention and Returns: Avoiding Per Diem Charges"
 description = "Learn how container detention (per diem) charges work in The Bahamas and how to avoid extra costs by returning containers on time."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Trade & Industry
+# Logistics & Supply Chain
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Logistics-Supply-Chain"]
+categories = ["Logistics & Supply Chain"]
 # tags = []
 
 

@@ -218,7 +218,7 @@ answer = "Yes. XPS can help identify and coordinate permit-related import requir
 
 [insights]
 lead = "Practical insights on third-party logistics, customs clearance, warehousing, freight coordination, and commercial import operations in The Bahamas."
-category = "Trade-Industry"
+category = "Trade & Industry"
 limit = 3
 
 [finalCta]

@@ -5,12 +5,12 @@ draft = false
 title = 'How Much Does Warehouse Space Cost in Nassau, Bahamas?'
 description= "Warehouse space in Nassau is expensive and scarce. XPS Logistics offers secure, well-located, and affordable 3PL warehousing services at just $12 per sq ft."
 
-# Trade-Industry
-# Logistics-Supply-Chain
-# Inside-XPS
+# Trade & Industry
+# Logistics & Supply Chain
+# Inside XPS
 
 # Use `-` for spaces or to replace symbols
-categories = ['Logistics-Supply-Chain']
+categories = ['Logistics & Supply Chain']
 # tags = []
 
 
@@ -68,6 +68,14 @@ To ensure operational efficiency, a minimum of 100 sq. ft. is required for new w
 As logistics needs in The Bahamas continue to expand, XPS is investing in infrastructure that delivers both value and reliability. Our recent [warehouse expansion](/insights/xps-expands-warehouse-capacity-nassau/) doubled our footprint, allowing us to meet client needs without passing along excessive real estate costs.
 
 Whether you're a local wholesaler, an international supplier, or an e-commerce retailer, XPS provides the warehousing backbone of your supply chain. As a third-party logistics (3PL) partner, we integrate freight forwarding, customs clearance, and distribution services with real-time inventory control and dedicated support.
+
+For current storage support, see [Warehousing Services](/services/warehousing/) or the dedicated [Warehouse Storage Nassau](/warehouse-storage-nassau/) page.
+
+## Related reading
+
+- [Warehousing in The Bahamas: Storage, Handling, and Cost Considerations](/insights/warehousing-in-the-bahamas/)
+- [The Hidden Costs of Poor Warehousing](/insights/logistics-supply-chain/hidden-costs-poor-warehousing/)
+- [Distribution and Delivery: Moving Goods After Clearance](/insights/distribution-and-delivery-moving-goods-after-clearance/)
 
 ---
 

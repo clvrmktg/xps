@@ -4,12 +4,12 @@ draft = true
 title = "Advance Rulings and Classification Disputes: Getting Certainty"
 description = "Use advance rulings to lock in HS codes and reduce clearance risk."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Customs Brokerage
+# Customs Brokerage
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ["Trade-Industry"]
+categories = ["Customs Brokerage"]
 # tags = []
 
 

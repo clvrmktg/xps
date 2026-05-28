@@ -4,12 +4,12 @@ draft = false
 title = "Managed vs Standard Clearance: What You’re Really Paying For"
 description = "Understand the difference between standard and managed customs clearance in The Bahamas and how each approach affects delays, costs, and coordination."
 
-# Trade-Industry
-# Logistics-Supply-Chain
+# Customs Brokerage
+# Customs Brokerage
 # Newsroom
 
 # Use `-` for spaces or to replace symbols
-categories = ['Trade-Industry']
+categories = ['Customs Brokerage']
 # tags = []
 
 
@@ -146,7 +146,7 @@ Even with managed clearance, the importer remains responsible for:
 
 The broker facilitates the process, but the accuracy of the declaration remains the importer’s responsibility.
 
-For more on this, see [Importer of Record: Roles, Risks, and Responsibilities](/insights/importer-of-record/).
+For more on this, see [Importer of Record: Roles, Risks, and Responsibilities](/insights/importer-of-record-roles-risks-responsibilities/).
 
 ## In simple terms
 
@@ -157,6 +157,12 @@ The difference is not whether a broker is used—but how the process is handled.
 Standard clearance focuses on submitting the entry.
 
 Managed clearance focuses on ensuring the shipment is ready to be cleared.
+
+## Related reading
+
+- [Bills of Lading and Freight Invoices](/insights/bills-of-lading-and-freight-invoices/)
+- [Demurrage, Storage, and Port Charges: What Delays Really Cost](/insights/demurrage-storage-and-port-charges/)
+- [Post Entry Corrections: Fixing Mistakes Without Delays](/insights/post-entry-corrections-fixing-mistakes/)
 
 ---
 
