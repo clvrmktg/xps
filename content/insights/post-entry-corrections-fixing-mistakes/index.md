@@ -42,6 +42,10 @@ An invoice may be incomplete, a value may be understated, or a classification ma
 
 When that happens, the next step is a **post entry correction**.
 
+[ photo: customs amendment paperwork on a desk with highlighted invoice values and classification details ]
+
+[ visual: decision tree showing mistake found before submission, after submission, after duty payment, and after release, with the correction path for each stage ]
+
 ## What is a post entry correction?
 
 A post entry correction is a change made to a customs entry after it has been submitted to Customs.
@@ -140,13 +144,7 @@ Post entry corrections are a normal part of the import process. Not every issue 
 
 However, delays often occur when information is incomplete, inconsistent, or slow to be provided.
 
-Accurate documentation from the beginning remains the most effective way to avoid corrections altogether.
-
-## Related reading
-
-- [Common HS Code Mistakes](/insights/common-hs-code-mistakes/)
-- [Importer of Record: Roles, Risks, and Responsibilities](/insights/importer-of-record-roles-risks-responsibilities/)
-- [Post-Entry Corrections Support](/post-entry-corrections/)
+Accurate documentation from the beginning remains the most effective way to avoid corrections altogether. Classification issues, for example, often begin with [common HS code mistakes](/insights/common-hs-code-mistakes/).
 
 ---
 

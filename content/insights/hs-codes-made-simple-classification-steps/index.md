@@ -66,12 +66,6 @@ For examples of classification errors that create clearance problems, see [Commo
 
 XPS Logistics can help review classifications and build a library of consistent HS codes for your recurring imports.
 
-## Related reading
-
-- [Advance Rulings and Classification Disputes](/insights/advance-rulings-and-classification-disputes/)
-- [Restricted and Controlled Goods: Plan Permits Early](/insights/restricted-and-controlled-goods-plan-permits-early/)
-- [Customs Brokerage Services](/services/customs-brokerage/)
-
 [Contact XPS Logistics](/contact-us/) to validate your classifications.
 
 ## Sources

@@ -44,6 +44,10 @@ Once goods are cleared, they are not always ready for immediate delivery. In man
 
 Understanding how warehousing works—and when it is needed—can help importers manage costs and maintain control over their inventory.
 
+[ photo: warehouse team organizing cleared cargo for storage, staging, and distribution ]
+
+[ visual: decision chart showing when direct delivery is enough versus when storage, staging, inventory tracking, or phased distribution is needed ]
+
 ## When warehousing is needed
 
 In many cases, shipments in The Bahamas move directly from the port to the final destination.
@@ -124,7 +128,7 @@ Delays in planning for storage can result in:
 
 - Congestion at the point of delivery  
 - Inefficient handling  
-- Additional transportation costs  
+- Additional [transportation costs](/insights/distribution-and-delivery-moving-goods-after-clearance/)  
 
 When warehousing is considered as part of the overall process, goods can move more smoothly from arrival to final destination.
 
@@ -149,12 +153,6 @@ Warehousing is not just a place to store goods.
 It is part of how shipments are managed after clearance.
 
 When used effectively, it provides flexibility, supports distribution, and helps maintain control over inventory.
-
-## Related reading
-
-- [How Much Does Warehouse Space Cost in Nassau, Bahamas?](/insights/warehouse-space-cost-nassau-bahamas/)
-- [The Hidden Costs of Poor Warehousing](/insights/logistics-supply-chain/hidden-costs-poor-warehousing/)
-- [XPS Expands Warehouse Capacity in Nassau](/insights/xps-expands-warehouse-capacity-nassau/)
 
 ---
 

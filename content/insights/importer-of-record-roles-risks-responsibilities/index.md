@@ -44,6 +44,10 @@ But when something goes wrong—incorrect values, missing documents, or complian
 
 In customs terms, that responsibility sits with the **Importer of Record**.
 
+[ photo: business importer signing customs authorization documents with shipment paperwork visible ]
+
+[ visual: responsibility map showing importer of record, customs broker, supplier, carrier, and Customs, with importer accountability at the center ]
+
 ## What is the Importer of Record?
 
 The **Importer of Record (IOR)** is the individual or business legally responsible for a shipment entering The Bahamas.
@@ -100,7 +104,7 @@ It does not.
 If there are issues with a shipment—such as:
 
 - Undervaluation  
-- Incorrect classification  
+- Incorrect [classification](/insights/common-hs-code-mistakes/)  
 - Missing permits  
 - Incomplete documentation  
 
@@ -144,12 +148,6 @@ The Importer of Record is the party responsible for the shipment.
 The broker prepares and submits the entry, but the importer is accountable for what is declared.
 
 Understanding this distinction helps prevent delays and ensures that shipments move through Customs without unnecessary issues.
-
-## Related reading
-
-- [How to Prepare a Shipment for Import into The Bahamas](/insights/how-to-prepare-a-shipment-for-import-into-the-bahamas/)
-- [Common HS Code Mistakes](/insights/common-hs-code-mistakes/)
-- [Customs Brokerage Services](/services/customs-brokerage/)
 
 ---
 

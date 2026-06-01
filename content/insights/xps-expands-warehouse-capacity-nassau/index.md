@@ -42,6 +42,10 @@ categories = ['Newsroom']
 
 In response to increasing demand from our expanding client base — and to serve you better — XPS Logistics has expanded its warehouse operations in Nassau.
 
+[ photo: XPS warehouse storage area with organized inventory, racking, and secured cargo space ]
+
+[ visual: warehouse capacity graphic showing expansion from 1,000 to 2,000 square feet and the operational benefits for storage, staging, and fulfillment ]
+
 XPS has secured new warehousing space in Nassau, doubling our capacity from 1,000 to 2,000 square feet to better support storage, staging, and fulfillment needs for both domestic and international clients. Whether you're holding inventory for inter-island distribution or preparing consolidated freight, the added space means faster processing and more predictable delivery timelines.
 
 This move is part of our continued investment in scalable third-party logistics (3PL) infrastructure — giving clients the flexibility to grow without the overhead of managing their own warehousing or distribution.

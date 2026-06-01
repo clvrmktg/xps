@@ -38,6 +38,10 @@ categories = ['Logistics & Supply Chain']
 
 In Nassau, finding secure, affordable, and available warehouse space isn't easy. With rental costs ranging from **$14.50 to over $35 per square foot**, many businesses are priced out of the space they need to operate efficiently. Whether you're a growing business or an international company looking to establish a foothold in The Bahamas, the challenge is the same: space is limited, and competition is high.
 
+[ photo: Nassau commercial warehouse interior with stored pallets, loading area, and organized floor space ]
+
+[ visual: cost comparison graphic showing private warehouse lease costs versus managed 3PL warehousing, including space, staffing, security, and flexibility ]
+
 ## What’s Driving the Cost?
 
 Recent listings show warehouse spaces starting at $14.50 per sq ft, but these often come with limited amenities and additional VAT. Class A commercial facilities can push well past $25–$35 per sq ft depending on location and amenities. Availability is especially tight in areas like western New Providence, where demand from both local and international operators is increasing.
@@ -70,12 +74,6 @@ As logistics needs in The Bahamas continue to expand, XPS is investing in infras
 Whether you're a local wholesaler, an international supplier, or an e-commerce retailer, XPS provides the warehousing backbone of your supply chain. As a third-party logistics (3PL) partner, we integrate freight forwarding, customs clearance, and distribution services with real-time inventory control and dedicated support.
 
 For current storage support, see [Warehousing Services](/services/warehousing/) or the dedicated [Warehouse Storage Nassau](/warehouse-storage-nassau/) page.
-
-## Related reading
-
-- [Warehousing in The Bahamas: Storage, Handling, and Cost Considerations](/insights/warehousing-in-the-bahamas/)
-- [The Hidden Costs of Poor Warehousing](/insights/logistics-supply-chain/hidden-costs-poor-warehousing/)
-- [Distribution and Delivery: Moving Goods After Clearance](/insights/distribution-and-delivery-moving-goods-after-clearance/)
 
 ---
 

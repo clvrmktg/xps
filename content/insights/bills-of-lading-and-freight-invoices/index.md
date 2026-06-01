@@ -44,6 +44,10 @@ Before a customs entry can be prepared, the shipment must be properly documented
 
 Two of the most common causes of delay are issues with the **Bill of Lading (or Air Waybill)** and the **freight invoice**.
 
+[ photo: bill of lading, freight invoice, and commercial invoice laid out for customs entry preparation ]
+
+[ visual: document relationship diagram showing supplier invoice, bill of lading or air waybill, freight invoice, broker entry, and Customs manifest reference ]
+
 ## The role of the transport document
 
 Every shipment must be tied to a transport document:
@@ -141,7 +145,7 @@ This includes:
 - Identifying the freight forwarder or carrier handling the shipment  
 - Providing all required documents to the broker in a timely manner  
 
-Relying entirely on suppliers or third parties without verification can lead to delays.
+Relying entirely on suppliers or third parties without verification can lead to delays. A more proactive approach is often the difference between [standard and managed clearance](/insights/managed-vs-standard-clearance/).
 
 ## In simple terms
 
@@ -150,12 +154,6 @@ Most shipment delays are not caused by Customs.
 They occur because the shipment cannot be properly identified, valued, or supported with the required documents.
 
 When the Bill of Lading, freight invoice, and supporting documents are available and consistent, the entry process can proceed without interruption.
-
-## Related reading
-
-- [How to Prepare a Shipment for Import into The Bahamas](/insights/how-to-prepare-a-shipment-for-import-into-the-bahamas/)
-- [Managed vs Standard Clearance: What You’re Really Paying For](/insights/managed-vs-standard-clearance/)
-- [Pre-Arrival Processing: Reduce Time at Port](/insights/pre-arrival-processing-reduce-time-at-port/)
 
 ---
 

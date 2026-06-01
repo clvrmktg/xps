@@ -44,6 +44,10 @@ By the time cargo arrives in The Bahamas, many of the outcomes—delays, additio
 
 Proper preparation is what allows the customs process to move without interruption.
 
+[ photo: organized import document packet with invoice, bill of lading, packing list, and shipment labels on a desk ]
+
+[ visual: pre-arrival checklist timeline showing invoice review -> transport document -> Click2Clear readiness -> permits -> broker submission -> release planning ]
+
 ## Before the shipment leaves the supplier
 
 The foundation of every import is the **commercial invoice**.
@@ -63,7 +67,7 @@ At this stage, it is also important to ensure that the **consignee name matches 
 
 ## Transport and documentation
 
-Once the shipment is arranged, it must be supported by the appropriate transport document:
+Once the shipment is arranged, it must be supported by the appropriate [transport document](/insights/bills-of-lading-and-freight-invoices/):
 
 - **Bill of Lading (B/L)** for ocean shipments  
 - **Air Waybill (AWB)** for air cargo  
@@ -133,12 +137,6 @@ A well-prepared shipment:
 4. Can be processed without delay  
 
 Preparation reduces the need for corrections, avoids unnecessary costs, and allows cargo to move as expected.
-
-## Related reading
-
-- [From Ship to Release: How Imports Actually Clear Customs in The Bahamas](/insights/from-ship-to-release-how-imports-actually-clear-customs-in-the-bahamas/)
-- [Bills of Lading and Freight Invoices](/insights/bills-of-lading-and-freight-invoices/)
-- [Restricted and Controlled Goods: Plan Permits Early](/insights/restricted-and-controlled-goods-plan-permits-early/)
 
 ---
 

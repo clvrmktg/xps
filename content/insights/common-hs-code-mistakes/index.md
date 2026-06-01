@@ -1,7 +1,7 @@
 +++
 date = 2025-06-12T01:02:34-04:00
 draft = false
-title = "Common Hs Code Mistakes"
+title = "Common HS Code Mistakes"
 description = "Learn how HS code classification affects duty and VAT in The Bahamas and how common mistakes can lead to delays, reassessment, and added costs."
 
 # Customs Brokerage
@@ -41,6 +41,10 @@ Not all import mistakes cause delays.
 Some go through without issue—but result in the wrong duty being paid.
 
 One of the most common causes of this is incorrect **HS code classification**.
+
+[ photo: close-up of a customs broker reviewing product descriptions and tariff codes beside commercial invoices ]
+
+[ visual: classification impact diagram showing product description -> HS code -> duty rate -> VAT treatment -> permit or inspection risk ]
 
 ## What is an HS code?
 
@@ -143,7 +147,7 @@ When identified later, they may involve reassessment, delays, or additional docu
 
 ## The role of the importer and broker
 
-The importer is responsible for the accuracy of the declaration, including classification.
+The [importer is responsible](/insights/importer-of-record-roles-risks-responsibilities/) for the accuracy of the declaration, including classification.
 
 The broker applies classification based on the information provided and their understanding of the goods.
 
@@ -153,8 +157,6 @@ Accurate classification depends on:
 - Supporting information where needed  
 - Consistency across documents  
 
-For a simpler classification workflow, see [HS Codes Made Simple: Classification Steps for Importers](/insights/hs-codes-made-simple-classification-steps/).
-
 ## In simple terms
 
 Classification determines how much you pay.
@@ -162,12 +164,6 @@ Classification determines how much you pay.
 When it is correct, duties and VAT are assessed properly and the process moves smoothly.
 
 When it is incorrect, the cost may not be immediately visible—but it will eventually need to be addressed.
-
-## Related reading
-
-- [Importer of Record: Roles, Risks, and Responsibilities](/insights/importer-of-record-roles-risks-responsibilities/)
-- [Advance Rulings and Classification Disputes](/insights/advance-rulings-and-classification-disputes/)
-- [How to Prepare a Shipment for Import into The Bahamas](/insights/how-to-prepare-a-shipment-for-import-into-the-bahamas/)
 
 ---
 

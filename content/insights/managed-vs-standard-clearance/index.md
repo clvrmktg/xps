@@ -44,6 +44,10 @@ However, while a broker is required, the level of service provided can differ si
 
 In practice, this often comes down to the difference between **standard clearance** and **managed clearance**.
 
+[ photo: customs broker coordinating shipment documents, carrier references, and clearance status on a workstation ]
+
+[ visual: side-by-side comparison chart showing standard clearance as reactive document submission and managed clearance as proactive coordination from documents through release ]
+
 ## The role of the customs broker
 
 A customs broker is responsible for:
@@ -130,9 +134,9 @@ The difference is how the situation is handled before it becomes a problem.
 
 As outlined in previous articles:
 
-- Missing documents can delay entry preparation  
-- Delays can lead to storage and demurrage charges  
-- Incorrect information can require post entry corrections  
+- [Missing documents](/insights/bills-of-lading-and-freight-invoices/) can delay entry preparation  
+- Delays can lead to [storage and demurrage charges](/insights/demurrage-storage-and-port-charges/)  
+- Incorrect information can require [post entry corrections](/insights/post-entry-corrections-fixing-mistakes/)  
 
 The level of coordination before submission often determines whether these issues arise.
 
@@ -157,12 +161,6 @@ The difference is not whether a broker is used—but how the process is handled.
 Standard clearance focuses on submitting the entry.
 
 Managed clearance focuses on ensuring the shipment is ready to be cleared.
-
-## Related reading
-
-- [Bills of Lading and Freight Invoices](/insights/bills-of-lading-and-freight-invoices/)
-- [Demurrage, Storage, and Port Charges: What Delays Really Cost](/insights/demurrage-storage-and-port-charges/)
-- [Post Entry Corrections: Fixing Mistakes Without Delays](/insights/post-entry-corrections-fixing-mistakes/)
 
 ---
 

@@ -19,6 +19,10 @@ In reality, the customs process starts **long before the broker prepares the ent
 
 Understanding this process can help importers avoid delays and better prepare their shipments for clearance.
 
+[ photo: Nassau port cargo area showing containers, trucks, and customs documentation workflow ]
+
+[ visual: flow chart showing supplier documents -> carrier manifest -> broker entry -> Customs review -> duty payment -> carrier release -> cargo collection ]
+
 ## Step 1: The shipment leaves the supplier
 
 Every import begins with the supplier preparing a **commercial invoice** and arranging transportation.
@@ -66,7 +70,7 @@ To do this, the broker verifies:
 - The **commercial invoice**  
 - The **Bill of Lading or Air Waybill**  
 - The **manifest reference**  
-- The **product classification (HS code)**  
+- The **product classification ([HS code](/insights/common-hs-code-mistakes/))**  
 
 The broker must also determine the **customs value of the shipment**. In principle, duties and VAT are assessed based on the **CIF value**, which includes:
 
@@ -150,12 +154,6 @@ A customs broker connects documents, classification, manifest records, valuation
 When that translation is accurate, clearance is straightforward. When it is not, the process slows down.
 
 For businesses that need support with entries and release coordination, see [Customs Brokerage Services](/services/customs-brokerage/) or the dedicated [Import Clearance Bahamas](/import-clearance-bahamas/) page.
-
-## Related reading
-
-- [Managed vs Standard Clearance: What You’re Really Paying For](/insights/managed-vs-standard-clearance/)
-- [Common HS Code Mistakes](/insights/common-hs-code-mistakes/)
-- [Demurrage, Storage, and Port Charges: What Delays Really Cost](/insights/demurrage-storage-and-port-charges/)
 
 ---
 

@@ -48,7 +48,7 @@ Some goods require permits, certificates, or agency approvals before they can be
 
 Start with classification and product descriptions. If a product falls into a controlled category, you can plan for permits before the shipment leaves the supplier.
 
-If classification is unclear, review [HS Codes Made Simple: Classification Steps for Importers](/insights/hs-codes-made-simple-classification-steps/) before the goods ship.
+If classification is unclear, confirm the product details before the goods ship.
 
 ## Build lead time into procurement
 
@@ -59,12 +59,6 @@ Permits can take days or weeks depending on the product. Build this into orderin
 Your broker can help confirm which products are likely to trigger controls and which agencies may be involved. That planning is far easier before the shipment ships.
 
 XPS Logistics can review product lists and flag items that typically require special approvals.
-
-## Related reading
-
-- [OGA Permit Support in The Bahamas](/oga-permits-bahamas/)
-- [Customs Documentation in The Bahamas](/customs-documentation-bahamas/)
-- [How to Prepare a Shipment for Import into The Bahamas](/insights/how-to-prepare-a-shipment-for-import-into-the-bahamas/)
 
 [Contact XPS Logistics](/contact-us/) to review your controlled goods plan.
 

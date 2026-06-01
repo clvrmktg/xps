@@ -46,6 +46,10 @@ However, even when the distance is short, distribution still requires coordinati
 
 Understanding how this stage works helps importers avoid delays, manage costs, and ensure goods are delivered efficiently.
 
+[ photo: delivery vehicle being loaded with cleared cargo for local distribution in Nassau ]
+
+[ visual: post-clearance movement diagram showing port or terminal -> direct delivery, warehouse staging, or multi-stop distribution ]
+
 ## From release to delivery
 
 Once a shipment is released, it becomes available for collection.
@@ -58,7 +62,7 @@ At this stage, arrangements must be made to:
 
 While this may seem straightforward, timing is important.
 
-Delays in collection can lead to additional charges or congestion at the collection point.
+Delays in collection can lead to [additional charges](/insights/demurrage-storage-and-port-charges/) or congestion at the collection point.
 
 ## Direct delivery vs staged delivery
 
@@ -128,12 +132,6 @@ Distribution is the step that moves goods from clearance to use.
 Even in a relatively small geographic area, it requires planning, timing, and coordination.
 
 When managed properly, it ensures that shipments move quickly, safely, and without unnecessary cost.
-
-## Related reading
-
-- [Container Detention and Returns](/insights/container-detention-and-returns/)
-- [Demurrage, Storage, and Port Charges: What Delays Really Cost](/insights/demurrage-storage-and-port-charges/)
-- [How Much Does Warehouse Space Cost in Nassau, Bahamas?](/insights/warehouse-space-cost-nassau-bahamas/)
 
 ---
 

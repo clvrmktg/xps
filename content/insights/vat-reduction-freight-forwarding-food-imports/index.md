@@ -1,7 +1,7 @@
 +++
 date = 2025-04-10T14:57:23-04:00
 draft = false
-title = 'Vat Reduction Freight Forwarding Food Imports'
+title = 'VAT Reduction Freight Forwarding Food Imports'
 description = "The Bahamas' VAT cut to 5% on unprepared food items may drive higher import volumes. Here's how freight forwarders can prepare for rising demand."
 
 # Trade & Industry
@@ -34,14 +34,9 @@ categories = ["Trade & Industry"]
 
 When the Government of The Bahamas reduced VAT to 5% on unprepared food items effective April 1, 2025, it lowered the cost of core groceries and signaled a likely rise in import volume. For freight forwarders and importers, the policy change is not just about price. It changes planning cycles, shipment frequency, and how much capacity you need at every step.
 
-{{< series-aside title="VAT Update Series" >}}
-**This article is part of our VAT Update Series.**  
-Explore how the April 2025 VAT reduction impacts freight forwarding, warehousing, and distribution:
-- [Bahamas Reduces VAT to 5% on Unprepared Food Items](/insights/bahamas-vat-reduction-5-percent/)  
-- *You are here: VAT Reduction and Freight Forwarding: Anticipating Demand for Food Imports*  
-- [Stock Smarter: Why Lower VAT Could Drive More Food Warehousing](/insights/stock-smarter-lower-vat-food-warehousing/)  
-- [From Warehouse to Shelf: Distribution Under the New VAT Regime](/insights/warehouse-to-shelf-distribution-vat-regime/)  
-{{< /series-aside >}}
+[ photo: imported food pallets or refrigerated cargo staged for customs clearance and distribution in Nassau ]
+
+[ visual: supply chain impact diagram showing lower VAT -> increased food import demand -> freight capacity pressure -> warehousing needs -> distribution planning ]
 
 ## TL;DR
 
@@ -76,13 +71,13 @@ The VAT change does not remove logistical constraints. It shifts them:
 1. Share demand forecasts and seasonal spikes with your forwarder.  
 2. Pre-book capacity during peak periods and confirm reefer availability early.  
 3. Validate classifications and invoices before cargo departure.  
-4. Align inbound schedules with warehousing and distribution capacity.
+4. Align inbound schedules with [warehousing](/services/warehousing/) and [distribution](/services/distribution/) capacity.
 
 ## How XPS Supports Clients
 
 As an integrated 3PL provider in The Bahamas, XPS Logistics helps clients navigate this shift with:
 
-- Freight forwarding by air and sea  
+- [Freight forwarding](/services/freight-forwarding/) by air and sea  
 - In-house customs brokerage  
 - Warehousing and inventory support  
 - Distribution and local delivery services

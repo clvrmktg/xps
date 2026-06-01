@@ -42,6 +42,10 @@ Once a container leaves the port, a different timeline begins—one that is ofte
 
 If the container is not returned within the allowed period, **detention (or per diem) charges** begin to apply.
 
+[ photo: empty shipping container on chassis awaiting return after cargo unloading ]
+
+[ visual: timeline showing container pickup -> unloading window -> empty return deadline -> detention or per diem charges ]
+
 ## What is container detention?
 
 Container detention refers to charges applied by the shipping line when a container is held outside the port beyond the allowed free time.

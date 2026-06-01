@@ -1,6 +1,6 @@
 +++
 date = 2025-11-13T14:57:23-04:00
-draft = false
+draft = true
 title = "Project Cargo Clearance: Oversize, Multi-Entry Planning"
 description = "How to plan customs clearance for large, complex, or phased project cargo."
 
@@ -23,20 +23,13 @@ categories = ["Customs Brokerage"]
   alt= ""
   figcaption = ""
 
-# Footnotes will be added based on this front matter. Shortcode for footnote reference in text: {{< footnote id="1" >}}.
-
-# [[footnotes]]
-#   id = 1
-#   content = ""
-
-
-[params]
-#  hasTwic = true
-#  post = true
-
 +++
 
 Project cargo often arrives in phases, with oversized or specialized equipment that requires careful documentation. Clearance planning must match the project schedule to avoid delays on site.
+
+[ photo: oversized commercial cargo or project materials staged for customs clearance and transport planning ]
+
+[ visual: phased project cargo schedule showing shipment waves, document sets, customs entries, release windows, and site delivery coordination ]
 
 ## TL;DR
 

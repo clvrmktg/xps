@@ -44,6 +44,10 @@ By the time a shipment arrives in The Bahamas, it is already on a timeline. If i
 
 These costs are commonly referred to as **demurrage and storage**.
 
+[ photo: container yard or port terminal with cargo waiting for release, emphasizing time-sensitive storage costs ]
+
+[ visual: timeline showing cargo arrival -> free days -> storage or demurrage begins -> customs release -> carrier release -> collection ]
+
 ## What are demurrage and storage charges?
 
 Demurrage and storage are charges applied when cargo remains at the port, terminal, or airline facility beyond the allowed free period.
@@ -61,7 +65,7 @@ Demurrage and storage apply while cargo remains at the port or terminal.
 
 Once a container is collected and leaves the port, those charges stop. However, a different charge may begin if the container is not returned within the allowed time.
 
-This is commonly referred to as **detention**.
+This is commonly referred to as [**detention**](/insights/container-detention-and-returns/).
 
 Detention charges are applied by the shipping line for the use of the container outside the port. They continue to accumulate until the empty container is returned.
 
@@ -87,7 +91,7 @@ In many cases, these charges are not caused by the port or carrier, but by delay
 
 Common causes include:
 
-- Missing Bills of Lading or Air Waybills  
+- Missing [Bills of Lading or Air Waybills](/insights/bills-of-lading-and-freight-invoices/)  
 - Missing or incorrect invoices  
 - Use of pro forma invoices instead of final commercial invoices  
 - Incomplete or unclear product descriptions  
@@ -150,12 +154,6 @@ Delays in clearing or collecting cargo result in additional charges.
 These costs are not random—they are the result of time lost during the process.
 
 When shipments are properly prepared and processed without delay, these charges are usually avoided.
-
-## Related reading
-
-- [Bills of Lading and Freight Invoices](/insights/bills-of-lading-and-freight-invoices/)
-- [Container Detention and Returns](/insights/container-detention-and-returns/)
-- [Pre-Arrival Processing: Reduce Time at Port](/insights/pre-arrival-processing-reduce-time-at-port/)
 
 ---
 
