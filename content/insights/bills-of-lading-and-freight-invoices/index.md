@@ -52,8 +52,8 @@ Two of the most common causes of delay are issues with the **Bill of Lading (or 
 
 Every shipment must be tied to a transport document:
 
-- **Bill of Lading (B/L)** for ocean shipments  
-- **Air Waybill (AWB)** for air cargo  
+- **Bill of Lading ({{< abbr title="Bill of Lading" text="B/L" >}})** for ocean shipments  
+- **Air Waybill ({{< abbr title="Air Waybill" text="AWB" >}})** for air cargo  
 
 This document confirms that the cargo has been received for shipment and provides the reference used to track it through the carrier and Customs systems.
 
@@ -90,7 +90,7 @@ The freight invoice provides:
 - The carrier or agent responsible for the shipment  
 - Supporting details required for valuation  
 
-Without this information, the broker may not be able to determine the correct value for VAT purposes.
+Without this information, the broker may not be able to determine the correct value for {{< abbr title="Value Added Tax" text="VAT" >}} purposes.
 
 As a result, the entry cannot be finalized.
 
@@ -158,4 +158,4 @@ When the Bill of Lading, freight invoice, and supporting documents are available
 ---
 
 If you need assistance coordinating documentation or preparing shipments for clearance,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

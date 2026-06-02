@@ -46,7 +46,7 @@ Classification disputes create uncertainty and slow down repeat imports. Advance
 
 ## When to seek a ruling
 
-If a product is new to your import program or has multiple possible HS codes, an advance ruling gives a clear answer and protects future shipments.
+If a product is new to your import program or has multiple possible {{< abbr title="Harmonized System" text="HS" >}} codes, an advance ruling gives a clear answer and protects future shipments.
 
 ## Benefits beyond compliance
 
@@ -56,9 +56,9 @@ Advance rulings improve pricing accuracy and inventory planning because duty and
 
 Provide detailed product descriptions, technical data, and intended use. The better the description, the faster the decision.
 
-XPS Logistics can help assemble the documentation needed for a strong ruling request.
+XPS can help assemble the documentation needed for a strong ruling request.
 
-[Contact XPS Logistics](/contact-us/) to discuss classification certainty.
+[Contact XPS](/contact-us/) to discuss classification certainty.
 
 ## Sources
 

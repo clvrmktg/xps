@@ -55,7 +55,7 @@ A customs broker is responsible for:
 - Preparing and submitting entries through Click2Clear  
 - Classifying goods  
 - Determining customs value  
-- Calculating duties and VAT  
+- Calculating duties and {{< abbr title="Value Added Tax" text="VAT" >}}  
 - Facilitating communication with Customs  
 
 This is the core function of brokerage.
@@ -73,7 +73,7 @@ This generally includes:
 - Receiving documents from the importer  
 - Preparing the customs entry  
 - Submitting the entry for processing  
-- Advising on duties and VAT  
+- Advising on duties and {{< abbr title="Value Added Tax" text="VAT" >}}  
 
 In this model, the process is largely **reactive**.
 
@@ -165,4 +165,4 @@ Managed clearance focuses on ensuring the shipment is ready to be cleared.
 ---
 
 If you need assistance coordinating your shipments from documentation through clearance,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

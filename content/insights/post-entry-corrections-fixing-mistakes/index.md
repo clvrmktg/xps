@@ -53,7 +53,7 @@ A post entry correction is a change made to a customs entry after it has been su
 This may involve updating:
 
 - The value of the goods  
-- The HS code classification  
+- The {{< abbr title="Harmonized System" text="HS" >}} code classification  
 - Freight or other charges  
 - Consignee or importer details  
 - Supporting documentation  
@@ -82,7 +82,7 @@ The timing of a correction matters.
 
 Amendments may be required for issues such as:
 
-- Incorrect HS code classification  
+- Incorrect {{< abbr title="Harmonized System" text="HS" >}} code classification  
 - Missing or updated documents  
 - Incorrect declaration details (such as the wrong office)  
 
@@ -94,7 +94,7 @@ Corrections may also be required if Customs rejects the entry after reviewing or
 
 When the correct information is provided, these issues can usually be resolved without significant delay.
 
-**After release**, corrections become more formal. Adjustments may require additional submissions, reassessment of duties and VAT, and in some cases, penalties depending on the nature of the issue.
+**After release**, corrections become more formal. Adjustments may require additional submissions, reassessment of duties and {{< abbr title="Value Added Tax" text="VAT" >}}, and in some cases, penalties depending on the nature of the issue.
 
 ## When and how corrections are made
 
@@ -106,7 +106,7 @@ The process for correcting an entry depends on its stage in the system.
 
 Amendments at this stage may be required where:
 
-- The HS code is incorrect  
+- The {{< abbr title="Harmonized System" text="HS" >}} code is incorrect  
 - Documents are missing or need to be updated  
 - Declaration details are incorrect (such as the wrong office)  
 
@@ -149,4 +149,4 @@ Accurate documentation from the beginning remains the most effective way to avoi
 ---
 
 If you need assistance correcting an entry or resolving an issue with a shipment,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

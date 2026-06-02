@@ -3,7 +3,7 @@
 date = 2025-03-27T14:57:23-04:00
 draft = false
 title = 'How New U.S Tariffs Are Shaping Bahamian Trade'
-description = "Learn how new 2025 U.S. tariffs are affecting Bahamian importers, exporters, and supply chains—and how XPS Logistics can help you adapt."
+description = "Learn how new 2025 U.S. tariffs are affecting Bahamian importers, exporters, and supply chains—and how XPS can help you adapt."
 # Trade & Industry
 # Logistics & Supply Chain
 # Inside XPS
@@ -33,7 +33,7 @@ categories = ['Trade & Industry']
 
 +++
 
-As global trade continues to evolve, businesses in The Bahamas are facing a fresh wave of challenges stemming from new U.S. tariffs that took effect in early 2025. These developments carry significant implications for importers, exporters, and the logistics networks that support them. At XPS Logistics, we recognize the urgency of these changes and the need for adaptive, forward-thinking strategies. Here's what Bahamian businesses need to know—and how we can help.
+As global trade continues to evolve, businesses in The Bahamas are facing a fresh wave of challenges stemming from new U.S. tariffs that took effect in early 2025. These developments carry significant implications for importers, exporters, and the logistics networks that support them. At XPS, we recognize the urgency of these changes and the need for adaptive, forward-thinking strategies. Here's what Bahamian businesses need to know—and how we can help.
 
 [ photo: Nassau Container Port with inbound containers and cargo vessels representing shifting trade routes ]
 
@@ -59,9 +59,9 @@ The tariffs aren’t just an import issue. Local exporters—especially those in
 
 Prime Minister Philip Davis has acknowledged the economic strain the tariffs pose and affirmed that his administration is actively exploring diplomatic avenues to seek exemptions or reductions. Simultaneously, the government is pursuing strategies to diversify trade partners and reduce reliance on traditional routes heavily impacted by the new tariff regime.
 
-## Where XPS Logistics Comes In
+## Where XPS Comes In
 
-At XPS Logistics, we understand that uncertainty in trade policy demands agility and expertise. Our 3PL (Third-Party Logistics) services are designed to help businesses navigate the complexities of today’s global supply chain with confidence and efficiency.
+At XPS, we understand that uncertainty in trade policy demands agility and expertise. Our third-party logistics ({{< abbr title="Third-Party Logistics" text="3PL" >}}) services are designed to help businesses navigate the complexities of today’s global supply chain with confidence and efficiency.
 
 Here’s how we can support your business:
 
@@ -79,12 +79,12 @@ Here’s how we can support your business:
 
 ## Looking Ahead
 
-The landscape of global trade is shifting. While the new U.S. tariffs pose undeniable challenges, they also underscore the need for resilient, flexible logistics partnerships. At XPS Logistics, we are more than freight forwarders—we are your strategic partner in trade.
+The landscape of global trade is shifting. While the new U.S. tariffs pose undeniable challenges, they also underscore the need for resilient, flexible logistics partnerships. At XPS, we are more than freight forwarders—we are your strategic partner in trade.
 
 As you recalibrate your supply chain strategy, let us help you chart the most efficient and cost-effective course forward. Together, we can turn today’s uncertainties into tomorrow’s opportunities.
 
-### Let XPS Logistics Be Your Strategic Advantage
+### Let XPS Be Your Strategic Advantage
 
-Whether you're navigating customs regulations, optimizing supply chains, or exploring new markets, XPS Logistics is here to help.
+Whether you're navigating customs regulations, optimizing supply chains, or exploring new markets, XPS is here to help.
 
 [**Contact Us Today**](/contact-us) to get started.

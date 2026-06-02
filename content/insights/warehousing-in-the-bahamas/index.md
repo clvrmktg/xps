@@ -52,7 +52,7 @@ Understanding how warehousing works—and when it is needed—can help importers
 
 In many cases, shipments in The Bahamas move directly from the port to the final destination.
 
-Cargo is often collected from facilities such as the Nassau Container Port (NCP) or the Gladstone Freight Terminal (GFT) and delivered straight to the importer.
+Cargo is often collected from facilities such as the Nassau Container Port ({{< abbr title="Nassau Container Port" text="NCP" >}}) or the Gladstone Freight Terminal ({{< abbr title="Gladstone Freight Terminal" text="GFT" >}}) and delivered straight to the importer.
 
 However, warehousing becomes necessary when that direct flow is not practical.
 
@@ -157,4 +157,4 @@ When used effectively, it provides flexibility, supports distribution, and helps
 ---
 
 If you need storage solutions or support managing your inventory after clearance,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

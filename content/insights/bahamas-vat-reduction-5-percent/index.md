@@ -36,7 +36,7 @@ categories = ['Trade & Industry']
 
 +++
 
-The Government of The Bahamas reduced Value Added Tax (VAT) on unprepared food items to 5% effective April 1, 2025. The change is aimed at lowering the cost of essential groceries while keeping core staples available across the islands. This article explains what changed, what is included, and what importers and retailers should do now.
+The Government of The Bahamas reduced Value Added Tax ({{< abbr title="Value Added Tax" text="VAT" >}}) on unprepared food items to 5% effective April 1, 2025. The change is aimed at lowering the cost of essential groceries while keeping core staples available across the islands. This article explains what changed, what is included, and what importers and retailers should do now.
 
 {{< series-aside title="VAT Update Series" >}}
 **This article is part of our VAT Update Series.**  
@@ -49,13 +49,13 @@ Explore how the April 2025 VAT reduction impacts freight forwarding, warehousing
 
 ## TL;DR
 
-- VAT on unprepared food sold in stores drops to 5% as of April 1, 2025.  
-- Prepared foods and restaurant meals are excluded; confirm the official list and HS codes.  
+- {{< abbr title="Value Added Tax" text="VAT" >}} on unprepared food sold in stores drops to 5% as of April 1, 2025.  
+- Prepared foods and restaurant meals are excluded; confirm the official list and {{< abbr title="Harmonized System" text="HS" >}} codes.  
 - Importers should update classifications, pricing, and shipment plans to capture savings.
 
 ## What Changed
 
-The VAT rate on unprepared food items sold in stores was reduced from 10% to 5%, effective April 1, 2025. The reduced rate applies to unprepared foods sold at grocery, convenience, and gas station stores, but not restaurant meals or prepared foods. The list of qualifying food items is defined in the amended VAT Act and related schedules. This aligns the tax change with what most households buy as basic groceries.
+The {{< abbr title="Value Added Tax" text="VAT" >}} rate on unprepared food items sold in stores was reduced from 10% to 5%, effective April 1, 2025. The reduced rate applies to unprepared foods sold at grocery, convenience, and gas station stores, but not restaurant meals or prepared foods. The list of qualifying food items is defined in the amended {{< abbr title="Value Added Tax" text="VAT" >}} Act and related schedules. This aligns the tax change with what most households buy as basic groceries.
 
 ## What Counts as "Unprepared Food"
 
@@ -66,7 +66,7 @@ The official list is broad, but typical categories include:
 - Dairy and eggs  
 - Grains, rice, and basic pantry staples
 
-These categories are meant to reflect a typical food basket and are expected to cover most everyday grocery items. For exact classifications, importers should confirm the tariff lines and the VAT schedule in the amended legislation.
+These categories are meant to reflect a typical food basket and are expected to cover most everyday grocery items. For exact classifications, importers should confirm the tariff lines and the {{< abbr title="Value Added Tax" text="VAT" >}} schedule in the amended legislation.
 
 ## What Is Excluded
 
@@ -74,26 +74,26 @@ The reduction does not apply to restaurants or prepared foods. Reports also note
 
 ## Why It Matters for Trade and Logistics
 
-Lower VAT can drive higher demand for core food items, which can lead to increased import volumes. That means:
+Lower {{< abbr title="Value Added Tax" text="VAT" >}} can drive higher demand for core food items, which can lead to increased import volumes. That means:
 
 - More frequent shipments and tighter booking windows  
 - Greater sensitivity to clearance delays  
-- Higher importance of correct HS codes and VAT classifications
+- Higher importance of correct {{< abbr title="Harmonized System" text="HS" >}} codes and {{< abbr title="Value Added Tax" text="VAT" >}} classifications
 
-If entries are misclassified, goods can be assessed at the wrong VAT rate or held up for review. The benefit of the tax change depends on accurate paperwork.
+If entries are misclassified, goods can be assessed at the wrong {{< abbr title="Value Added Tax" text="VAT" >}} rate or held up for review. The benefit of the tax change depends on accurate paperwork.
 
 ## What Businesses Should Do Now
 
 1. Audit the product list you import and confirm which items fall under the 5% rate.  
-2. Align with your broker to ensure HS codes and VAT schedules are correct.  
+2. Align with your broker to ensure {{< abbr title="Harmonized System" text="HS" >}} codes and {{< abbr title="Value Added Tax" text="VAT" >}} schedules are correct.  
 3. Update pricing files and retail systems to reflect the new rate.  
 4. Plan for larger volumes if consumer demand rises.
 
 ## How XPS Helps
 
-XPS Logistics supports importers with customs brokerage, freight forwarding, and compliance checks. We help verify classifications, coordinate documentation, and keep shipments moving so VAT savings are reflected at the shelf. If you need help aligning shipments with the new VAT regime, we are ready to assist.
+XPS supports importers with customs brokerage, freight forwarding, and compliance checks. We help verify classifications, coordinate documentation, and keep shipments moving so {{< abbr title="Value Added Tax" text="VAT" >}} savings are reflected at the shelf. If you need help aligning shipments with the new {{< abbr title="Value Added Tax" text="VAT" >}} regime, we are ready to assist.
 
-[Contact XPS Logistics](/contact-us/) to review your product list or upcoming import schedule.
+[Contact XPS](/contact-us/) to review your product list or upcoming import schedule.
 
 ## Sources
 

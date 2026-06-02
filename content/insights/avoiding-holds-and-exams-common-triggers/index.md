@@ -47,20 +47,20 @@ Holds and exams slow down clearance and add handling costs. Many of them are pre
 ## Common triggers
 
 - Mismatch between invoice and packing list
-- HS code inconsistencies across shipments
+- {{< abbr title="Harmonized System" text="HS" >}} code inconsistencies across shipments
 - Missing permits for controlled goods
 
 ## Fixes that work
 
-Create a single source of truth for product descriptions and HS codes. Use a document checklist and confirm details with suppliers before cargo is loaded.
+Create a single source of truth for product descriptions and {{< abbr title="Harmonized System" text="HS" >}} codes. Use a document checklist and confirm details with suppliers before cargo is loaded.
 
 ## The role of risk management
 
 Customs risk management systems rely on data quality. Clean, consistent entries reduce the likelihood of inspections and speed release.
 
-XPS Logistics reviews entries for consistency and can flag risk issues early.
+XPS reviews entries for consistency and can flag risk issues early.
 
-[Contact XPS Logistics](/contact-us/) to reduce holds on your next shipment.
+[Contact XPS](/contact-us/) to reduce holds on your next shipment.
 
 ## Sources
 

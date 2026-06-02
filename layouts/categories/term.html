@@ -16,9 +16,17 @@
     {{- end }}
   </header>
   <div class="[ loop-wrap ][ grid section--spacing ]">
-    {{ $term := .Params.category | default $title }}
-    {{ $posts := where site.RegularPages "Section" "insights" }}
-    {{ $posts = where $posts "Params.categories" "intersect" (slice $term) }}
+    {{- $termSlug := .Data.Term | default .Title | urlize -}}
+    {{- $termTitle := .Title -}}
+    {{- $posts := slice -}}
+    {{- range where site.RegularPages "Section" "insights" -}}
+      {{- $page := . -}}
+      {{- range .Params.categories -}}
+        {{- if or (eq . $termTitle) (eq (. | urlize) $termSlug) -}}
+          {{- $posts = $posts | append $page -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
     {{ $paginator := .Paginate $posts }}
     {{ partial "posts.html" (dict "Pages" $paginator.Pages "Site" .Site) }}
 

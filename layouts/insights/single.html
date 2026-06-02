@@ -16,7 +16,7 @@
       <p class="[ meta{{ if .Params.feature.image }} meta--spaced{{ end }} ]">
         {{- range sort .Params.categories }}
         {{- $cat := . -}}
-        <span><a href="{{ partial "category-url.html" $cat }}">{{ partial "category-title.html" $cat }}</a></span>
+        <span><a href="{{ partial "category-url.html" $cat }}" data-prefetch>{{ partial "category-title.html" $cat }}</a></span>
       {{- end }}
         | <time datetime="{{ $published.Format $iso }}">
             {{ $published.Format $format }}

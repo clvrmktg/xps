@@ -58,9 +58,9 @@ Permits can take days or weeks depending on the product. Build this into orderin
 
 Your broker can help confirm which products are likely to trigger controls and which agencies may be involved. That planning is far easier before the shipment ships.
 
-XPS Logistics can review product lists and flag items that typically require special approvals.
+XPS can review product lists and flag items that typically require special approvals.
 
-[Contact XPS Logistics](/contact-us/) to review your controlled goods plan.
+[Contact XPS](/contact-us/) to review your controlled goods plan.
 
 ## Sources
 

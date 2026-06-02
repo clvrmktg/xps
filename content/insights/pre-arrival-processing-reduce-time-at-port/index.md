@@ -52,15 +52,15 @@ When customs has time to review entries before arrival, issues are identified ea
 
 - Final invoice and packing list
 - Transport document details
-- Accurate HS codes and declared values
+- Accurate {{< abbr title="Harmonized System" text="HS" >}} codes and declared values
 
 ## How to build the timeline
 
 Ask suppliers for draft documents before sailing, then confirm final copies once the shipment is booked. Share the timeline with your broker so the entry is prepared in advance.
 
-XPS Logistics can coordinate pre arrival submissions and align shipping schedules with clearance windows.
+XPS can coordinate pre arrival submissions and align shipping schedules with clearance windows.
 
-[Contact XPS Logistics](/contact-us/) to set up a pre arrival workflow.
+[Contact XPS](/contact-us/) to set up a pre arrival workflow.
 
 ## Sources
 

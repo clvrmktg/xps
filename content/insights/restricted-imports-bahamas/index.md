@@ -3,7 +3,7 @@ date = 2025-06-05T14:57:23-04:00
 lastMod = '2025-06-02T14:42:35-04:00'
 draft = true
 title = 'Restricted Imports in The Bahamas: What Requires a Permit, License, or Special Clearance?'
-description = "Importing goods into The Bahamas? Learn which items require special permits, licenses, or approvals—and how XPS Logistics can help you stay compliant."
+description = "Importing goods into The Bahamas? Learn which items require special permits, licenses, or approvals—and how XPS can help you stay compliant."
 
 # Customs Brokerage
 # Customs Brokerage
@@ -39,7 +39,7 @@ categories = ['Customs Brokerage']
 
 When importing goods into The Bahamas, not everything can be cleared through customs with just an invoice. Some items require **special permits**, **import licenses**, or **government approvals** before they can enter the country legally.
 
-If you're working with a third-party logistics provider (3PL) like XPS Logistics, it's important to know which goods are considered restricted—and what needs to be done **before the cargo arrives**.
+If you're working with a third-party logistics provider ({{< abbr title="Third-Party Logistics" text="3PL" >}}) like XPS, it's important to know which goods are considered restricted—and what needs to be done **before the cargo arrives**.
 
 ### Why Are Some Goods Restricted?
 
@@ -67,7 +67,7 @@ Here’s a breakdown of common product categories that require import permits, l
 | **Vehicles & Motorcraft**  | Cars, motorcycles, golf carts, jet skis          | Bahamas Customs                    |
 | **Luxury Items & Jewelry** | High-value goods, gold, precious metals          | Bahamas Customs                    |
 
-> ⚠️ Some goods may also require environmental levies, VAT pre-payment, or inspection fees.
+> ⚠️ Some goods may also require environmental levies, {{< abbr title="Value Added Tax" text="VAT" >}} pre-payment, or inspection fees.
 
 
 ### Permit vs. License: What's the Difference?
@@ -75,10 +75,10 @@ Here’s a breakdown of common product categories that require import permits, l
 - **Import Permit**: Typically a one-time document required for a specific shipment (e.g., fresh produce).
 - **Import License**: Often a longer-term authorization granted to companies importing a particular class of goods (e.g., pharmaceuticals or chemicals).
 
-If you're unsure which applies, XPS Logistics can advise you during pre-clearance.
+If you're unsure which applies, XPS can advise you during pre-clearance.
 
 
-### How XPS Logistics Helps
+### How XPS Helps
 
 At XPS, we don’t just move your cargo—we ensure it moves **legally and efficiently**. As your licensed customs broker, we:
 
@@ -92,7 +92,7 @@ We also recommend listing the consignee on all import documents as:
 
 ```
 Your Business Name
-c/o XPS Logistics
+c/o XPS
 Nassau, The Bahamas
 ```
 
@@ -104,7 +104,7 @@ Before booking your freight or submitting your commercial invoice, ask:
 
 - Is my product restricted or controlled in The Bahamas?
 - Do I need a permit or license to import it?
-- Have I identified the correct HS Code?
+- Have I identified the correct {{< abbr title="Harmonized System" text="HS" >}} Code?
 - Will XPS be acting as the customs broker and consignee?
 - Have I allowed enough time to secure documentation?
 
@@ -112,7 +112,7 @@ If you're not 100% sure, **ask before you ship.**
 
 ## Avoid Delays. Ask a Broker First.
 
-Restricted goods don't need to slow you down—if you plan ahead. XPS Logistics works with importers across industries to ensure their shipments are **cleared, compliant, and delivered without issue**.
+Restricted goods don't need to slow you down—if you plan ahead. XPS works with importers across industries to ensure their shipments are **cleared, compliant, and delivered without issue**.
 
 [Contact us](/contact-us) today if you have questions about restricted imports or documentation requirements.
 

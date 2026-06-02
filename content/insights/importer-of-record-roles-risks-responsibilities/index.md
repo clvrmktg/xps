@@ -56,7 +56,7 @@ This is the party that Customs recognizes as:
 
 - The owner or consignee of the goods  
 - The party responsible for the accuracy of the declaration  
-- The entity liable for duties, VAT, and any applicable penalties  
+- The entity liable for duties, {{< abbr title="Value Added Tax" text="VAT" >}}, and any applicable penalties  
 
 Even when a broker prepares and submits the entry, the Importer of Record remains ultimately responsible for what is declared.
 
@@ -152,4 +152,4 @@ Understanding this distinction helps prevent delays and ensures that shipments m
 ---
 
 If you have questions about your responsibilities as an importer,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

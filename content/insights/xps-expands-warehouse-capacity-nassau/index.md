@@ -3,7 +3,7 @@ date = 2025-05-08T14:57:23-04:00
 lastMod = '2025-06-01T04:28:02-04:00'
 draft = false
 title = 'XPS Expands Warehouse Capacity in Nassau'
-description = "XPS Logistics doubles its warehouse capacity in Nassau, adding 2,000 sq ft of secure, cost-effective storage to support growing logistics demand in The Bahamas."
+description = "XPS doubles its warehouse capacity in Nassau, adding 2,000 sq ft of secure, cost-effective storage to support growing logistics demand in The Bahamas."
 
 # Trade & Industry
 # Logistics & Supply Chain
@@ -40,7 +40,7 @@ categories = ['Newsroom']
 
 +++
 
-In response to increasing demand from our expanding client base — and to serve you better — XPS Logistics has expanded its warehouse operations in Nassau.
+In response to increasing demand from our expanding client base — and to serve you better — XPS has expanded its warehouse operations in Nassau.
 
 [ photo: XPS warehouse storage area with organized inventory, racking, and secured cargo space ]
 
@@ -48,7 +48,7 @@ In response to increasing demand from our expanding client base — and to serve
 
 XPS has secured new warehousing space in Nassau, doubling our capacity from 1,000 to 2,000 square feet to better support storage, staging, and fulfillment needs for both domestic and international clients. Whether you're holding inventory for inter-island distribution or preparing consolidated freight, the added space means faster processing and more predictable delivery timelines.
 
-This move is part of our continued investment in scalable third-party logistics (3PL) infrastructure — giving clients the flexibility to grow without the overhead of managing their own warehousing or distribution.
+This move is part of our continued investment in scalable third-party logistics ({{< abbr title="Third-Party Logistics" text="3PL" >}}) infrastructure — giving clients the flexibility to grow without the overhead of managing their own warehousing or distribution.
 
 Security and accountability remain top priorities. The warehouse is monitored 24/7 with surveillance cameras and staffed during business hours — ensuring your goods are protected and traceable at every stage.
 

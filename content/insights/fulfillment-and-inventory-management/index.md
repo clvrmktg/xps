@@ -4,7 +4,7 @@ date: 2025-11-13T09:00:00-04:00
 description: "Learn how fulfillment and inventory management help businesses organize, store, and distribute goods more efficiently in The Bahamas."
 
 categories:
-  - logistics-supply-chain
+  - Logistics & Supply Chain
 
 cover:
   image: ""
@@ -29,7 +29,7 @@ This is where warehousing evolves into fulfillment and inventory management.
 
 ## When inventory becomes an operational challenge
 
-In The Bahamas, many shipments still move directly from the Nassau Container Port (NCP) or Gladstone Freight Terminal (GFT) to the importer.
+In The Bahamas, many shipments still move directly from the Nassau Container Port ({{< abbr title="Nassau Container Port" text="NCP" >}}) or Gladstone Freight Terminal ({{< abbr title="Gladstone Freight Terminal" text="GFT" >}}) to the importer.
 
 For businesses importing regularly, however, direct delivery is not always practical.
 
@@ -94,11 +94,11 @@ Rather than repeatedly coordinating shipments from scratch, inventory can be sto
 
 This creates a more stable and efficient operational process.
 
-For many growing businesses, this is where third-party logistics (3PL) support becomes increasingly valuable.
+For many growing businesses, this is where third-party logistics ({{< abbr title="Third-Party Logistics" text="3PL" >}}) support becomes increasingly valuable.
 
 ## How XPS supports fulfillment and inventory management
 
-At XPS Logistics, fulfillment is approached as part of the broader logistics process—not simply storage alone.
+At XPS, fulfillment is approached as part of the broader logistics process—not simply storage alone.
 
 We help businesses manage inventory after clearance by supporting:
 
@@ -144,4 +144,4 @@ As businesses grow, this level of coordination becomes increasingly important to
 ---
 
 If you need support managing inventory, fulfillment, or ongoing distribution operations,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

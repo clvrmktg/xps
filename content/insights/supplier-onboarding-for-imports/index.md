@@ -41,7 +41,7 @@ Many customs issues start at the supplier. If suppliers provide inconsistent inv
 ## TL;DR
 
 - Supplier data standards prevent downstream clearance errors.
-- Require consistent product descriptions and HS code proposals.
+- Require consistent product descriptions and {{< abbr title="Harmonized System" text="HS" >}} code proposals.
 - Audit supplier documents before the first shipment.
 
 ## What to include in onboarding
@@ -56,9 +56,9 @@ Review the supplier document set before cargo ships. Correcting errors at origin
 
 Share issues found at clearance with suppliers so the next shipment improves.
 
-XPS Logistics can help build supplier onboarding checklists and review first shipments.
+XPS can help build supplier onboarding checklists and review first shipments.
 
-[Contact XPS Logistics](/contact-us/) to improve supplier documentation.
+[Contact XPS](/contact-us/) to improve supplier documentation.
 
 ## Sources
 

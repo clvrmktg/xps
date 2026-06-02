@@ -40,7 +40,7 @@ Not all import mistakes cause delays.
 
 Some go through without issue—but result in the wrong duty being paid.
 
-One of the most common causes of this is incorrect **HS code classification**.
+One of the most common causes of this is incorrect **{{< abbr title="Harmonized System" text="HS" >}} code classification**.
 
 [ photo: close-up of a customs broker reviewing product descriptions and tariff codes beside commercial invoices ]
 
@@ -48,12 +48,12 @@ One of the most common causes of this is incorrect **HS code classification**.
 
 ## What is an HS code?
 
-An HS (Harmonized System) code is used to classify goods for import.
+An {{< abbr title="Harmonized System" text="HS" >}} code is used to classify goods for import.
 
 Each product is assigned a code that determines:
 
 - The applicable duty rate  
-- Whether VAT applies  
+- Whether {{< abbr title="Value Added Tax" text="VAT" >}} applies  
 - Whether permits or restrictions are required  
 
 Accurate classification is essential to ensure the correct assessment of duties and taxes.
@@ -161,11 +161,11 @@ Accurate classification depends on:
 
 Classification determines how much you pay.
 
-When it is correct, duties and VAT are assessed properly and the process moves smoothly.
+When it is correct, duties and {{< abbr title="Value Added Tax" text="VAT" >}} are assessed properly and the process moves smoothly.
 
 When it is incorrect, the cost may not be immediately visible—but it will eventually need to be addressed.
 
 ---
 
 If you need assistance reviewing classifications or preparing entries,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

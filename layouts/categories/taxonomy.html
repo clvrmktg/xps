@@ -13,7 +13,7 @@
   <ul>
     {{ range .Data.Terms.Alphabetical }}
       <li>
-        <a href="{{ partial "category-url.html" .Page.Title }}">
+        <a href="{{ partial "category-url.html" .Page.Title }}" data-prefetch>
           {{- partial "category-title.html" .Page.Title -}}
         </a>
       </li>

@@ -9,7 +9,7 @@
     <div class="[ hero__inner ][ full-width content-grid ]">
       <div class="[ wrapper ][ flex middle section--padding-bottom ]">
         <div class="[ hero__content ][ ch--54 ]">
-          <p class="[ hero__eyebrow ][ font--1- upper ]">{{ .Params.eyebrow | default (printf "XPS Logistics • %s" .Title) }}</p>
+          <p class="[ hero__eyebrow ][ font--1- upper ]">{{ .Params.eyebrow | default (printf "XPS • %s" .Title) }}</p>
           <h1>{{ $lead.heading | default .Title }}</h1>
           {{ with $lead.text }}
             <p class="[ lead ]">{{ . }}</p>
@@ -121,6 +121,38 @@
                 {{ end }}
               </div>
               <div class="[ advantage-card__content ]">
+                <h3 class="[ font--4 ]">{{ .title }}</h3>
+                <p>{{ .text }}</p>
+              </div>
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with .Params.infrastructure }}
+    <section class="[ infrastructure-section ][ full-width content-grid ]">
+      <div class="[ wrapper ][ infrastructure-section__inner ]">
+        <div class="[ infrastructure-section__header ch--64 ]">
+          <h2>{{ $.Params.infrastructureHeading | default "Bahamas Logistics Infrastructure" }}</h2>
+          {{ with $.Params.infrastructureLead }}
+            <p class="[ lead ]">{{ . }}</p>
+          {{ end }}
+        </div>
+        <div class="[ infrastructure-grid ]">
+          {{ range . }}
+            <article class="[ infrastructure-card ]">
+              <div class="[ infrastructure-card__icon ]" aria-hidden="true">
+                {{ with .icon }}
+                  {{- $icon := printf "static/tabler/%s.svg" . -}}
+                  {{- if fileExists $icon -}}
+                    {{ readFile $icon | safeHTML }}
+                  {{- end -}}
+                {{ end }}
+              </div>
+              <div class="[ infrastructure-card__content ]">
+                {{ with .facility }}<p class="[ infrastructure-card__facility ]">{{ . }}</p>{{ end }}
                 <h3 class="[ font--4 ]">{{ .title }}</h3>
                 <p>{{ .text }}</p>
               </div>
@@ -565,6 +597,130 @@
       }
 
       .advantage-card {
+        min-height: auto;
+      }
+    }
+
+    .infrastructure-section {
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(rgb(250 250 250 / 0.94), rgb(250 250 250 / 0.94)),
+        linear-gradient(90deg, rgb(32 32 32 / 0.04) 1px, transparent 1px),
+        linear-gradient(rgb(32 32 32 / 0.04) 1px, transparent 1px);
+      background-size: auto, 4rem 4rem, 4rem 4rem;
+    }
+
+    .infrastructure-section__inner {
+      display: grid;
+      gap: clamp(2.5rem, 5vw, 4rem);
+      padding-block: clamp(5.5rem, 10vw, 8rem);
+    }
+
+    .infrastructure-section__header {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .infrastructure-section__header p {
+      padding-bottom: 0;
+    }
+
+    .infrastructure-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .infrastructure-card {
+      position: relative;
+      display: grid;
+      align-content: start;
+      gap: 1.15rem;
+      min-height: 18rem;
+      padding: 1.25rem;
+      border: 1px solid rgb(255 255 255 / 0.12);
+      border-radius: 0.5rem;
+      color: white;
+      background:
+        linear-gradient(180deg, rgb(33 33 33 / 0.98), rgb(18 18 18 / 0.98));
+      box-shadow: 0 1rem 2.25rem rgb(0 0 0 / 0.12), inset 0 1px 0 rgb(255 255 255 / 0.08);
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .infrastructure-card::before {
+      position: absolute;
+      top: 0;
+      right: 1rem;
+      left: 1rem;
+      height: 0.1875rem;
+      content: "";
+      background: rgb(192 12 0 / 0.86);
+      opacity: 0.74;
+    }
+
+    .infrastructure-card:hover {
+      border-color: rgb(192 12 0 / 0.42);
+      box-shadow: 0 1.25rem 2.75rem rgb(0 0 0 / 0.16), inset 0 1px 0 rgb(255 255 255 / 0.1);
+      transform: translateY(-0.125rem);
+    }
+
+    .infrastructure-card__icon {
+      display: inline-grid;
+      place-items: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      border: 1px solid rgb(192 12 0 / 0.34);
+      border-radius: 0.5rem;
+      color: var(--xps-red);
+      background: rgb(192 12 0 / 0.11);
+    }
+
+    .infrastructure-card__icon svg {
+      width: 1.25rem;
+      height: 1.25rem;
+      stroke: currentcolor;
+    }
+
+    .infrastructure-card__content {
+      display: grid;
+      gap: 0.55rem;
+    }
+
+    .infrastructure-card__content h3,
+    .infrastructure-card__content p {
+      padding-bottom: 0;
+    }
+
+    .infrastructure-card__content h3 {
+      color: white;
+    }
+
+    .infrastructure-card__content p {
+      color: rgb(255 255 255 / 0.72);
+      line-height: 1.6;
+    }
+
+    .infrastructure-card__content .infrastructure-card__facility {
+      color: var(--xps-red);
+      font-size: 0.78rem;
+      font-weight: 800;
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 64rem) {
+      .infrastructure-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 42rem) {
+      .infrastructure-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .infrastructure-card {
         min-height: auto;
       }
     }

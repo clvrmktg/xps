@@ -69,8 +69,8 @@ At this stage, it is also important to ensure that the **consignee name matches 
 
 Once the shipment is arranged, it must be supported by the appropriate [transport document](/insights/bills-of-lading-and-freight-invoices/):
 
-- **Bill of Lading (B/L)** for ocean shipments  
-- **Air Waybill (AWB)** for air cargo  
+- **Bill of Lading ({{< abbr title="Bill of Lading" text="B/L" >}})** for ocean shipments  
+- **Air Waybill ({{< abbr title="Air Waybill" text="AWB" >}})** for air cargo  
 
 This document links the shipment to the carrier and the cargo manifest.
 
@@ -115,7 +115,7 @@ If not, delays begin here.
 Even after the entry is approved, the shipment cannot be collected until both releases are in place:
 
 - **Carrier release**, after freight and local charges are settled  
-- **Customs release**, after duties and VAT are assessed and paid  
+- **Customs release**, after duties and {{< abbr title="Value Added Tax" text="VAT" >}} are assessed and paid  
 
 Delays at either stage can result in storage, demurrage, or detention charges.
 
@@ -141,4 +141,4 @@ Preparation reduces the need for corrections, avoids unnecessary costs, and allo
 ---
 
 If you need assistance preparing shipments or coordinating documentation before arrival,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

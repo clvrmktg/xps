@@ -36,12 +36,12 @@ categories = ["Customs Brokerage"]
 
 +++
 
-HS codes are the language Customs uses to decide duty rates, controls, and documentation requirements. A single digit error can shift a shipment into the wrong category and trigger questions or higher charges. A repeatable classification process keeps entries consistent.
+{{< abbr title="Harmonized System" text="HS" >}} codes are the language Customs uses to decide duty rates, controls, and documentation requirements. A single digit error can shift a shipment into the wrong category and trigger questions or higher charges. A repeatable classification process keeps entries consistent.
 
 ## TL;DR
 
-- Start with product facts and intended use before choosing an HS code.
-- Use the HS structure and notes, not just a keyword search.
+- Start with product facts and intended use before choosing an {{< abbr title="Harmonized System" text="HS" >}} code.
+- Use the {{< abbr title="Harmonized System" text="HS" >}} structure and notes, not just a keyword search.
 - When in doubt, request an advance ruling to lock in certainty.
 
 ## Start with product facts
@@ -50,7 +50,7 @@ Gather the material composition, function, level of processing, and packaging. T
 
 ## Use the HS structure
 
-The HS is organized by chapters, headings, and subheadings. Read the section and chapter notes before selecting a subheading. Those notes often determine inclusion or exclusion for specific goods.
+The {{< abbr title="Harmonized System" text="HS" >}} is organized by chapters, headings, and subheadings. Read the section and chapter notes before selecting a subheading. Those notes often determine inclusion or exclusion for specific goods.
 
 ## When to request a ruling
 
@@ -64,9 +64,9 @@ If a product is new, complex, or high value, request an advance ruling. It provi
 
 For examples of classification errors that create clearance problems, see [Common HS Code Mistakes](/insights/common-hs-code-mistakes/).
 
-XPS Logistics can help review classifications and build a library of consistent HS codes for your recurring imports.
+XPS can help review classifications and build a library of consistent {{< abbr title="Harmonized System" text="HS" >}} codes for your recurring imports.
 
-[Contact XPS Logistics](/contact-us/) to validate your classifications.
+[Contact XPS](/contact-us/) to validate your classifications.
 
 ## Sources
 

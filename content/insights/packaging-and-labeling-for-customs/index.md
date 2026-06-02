@@ -56,9 +56,9 @@ Mixed cartons are common, but they require clear item level detail. Without it, 
 
 Create a supplier guide that defines labeling and packaging requirements. This reduces rework and keeps documentation consistent.
 
-XPS Logistics can help create packaging and labeling standards tied to your customs documentation.
+XPS can help create packaging and labeling standards tied to your customs documentation.
 
-[Contact XPS Logistics](/contact-us/) to improve labeling compliance.
+[Contact XPS](/contact-us/) to improve labeling compliance.
 
 ## Sources
 

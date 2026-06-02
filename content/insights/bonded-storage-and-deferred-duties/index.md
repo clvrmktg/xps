@@ -56,9 +56,9 @@ Bonded storage still requires accurate documentation, inventory control, and cle
 
 Your broker should manage the entry process and ensure goods are released correctly when needed.
 
-XPS Logistics can help evaluate whether bonded storage fits your import program.
+XPS can help evaluate whether bonded storage fits your import program.
 
-[Contact XPS Logistics](/contact-us/) to discuss a bonded storage strategy.
+[Contact XPS](/contact-us/) to discuss a bonded storage strategy.
 
 ## Sources
 

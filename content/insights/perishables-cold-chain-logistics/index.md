@@ -121,7 +121,7 @@ With perishables, these operational stages become even more sensitive because de
 
 ## How XPS supports perishable and cold chain logistics
 
-At XPS Logistics, perishable shipments are approached as time-sensitive operational movements—not simply standard cargo clearances.
+At XPS, perishable shipments are approached as time-sensitive operational movements—not simply standard cargo clearances.
 
 We help coordinate the movement of temperature-sensitive goods by supporting:
 
@@ -133,7 +133,7 @@ We help coordinate the movement of temperature-sensitive goods by supporting:
 
 For businesses importing sensitive goods regularly, this level of coordination helps reduce delays, maintain product quality, and support more reliable operations.
 
-For many businesses, this is where third-party logistics (3PL) support becomes increasingly valuable.
+For many businesses, this is where third-party logistics ({{< abbr title="Third-Party Logistics" text="3PL" >}}) support becomes increasingly valuable.
 
 [ photo ]
 
@@ -151,4 +151,4 @@ When the cold chain is managed properly, goods move more efficiently, product qu
 ---
 
 If you need support coordinating perishable imports or temperature-sensitive logistics in The Bahamas,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

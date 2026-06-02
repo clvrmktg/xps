@@ -11,7 +11,7 @@ description = ''
 
 **Effective Date:** [Insert Date]
 
-This Cookie Policy explains how XPS Logistics (“we,” “our,” or “us”) uses cookies and similar technologies when you visit our website.
+This Cookie Policy explains how XPS (“we,” “our,” or “us”) uses cookies and similar technologies when you visit our website.
 
 ## 1. What Are Cookies?
 

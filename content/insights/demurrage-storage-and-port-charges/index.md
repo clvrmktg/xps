@@ -80,7 +80,7 @@ Once this period expires, charges begin to accumulate daily.
 The exact free time and rates vary depending on:
 
 - The carrier or shipping line  
-- The type of cargo (containerized, LCL, or air)  
+- The type of cargo (containerized, {{< abbr title="Less than Container Load" text="LCL" >}}, or air)  
 - The facility where the cargo is stored  
 
 Importers are not always notified when free time expires, so delays in processing can quickly become costly.
@@ -116,7 +116,7 @@ Delays at any stage can result in additional costs.
 
 Even after an entry is approved, cargo cannot be collected until both releases are in place.
 
-The carrier must release the shipment after freight and local charges are paid, and Customs must release the entry after duties and VAT are settled.
+The carrier must release the shipment after freight and local charges are paid, and Customs must release the entry after duties and {{< abbr title="Value Added Tax" text="VAT" >}} are settled.
 
 If either of these is delayed, cargo remains at the terminal and charges may continue to accrue.
 
@@ -126,8 +126,8 @@ Demurrage and storage charges are typically calculated on a daily basis.
 
 What begins as a short delay can quickly become significant, particularly for:
 
-- Full container loads (FCL)  
-- High-volume LCL shipments  
+- Full container loads ({{< abbr title="Full Container Load" text="FCL" >}})  
+- High-volume {{< abbr title="Less than Container Load" text="LCL" >}} shipments  
 - Time-sensitive or high-value goods  
 
 In some cases, the cost of delays can exceed the cost of the original freight.
@@ -158,4 +158,4 @@ When shipments are properly prepared and processed without delay, these charges 
 ---
 
 If you need assistance preparing shipments or avoiding unnecessary delays and costs,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

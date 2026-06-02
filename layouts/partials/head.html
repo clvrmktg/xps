@@ -39,7 +39,7 @@
     {{- with index site.Data.categories "default" }}
       <meta name="description" content="{{ .description }}">
     {{- else }}
-      <meta name="description" content="Explore insights by category from XPS Logistics.">
+      <meta name="description" content="Explore insights by category from XPS.">
     {{- end }}
 
   {{- else -}}
@@ -92,7 +92,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ $title }}">
   {{- $image := $share.image | default .Site.Params.share -}}
-  {{- $alt := $share.alt | default "XPS Logistics logo" -}}
+  {{- $alt := $share.alt | default "XPS logo" -}}
   <meta property="og:description" content="{{- .Description -}}">
   <meta property="og:image" content="{{- $image | absURL -}}">
   <meta property="og:image:alt" content="{{ $alt  }}">

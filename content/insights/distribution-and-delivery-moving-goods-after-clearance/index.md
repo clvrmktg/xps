@@ -40,7 +40,7 @@ After a shipment is cleared by Customs, the next step is getting the goods to th
 
 In many cases in The Bahamas, this movement happens quickly.
 
-Cargo is typically collected from the Nassau Container Port (NCP) at Arawak Cay or the Gladstone Freight Terminal (GFT) and delivered directly to the importer.
+Cargo is typically collected from the Nassau Container Port ({{< abbr title="Nassau Container Port" text="NCP" >}}) at Arawak Cay or the Gladstone Freight Terminal ({{< abbr title="Gladstone Freight Terminal" text="GFT" >}}) and delivered directly to the importer.
 
 However, even when the distance is short, distribution still requires coordination.
 
@@ -116,7 +116,7 @@ Proper handling ensures that goods arrive in the same condition in which they we
 
 A logistics provider can manage the movement of goods after clearance by coordinating:
 
-- Collection from NCP or GFT  
+- Collection from {{< abbr title="Nassau Container Port" text="NCP" >}} or {{< abbr title="Gladstone Freight Terminal" text="GFT" >}}  
 - Transportation to the delivery point  
 - Scheduling and routing of deliveries  
 - Communication between all parties involved  
@@ -136,4 +136,4 @@ When managed properly, it ensures that shipments move quickly, safely, and witho
 ---
 
 If you need support coordinating delivery or managing post-clearance logistics,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).

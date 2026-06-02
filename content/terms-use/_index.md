@@ -11,7 +11,7 @@ description = ''
 
 **Effective Date:** [Insert Date]
 
-Welcome to the website of XPS Logistics (“we,” “our,” or “us”). By accessing or using this website (the “Site”), you agree to be bound by the following Terms of Use. If you do not agree to these terms, please do not use the Site.
+Welcome to the website of XPS (“we,” “our,” or “us”). By accessing or using this website (the “Site”), you agree to be bound by the following Terms of Use. If you do not agree to these terms, please do not use the Site.
 
 ## 1. Use of the Site
 
@@ -23,7 +23,7 @@ We strive to ensure that the information presented on this Site is accurate and 
 
 ## 3. Intellectual Property
 
-All content on this Site—including text, graphics, logos, and images—is the property of XPS Logistics or its licensors and is protected by applicable intellectual property laws. You may not copy, reproduce, distribute, or modify any part of the Site without our prior written permission.
+All content on this Site—including text, graphics, logos, and images—is the property of XPS or its licensors and is protected by applicable intellectual property laws. You may not copy, reproduce, distribute, or modify any part of the Site without our prior written permission.
 
 ## 4. Limitation of Liability
 

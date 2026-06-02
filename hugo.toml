@@ -1,6 +1,6 @@
 baseURL = 'https://xpslogistics.netlify.app/'
 languageCode = 'en-us'
-title = 'XPS Logistics'
+title = 'XPS'
 
 [sass]
   use_dart_sass = true

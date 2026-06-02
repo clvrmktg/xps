@@ -46,7 +46,7 @@ A customs broker is a long term partner in your supply chain. Selecting the righ
 
 ## Questions to ask
 
-- How do you validate HS codes and values?
+- How do you validate {{< abbr title="Harmonized System" text="HS" >}} codes and values?
 - What is your standard document checklist?
 - How quickly do you respond to Customs queries?
 - Do you handle exceptions and post entry corrections?
@@ -59,9 +59,9 @@ A low fee does not help if it leads to delays or penalties. Evaluate a broker ba
 
 Start with a smaller shipment and evaluate performance. Track clearance time, responsiveness, and accuracy before committing long term.
 
-XPS Logistics offers integrated brokerage with freight, warehousing, and distribution support so all steps stay aligned.
+XPS offers integrated brokerage with freight, warehousing, and distribution support so all steps stay aligned.
 
-[Contact XPS Logistics](/contact-us/) to discuss brokerage support.
+[Contact XPS](/contact-us/) to discuss brokerage support.
 
 ## Sources
 

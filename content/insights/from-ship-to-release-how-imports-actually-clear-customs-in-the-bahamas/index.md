@@ -36,8 +36,8 @@ The invoice becomes the foundation of the customs entry. It should clearly state
 
 At the same time, the carrier or freight forwarder issues a **transport document** confirming that the cargo has been accepted for shipment:
 
-- **Bill of Lading (B/L)** for ocean freight  
-- **Air Waybill (AWB)** for air cargo  
+- **Bill of Lading ({{< abbr title="Bill of Lading" text="B/L" >}})** for ocean freight  
+- **Air Waybill ({{< abbr title="Air Waybill" text="AWB" >}})** for air cargo  
 
 This document provides the shipment reference used by carriers, freight agents, and brokers to track the cargo during transport.
 
@@ -53,8 +53,8 @@ For example:
 
 | Shipment Type | Example Reference |
 |---|---|
-| Ocean LCL shipments | HSEN numbers |
-| Ocean FCL containers | MSTRN numbers |
+| Ocean {{< abbr title="Less than Container Load" text="LCL" >}} shipments | HSEN numbers |
+| Ocean {{< abbr title="Full Container Load" text="FCL" >}} containers | MSTRN numbers |
 | Air cargo shipments | MAM references |
 
 These references connect the transport document, the manifest record, and the shipment itself. Without them, locating a shipment in the system can be difficult.
@@ -72,7 +72,7 @@ To do this, the broker verifies:
 - The **manifest reference**  
 - The **product classification ([HS code](/insights/common-hs-code-mistakes/))**  
 
-The broker must also determine the **customs value of the shipment**. In principle, duties and VAT are assessed based on the **CIF value**, which includes:
+The broker must also determine the **customs value of the shipment**. In principle, duties and {{< abbr title="Value Added Tax" text="VAT" >}} are assessed based on the **Cost, Insurance, and Freight ({{< abbr title="Cost, Insurance, and Freight" text="CIF" >}}) value**, which includes:
 
 - The **cost of the goods**  
 - **Insurance**, where applicable  
@@ -80,11 +80,11 @@ The broker must also determine the **customs value of the shipment**. In princip
 
 If the freight cost is not included on the supplier’s invoice, a **freight invoice** may be required.
 
-In practice, how these costs are reflected in the entry may vary depending on how freight is invoiced. For this reason, VAT is typically applied on the combined value of goods and freight, while the duty calculation may depend on how the customs value is declared in the entry.
+In practice, how these costs are reflected in the entry may vary depending on how freight is invoiced. For this reason, {{< abbr title="Value Added Tax" text="VAT" >}} is typically applied on the combined value of goods and freight, while the duty calculation may depend on how the customs value is declared in the entry.
 
 For more detail on transport and freight documents, see [Bills of Lading and Freight Invoices](/insights/bills-of-lading-and-freight-invoices/).
 
-Once the value and classification are confirmed, the broker calculates duties and VAT, prepares the entry, and submits it electronically to Customs.
+Once the value and classification are confirmed, the broker calculates duties and {{< abbr title="Value Added Tax" text="VAT" >}}, prepares the entry, and submits it electronically to Customs.
 
 ## Step 4: Customs reviews the entry
 
@@ -107,7 +107,7 @@ In practice, however, **two separate releases are required**.
 
 The carrier or freight agent must first release the shipment, usually after all shipping-related charges have been settled. This often includes freight, handling, and local agency fees, and is tied to the Bill of Lading or Air Waybill.
 
-Customs must also issue its release after the entry has been approved, duties and VAT have been paid, and any inspections or permit requirements have been satisfied.
+Customs must also issue its release after the entry has been approved, duties and {{< abbr title="Value Added Tax" text="VAT" >}} have been paid, and any inspections or permit requirements have been satisfied.
 
 Both releases are required. It is not uncommon for a shipment to be “cleared” by Customs but still unavailable for collection because the carrier has not yet issued its release.
 
@@ -143,7 +143,7 @@ Most shipments require:
 
 Duty rates vary depending on the classification of the goods.
 
-VAT is typically applied at **10%** and is calculated on the combined value of the goods, freight, and any applicable duty.
+{{< abbr title="Value Added Tax" text="VAT" >}} is typically applied at **10%** and is calculated on the combined value of the goods, freight, and any applicable duty.
 
 Additional charges may apply depending on the type of goods.
 
@@ -153,16 +153,16 @@ A customs broker connects documents, classification, manifest records, valuation
 
 When that translation is accurate, clearance is straightforward. When it is not, the process slows down.
 
-For businesses that need support with entries and release coordination, see [Customs Brokerage Services](/services/customs-brokerage/) or the dedicated [Import Clearance Bahamas](/import-clearance-bahamas/) page.
+For businesses that need support with entries and release coordination, see [Customs Brokerage Services](/services/customs-brokerage/).
 
 ---
 
 If you have questions about preparing shipments for import into The Bahamas,  
-[contact XPS Logistics](/contact-us/).
+[contact XPS](/contact-us/).
 
 <!-- ## Next in this series
 
 In the next article, we’ll explore one of the most important elements of the customs process:
 
-**HS Codes — the classification system that determines duty rates on imported goods.**
+**{{< abbr title="Harmonized System" text="HS" >}} Codes — the classification system that determines duty rates on imported goods.**
  -->
