@@ -21,6 +21,7 @@ categories = ['Logistics & Supply Chain']
 [feature]
   image = ""
   alt= ""
+  placeholder = "Shipping documents, bill of lading, freight invoice, and commercial invoice reviewed together for customs clearance."
   figcaption = ""
 
 # Footnotes will be added based on this front matter. Shortcode for footnote reference in text: {{< footnote id="1" >}}.
@@ -43,8 +44,6 @@ In most cases, delays happen because something is missing.
 Before a customs entry can be prepared, the shipment must be properly documented and identifiable in the system. When key documents are unavailable or inconsistent, the process cannot move forward.
 
 Two of the most common causes of delay are issues with the **Bill of Lading (or Air Waybill)** and the **freight invoice**.
-
-[ photo: bill of lading, freight invoice, and commercial invoice laid out for customs entry preparation ]
 
 [ visual: document relationship diagram showing supplier invoice, bill of lading or air waybill, freight invoice, broker entry, and Customs manifest reference ]
 

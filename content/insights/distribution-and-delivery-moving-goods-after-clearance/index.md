@@ -21,6 +21,7 @@ categories = ["Logistics & Supply Chain"]
 [feature]
   image = ""
   alt= ""
+  placeholder = "Cargo being staged for local delivery after customs clearance, with delivery vehicle or warehouse activity visible."
   figcaption = ""
 
 # Footnotes will be added based on this front matter. Shortcode for footnote reference in text: {{< footnote id="1" >}}.
@@ -45,8 +46,6 @@ Cargo is typically collected from the Nassau Container Port ({{< abbr title="Nas
 However, even when the distance is short, distribution still requires coordination.
 
 Understanding how this stage works helps importers avoid delays, manage costs, and ensure goods are delivered efficiently.
-
-[ photo: delivery vehicle being loaded with cleared cargo for local distribution in Nassau ]
 
 [ visual: post-clearance movement diagram showing port or terminal -> direct delivery, warehouse staging, or multi-stop distribution ]
 

@@ -22,6 +22,7 @@ categories = ['Newsroom']
 [feature]
   image = ""
   alt= ""
+  placeholder = "XPS warehouse space in Nassau showing expanded storage, staging, and fulfillment capacity."
   figcaption = ""
 
 # Footnotes will be added based on this front matter. Shortcode for footnote reference in text: {{< footnote id="1" >}}.
@@ -41,8 +42,6 @@ categories = ['Newsroom']
 +++
 
 In response to increasing demand from our expanding client base — and to serve you better — XPS has expanded its warehouse operations in Nassau.
-
-[ photo: XPS warehouse storage area with organized inventory, racking, and secured cargo space ]
 
 [ visual: warehouse capacity graphic showing expansion from 1,000 to 2,000 square feet and the operational benefits for storage, staging, and fulfillment ]
 

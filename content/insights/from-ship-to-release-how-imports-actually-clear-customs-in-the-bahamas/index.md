@@ -10,6 +10,11 @@ categories = ["Customs Brokerage"]
 image = ""
 alt = ""
 
+[feature]
+image = ""
+alt = ""
+placeholder = "Nassau port cargo area showing containers, trucks, and customs documentation workflow."
+
 [params]
 +++
 
@@ -18,8 +23,6 @@ Most people think importing into The Bahamas begins when duties and taxes are pa
 In reality, the customs process starts **long before the broker prepares the entry**. By the time your shipment arrives in Nassau, a chain of systems, documents, and manifest records must already line up correctly.
 
 Understanding this process can help importers avoid delays and better prepare their shipments for clearance.
-
-[ photo: Nassau port cargo area showing containers, trucks, and customs documentation workflow ]
 
 [ visual: flow chart showing supplier documents -> carrier manifest -> broker entry -> Customs review -> duty payment -> carrier release -> cargo collection ]
 

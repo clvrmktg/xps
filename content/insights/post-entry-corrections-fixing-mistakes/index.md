@@ -21,6 +21,7 @@ categories = ["Customs Brokerage"]
 [feature]
   image = ""
   alt= ""
+  placeholder = "Customs entry correction documents, revised invoice, or broker review of post-entry adjustment paperwork."
   figcaption = ""
 
 # Footnotes will be added based on this front matter. Shortcode for footnote reference in text: {{< footnote id="1" >}}.
@@ -41,8 +42,6 @@ Mistakes can occur in any shipment.
 An invoice may be incomplete, a value may be understated, or a classification may not fully reflect the goods being imported. In many cases, these issues are not identified until the entry is being prepared—or after it has already been submitted.
 
 When that happens, the next step is a **post entry correction**.
-
-[ photo: customs amendment paperwork on a desk with highlighted invoice values and classification details ]
 
 [ visual: decision tree showing mistake found before submission, after submission, after duty payment, and after release, with the correction path for each stage ]
 

@@ -13,6 +13,7 @@ categories = ["Logistics & Supply Chain"]
 [feature]
   image = ""
   alt = ""
+  placeholder = "Organized warehouse staging area with commercial inventory prepared for delivery or distribution."
   figcaption = ""
 
 +++
@@ -30,11 +31,6 @@ A shipment may clear successfully through Customs, but delays can still occur af
 Over time, these issues begin affecting customer relationships, project schedules, and operational reliability.
 
 For businesses serving clients in The Bahamas remotely, strong local logistics coordination becomes an important part of maintaining consistent service.
-
-[ photo ]
-
-Suggested placement:
-Organized warehouse and logistics coordination environment with staged cargo or outgoing deliveries.
 
 ## Expanding into a local market creates operational challenges
 
@@ -80,16 +76,7 @@ A shipment may technically be available, but not prepared for delivery. Inventor
 
 Over time, these operational gaps create pressure across the supply chain.
 
-[ infographic ]
-
-Suggested placement:
-Operational flow comparison:
-
-Limited Local Coordination → Delays → Delivery Disruptions → Client Friction
-
-vs
-
-Coordinated Local Logistics → Visibility → Reliable Delivery → Operational Continuity
+[ visual: comparison graphic showing limited local coordination causing delays, delivery disruptions, and client friction versus coordinated local logistics creating visibility, reliable delivery, and operational continuity ]
 
 ## Local coordination affects costs as well
 
@@ -122,15 +109,7 @@ Likewise, [distribution and delivery coordination](/insights/distribution-and-de
 
 For many international suppliers, local logistics support ultimately becomes an extension of their own operational capability within The Bahamas.
 
-[ process graphic ]
-
-Suggested placement:
-Logistics coordination lifecycle:
-
-Import → Receiving → Staging → Storage → Distribution → Delivery
-
-Highlight:
-“Visibility improves operational continuity.”
+[ visual: logistics coordination lifecycle showing import -> receiving -> staging -> storage -> distribution -> delivery, highlighting how visibility improves operational continuity ]
 
 ## Local knowledge matters
 
@@ -155,11 +134,6 @@ We help businesses improve local execution by supporting:
 - coordination between incoming shipments and local operational requirements
 
 For international suppliers and logistics providers, this helps create more reliable local coordination while improving visibility and reducing operational friction after cargo arrives in The Bahamas.
-
-[ photo ]
-
-Suggested placement:
-Coordinated delivery preparation, staged cargo movement, or logistics operations involving commercial shipments.
 
 ## In simple terms
 

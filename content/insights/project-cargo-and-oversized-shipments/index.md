@@ -13,6 +13,7 @@ categories = ["Logistics & Supply Chain"]
 [feature]
   image = ""
   alt = ""
+  placeholder = "Oversized cargo, heavy equipment, or breakbulk shipment being handled at a port or staged for project delivery."
   figcaption = ""
 
 +++
@@ -41,11 +42,6 @@ Project cargo and oversized shipments may involve:
 - Staged delivery schedules  
 
 These shipments often affect multiple parts of the logistics process simultaneously, including transportation, Customs clearance, warehousing, and final delivery coordination.
-
-[ photo ]
-
-Suggested placement:
-Oversized cargo, heavy equipment, or breakbulk cargo being handled at a port facility.
 
 ## Planning begins before arrival
 
@@ -95,15 +91,7 @@ This can include:
 
 For some imports, approvals may need to be coordinated through the {{< abbr title="Other Government Agency" text="OGA" >}} system before clearance can proceed.
 
-[ infographic ]
-
-Suggested placement:
-Process graphic:
-
-Project Planning → Shipment Coordination → Permit/OGA Review → Arrival → Customs Clearance → Specialized Delivery
-
-Highlight:
-“Planning begins before arrival.”
+[ visual: process graphic showing project planning -> shipment coordination -> permit or OGA review -> arrival -> customs clearance -> specialized delivery, highlighting that project cargo planning begins before arrival ]
 
 ## Warehousing and staged delivery
 
@@ -129,11 +117,6 @@ We help businesses prepare oversized or project-based shipments by supporting:
 - Timing-sensitive shipment management  
 
 This helps businesses reduce delays, improve coordination, and move complex shipments more efficiently through the import process.
-
-[ photo ]
-
-Suggested placement:
-Heavy equipment transport or coordinated cargo delivery at a project site.
 
 ## In simple terms
 

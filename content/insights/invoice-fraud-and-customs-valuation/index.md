@@ -13,6 +13,7 @@ categories = ["Trade & Industry"]
 [feature]
   image = ""
   alt = ""
+  placeholder = "Commercial cargo documentation review, invoice verification, or customs processing environment."
   figcaption = ""
 
 +++
@@ -24,11 +25,6 @@ Recent public statements and reporting by [Eyewitness News Bahamas](https://ewne
 Comptroller of Customs Ralph Munroe has publicly addressed the issue, noting that Customs continues strengthening efforts to identify valuation discrepancies and improve compliance within the import process.
 
 For importers, suppliers, and logistics providers, this reinforces an important operational reality: documentation accuracy and transaction transparency are becoming increasingly important during Customs clearance.
-
-[ photo ]
-
-Suggested placement:
-Commercial cargo inspection, document review, or Customs processing environment.
 
 ## Why the issue is receiving attention again
 
@@ -94,15 +90,7 @@ Over time, these situations may lead to:
 
 For businesses operating on tight schedules or recurring supply timelines, valuation-related delays can affect much more than the Customs process alone.
 
-[ infographic ]
-
-Suggested placement:
-Documentation verification flow:
-
-Commercial Invoice → Payment Verification → Customs Review → Clearance Decision
-
-Highlight:
-“Documentation consistency supports faster processing.”
+[ visual: documentation verification flow showing commercial invoice -> payment verification -> customs review -> clearance decision, highlighting that documentation consistency supports faster processing ]
 
 ## Documentation consistency matters
 
@@ -143,15 +131,7 @@ Likewise, international suppliers and logistics providers servicing clients in T
 
 As import operations scale, consistency and operational preparation become increasingly important.
 
-[ process graphic ]
-
-Suggested placement:
-Import compliance lifecycle:
-
-Supplier Documentation → Shipment Preparation → Customs Review → Clearance → Delivery
-
-Highlight:
-“Prepared documentation supports operational continuity.”
+[ visual: import compliance lifecycle showing supplier documentation -> shipment preparation -> customs review -> clearance -> delivery, highlighting how prepared documentation supports operational continuity ]
 
 ## How XPS supports import coordination
 
@@ -165,11 +145,6 @@ We help businesses support smoother import processing by assisting with:
 - operational preparation for supporting documentation requests
 
 This helps businesses reduce delays, improve visibility during clearance, and maintain more reliable logistics coordination throughout the import process.
-
-[ photo ]
-
-Suggested placement:
-Professional shipment documentation review or logistics coordination environment.
 
 ## In simple terms
 

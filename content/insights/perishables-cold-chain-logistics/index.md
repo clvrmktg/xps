@@ -13,6 +13,7 @@ categories = ["Logistics & Supply Chain"]
 [feature]
   image = ""
   alt = ""
+  placeholder = "Temperature-sensitive cargo, reefer handling, or chilled goods staged for cold-chain distribution."
   figcaption = ""
 
 +++
@@ -41,11 +42,6 @@ This may include:
 Many of these shipments require controlled temperatures throughout transport, clearance, storage, and delivery.
 
 This continuous temperature-controlled process is commonly referred to as the cold chain.
-
-[ photo ]
-
-Suggested placement:
-Refrigerated cargo or cold storage warehouse with palletized produce or temperature-sensitive goods.
 
 ## Why timing matters
 
@@ -98,14 +94,7 @@ This may involve:
 
 Without proper handling after release, the cold chain can still be disrupted even if Customs clearance was completed successfully.
 
-[ infographic ]
-
-Suggested placement:
-Simple process graphic:
-
-Supplier → Refrigerated Transport → Customs Clearance → Cold Storage → Distribution
-
-Include temperature icons and “delay risk” markers between stages.
+[ visual: cold-chain process graphic showing supplier -> refrigerated transport -> customs clearance -> cold storage -> distribution, with temperature icons and delay-risk markers between stages ]
 
 ## The role of warehousing and distribution
 
@@ -134,11 +123,6 @@ We help coordinate the movement of temperature-sensitive goods by supporting:
 For businesses importing sensitive goods regularly, this level of coordination helps reduce delays, maintain product quality, and support more reliable operations.
 
 For many businesses, this is where third-party logistics ({{< abbr title="Third-Party Logistics" text="3PL" >}}) support becomes increasingly valuable.
-
-[ photo ]
-
-Suggested placement:
-Worker handling refrigerated cargo or organized cold storage environment.
 
 ## In simple terms
 

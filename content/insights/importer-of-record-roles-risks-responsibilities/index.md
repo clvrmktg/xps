@@ -21,6 +21,7 @@ categories = ["Customs Brokerage"]
 [feature]
   image = ""
   alt= ""
+  placeholder = "Importer reviewing commercial invoice, shipping documents, and customs authorization paperwork."
   figcaption = ""
 
 # Footnotes will be added based on this front matter. Shortcode for footnote reference in text: {{< footnote id="1" >}}.
@@ -43,8 +44,6 @@ But when something goes wrong—incorrect values, missing documents, or complian
 **Who is responsible for the shipment?**
 
 In customs terms, that responsibility sits with the **Importer of Record**.
-
-[ photo: business importer signing customs authorization documents with shipment paperwork visible ]
 
 [ visual: responsibility map showing importer of record, customs broker, supplier, carrier, and Customs, with importer accountability at the center ]
 

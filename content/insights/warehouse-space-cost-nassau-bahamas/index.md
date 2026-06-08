@@ -21,6 +21,7 @@ categories = ['Logistics & Supply Chain']
 [feature]
   image = ""
   alt= ""
+  placeholder = "Commercial warehouse space in Nassau with palletized inventory, storage racks, or staged cargo."
   figcaption = ""
 
 # Footnotes will be added based on this front matter. Shortcode for footnote reference in text: {{< footnote id="1" >}}.
@@ -37,8 +38,6 @@ categories = ['Logistics & Supply Chain']
 +++
 
 In Nassau, finding secure, affordable, and available warehouse space isn't easy. With rental costs ranging from **$14.50 to over $35 per square foot**, many businesses are priced out of the space they need to operate efficiently. Whether you're a growing business or an international company looking to establish a foothold in The Bahamas, the challenge is the same: space is limited, and competition is high.
-
-[ photo: Nassau commercial warehouse interior with stored pallets, loading area, and organized floor space ]
 
 [ visual: cost comparison graphic showing private warehouse lease costs versus managed 3PL warehousing, including space, staffing, security, and flexibility ]
 

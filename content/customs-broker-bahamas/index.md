@@ -1,8 +1,8 @@
 +++
 date = '2026-05-21T00:00:00-04:00'
 draft = false
-title = "Customs Brokerage Bahamas"
-description = "Customs brokerage and customs clearance services in The Bahamas, including Click2Clear entry preparation, tariff classification, import permits, cargo coordination, and commercial customs support."
+title = "Licensed Customs Broker Services in The Bahamas"
+description = "Looking for a fast, reliable customs broker in the Bahamas? XPS manages Click2Clear entries and port clearance across Nassau & the Family Islands. Talk to a broker."
 
 type = "landing"
 layout = "long-tail"
@@ -45,7 +45,7 @@ infrastructureLead = "Commercial customs clearance in The Bahamas involves multi
 # =============================================================================
 
 [lead]
-heading = "Customs Brokerage & Click2Clear Clearance Services in The Bahamas"
+heading = "Licensed Customs Broker Services in The Bahamas"
 text = "Reliable customs brokerage, Click2Clear entry preparation, import permit coordination, and cargo clearance support for Bahamian businesses and international vendors shipping to Nassau and the Family Islands."
 
 [[heroCtas]]
@@ -65,8 +65,8 @@ style = "secondary"
 [definition]
 heading = "What Does a Customs Broker Do?"
 paragraphs = [ 
-  "Licensed customs brokers help businesses coordinate import clearance, customs documentation, tariff classification, permit processing, and cargo release procedures for goods entering The Bahamas.", 
-  "In The Bahamas, customs brokerage support often includes Click2Clear (BESW) entry preparation, permit coordination with government agencies, and communication between freight providers, customs systems, and cargo delivery points." 
+  "A licensed customs broker manages the legal and administrative complexities of moving goods across international borders. From initial document auditing and strict tariff classification to coordinating cargo release protocols, a professional broker ensures complete compliance with the Department of Customs.", 
+  "Our integrated brokerage workflows unify data collection, pre-arrival preparation, and local agency coordination into a single transparent pipeline, protecting businesses from unnecessary supply chain delays." 
 ]
 
 # =============================================================================
@@ -74,8 +74,8 @@ paragraphs = [
 # =============================================================================
 
 [serviceList]
-heading = "Customs Brokerage Services Offered by XPS"
-text = "Our customs brokerage services integrate customs clearance, permit coordination, freight communication, and cargo release support into one coordinated import workflow."
+heading = "Services Offered by XPS"
+text = "From the moment your cargo leaves the supplier to its final delivery in The Bahamas, our team handles the logistics. We manage the freight, take care of the customs paperwork, and ensure your goods clear the port smoothly."
 
 include = [
   "customs-brokerage",
@@ -85,20 +85,20 @@ include = [
 ]
 
 [[serviceDescriptions]]
-slug = "customs-brokerage"
-text = "Preparation and coordination of customs entries, tariff classification, import documentation, and permit processing."
+slug = "freight-forwarding"
+text = "Reliable air and ocean shipping solutions. We coordinate directly with your suppliers to ship and track your cargo from start to finish."
 
 [[serviceDescriptions]]
-slug = "freight-forwarding"
-text = "Air and ocean freight coordination supporting commercial imports and customs release workflows."
+slug = "customs-brokerage"
+text = "Complete clearance support. We review your commercial invoices, apply the correct duty rates, and file your entries directly into Click2Clear."
 
 [[serviceDescriptions]]
 slug = "warehousing"
-text = "Cargo staging, inventory storage, and warehousing support following customs clearance."
+text = "Secure cargo holding. Once your goods clear Nassau Container Port or LPIA, we provide safe storage and organized staging for your inventory."
 
 [[serviceDescriptions]]
 slug = "distribution"
-text = "Coordination of local delivery, inter-island cargo movement, and Family Island distribution."
+text = "Local final-mile transport. We deliver straight to your business in Nassau or handle mailboat transfers at Potter's Cay for the Family Islands."
 
 # =============================================================================
 # PAIN POINTS

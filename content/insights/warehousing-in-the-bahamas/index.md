@@ -21,6 +21,7 @@ categories = ["Logistics & Supply Chain"]
 [feature]
   image = ""
   alt= ""
+  placeholder = "Warehouse storage area with organized pallets, inventory staging, and commercial cargo handling."
   figcaption = ""
 
 # Footnotes will be added based on this front matter. Shortcode for footnote reference in text: {{< footnote id="1" >}}.
@@ -43,8 +44,6 @@ In practice, it plays a much larger role.
 Once goods are cleared, they are not always ready for immediate delivery. In many cases, they need to be stored, organized, or prepared for distribution.
 
 Understanding how warehousing works—and when it is needed—can help importers manage costs and maintain control over their inventory.
-
-[ photo: warehouse team organizing cleared cargo for storage, staging, and distribution ]
 
 [ visual: decision chart showing when direct delivery is enough versus when storage, staging, inventory tracking, or phased distribution is needed ]
 

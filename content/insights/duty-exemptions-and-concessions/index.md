@@ -13,6 +13,7 @@ categories = ["Customs Brokerage"]
 [feature]
   image = ""
   alt = ""
+  placeholder = "Commercial or project cargo associated with approved concessions, development activity, or duty exemption review."
   figcaption = ""
 
 +++
@@ -42,11 +43,6 @@ These approvals are often connected to:
 - Returning resident or special import programmes  
 
 In many cases, the approval is tied to a specific {{< abbr title="Customs Procedure Code" text="CPC" >}} declaration structure or concession code used during Customs processing.
-
-[ photo ]
-
-Suggested placement:
-Commercial cargo or project imports associated with industrial, commercial, or development activity.
 
 ## How concessions are processed
 
@@ -107,15 +103,7 @@ Depending on the shipment type and delivery timeline, this may result in:
 
 For this reason, concession planning should ideally begin before the shipment arrives in The Bahamas.
 
-[ infographic ]
-
-Suggested placement:
-Timeline graphic:
-
-Commercial Invoice Received → Concession Review → OGA Application → Approval → Shipment Arrival → Customs Declaration
-
-Highlight:
-“Approvals should begin before arrival.”
+[ visual: timeline graphic showing commercial invoice received -> concession review -> OGA application -> approval -> shipment arrival -> customs declaration, highlighting that approvals should begin before arrival ]
 
 ## The connection to Customs declarations
 
@@ -145,17 +133,7 @@ This may include:
 
 [Early coordination](/insights/managed-vs-standard-clearance/) helps businesses avoid delays, unnecessary charges, and complications during clearance.
 
-[ process graphic ]
-
-Suggested placement:
-Comparison graphic:
-
-| Waiting Until Arrival | Preparing Early |
-|---|---|
-| Delayed approvals | Faster processing |
-| Reassessment risk | Better declaration accuracy |
-| Shipment held | Clearance readiness |
-| Reactive processing | Coordinated import planning |
+[ visual: comparison graphic showing waiting until arrival versus preparing early, comparing delayed approvals, reassessment risk, shipment holds, and reactive processing against faster processing, better declaration accuracy, clearance readiness, and coordinated import planning ]
 
 ## How XPS supports concession-related imports
 

@@ -21,6 +21,7 @@ categories = ['Logistics & Supply Chain']
 [feature]
   image = ""
   alt= ""
+  placeholder = "Container terminal, port storage area, or cargo awaiting release where demurrage and storage costs can accumulate."
   figcaption = ""
 
 # Footnotes will be added based on this front matter. Shortcode for footnote reference in text: {{< footnote id="1" >}}.
@@ -43,8 +44,6 @@ In practice, they come with a cost.
 By the time a shipment arrives in The Bahamas, it is already on a timeline. If it is not cleared and collected within that window, additional charges begin to apply.
 
 These costs are commonly referred to as **demurrage and storage**.
-
-[ photo: container yard or port terminal with cargo waiting for release, emphasizing time-sensitive storage costs ]
 
 [ visual: timeline showing cargo arrival -> free days -> storage or demurrage begins -> customs release -> carrier release -> collection ]
 

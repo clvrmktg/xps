@@ -13,6 +13,7 @@ categories = ["Customs Brokerage"]
 [feature]
   image = ""
   alt = ""
+  placeholder = "Customs or agency inspection of regulated cargo, permit review, or restricted goods documentation."
   figcaption = ""
 
 +++
@@ -41,11 +42,6 @@ These may include:
 - Animals and animal-related products  
 
 Different categories of goods may fall under different government agencies depending on the nature of the shipment.
-
-[ photo ]
-
-Suggested placement:
-Customs inspection or regulated cargo being reviewed at a port or warehouse facility.
 
 ## The role of OGA applications
 
@@ -88,15 +84,7 @@ For example:
 
 Because of this, regulated shipments should ideally be prepared before the cargo arrives in The Bahamas.
 
-[ infographic ]
-
-Suggested placement:
-Timeline graphic:
-
-Commercial Invoice Received → Permit Review → {{< abbr title="Other Government Agency" text="OGA" >}} Application → Approval → Shipment Arrival → Customs Clearance
-
-Highlight:
-“Preparation begins before arrival.”
+[ visual: permit timeline graphic showing commercial invoice received -> permit review -> OGA application -> approval -> shipment arrival -> customs clearance, highlighting that preparation begins before arrival ]
 
 ## When should a broker be involved?
 
@@ -123,17 +111,7 @@ This may include:
 
 For many businesses, this preparation helps avoid unnecessary storage charges, delayed deliveries, and disruptions to operations.
 
-[ process graphic ]
-
-Suggested placement:
-Comparison graphic:
-
-| Waiting Until Arrival | Preparing Early |
-|---|---|
-| Permit delays | Faster processing |
-| Shipment held | Clearance readiness |
-| Storage charges | Better coordination |
-| Reactive clearance | Managed logistics |
+[ visual: comparison graphic showing waiting until arrival versus preparing early, comparing permit delays, shipment holds, storage charges, and reactive clearance against faster processing, clearance readiness, better coordination, and managed logistics ]
 
 ## Concessions and exemptions
 

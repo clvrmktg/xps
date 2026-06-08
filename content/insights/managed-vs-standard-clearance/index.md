@@ -21,6 +21,7 @@ categories = ['Customs Brokerage']
 [feature]
   image = ""
   alt= ""
+  placeholder = "Customs broker coordinating documents and cargo status for managed import clearance."
   figcaption = ""
 
 # Footnotes will be added based on this front matter. Shortcode for footnote reference in text: {{< footnote id="1" >}}.
@@ -43,8 +44,6 @@ In The Bahamas, a licensed customs broker is required to prepare and submit entr
 However, while a broker is required, the level of service provided can differ significantly.
 
 In practice, this often comes down to the difference between **standard clearance** and **managed clearance**.
-
-[ photo: customs broker coordinating shipment documents, carrier references, and clearance status on a workstation ]
 
 [ visual: side-by-side comparison chart showing standard clearance as reactive document submission and managed clearance as proactive coordination from documents through release ]
 

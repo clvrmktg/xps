@@ -5,7 +5,7 @@ draft = false
 title = 'Customs Brokerage'
 summary = "Licensed brokerage services to ensure your goods clear Bahamian customs quickly, compliantly, and without delays."
 
-description = "Licensed Bahamian customs brokers managing your cargo clearance from start to finish."
+description = "Streamline your supply chain with licensed Bahamian customs brokers. XPS ensures compliant, rapid clearance and full document auditing from start to finish."
 
 subheading = """
 Licensed Bahamian customs brokers managing your cargo clearance from start to finish.
@@ -81,6 +81,8 @@ Customs brokerage is a critical step in the logistics chain—and small mistakes
 
 - **Support for First-Time Importers**  
   New to importing? We guide you through the process and handle the complexity so you can focus on your business.
+
+  Looking for an authorized local customs broker for Nassau port entry processing or inter-island freight transfers? Explore our dedicated [Bahamas Customs Broker Solutions](/customs-broker-bahamas/) page.
 """
 image = "xps-customs-broker-handing-off-paperwork.jpg"
 alt = "XPS customs broker handing a cleared customs release to a client inside a warehouse"

@@ -35,8 +35,6 @@ categories = ['Trade & Industry']
 
 As global trade continues to evolve, businesses in The Bahamas are facing a fresh wave of challenges stemming from new U.S. tariffs that took effect in early 2025. These developments carry significant implications for importers, exporters, and the logistics networks that support them. At XPS, we recognize the urgency of these changes and the need for adaptive, forward-thinking strategies. Here's what Bahamian businesses need to know—and how we can help.
 
-[ photo: Nassau Container Port with inbound containers and cargo vessels representing shifting trade routes ]
-
 [ visual: trade impact map showing U.S. tariff pressure, alternate sourcing routes, inbound cost changes, and effects on Bahamian importers ]
 
 ## Understanding the New U.S. Tariffs

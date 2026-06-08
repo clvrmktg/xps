@@ -13,6 +13,7 @@ categories = ["Logistics & Supply Chain"]
 [feature]
   image = ""
   alt = ""
+  placeholder = "Palletized commercial cargo staged in a warehouse for scheduled delivery or distribution."
   figcaption = ""
 
 +++
@@ -28,11 +29,6 @@ As operations grow, however, businesses eventually begin experiencing situations
 At that point, businesses often realize they are no longer simply moving cargo.
 
 They are managing logistics operations.
-
-[ photo ]
-
-Suggested placement:
-Commercial cargo staged for organized delivery or warehouse coordination.
 
 ## Growth changes how shipments move
 
@@ -69,17 +65,7 @@ Without flexibility in how shipments are coordinated locally, businesses may beg
 
 As shipment volume grows, these issues often become more noticeable.
 
-[ infographic ]
-
-Suggested placement:
-Direct Delivery vs Coordinated Logistics graphic:
-
-| Direct Delivery | Coordinated Logistics |
-|---|---|
-| Immediate movement only | Flexible staging and delivery |
-| Limited timing flexibility | Coordinated scheduling |
-| Reactive handling | Planned movement |
-| Increased operational pressure | Improved continuity |
+[ visual: comparison graphic showing direct delivery versus coordinated logistics, comparing immediate movement, limited timing flexibility, reactive handling, and operational pressure against flexible staging, coordinated scheduling, planned movement, and improved continuity ]
 
 ## Warehousing becomes part of operational coordination
 
@@ -111,15 +97,7 @@ Likewise, businesses and logistics providers operating from other islands may re
 
 As operations grow, local logistics coordination increasingly becomes an extension of the business itself.
 
-[ process graphic ]
-
-Suggested placement:
-Logistics scaling lifecycle:
-
-Import → Clearance → Receiving → Staging → Distribution → Scheduled Delivery
-
-Highlight:
-“Growth increases coordination requirements.”
+[ visual: logistics scaling lifecycle showing import -> clearance -> receiving -> staging -> distribution -> scheduled delivery, highlighting that growth increases coordination requirements ]
 
 ## Visibility supports operational continuity
 
@@ -171,11 +149,6 @@ We support businesses by helping coordinate:
 - local operational coordination after clearance
 
 For businesses expanding operations or increasing shipment volume, this helps improve flexibility, reduce operational friction, and support more reliable logistics execution locally.
-
-[ photo ]
-
-Suggested placement:
-Coordinated cargo staging or organized outbound delivery preparation.
 
 ## In simple terms
 

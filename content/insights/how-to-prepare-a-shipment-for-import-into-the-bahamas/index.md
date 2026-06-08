@@ -21,6 +21,7 @@ categories = ['Logistics & Supply Chain']
 [feature]
   image = ""
   alt= ""
+  placeholder = "Commercial shipment documents, packed cargo, and import checklist prepared before cargo departs for The Bahamas."
   figcaption = ""
 
 # Footnotes will be added based on this front matter. Shortcode for footnote reference in text: {{< footnote id="1" >}}.
@@ -43,8 +44,6 @@ They begin before the shipment ever leaves the supplier.
 By the time cargo arrives in The Bahamas, many of the outcomes—delays, additional costs, or smooth clearance—have already been determined by how the shipment was prepared.
 
 Proper preparation is what allows the customs process to move without interruption.
-
-[ photo: organized import document packet with invoice, bill of lading, packing list, and shipment labels on a desk ]
 
 [ visual: pre-arrival checklist timeline showing invoice review -> transport document -> Click2Clear readiness -> permits -> broker submission -> release planning ]
 

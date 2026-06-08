@@ -21,6 +21,7 @@ categories = ['Customs Brokerage']
 [feature]
   image = ""
   alt= ""
+  placeholder = "Customs classification worksheet or commercial product catalog being reviewed beside import documentation."
   figcaption = ""
 
 # Footnotes will be added based on this front matter. Shortcode for footnote reference in text: {{< footnote id="1" >}}.
@@ -41,8 +42,6 @@ Not all import mistakes cause delays.
 Some go through without issue—but result in the wrong duty being paid.
 
 One of the most common causes of this is incorrect **{{< abbr title="Harmonized System" text="HS" >}} code classification**.
-
-[ photo: close-up of a customs broker reviewing product descriptions and tariff codes beside commercial invoices ]
 
 [ visual: classification impact diagram showing product description -> HS code -> duty rate -> VAT treatment -> permit or inspection risk ]
 

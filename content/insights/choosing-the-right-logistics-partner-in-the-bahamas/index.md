@@ -13,6 +13,7 @@ categories = ["Logistics & Supply Chain"]
 [feature]
   image = ""
   alt = ""
+  placeholder = "Logistics coordination environment with staged cargo, warehouse activity, and delivery planning."
   figcaption = ""
 
 +++
@@ -24,11 +25,6 @@ For many businesses operating in The Bahamas, logistics support eventually becom
 A shipment may arrive successfully at the port, but what happens afterward often determines whether operations continue smoothly or begin experiencing delays, communication issues, and unnecessary costs.
 
 Because of this, businesses increasingly look for logistics partners who can support not only transportation, but also coordination, visibility, and ongoing operational support locally.
-
-[ photo ]
-
-Suggested placement:
-Professional logistics coordination environment involving cargo staging, warehouse activity, or delivery planning.
 
 ## Reliability matters more than promises
 
@@ -62,15 +58,7 @@ In many cases, businesses are not looking for a warehouse alone.
 
 They are looking for a trusted local logistics partner capable of extending operational support into a market where they do not maintain their own infrastructure or staffing directly.
 
-[ infographic ]
-
-Suggested placement:
-Operational continuity graphic:
-
-International / Regional Supplier → Local Logistics Coordination → Warehousing / Staging → Distribution → Client Delivery
-
-Highlight:
-“Reliable local coordination supports operational continuity.”
+[ visual: operational continuity graphic showing international or regional supplier -> local logistics coordination -> warehousing or staging -> distribution -> client delivery ]
 
 ## Visibility becomes increasingly important as operations grow
 
@@ -124,15 +112,7 @@ This may include:
 
 Where operations depend on recurring shipments or scheduled project activity, even small coordination problems can create larger operational consequences over time.
 
-[ process graphic ]
-
-Suggested placement:
-Logistics coordination lifecycle:
-
-Import → Receiving → Staging → Storage → Distribution → Final Delivery
-
-Highlight:
-“Coordination supports reliability.”
+[ visual: logistics coordination lifecycle showing import -> receiving -> staging -> storage -> distribution -> final delivery, highlighting that coordination supports reliability ]
 
 ## Local knowledge matters
 
@@ -162,11 +142,6 @@ We help businesses improve operational continuity by supporting:
 - coordination between incoming shipments and local operational requirements
 
 For businesses operating remotely or extending services into The Bahamas, this helps improve visibility, reduce operational friction, and support more reliable execution locally.
-
-[ photo ]
-
-Suggested placement:
-Coordinated commercial cargo handling or staged deliveries prepared for distribution.
 
 ## In simple terms
 

@@ -17,6 +17,7 @@ categories = ["Trade & Industry"]
 [feature]
   image = ""
   alt= ""
+  placeholder = "Imported food cargo, reefer container, or palletized grocery products staged for distribution."
   figcaption = ""
 
 +++
@@ -30,11 +31,6 @@ For importers, distributors, retailers, and logistics providers, however, the po
 As import demand shifts, businesses may begin adjusting purchasing patterns, shipment frequency, inventory turnover, and delivery schedules in response to changing market conditions.
 
 Over time, these adjustments can place additional pressure on logistics coordination across warehousing, freight movement, distribution, and cold-chain operations throughout The Bahamas.
-
-[ photo ]
-
-Suggested placement:
-Imported food cargo, reefer containers, or palletized grocery products staged for distribution.
 
 ## Lower import costs may increase shipment activity
 
@@ -70,15 +66,7 @@ Even relatively small delays involving food cargo can affect:
 - delivery scheduling
 - operational costs
 
-[ infographic ]
-
-Suggested placement:
-Supply chain impact graphic:
-
-Lower VAT → Increased Import Activity → Higher Logistics Demand → Distribution Pressure → Inventory Coordination
-
-Highlight:
-“Operational demand often increases before market stabilization.”
+[ visual: supply chain impact graphic showing lower VAT -> increased import activity -> higher logistics demand -> distribution pressure -> inventory coordination ]
 
 ## Increased demand creates operational pressure
 
@@ -119,16 +107,6 @@ For many importers and distributors, this creates increased demand for logistics
 - scheduled distribution
 - ongoing operational visibility
 
-[ process graphic ]
-
-Suggested placement:
-Food logistics lifecycle:
-
-Import → Clearance → Cold Storage / Staging → Distribution → Retail Delivery
-
-Highlight:
-“Perishable cargo requires tighter coordination.”
-
 ## Logistics coordination supports supply chain continuity
 
 As import demand shifts, businesses increasingly benefit from logistics coordination that extends beyond transportation alone.
@@ -158,11 +136,6 @@ We help businesses support smoother food import operations by assisting with:
 - local delivery coordination
 
 This helps businesses maintain more reliable inventory movement while reducing operational friction during periods of increased import activity.
-
-[ photo ]
-
-Suggested placement:
-Coordinated food distribution, reefer handling, or warehouse staging operations.
 
 ## In simple terms
 

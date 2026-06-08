@@ -21,6 +21,7 @@ categories = ["Logistics & Supply Chain"]
 [feature]
   image = ""
   alt= ""
+  placeholder = "Container at port or warehouse yard awaiting unloading and empty return coordination."
   figcaption = ""
 
 # Footnotes will be added based on this front matter. Shortcode for footnote reference in text: {{< footnote id="1" >}}.
@@ -41,8 +42,6 @@ Clearing a shipment does not end the cost exposure.
 Once a container leaves the port, a different timeline begins—one that is often overlooked.
 
 If the container is not returned within the allowed period, **detention (or per diem) charges** begin to apply.
-
-[ photo: empty shipping container on chassis awaiting return after cargo unloading ]
 
 [ visual: timeline showing container pickup -> unloading window -> empty return deadline -> detention or per diem charges ]
 
