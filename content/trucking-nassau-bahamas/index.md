@@ -16,7 +16,7 @@ trustBar = [
 
 faqIntro = "Answers to common questions about trucking in Nassau, including port pickup, airport cargo collection, warehouse delivery, scheduled routes, and commercial distribution across New Providence."
 processHeading = "How XPS Trucking Support Works"
-processLead = "A coordinated local trucking workflow for collecting cargo, confirming release status, staging goods, and completing delivery across Nassau and New Providence."
+processLead = "A simple trucking path from release review to pickup, secure transport, site coordination, and proof of delivery."
 industriesHeading = "Industries We Support"
 industriesLead = "Nassau trucking support shaped around the delivery windows, cargo types, receiving requirements, and operational needs of commercial businesses."
 painPointsHeading = "Why Businesses Need Coordinated Trucking in Nassau"
@@ -28,7 +28,7 @@ infrastructureLead = "Commercial trucking in Nassau often connects cargo from th
 
 [lead]
 heading = "Commercial Trucking Services in Nassau, Bahamas"
-text = "Local trucking, port pickup, airport cargo collection, warehouse delivery, and commercial distribution support for businesses moving cargo across Nassau and New Providence."
+text = "Dependable container haulage, port pickups, and business freight distribution across New Providence."
 
 [[heroCtas]]
 label = "Request Trucking Support"
@@ -43,8 +43,8 @@ style = "secondary"
 [definition]
 heading = "Trucking and Local Delivery in Nassau"
 paragraphs = [
-  "Trucking in Nassau plays a critical role after cargo arrives, clears Customs, or needs to move between warehouses, commercial locations, project sites, and customer delivery points.",
-  "For commercial importers, reliable trucking support helps coordinate port collection, airport cargo pickup, warehouse staging, scheduled delivery, multi-stop routes, and local distribution throughout New Providence."
+  "Trucking in Nassau is about more than just moving boxes from A to B. It is about keeping your business timeline on track. For commercial importers, a reliable trucking partner ensures that cargo moves quickly out of the port to prevent costly storage fees.",
+  "Whether you need full container haulage, multi-stop business deliveries, or retail stock distribution, our fleet is positioned to handle your freight across New Providence."
 ]
 
 [serviceList]
@@ -74,34 +74,34 @@ slug = "freight-forwarding"
 text = "Air and ocean freight coordination connected to local trucking after cargo arrives in Nassau."
 
 [[painPoints]]
-title = "Avoid Pickup Delays"
-text = "Coordinate release status, terminal requirements, and trucking availability before cargo is ready for collection."
+title = "Avoid Port Delays"
+text = "We coordinate driver scheduling around exact customs release times. This helps you get cargo moving immediately and avoid extra storage fees at the dock."
 outcome = "Faster collection"
 icon = "clipboard-check"
 featured = true
 
 [[painPoints]]
-title = "Improve Delivery Scheduling"
-text = "Align truck dispatch, receiving hours, site readiness, and customer delivery windows."
+title = "Improve Delivery Timelines"
+text = "We align truck dispatching with your business hours, so your team is ready to receive inventory when the truck arrives."
 outcome = "Better timing"
 icon = "route"
 
 [[painPoints]]
-title = "Reduce Repeated Handling"
-text = "Move cargo through warehouse staging, direct delivery, or multi-stop routes with fewer unnecessary transfers."
+title = "Reduce Cargo Handling"
+text = "By coordinating customs clearance and trucking under one roof, we remove unnecessary handoffs, transfers, and warehouse touches."
 outcome = "Cleaner movement"
 icon = "arrows-exchange"
 
 [[painPoints]]
-title = "Support Commercial Deliveries"
-text = "Coordinate deliveries to retailers, warehouses, offices, job sites, hospitality properties, and commercial facilities."
+title = "Dependable Commercial Deliveries"
+text = "We provide on-time transport to retail storefronts, active construction sites, warehouses, offices, and hospitality properties."
 outcome = "Reliable execution"
 icon = "truck-delivery"
 
 [[painPoints]]
 title = "Connect Cargo to Operations"
-text = "Link freight arrival, customs release, storage, delivery, and distribution planning into one local workflow."
-outcome = "Operational continuity"
+text = "We sync the physical arrival of your freight with your daily workflows, turning port clearance into a predictable delivery process."
+outcome = "Seamless delivery"
 icon = "packages"
 
 [[advantages]]
@@ -125,48 +125,48 @@ text = "Local trucking connects with customs brokerage, freight forwarding, ware
 icon = "route"
 
 [[infrastructure]]
-title = "Port Cargo Pickup"
+title = "Port Container Pickups"
 facility = "Nassau Container Port"
-text = "Coordination for containerized cargo, released shipments, commercial pickups, and movement from port to warehouse, project site, or customer location."
+text = "Full container load (FCL) transport for 20-foot and 40-foot ocean containers straight from Nassau Container Port at Arawak Cay to your commercial facility."
 icon = "truck-delivery"
 
 [[infrastructure]]
 title = "LCL Freight Collection"
 facility = "Gladstone Freight Terminal (GFT)"
-text = "Support for collecting degrouped less-than-container-load cargo and moving freight onward after release."
+text = "Daily pickups for less-than-container-load (LCL) shipments from Gladstone Freight Terminal and local breakdown yards, sorted and delivered to your business."
 icon = "packages"
 
 [[infrastructure]]
-title = "Air Cargo Collection"
+title = "Airport Cargo Logistics"
 facility = "Lynden Pindling International Airport (LPIA)"
-text = "Trucking coordination for time-sensitive air cargo, commercial samples, urgent inventory, and airport freight arrivals."
+text = "Fast-tracked terminal collections at Lynden Pindling International Airport for time-sensitive air freight, commercial samples, and urgent inventory."
 icon = "clipboard-check"
 
 [[infrastructure]]
 title = "Local Delivery Network"
 facility = "Nassau and New Providence"
-text = "Scheduled delivery, multi-stop routes, warehouse-to-customer movement, and commercial distribution across the island."
+text = "Scheduled multi-stop trucking and final-mile commercial distribution across all major business districts in New Providence."
 icon = "route"
 
 [[process]]
-title = "Cargo Status Review"
-text = "Shipment details, release status, pickup requirements, and delivery instructions reviewed before dispatch."
+title = "Document & Schedule Review"
+text = "We review your customs release paperwork, delivery instructions, and gate passes before dispatching a driver to ensure a smooth pickup."
 
 [[process]]
-title = "Pickup Coordination"
-text = "Port, airport, freight terminal, warehouse, or supplier pickup coordinated based on cargo availability."
+title = "Port & Terminal Coordination"
+text = "Our dispatch team monitors cargo availability at Arawak Cay, GFT, or LPIA, sending the right truck once freight is ready."
 
 [[process]]
-title = "Warehouse Staging"
-text = "Cargo stored, sorted, consolidated, or staged where direct delivery is not practical."
+title = "Secure Transport & Staging"
+text = "Your cargo is secured and tracked as it moves. If your site is not ready, we can stage items at our staff-only facility."
 
 [[process]]
 title = "Route & Delivery Planning"
-text = "Delivery timing, receiving windows, truck access, and multi-stop routing coordinated across Nassau."
+text = "We confirm delivery windows, check site access rules, and optimize the truck route across Nassau."
 
 [[process]]
 title = "Delivery Confirmation"
-text = "Cargo delivered to the receiving location with communication and delivery coordination throughout the movement."
+text = "Our driver offloads your freight safely, secures a clean proof of delivery, and updates your team."
 
 [[industries]]
 title = "Retail & Wholesale"
