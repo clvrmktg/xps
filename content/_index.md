@@ -26,10 +26,10 @@ We're more than just a freight handler—we're your full-service logistics partn
 """
 ######
 
-heading = "Simplify Your Supply Chain"
+heading = "Commercial Logistics & Freight Services in The Bahamas"
 
 subheading = """
-Trusted <abbr title="Third Party Logistics" aria-label="Third Party Logistics">3PL</abbr> provider offering customs brokerage, ocean and air freight, warehousing, distribution, and last-mile delivery across The Bahamas.
+Trusted <abbr title="Third Party Logistics" aria-label="Third Party Logistics">3PL</abbr> provider offering customs brokerage, secure warehousing, and last-mile distribution throughout Nassau and the Family Islands.
 """
 
 [highlights]
