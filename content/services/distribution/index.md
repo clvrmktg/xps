@@ -6,17 +6,17 @@ title = 'Distribution'
 summary = "From our warehouse to your customers—across Nassau and the Family Islands—we handle local delivery and island-wide coordination with speed and reliability."
 description = "Reliable last-mile distribution across New Providence and the Family Islands, with scheduled deliveries, flexible routing, and real-time communication."
 
-subheading = """
-Reliable last-mile distribution across New Providence and the Family Islands, with scheduled deliveries, flexible routing, and real-time communication.
 
-Whether you're moving small parcels, palletized freight, or full container loads, our team dispatches daily routes, handles inter-island coordination, and connects your cargo seamlessly with warehousing and customs brokerage for a complete end-to-end workflow.
+heading = "Last Mile Distribution"
+subheading = """
+Whether you are moving small retail boxes, heavy pallets, or full ocean containers, we handle the local trucking and inter-island shipping for you. Our team manages the entire process—connecting your cargo directly with our customs and warehouse services so your goods reach your business or job site without the hassle.
 """
 
 cta = "Talk to a distribution specialist"
 
 [highlights]
 title = "Why our distribution delivers"
-lead  = "Local expertise, dependable scheduling, and island-wide coordination to keep your freight moving smoothly."
+lead  = "Local knowledge, on-time delivery schedules, and island-wide shipping support to keep your cargo moving smoothly."
 
 [[highlights.items]]
 title = "Reliable"
@@ -25,32 +25,32 @@ icon = "truck-delivery"
 
 [[highlights.items]]
 title = "Local"
-text = "Coverage across New Providence and all major Family Islands, with flexible routing tailored to your delivery needs."
+text = "Coverage across Nassau and all major Family Islands, with flexible routing tailored to your delivery needs."
 icon = "map-pin"
 
 [[highlights.items]]
 title = "Integrated"
-text = "Seamlessly connected with our [warehousing](/services/warehousing) and [customs brokerage](/services/customs-brokerage) services for end-to-end logistics coordination."
+text = "Connected directly with our [warehousing](/services/warehousing) and [customs brokerage](/services/customs-brokerage) services to help cargo move efficiently from arrival to final delivery."
 icon = "arrows-transfer-up-down"
 
 [offers]
 content = """
-XPS distribution services are built to connect your supply chain directly to your customers. We provide last-mile delivery, island-wide coordination, and responsive logistics support tailored to your operation.
+XPS distribution services help businesses move goods throughout Nassau and the Family Islands. We provide reliable transportation, coordinated deliveries, and practical logistics support.
 
 - **Nassau Delivery Network**  
-  Daily routes across New Providence for on-time delivery to businesses and retail locations.
+  Scheduled truck routes throughout New Providence for deliveries to businesses, offices, retail stores, warehouses, and project sites.
 
-- **Family Island Dispatch**  
-  We prepare and coordinate inter-island shipping to all major Family Islands—via mailboat, air freight, or ferry.
+- **Family Island Shipping**  
+  We coordinate deliveries to major Family Islands using mailboat, air freight, and other approved transportation services.
 
 - **Warehouse-to-Customer Fulfillment**  
-  Distribute directly from our facility for faster turnaround and lower handling costs.
+  Inventory can be picked, prepared, and dispatched directly from our warehouse to help reduce handling and speed up delivery.
 
-- **Multi-stop Coordination**  
-  We consolidate and route deliveries for multiple locations to save time and cost.
+- **Multi-Stop Delivery**  
+  We coordinate deliveries to multiple stores, offices, warehouses, or project sites through a single delivery plan.
 
 - **Commercial & Government Delivery**  
-  Whether you're supplying a retail chain or a government agency, we deliver with accuracy and professionalism.
+  Whether delivering to a retail location, contractor, corporate office, or government agency, we maintain professional handling standards throughout the process.
 """
 image = "freight-distribution.jpg"
 alt = "Bahamas Freight vessel carrying cargo containers to the Family Islands"
@@ -58,50 +58,50 @@ alt = "Bahamas Freight vessel carrying cargo containers to the Family Islands"
 
 [why]
 content = """
-Logistics doesn’t end when the shipment lands. That’s why businesses across The Bahamas trust XPS to carry their cargo across the finish line.
+Logistics doesn't end when your cargo arrives in Nassau. Here's why businesses across The Bahamas trust XPS for final-mile delivery and distribution.
 
-- **Consistent Scheduling**  
-  Our regular delivery routes ensure predictable service and fast turnaround.
+- **On-Time Delivery**  
+  Regular delivery schedules help businesses plan inventory movements and keep operations running smoothly.
 
 - **Experienced Local Team**  
-  Our drivers and dispatchers know the roads, ports, and customs processes throughout The Bahamas.
+  Our logistics team understands the transportation networks, ports, and shipping routes that connect Nassau and the Family Islands.
 
-- **End-to-End Visibility**  
-  With warehousing, brokerage, and forwarding under one roof, we coordinate every step for fewer delays and lower costs.
+- **Clear Communication**  
+  With warehousing, brokerage, freight forwarding, and distribution under one roof, you'll always know the status of your cargo and the next step in the process.
 
-- **Flexible Options**  
-  From one-off dispatches to recurring delivery routes, we scale with your operation and timeline.
+- **Flexible Delivery Solutions**  
+  From one-time deliveries to recurring distribution schedules, we can tailor transportation services to your operational needs.
 """
 image = "xps-driver-holding-parcel-box.jpg"
 alt = "XPS driver delivering parcel"
 
 [[faq]]
 question = "Where do you deliver?"
-answer = """We provide delivery throughout New Providence and coordinate shipments to all major Family Islands. Whether you need local dispatch, inter-island logistics, or trucking services for larger loads, we’ve got you covered."""
+answer = """We provide delivery services throughout New Providence and coordinate shipments to major Family Islands. Whether you need local distribution in Nassau or cargo moved to another island, we can help manage the transportation process."""
 
 [[faq]]
 question = "Can you deliver directly to my customers?"
-answer = """Yes. We offer last-mile delivery services from our warehouse to your customers—businesses, retail locations, or government agencies—saving you time and handling costs."""
+answer = """Yes. We can coordinate direct delivery to your customers, retail locations, project sites, government agencies, and other business destinations. This helps reduce handling and simplifies your distribution process."""
 
 [[faq]]
 question = "How are Family Island deliveries handled?"
-answer = """We prepare and coordinate Family Island shipments via mailboat, air freight, or ferry, depending on your needs and schedule. We’ll handle packaging, documentation, and dispatch from Nassau for a smooth island-to-island workflow."""
+answer = """We coordinate Family Island deliveries through mailboat services, air freight providers, and other approved transportation partners. Our team manages the logistics, documentation, and cargo transfer process to help ensure a smooth delivery experience."""
 
 [[faq]]
 question = "Do you offer scheduled delivery routes?"
-answer = """Yes. We operate regular delivery routes in Nassau and can schedule recurring pickups or drop-offs to fit your operation. Family Island dispatches are coordinated according to vessel schedules and freight availability."""
+answer = """Yes. We can coordinate deliveries around your business needs. Whether you're arranging a single shipment or require ongoing distribution support, our team can help plan a suitable delivery schedule."""
 
 [[faq]]
 question = "What size shipments can you handle?"
-answer = """We handle a wide range of shipment sizes—from single boxes to pallets, LCL (less-than-container-load) cargo, and full container loads (FCL) once cleared or received at our warehouse. For oversized or specialized items, contact us to confirm handling and trucking options."""
+answer = """We handle a wide range of commercial shipments, from individual cartons and palletized freight to larger inventory movements and containerized cargo. If you have oversized equipment or specialized transportation requirements, please contact us to discuss available options."""
 
 [[faq]]
 question = "Can I store my goods at your warehouse before distribution?"
-answer = """Absolutely. Many clients store goods in our facility and use our distribution service to fulfill orders on demand. This creates a seamless warehousing-to-delivery pipeline, supported by our local trucking network."""
+answer = """Absolutely. Many businesses use our warehouse to store inventory before it is distributed to customers, stores, project sites, or other destinations. Combining storage and distribution through one provider can help simplify operations and reduce handling costs."""
 
 [[faq]]
 question = "Do you deliver to government agencies or retail chains?"
-answer = """Yes. We serve both public- and private-sector clients, including deliveries to government agencies, retail stores, and corporate facilities. Our team ensures deliveries are accurate, professional, and well-documented."""
+answer = """Yes. We support deliveries to government agencies, retail chains, corporate offices, contractors, and other commercial customers. Our team works to ensure deliveries are accurate, professional, and properly documented."""
 
 [cover]
 image = ""
