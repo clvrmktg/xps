@@ -4,12 +4,11 @@ weight = 3
 draft = false
 title = 'Warehousing'
 summary = "Secure storage solutions in western New Providence with 24/7 monitoring, on-site staff, and scalable capacity. Ideal for short or long-term storage of commercial goods."
-description = "Secure, flexible warehousing in western New Providence. XPS offers monitored storage with loading support, inventory oversight, and integrated logistics."
+description = "Secure commercial warehousing in Nassau. XPS provides inventory storage, cargo handling, and distribution for businesses across the Family Islands."
 
+heading = "Secure Warehouse Storage"
 subheading="""
-Secure, flexible warehousing in western New Providence. XPS offers monitored storage with loading support, inventory oversight, and integrated logistics. 
-
-Whether you need short-term transit storage or long-term inventory support, our on-site team handles receiving, inspection, and coordination—keeping your goods moving through clearance, storage, and final delivery.
+Whether you need temporary storage during customs clearance or longer-term inventory support, our warehouse provides secure space, cargo handling, and coordinated logistics to help keep your business moving.
 """
 
 cta = "Talk to a warehouse specialist"
@@ -24,11 +23,11 @@ alt = "XPS warehouse"
 
 [highlights]
 title = "Why businesses store with XPS"
-lead  = "Secure, flexible storage integrated with brokerage, forwarding, and delivery for a seamless logistics flow."
+lead  = "Secure warehouse space tied directly to our customs brokerage, shipping, and cargo delivery services."
 
 [[highlights.items]]
 title = "Secure"
-text = "Monitored 24/7 with restricted access and on-site staff to keep your cargo safe and protected."
+text = "Monitored facilities, controlled access, and on-site personnel help keep your cargo secure while in storage."
 icon = "shield-lock"
 
 [[highlights.items]]
@@ -37,14 +36,15 @@ text = "Short or long-term storage options with space that scales to your invent
 icon = "arrows-horizontal"
 
 [[highlights.items]]
-title = "Connected"
-text = """Integrated with our [customs brokerage](/services/customs-brokerage)  
-and [distribution](/services/distribution) services for a seamless, end-to-end workflow."""
+title = "Strategic Location"
+text = """
+Located in western New Providence with convenient access to major freight routes, ports, and logistics facilities.
+"""
 icon = "route"
 
 [offers]
 content = """
-Our warehousing facility in western New Providence is designed for flexibility, security, and seamless integration with your logistics flow. Whether you're storing goods in transit or holding inventory for local distribution, XPS has you covered.
+Our warehousing facility is designed for flexibility, security, and reliable inventory management. Whether you're holding inventory for local delivery or managing longer-term storage needs, XPS has you covered.
 
 - **Secure Storage Facility**  
   24/7 monitoring, gated access, and on-site staff ensure your goods remain safe and accounted for.
@@ -66,7 +66,7 @@ alt = "XPS warehouse clerk inspecting inventory"
 
 [why]
 content = """
-Storing your goods shouldn't be a risk—it should be part of a reliable logistics plan. Here's why businesses trust XPS for warehousing:
+Our warehouse is located in western New Providence with convenient access to Nassau Container Port, Gladstone Freight Terminal (GFT), Lynden Pindling International Airport (LPIA), and major commercial routes.
 
 - **Location Advantage**  
   Our warehouse is located near major freight routes and Customs facilities in western New Providence for faster turnarounds.
@@ -85,36 +85,35 @@ alt = "XPS warehouse clerk helping customer"
 
 [[faq]]
 question = "Where is your warehouse located?"
-answer = """Our facility is in western New Providence, strategically positioned near major ports, Customs, and delivery routes for faster cargo handling and distribution."""
+answer = """Our commercial facility is located in western New Providence. It is positioned near major transit routes with convenient access to the Nassau Container Port (Arawak Cay), Gladstone Freight Terminal (GFT), and LPIA."""
 
 [[faq]]
 question = "Do you offer both short and long-term storage?"
-answer = """Yes. We provide flexible storage options—from a few days to several months—depending on your needs. Whether you're staging shipments or storing overflow inventory, we've got space for you."""
+answer = """Yes. We provide flexible warehousing solutions for both short-term and long-term storage needs. Whether you need temporary space for incoming inventory or ongoing storage as part of your business operations, we can tailor a solution to fit your requirements."""
 
 [[faq]]
 question = "Is the warehouse secure?"
-answer = """Absolutely. The facility is monitored 24/7 with gated access, surveillance systems, and on-site staff. We take security seriously to protect your goods."""
+answer = """Yes. Our facility features gated, controlled access, 24/7 camera surveillance, and on-site staff. Because this is a commercial warehouse, we keep the facility secure and closed to the general public to protect your business inventory."""
 
 [[faq]]
 question = "Is there a minimum storage requirement?"
-answer = """Yes. Our warehousing services start at a minimum of **100 square feet**. This ensures we can allocate dedicated, secure space for your goods and manage handling efficiently."""
+answer = """Yes. Our commercial warehousing services start at a minimum of **100 square feet**. This minimum allows us to properly allocate dedicated space and efficiently manage your business stock within our system."""
 
 [[faq]]
 question = "Can you receive shipments on my behalf?"
-answer = """Yes. You can consign shipments to your name or business ‘c/o XPS,' and our team will receive, inspect, and store your cargo. We can also notify you upon arrival."""
+answer = """Yes. Commercial shipments can be consigned to *“Your Business Name c/o XPS.”* Once your cargo has been released from the port or airport, we can arrange pickup, transfer it to our facility, inspect it upon arrival, and place it into storage."""
 
 [[faq]]
 question = "Do you provide inventory tracking?"
-answer = """We offer basic inventory oversight, including logging items received and dispatched. For more complex inventory requirements, we can work with you to develop a customized solution."""
+answer = """Yes. We maintain records of goods received into storage and goods released for collection or delivery, helping businesses maintain visibility of inventory held at our facility."""
 
 [[faq]]
 question = "Can my goods be delivered from the warehouse?"
-answer = """Yes. We provide local delivery services from our warehouse to any destination in Nassau or the Family Islands as part of our integrated logistics offering."""
+answer = """Absolutely. We operate a full distribution service. When your business needs stock, we prepare the required goods for dispatch and deliver them to stores, offices, project sites, and other commercial destinations throughout Nassau. Family Island delivery can also be arranged through trusted shipping partners."""
 
 [[faq]]
 question = "What kinds of goods can I store with XPS?"
-answer = """We accommodate a wide range of commercial cargo, including boxed goods, pallets, equipment, and containerized shipments. For regulated or sensitive items, please contact us first to confirm availability."""
-
+answer = """We manage a wide range of commercial freight, including retail stock, palletized inventory, building materials, equipment, and machinery. We do not accept hazardous materials, household personal items, or restricted goods without prior approval."""
 
 [params]
   hasTwic = false

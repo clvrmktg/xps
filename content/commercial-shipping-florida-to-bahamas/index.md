@@ -27,19 +27,19 @@ trustBar = [
 faqIntro = "Answers to common questions about commercial shipping from Florida to The Bahamas, including customs clearance, LCL cargo, freight coordination, and Family Island delivery."
 
 processHeading = "How Commercial Shipping to The Bahamas Works"
-processLead = "A coordinated workflow supporting cargo movement from South Florida through customs clearance, warehousing, and final delivery across The Bahamas."
+processLead = "A clear shipping workflow from pre-export review through South Florida staging, advance customs clearance, arrival handling, and final delivery."
 
 industriesHeading = "Industries We Support"
 industriesLead = "Commercial freight coordination tailored to the operational realities, cargo requirements, and distribution needs of businesses importing into The Bahamas."
 
 painPointsHeading = "Why Businesses Need Freight Coordination"
-painPointsLead = "Commercial shipping into The Bahamas involves multiple cargo handlers, customs systems, ports, and delivery routes. Coordinated logistics support helps reduce delays and improve shipment visibility."
+painPointsLead = "Commercial shipping into The Bahamas involves suppliers, carriers, customs systems, ports, warehouses, and delivery teams. Tight coordination keeps freight moving and helps prevent avoidable storage costs."
 
 advantagesHeading = "Why Businesses Choose XPS"
-advantagesLead = "XPS maintains active communication between suppliers, freight partners, customs systems, and delivery points to help reduce delays, improve cargo visibility, and support more efficient commercial shipping operations."
+advantagesLead = "XPS gives importers one clear point of coordination across South Florida freight activity, Bahamian customs clearance, warehousing, and delivery."
 
 infrastructureHeading = "Florida to Bahamas Freight Infrastructure"
-infrastructureLead = "Commercial cargo moving into The Bahamas passes through multiple consolidation points, ports, processing facilities, and distribution channels. XPS coordinates freight movement across South Florida, Nassau, and the Family Islands."
+infrastructureLead = "Commercial cargo moving from Florida to The Bahamas depends on physical freight hubs, export staging points, Nassau entry facilities, and inter-island transfer routes."
 
 # =============================================================================
 # HERO / LEAD
@@ -47,7 +47,7 @@ infrastructureLead = "Commercial cargo moving into The Bahamas passes through mu
 
 [lead]
 heading = "Commercial Shipping Services from Florida to The Bahamas"
-text = "Reliable freight coordination, customs brokerage, cargo consolidation, and delivery support for Bahamian businesses and international vendors shipping to Nassau and the Family Islands."
+text = "Reliable freight coordination, cargo consolidation, customs clearance, and final delivery for commercial importers and international vendors."
 
 [[heroCtas]]
 label = "Request Shipping Support"
@@ -66,9 +66,8 @@ style = "secondary"
 [definition]
 heading = "How Commercial Shipping to The Bahamas Works"
 paragraphs = [
-  "Commercial shipping from Florida to The Bahamas often involves freight consolidation, customs coordination, cargo staging, warehousing, and local delivery across multiple islands.",
-
-  "XPS helps businesses coordinate cargo movement from South Florida through Nassau entry points, customs processing, warehousing, and onward distribution throughout The Bahamas."
+  "Moving commercial freight from Florida to The Bahamas involves multiple handoffs between suppliers, freight forwarders, customs officials, and local transport teams. Without tight coordination, cargo gets stuck at the port, leading to compounding delays and unexpected storage fees.",
+  "XPS manages the entire pipeline. We coordinate the flow of your goods from South Florida staging points through Nassau customs entry, handling warehousing, staging, and final distribution to your business or job site."
 ]
 
 # =============================================================================
@@ -108,32 +107,32 @@ text = "Coordination of local delivery, inter-island cargo movement, and Family 
 
 [[painPoints]]
 title = "Reduce Cargo Delays"
-text = "Coordinate freight movement, customs processing, and delivery workflows more efficiently."
+text = "We align your freight arrivals with upcoming sailing schedules and customs documentation readiness. This prevents containers from sitting idle at the port."
 outcome = "Improved shipment flow"
 icon = "clipboard-check"
 
 [[painPoints]]
 title = "Improve Freight Visibility"
-text = "Maintain communication across suppliers, freight providers, customs systems, and delivery coordination points."
+text = "We maintain active communication across suppliers, carriers, and local delivery teams so you always know where your inventory is positioned."
 outcome = "Better shipment awareness"
 icon = "route"
 featured = true
 
 [[painPoints]]
 title = "Simplify Consolidation"
-text = "Support cargo consolidation and shipment coordination for imports moving through South Florida."
+text = "We streamline less-than-container-load (LCL) cargo staging in South Florida, ensuring multiple vendor orders are grouped correctly before shipping to Nassau."
 outcome = "Cleaner freight coordination"
-icon = "packages"
+icon = "building-warehouse"
 
 [[painPoints]]
 title = "Support Family Island Delivery"
-text = "Coordinate onward movement throughout Nassau and the Family Islands."
+text = "Your supply chain does not have to end in Nassau. We coordinate port handoffs to domestic carriers and mailboats for onward transit."
 outcome = "Wider delivery reach"
-icon = "map"
+icon = "ship"
 
 [[painPoints]]
 title = "Scale Commercial Imports"
-text = "Support growing import operations without maintaining a full internal logistics department."
+text = "Get the operational support of an international shipping department without the overhead, allowing you to manage large-scale bulk imports smoothly."
 outcome = "Flexible operational support"
 icon = "trending-up"
 
@@ -143,22 +142,22 @@ icon = "trending-up"
 
 [[advantages]]
 title = "South Florida Coordination"
-text = "Support for cargo consolidation, freight coordination, and shipment preparation prior to arrival in The Bahamas."
-icon = "map-pin"
+text = "We work with your U.S.-based suppliers and forwarders to ensure cargo labeling, manifest details, and export bookings are correct before the vessel sails."
+icon = "building-warehouse"
 
 [[advantages]]
 title = "Customs-Focused Freight Support"
-text = "Integrated customs brokerage coordination supporting smoother commercial cargo processing and release workflows."
+text = "We do not wait for cargo to arrive to start clearance. Our team prepares entries early to reduce customs friction at Arawak Cay or LPIA."
 icon = "clipboard-check"
 
 [[advantages]]
 title = "Bahamas Logistics Knowledge"
-text = "Understanding local ports, cargo flow, customs systems, and Family Island routing matters."
+text = "We understand the real-world rules of local ports, gate clearances, and Family Island routing systems, helping freight avoid common local pitfalls."
 icon = "route"
 
 [[advantages]]
 title = "Commercial Cargo Experience"
-text = "Support for retailers, contractors, hospitality operators, wholesalers, and growing commercial importers."
+text = "From construction materials and resort fixtures to retail inventory and food supply chains, we build coordination around your cargo’s handling needs."
 icon = "packages"
 
 # =============================================================================
@@ -166,52 +165,52 @@ icon = "packages"
 # =============================================================================
 
 [[infrastructure]]
-title = "South Florida Consolidation"
+title = "Miami & Fort Lauderdale"
 facility = "Miami & Fort Lauderdale"
-text = "Support for freight consolidation, shipment coordination, and commercial cargo movement prior to export to The Bahamas."
-icon = "warehouse"
+text = "Coordination support for supplier drop-offs, inland freight tracking, and export cargo staging prior to vessel departure for The Bahamas."
+icon = "building-warehouse"
 
 [[infrastructure]]
-title = "Air Freight Imports"
+title = "Lynden Pindling International Airport (LPIA)"
 facility = "Lynden Pindling International Airport (LPIA)"
-text = "Support for commercial air cargo arrivals, urgent shipments, and customs coordination through Nassau’s primary airport."
-icon = "truck-delivery"
+text = "Fast-tracked coordination for time-sensitive commercial air cargo, urgent component replacements, and high-value project items."
+icon = "plane"
 
 [[infrastructure]]
-title = "LCL & FCL Cargo Handling"
+title = "Gladstone Freight Terminal (GFT) & Nassau Container Port"
 facility = "Gladstone Freight Terminal (GFT) & Nassau Container Port"
-text = "Coordination for LCL cargo degrouping, FCL processing, customs release, and commercial cargo collection."
-icon = "packages"
+text = "Complete on-the-ground management for full container loads (FCL) at Arawak Cay and less-than-container-load (LCL) sorting at GFT."
+icon = "container"
 
 [[infrastructure]]
-title = "Family Island Distribution"
+title = "Potter's Cay & Inter-Island Movement"
 facility = "Potter’s Cay & Inter-Island Movement"
-text = "Support for mailboat coordination, cargo transfers, and onward movement throughout the Family Islands."
-icon = "route"
+text = "Direct connection to inter-island mailboats and domestic carriers for smooth cargo transfers to businesses throughout the Family Islands."
+icon = "ship"
 
 # =============================================================================
 # PROCESS
 # =============================================================================
 
 [[process]]
-title = "Freight Coordination"
-text = "Cargo details, supplier documentation, and shipment schedules coordinated prior to export."
+title = "Pre-Export Freight Coordination"
+text = "We review supplier packing lists, invoices, and shipment sizes to align them with upcoming ocean or air freight cutoff times."
 
 [[process]]
-title = "South Florida Consolidation"
-text = "Commercial cargo consolidated and prepared for air or ocean shipment to Nassau."
+title = "South Florida Cargo Staging"
+text = "Your freight is received, verified against purchase orders, and prepared for secure loading onto Nassau-bound vessels."
 
 [[process]]
-title = "Customs Clearance"
-text = "Click2Clear entry preparation, customs processing, and cargo release coordinated efficiently."
+title = "Advance Customs Clearance"
+text = "Our team processes Click2Clear documentation, handles duty concessions, and prepares agency releases while cargo is still in transit."
 
 [[process]]
-title = "Warehousing & Staging"
-text = "Cargo stored, staged, or prepared for onward local or inter-island movement."
+title = "Arrival Handling & Staging"
+text = "Once discharged at the port, your cargo is collected. If your facility is not ready, we hold it in our staff-only storage area."
 
 [[process]]
-title = "Delivery & Distribution"
-text = "Commercial cargo delivered locally or routed throughout the Family Islands."
+title = "Final Delivery & Island Routing"
+text = "We truck freight straight to your Nassau location or transfer it to domestic docks for Family Island distribution."
 
 # =============================================================================
 # INDUSTRIES
@@ -220,42 +219,42 @@ text = "Commercial cargo delivered locally or routed throughout the Family Islan
 [[industries]]
 title = "Retail & Wholesale"
 descriptor = "Commercial inventory movement"
-text = "Freight coordination, customs processing, and cargo distribution support for retailers and wholesalers."
+text = "Streamlined freight forwarding and cargo consolidation from South Florida hubs directly to local Nassau storefronts, supporting predictable shelf replenishment and holiday inventory spikes."
 image = "/services/warehousing/xps-warehouse-clerk-inspecting-cargo.jpg"
 alt = "Commercial inventory inspection in warehouse"
 
 [[industries]]
 title = "Construction & Development"
 descriptor = "Project cargo logistics"
-text = "Commercial shipping support for building materials, equipment imports, and staged project cargo delivery."
+text = "Phased transport coordination for structural imports, bulk building materials, and heavy fixtures, staged in Florida and delivered straight to active Bahamian job sites."
 image = "/services/freight-forwarding/truck-outgate-nassau-container-port-arawak-cay.jpg"
 alt = "Container truck leaving Nassau Container Port"
 
 [[industries]]
 title = "Hospitality"
 descriptor = "Hotel supply coordination"
-text = "Support for hotel FF&E, OS&E, renovation shipments, and hospitality supply chain logistics."
+text = "Reliable ocean and air freight logistics for FF&E, OS&E, resort property maintenance supplies, and highly time-sensitive hospitality operational inventory."
 image = "/services/distribution/xps-driver-loading-vehicle.jpg"
 alt = "Commercial cargo prepared for delivery"
 
 [[industries]]
 title = "Automotive"
 descriptor = "Vehicle & parts logistics"
-text = "Coordination for vehicle imports, automotive cargo movement, and commercial parts shipments."
+text = "Secure transport handling for commercial vehicles, bulk mechanical equipment, fleet parts, and industrial tools shipped seamlessly from US suppliers to local distributors."
 image = "/services/customs-brokerage/xps-customs-broker-processing-entry.jpg"
 alt = "Commercial automotive customs processing"
 
 [[industries]]
 title = "Food & Beverage"
 descriptor = "Regulated cargo movement"
-text = "Commercial shipping support for food products, permit-sensitive cargo, and cold-chain freight coordination."
+text = "Coordinated cold-chain logistics and port clearance for food store distributors, ensuring grocery staples and temperature-sensitive stock clear the dock smoothly."
 image = "/services/freight-forwarding/nassau-container-port-loading-vessel-crane.jpg"
 alt = "Commercial freight vessel at Nassau Container Port"
 
 [[industries]]
 title = "E-Commerce & Distribution"
 descriptor = "Growing fulfillment operations"
-text = "Freight coordination, warehousing, inventory staging, and distribution support for growing fulfillment businesses."
+text = "Consolidation and staging frameworks built for local businesses, converting multi-vendor US online orders into single, organized shipments to reduce individual entry fees."
 image = "/services/distribution/xps-box-truck-in-front-of-warehouse.jpg"
 alt = "Distribution truck outside warehouse"
 
@@ -265,27 +264,27 @@ alt = "Distribution truck outside warehouse"
 
 [[faq]]
 question = "How does commercial shipping from Florida to The Bahamas work?"
-answer = "Commercial shipping to The Bahamas often involves South Florida freight consolidation, customs processing, cargo staging, warehousing, and local or Family Island delivery coordination."
+answer = "We manage the entire transit loop. Your suppliers ship goods to your designated South Florida staging point, where cargo is verified and consolidated. We handle the ocean or air booking, manage the Click2Clear customs submission in Nassau, and truck the freight directly to its final Bahamian destination."
 
 [[faq]]
 question = "Does XPS coordinate customs clearance?"
-answer = "Yes. XPS coordinates customs brokerage support, including Click2Clear (C2C/BESW) entry preparation, tariff classification, documentation review, and customs release coordination."
+answer = "Our in-house customs brokerage team handles the entire entry process. We review your commercial invoices, calculate duty rates, process necessary agency permits, and secure customs release at Arawak Cay or LPIA before the truck is dispatched."
 
 [[faq]]
 question = "Can XPS coordinate LCL and FCL shipments?"
-answer = "Yes. XPS supports less-than-container-load (LCL) cargo through Gladstone Freight Terminal (GFT) and full container load (FCL) cargo through Nassau Container Port."
+answer = "We manage both. If you have enough freight to fill a 20-foot or 40-foot container, we arrange Full Container Load (FCL) transport. For smaller orders, we utilize Less-than-Container Load (LCL) consolidation to group your cargo with other shipments to lower your ocean freight costs."
 
 [[faq]]
 question = "Does XPS support Family Island cargo movement?"
-answer = "Yes. XPS coordinates Potter’s Cay cargo transfers, mailboat logistics, and onward commercial cargo movement throughout the Family Islands."
+answer = "Our services extend well beyond New Providence. Once your freight clears customs at the Nassau port, our team manages the physical hand-off to domestic air carriers or the inter-island mailboats at Potter's Cay to ensure smooth delivery across the Family Islands."
 
 [[faq]]
 question = "Can XPS assist with warehousing and cargo staging?"
-answer = "Yes. XPS provides warehousing support, inventory staging, and cargo preparation for local delivery and inter-island distribution."
+answer = "If your business location or job site isn't ready to receive a shipment immediately, we can route your cleared cargo straight into our secure, staff-only storage facility in Nassau for flexible, short-term inventory staging."
 
 [[faq]]
 question = "What types of businesses use commercial freight coordination services?"
-answer = "Retailers, wholesalers, contractors, hospitality operators, food and beverage companies, automotive businesses, and growing importers commonly use coordinated freight and customs support."
+answer = "We primarily support retail store owners managing inventory cycles, construction contractors balancing material arrivals, hospitality procurement teams handling resort supplies, and local distributors moving bulk commercial shipments."
 
 # =============================================================================
 # INSIGHTS

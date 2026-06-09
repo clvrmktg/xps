@@ -6,10 +6,12 @@ title = 'Freight Forwarding'
 summary = "We coordinate global air and ocean shipments with full documentation, customs support, and local delivery."
 description = "Reliable imports and exports by air, sea, and land freight forwarding, fully compliant with Bahamian customs and ISPS Code security standards."
 
-subheading = """
-Reliable imports and exports by air, sea, and land freight forwarding, fully compliant with Bahamian customs and ISPS Code security standards.
 
-From Nassau Container Port to regional hubs across the Caribbean and the Americas, XPS coordinates every leg of your shipment so it arrives where it should, when it should.
+heading = "Freight Forwarding Services for Nassau & The Family Islands"
+subheading = """
+Seamless air and ocean freight forwarding connecting South Florida consolidation hubs to Nassau Container Port and Lynden Pindling International Airport. 
+
+We ensure full Bahamian customs compliance and secure handling from origin to final destination.
 """
 
 cta = "Talk to a freight specialist"
@@ -17,21 +19,21 @@ cta = "Talk to a freight specialist"
 
 [highlights]
 title = "Why our freight forwarding works"
-lead  = "End-to-end air, ocean, and land coordination—with compliant documentation and on-time delivery across The Bahamas."
+lead  = "We coordinate commercial freight movements, documentation, and logistics support for businesses importing cargo into Nassau and throughout the Family Islands."
 
 [[highlights.items]]
-title = "Global Reach"
-text = "Connections across major ports, carriers, and regional hubs in the U.S., Caribbean, and Latin America."
+title = "Florida to Nassau Shipping"
+text = "We coordinate commercial cargo moving from Florida into Nassau, helping businesses manage supplier shipments through reliable ocean and air freight networks."
 icon = "world"
 
 [[highlights.items]]
-title = "Fully Coordinated"
-text = "We manage every leg of the shipment—from booking and documentation to final delivery."
+title = "Freight Consolidation"
+text = "Reduce shipping costs by combining cargo from multiple suppliers into a single shipment. We help streamline freight movements and simplify import logistics."
 icon = "route"
 
 [[highlights.items]]
-title = "On-Time Delivery"
-text = "Timely, cost-effective freight forwarding built around your timeline and cargo needs."
+title = "Nassau & Family Island Delivery"
+text = "Once cargo arrives, we coordinate onward movement to warehouses, retail locations, project sites, and Family Island destinations throughout The Bahamas."
 icon = "clock-check"
 
 [offers]
@@ -57,8 +59,8 @@ alt = "Nassau Container Port vessel loading"
 title = "Why Businesses Choose XPS"
 content = """Freight forwarding is more than moving cargo—it's about confidence in your supply chain. Here's what sets us apart:
 
-- **Regional Expertise**  
-  Deep knowledge of Caribbean, U.S., and Latin American freight corridors.
+- **Florida-Bahamas Trade Corridor**  
+  Regularly supporting commercial cargo movements between Florida and The Bahamas, helping businesses navigate one of the country's most important supply corridors.
 
 - **Integrated Logistics**  
   Seamless service across brokerage, warehousing, and delivery—from one provider.
@@ -77,31 +79,40 @@ alt = "Outgating an LCL shipment at Nassau Container Port"
 
 [[faq]]
 question = "What types of freight do you handle?"
-answer = """We handle all major modes of freight, including air and ocean shipments, full-container loads (FCL), less-than-container loads (LCL), and consolidated cargo.
+answer = """We coordinate air and ocean freight shipments moving into The Bahamas, including full-container loads (FCL), less-than-container loads (LCL), consolidated cargo, vehicles, machinery, building materials, and commercial inventory.
 
-For vehicles, machinery, and oversized equipment, we also arrange RoRo (roll-on/roll-off) and project cargo services. Whatever you're moving, we match the best method to your cargo and timeline."""
+Cargo may arrive through facilities such as Nassau Container Port, Gladstone Freight Terminal (GFT), or Lynden Pindling International Airport (LPIA), depending on the shipment method and carrier."""
 
 [[faq]]
 question = "Can you consolidate multiple shipments into one?"
-answer = """Yes. If you're purchasing goods from different suppliers or locations, we can combine them into a single shipment. This often reduces freight costs and simplifies customs clearance, especially for smaller or mixed cargo."""
+answer = """Yes. If you're purchasing goods from multiple suppliers, we can help coordinate consolidation before cargo moves to The Bahamas. This can reduce freight costs, simplify customs clearance, and make inventory management easier upon arrival in Nassau."""
 
 [[faq]]
 question = "Can I track my shipment?"
-answer = """Yes. We provide updates at every major milestone—when your cargo departs, arrives at port, clears customs, and is scheduled for final delivery. You'll always know where your shipment is and what to expect next."""
+answer = """Yes. We provide updates at key milestones throughout the shipping process, including departure, arrival in Nassau, customs clearance, and final delivery scheduling. You'll always know where your cargo is and what to expect next."""
 
 [[faq]]
-question = "What documents are needed for freight forwarding?" 
-answer = "To properly forward your shipment, we typically need:\n\n- A **commercial invoice**\n- A **bill of lading** or **airway bill**\n- A **packing list** (if applicable)\n- Any necessary **permits or certificates** for regulated items\n\nIf XPS is also handling your customs brokerage, we'll take care of preparing and submitting these through the Click2Clear system."
+question = "What documents are needed for freight forwarding?"
+answer = """To coordinate your shipment, we typically require:
+
+- A **commercial invoice**
+- A **bill of lading** or **airway bill**
+- A **packing list** (if applicable)
+- Any required **permits or certificates** for regulated goods
+
+Additional documentation may be required depending on the type of cargo, importer status, and customs requirements.
+
+If XPS is also handling your customs brokerage, we'll advise you on any additional documents needed and prepare the necessary customs submissions through the Bahamas Electronic Single Window (Click2Clear) system."""
 
 [[faq]]
 question = "Do you offer port-to-door delivery?"
-answer = "Yes. Once your cargo arrives and clears customs, we can deliver directly to your warehouse, store, project site, or customer—anywhere in Nassau and, through partners, throughout the Family Islands."
+answer = """Yes. Once cargo is released from facilities such as Nassau Container Port, Gladstone Freight Terminal (GFT), or Lynden Pindling International Airport (LPIA), we can coordinate delivery to warehouses, retail locations, project sites, and other commercial destinations in Nassau. Family Island delivery can also be arranged through approved transport partners."""
 
 [[faq]]
 question = "Can you forward cargo routed through the U.S. or other regions?"
-answer = """Absolutely. We regularly coordinate transshipment and cross-border forwarding—moving cargo through hubs like Miami, Panama, and key Caribbean ports—when it offers better transit times or pricing. 
+answer = """Yes. Many shipments entering The Bahamas are routed through major logistics hubs before arriving in Nassau. We can coordinate the movement, documentation, and communication required to keep cargo moving efficiently throughout the process.
 
-In simple terms, if your cargo needs to pass through another country before reaching The Bahamas, we handle the entire routing and documentation process."""
+In simple terms, if your shipment must pass through another location before reaching The Bahamas, we can help manage the logistics involved."""
 
 
 [cover]

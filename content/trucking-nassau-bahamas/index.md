@@ -106,29 +106,29 @@ icon = "packages"
 
 [[advantages]]
 title = "Nassau-Based Coordination"
-text = "XPS supports commercial cargo movement across Nassau and New Providence with local trucking and delivery coordination."
+text = "XPS manages your commercial cargo movement directly on the ground. We bridge the gap between local ports and your facility with clear, direct communication."
 icon = "map-pin"
 
 [[advantages]]
 title = "Port and Airport Awareness"
-text = "Trucking is coordinated around release timing, collection requirements, terminal activity, and cargo availability."
+text = "We do not guess when cargo is ready. Our team tracks release status, terminal congestion, and equipment availability at Arawak Cay, GFT, and LPIA."
 icon = "clipboard-check"
 
 [[advantages]]
 title = "Warehouse-Connected Delivery"
-text = "Cargo can be stored, staged, organized, or prepared for scheduled movement before final delivery."
-icon = "packages"
+text = "Your transport does not have to be a straight line. We can pull freight from the port and route it into secure staging until your team is ready."
+icon = "building-warehouse"
 
 [[advantages]]
 title = "Integrated Logistics Support"
-text = "Local trucking connects with customs brokerage, freight forwarding, warehousing, and distribution planning."
+text = "By combining trucking, brokerage, and warehousing with one partner, you eliminate the finger-pointing that happens between separate providers."
 icon = "route"
 
 [[infrastructure]]
 title = "Port Container Pickups"
 facility = "Nassau Container Port"
 text = "Full container load (FCL) transport for 20-foot and 40-foot ocean containers straight from Nassau Container Port at Arawak Cay to your commercial facility."
-icon = "truck-delivery"
+icon = "container"
 
 [[infrastructure]]
 title = "LCL Freight Collection"
@@ -140,7 +140,7 @@ icon = "packages"
 title = "Airport Cargo Logistics"
 facility = "Lynden Pindling International Airport (LPIA)"
 text = "Fast-tracked terminal collections at Lynden Pindling International Airport for time-sensitive air freight, commercial samples, and urgent inventory."
-icon = "clipboard-check"
+icon = "plane"
 
 [[infrastructure]]
 title = "Local Delivery Network"
@@ -171,68 +171,68 @@ text = "Our driver offloads your freight safely, secures a clean proof of delive
 [[industries]]
 title = "Retail & Wholesale"
 descriptor = "Store and inventory delivery"
-text = "Trucking support for commercial inventory, retail replenishment, wholesale orders, and scheduled delivery across Nassau."
+text = "Trucking support built for commercial inventory replenishment, wholesale goods delivery, and timed warehouse transfers to retail locations across Nassau."
 image = "/services/warehousing/xps-warehouse-clerk-inspecting-cargo.jpg"
 alt = "Warehouse clerk inspecting commercial inventory"
 
 [[industries]]
 title = "Construction & Development"
 descriptor = "Project site delivery"
-text = "Local trucking for building materials, equipment, fixtures, staged project cargo, and job-site delivery coordination."
+text = "Coordinated transport for bulk building materials, structural steel packets, fixtures, heavy equipment, and phased job-site cargo distribution."
 image = "/services/freight-forwarding/truck-outgate-nassau-container-port-arawak-cay.jpg"
 alt = "Container truck leaving Nassau Container Port"
 
 [[industries]]
 title = "Hospitality"
 descriptor = "Hotel and resort delivery"
-text = "Delivery coordination for FF&E, OS&E, food service supplies, renovation cargo, and recurring hospitality shipments."
+text = "Time-sensitive delivery for FF&E, OS&E, restaurant food supply chains, resort renovation materials, and high-frequency recurring inventory."
 image = "/services/distribution/xps-driver-loading-vehicle.jpg"
 alt = "XPS driver loading cargo for delivery"
 
 [[industries]]
 title = "Automotive"
 descriptor = "Parts and equipment movement"
-text = "Trucking support for parts, tires, equipment, tools, commercial transport needs, and automotive supply operations."
+text = "Reliable transport for heavy machinery components, bulk tires, mechanical tools, commercial garage equipment, and automotive supply operations."
 image = "/services/customs-brokerage/xps-customs-broker-processing-entry.jpg"
 alt = "Customs broker processing import documents"
 
 [[industries]]
 title = "Food & Beverage"
 descriptor = "Time-sensitive delivery"
-text = "Local delivery coordination for commercial food products, restaurant supplies, cold-chain shipments, and permit-sensitive cargo."
+text = "Local container haulage for grocery distributors, commercial food products, and temperature-sensitive imports requiring rapid transport from the dock."
 image = "/services/freight-forwarding/nassau-container-port-loading-vessel-crane.jpg"
 alt = "Cargo vessel being loaded at Nassau Container Port"
 
 [[industries]]
 title = "E-Commerce & Distribution"
 descriptor = "Fulfillment movement"
-text = "Warehouse-to-customer delivery, inventory staging, recurring route support, and commercial distribution for growing operations."
+text = "Warehouse-to-storefront transport, bulk delivery routing, and organized distribution support to help growing local businesses manage stock movement."
 image = "/services/distribution/xps-box-truck-in-front-of-warehouse.jpg"
 alt = "XPS box truck in front of warehouse"
 
 [[faq]]
 question = "Does XPS provide trucking in Nassau?"
-answer = "Yes. XPS provides local trucking and delivery coordination in Nassau and New Providence for commercial cargo, warehouse deliveries, port pickups, airport cargo, and distribution activity."
+answer = "We handle commercial trucking and freight delivery across all of Nassau and New Providence. Our fleet moves everything from heavy ocean containers to palletized airport cargo and retail store inventory."
 
 [[faq]]
 question = "Can XPS pick up cargo from Nassau Container Port?"
-answer = "Yes. XPS can coordinate pickup of released cargo from Nassau Container Port and move it to a warehouse, job site, business location, or delivery point."
+answer = "Regularly. We pick up both 20-foot and 40-foot containers straight from Arawak Cay the moment they clear customs, hauling them directly to your warehouse, store, or construction site."
 
 [[faq]]
 question = "Can XPS collect LCL cargo from GFT?"
-answer = "Yes. XPS can coordinate collection of released less-than-container-load cargo from Gladstone Freight Terminal and arrange onward delivery or staging."
+answer = "We do. Our drivers make frequent pickups at Gladstone Freight Terminal (GFT) to collect Less-than-Container Load shipments, sorting and staging them for final local delivery."
 
 [[faq]]
 question = "Can XPS handle airport cargo pickup?"
-answer = "Yes. XPS can coordinate local trucking for commercial air cargo arriving through Lynden Pindling International Airport where suitable release and pickup requirements are met."
+answer = "We handle time-sensitive air freight terminal collections directly from Lynden Pindling International Airport (LPIA) as soon as your customs release paperwork and gate passes are finalized."
 
 [[faq]]
 question = "Does XPS provide scheduled delivery routes?"
-answer = "Yes. XPS can coordinate scheduled local delivery routes, recurring commercial deliveries, and multi-stop movement across Nassau based on operational requirements."
+answer = "We can set up recurring commercial routes, multi-stop drop-offs, and timed wholesale distribution across Nassau depending on how your business handles its weekly inventory flow."
 
 [[faq]]
 question = "Can cargo be stored before delivery?"
-answer = "Yes. Cargo can be staged or stored through XPS warehousing support before final delivery when direct movement is not practical."
+answer = "If your job site or storefront isn't ready to receive your freight immediately, we can route your cargo straight from the port into our secure, staff-only staging facility for short-term storage."
 
 [insights]
 lead = "Practical insights on delivery coordination, warehousing, post-clearance movement, local logistics, and commercial distribution in Nassau and The Bahamas."

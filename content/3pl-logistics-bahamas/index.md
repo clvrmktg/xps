@@ -135,7 +135,7 @@ icon = "route"
 title = "Air Cargo Coordination"
 facility = "Lynden Pindling International Airport (LPIA)"
 text = "Support for commercial air freight arrivals, time-sensitive shipments, and customs coordination for inbound cargo arriving through Nassau’s primary airport."
-icon = "truck-delivery"
+icon = "plane"
 
 [[infrastructure]]
 title = "LCL Cargo Handling"
@@ -147,13 +147,13 @@ icon = "packages"
 title = "Full Container Processing"
 facility = "Nassau Container Port"
 text = "Support for full container load (FCL) imports, container collection, customs coordination, and commercial cargo delivery."
-icon = "clipboard-check"
+icon = "container"
 
 [[infrastructure]]
 title = "Family Island Distribution"
 facility = "Potter’s Cay"
 text = "Support for cargo transfers, mailboat coordination, and distribution throughout the Family Islands and inter-island trade routes."
-icon = "route"
+icon = "ship"
 
 [[process]]
 title = "Shipment Coordination"

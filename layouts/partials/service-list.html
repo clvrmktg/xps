@@ -14,7 +14,7 @@
   <ul class="[ grid md:col--2 col-gap--2 row-gap--3 ]">
     {{ $counter := 0 }}
     {{ range $pages.ByWeight }}
-      {{ if or (not $include) (in $include .File.ContentBaseName) }}
+      {{ if and (or (not $include) (in $include .File.ContentBaseName)) (or $include (ne .Params.listed false)) }}
       {{ $counter = add $counter 1 }}
       {{ $description := index $descriptions .File.ContentBaseName | default .Summary }}
       <li id="service-{{$counter}}" class="[ post ]">

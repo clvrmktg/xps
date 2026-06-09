@@ -8,9 +8,9 @@
     <div class="[ hero__inner ][ full-width content-grid ]">
       <div class="[ wrapper ][ flex middle section--padding-bottom ]">
         <div class="[ hero__content ][ ch--54 ]">
-          <p class="[ hero__eyebrow ][ font--1- upper ]">XPS • {{ .Title }}</p>
+          <p class="[ hero__eyebrow ][ upper ]">XPS • {{ .Title }}</p>
           <h1>{{ if .Params.heading }}{{ .Params.heading }}{{else}}{{ .Title }}{{end}}</h1>
-          <div>{{ .Params.subheading | markdownify }}</div>
+          <div class="[ pb--1 ]">{{ .Params.subheading | markdownify }}</div>
           {{ if .Params.cta }}
           <a class="[ btn btn--lg btn--red ]" href="/contact-us" data-prefetch>{{ .Params.cta }}</a>
           {{ end }}
