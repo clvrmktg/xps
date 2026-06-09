@@ -111,7 +111,4 @@ alt = ""
 image = "xps-box-truck-in-front-of-warehouse.jpg"
 alt = "XPS box truck in front of warehouse"
 
-[params]
-  hasTwic = false
-
 +++
