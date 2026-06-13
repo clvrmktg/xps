@@ -6,7 +6,7 @@
 {{ $descriptions := .descriptions | default dict }}
 {{ $pages := $page.Pages }}
 
-<section class="[ full-width content-grid bg--light section--spacing section--padding ]">
+<section class="[ full-width content-grid bg--light section--spacing section--padding{{ with .class }} {{ . }}{{ end }} ]">
   <div>
     <h2>{{ $title }}</h2>
     <p class="[ lead ]">{{ $lead }}</p>

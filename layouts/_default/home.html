@@ -11,11 +11,14 @@
   {{ end }}
   <h1 class="[ hidden ]">XPS</h1>
   <div class="[ hero__inner ][ full-width content-grid ]">
-    <div class="[ wrapper ][ flex middle section--padding-bottom ]">
+    <div class="[ wrapper ][ flex middle ]">
       <div class="[ hero__content ][ ch--54 ]">
         <h2 class="[ font--1 ]">{{ .Params.heading }}</h2>
         <p class="[ ch--48 ]">{{ .Params.subheading | safeHTML }}</p>
-        <a class="[ btn btn--lg btn--red ]" href="/contact-us" data-prefetch>Get In Touch</a>
+        <div class="[ hero__actions ][ flex gap--1 ]">
+          <a class="[ btn btn--lg btn--red ]" href="/contact-us" data-prefetch>Talk To Our Team</a>
+          <a class="[ btn btn--lg btn--white--ghost ]" href="/services/" data-prefetch>Explore Services</a>
+        </div>
       </div>
     </div>
   </div>
@@ -25,34 +28,88 @@
 
 
   {{ $services := site.GetPage "section" "services" }}
-  {{ partial "service-list.html" (dict "page" $services "title" .Params.serviceList.title "lead" .Params.serviceList.lead) }}
+  {{ partial "service-list.html" (dict "page" $services "title" .Params.serviceList.title "lead" .Params.serviceList.lead "class" "home-services") }}
 
 
-
-<section class="[ full-width content-grid banner--black ]">
-  <div class="[ wrapper ][ grid md:col--2 gap--2 ]">
-    <div class="[ grid gap--1 section--padding ]">
+{{ with .Params.brandStatement }}
+<section class="[ brand-statement ][ full-width content-grid ]">
+  <div class="[ brand-statement__inner ][ grid md:col--2 ]">
+    <div class="[ brand-statement__media ]">
+      {{ partial "image.html" (dict
+        "page" $
+        "image" (dict
+          "path" .image
+          "alt" (.alt | default .heading)
+        )
+        "fallback" (dict
+          "path" "/uploads/xps-feature-fallback.jpg"
+          "width" 1920
+          "height" 1080
+        )
+        "class" "brand-statement__img"
+        "ratio" "4:3"
+        "helper" "scale"
+      ) }}
+    </div>
+    <div class="[ brand-statement__content ][ grid middle ]">
       <div>
-        <h2>Why XPS?</h2>
-        {{ .Summary | safeHTML }}
-      </div>
-      <div>
-        <a class="[ btn btn--lg btn--red ]" href="/company" data-prefetch>Learn More
-          <span class="[ hidden ]">About XPS</span>
-        </a>
+        <h2>{{ .heading }}</h2>
+        {{ range .paragraphs }}
+        <p>{{ . }}</p>
+        {{ end }}
       </div>
     </div>
   </div>
 </section>
+{{ end }}
 
-<section class="[ grid section--spacing section--padding ]">
+{{ with .Params.reasons }}
+<section class="[ reasons home-section ][ grid section--spacing section--padding ]">
   <div>
-    <h2>Insights</h2>
-    <p class="[ lead ]">Discover expert insights on logistics, trade, and supply chain solutions in The Bahamas. Stay ahead with updates, tips, and analysis from the team at XPS.</p>
+    <h2>{{ .title }}</h2>
+    {{ with .lead }}<p class="[ lead ]">{{ . }}</p>{{ end }}
+  </div>
+  <ul class="[ reason-list ][ grid md:col--2 lg:col--4 gap--2 ]">
+    {{ range .items }}
+    <li class="[ reason-card ][ grid gap--1 ]">
+      {{ with .icon }}
+      <span class="[ reason-card__icon ]">{{ readFile (printf "static/tabler/%s.svg" .) | safeHTML }}</span>
+      {{ end }}
+      <h3>{{ .title }}</h3>
+      <p>{{ .text }}</p>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
+
+<section class="[ resource-center home-section ][ grid section--spacing section--padding ]">
+  <div>
+    {{ with .Params.resourceCenter }}
+    <h2>{{ .title }}</h2>
+    <p class="[ lead ]">{{ .lead }}</p>
+    <p>{{ .text }}</p>
+    {{ else }}
+    <h2>Bahamas Logistics Resource Center</h2>
+    <p class="[ lead ]">Practical guides, industry updates, and logistics knowledge designed for businesses importing into and operating throughout The Bahamas.</p>
+    {{ end }}
   </div>
   {{ $posts := (site.GetPage "section" "insights").RegularPages | first 3 }}
   {{ partial "posts.html" (dict "Pages" $posts "Site" .Site) }}
 </section>
+
+{{ with .Params.coverage }}
+<section class="[ coverage-strip ][ full-width content-grid section--padding ]">
+  <div class="[ coverage-strip__inner ][ grid gap--2 ]">
+    <h2>{{ .title }}</h2>
+    <ul class="[ coverage-strip__list ][ grid lg:col--4 gap--1 ]">
+      {{ range .items }}
+      <li>{{ . }}</li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}
 
 {{ partial "cta.html" . }}
 

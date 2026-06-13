@@ -74,4 +74,269 @@
   display: inline-block
   margin-bottom: 1em
 
+.hero--home
+  isolation: isolate
+  background-position: center
 
+  &::before
+    content: ''
+    position: absolute
+    inset: 0
+    z-index: 0
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.58) 48%, rgba(0, 0, 0, 0.18))
+
+  > .hero__inner
+    min-height: clamp(32rem, 78vh, 46rem)
+    background: none
+    position: relative
+    z-index: 1
+
+  .wrapper
+    padding-block: clamp(4rem, 10vw, 7rem)
+
+  .hero__content
+    max-width: rem(720)
+
+    h2
+      max-width: 11em
+      padding-bottom: 0.35em
+      font-weight: 900
+      line-height: 0.95
+
+    p
+      max-width: 44rem
+      color: rgba(255, 255, 255, 0.86)
+      font-weight: 700
+      line-height: 1.45
+
+  .btn
+    border-radius: rem(2)
+
+.hero__actions
+  flex-wrap: wrap
+  margin-top: 1.5rem
+
+.hero--home + .highlights--service
+  background: color('black')
+  color: color('white')
+
+  .section__header
+    max-width: rem(760)
+    margin-inline: auto
+
+    h2
+      color: color('white')
+      max-width: 12em
+      margin-inline: auto
+      font-weight: 900
+      line-height: 1.08
+
+    p
+      color: rgba(255, 255, 255, 0.72)
+
+  .highlight
+    padding: clamp(1.25rem, 3vw, 1.75rem)
+    border-top: rem(5) solid color('xps-red')
+    background: rgba(255, 255, 255, 0.06)
+    color: color('white')
+
+    h3,
+    p
+      padding-bottom: 0
+
+    h3
+      color: color('white')
+
+    p
+      color: rgba(255, 255, 255, 0.78)
+
+    svg
+      width: rem(36)
+      height: rem(36)
+      stroke: color('xps-red')
+
+.home-section
+  > div:first-child
+    max-width: rem(780)
+
+    h2
+      font-weight: 900
+      line-height: 1.08
+
+    p:last-child
+      max-width: 58rem
+
+.home-services
+  background: color('neutral-grey-lightest')
+
+  > div:first-child
+    max-width: rem(780)
+
+    h2
+      font-weight: 900
+      line-height: 1.08
+
+  .post
+    background: color('white')
+    border-bottom: rem(5) solid color('xps-red')
+    box-shadow: 0 rem(18) rem(42) rgba(32, 32, 32, 0.08)
+
+  .post__link
+    row-gap: 0
+
+    > .flow
+      padding: 1.25rem
+
+      h2
+        font-size: var(--step-1)
+        line-height: 1.1
+        text-decoration: none
+
+      p
+        line-height: 1.55
+
+  .post > span
+    display: block
+    padding: 0 1.25rem 1.25rem
+    color: color('xps-red')
+    font-weight: 800
+
+.brand-statement
+  background: color('black')
+  color: color('white')
+
+  &__inner
+    grid-column: full-width
+    gap: 0
+
+  &__media
+    min-height: rem(360)
+    border-bottom: rem(6) solid color('xps-red')
+
+  &__img
+    height: 100%
+
+    picture,
+    img
+      height: 100%
+
+  &__content
+    align-content: center
+    padding: clamp(2rem, 6vw, 5rem)
+
+    h2
+      max-width: 9em
+      color: color('white')
+      font-weight: 900
+      line-height: 1.05
+
+    p
+      max-width: 42rem
+      color: rgba(255, 255, 255, 0.78)
+      line-height: 1.65
+
+      + p
+        margin-top: 1rem
+
+.reason-list,
+.coverage-strip__list
+  list-style: none
+  margin: 0
+  padding: 0
+
+.reason-card
+  align-content: start
+  min-height: 100%
+  padding: clamp(1.25rem, 3vw, 1.75rem)
+  border: rem(1) solid color('neutral-grey-light')
+  border-radius: rem(2)
+  background: color('white')
+  box-shadow: 0 rem(18) rem(44) rgba(32, 32, 32, 0.08)
+  +transition((transform, box-shadow, border-color))
+
+  +hover
+    border-color: color('xps-red')
+    box-shadow: 0 rem(24) rem(56) rgba(32, 32, 32, 0.14)
+    transform: translateY(rem(-3))
+
+  h3,
+  p
+    padding-bottom: 0
+
+  h3
+    line-height: 1.12
+
+  p
+    color: var(--text-body)
+    line-height: 1.55
+
+.reason-card__icon
+  width: rem(44)
+  height: rem(44)
+  display: inline-grid
+  place-items: center
+  border-radius: rem(2)
+  background: color('black')
+  color: color('xps-red')
+
+  svg
+    width: rem(24)
+    height: rem(24)
+
+.coverage-strip
+  padding-block: clamp(2rem, 5vw, 3rem)
+  background: color('black')
+  color: color('white')
+
+  h2
+    color: color('white')
+    padding-bottom: 0
+    font-size: var(--step-1)
+    line-height: 1.1
+
+.coverage-strip__inner
+  align-items: center
+
+.coverage-strip__list
+  li
+    padding: 1rem
+    border-left: rem(4) solid color('xps-red')
+    background: rgba(255, 255, 255, 0.08)
+    color: color('white')
+    font-weight: 800
+    line-height: 1.25
+
+.resource-center
+  background: color('white')
+
+  .posts
+    align-items: start
+
+  .post
+    background: color('white')
+    border: rem(1) solid color('border')
+    box-shadow: 0 rem(16) rem(38) rgba(32, 32, 32, 0.07)
+
+  .post__link
+    row-gap: 0
+
+    > div
+      padding: 1rem
+
+    h2
+      text-decoration: none
+
+  .post__img
+    border-bottom: rem(4) solid color('xps-red')
+
+@media (min-width: 800px)
+  .brand-statement__content
+    min-height: rem(560)
+    padding-right: max(2rem, calc((100vw - var(--content-max-width)) / 2))
+
+  .brand-statement__media
+    border-right: rem(6) solid color('xps-red')
+    border-bottom: 0
+
+  .coverage-strip__inner
+    grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr)
