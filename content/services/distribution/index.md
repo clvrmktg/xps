@@ -12,7 +12,7 @@ subheading = """
 Whether you are moving small retail boxes, heavy pallets, or full ocean containers, we handle the local trucking and inter-island shipping for you. Our team manages the entire process—connecting your cargo directly with our customs and warehouse services so your goods reach your business or job site without the hassle.
 """
 
-cta = "Talk to a distribution specialist"
+cta = "Talk to our team"
 
 [highlights]
 title = "Why our distribution delivers"

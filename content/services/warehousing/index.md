@@ -11,7 +11,7 @@ subheading="""
 Whether you need temporary storage during customs clearance or longer-term inventory support, our warehouse provides secure space, cargo handling, and coordinated logistics to help keep your business moving.
 """
 
-cta = "Talk to a warehouse specialist"
+cta = "Talk to our team"
 
 [cover]
 image = ""

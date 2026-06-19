@@ -31,12 +31,12 @@ heading = "Commercial Trucking Services in Nassau, Bahamas"
 text = "Dependable container haulage, port pickups, and business freight distribution across New Providence."
 
 [[heroCtas]]
-label = "Request Trucking Support"
+label = "Talk to our team"
 href = "/contact-us/"
 style = "primary"
 
 [[heroCtas]]
-label = "Speak With XPS"
+label = "Talk to our team"
 href = "/contact-us/"
 style = "secondary"
 
@@ -242,7 +242,7 @@ limit = 3
 [finalCta]
 heading = "Need Trucking Support in Nassau?"
 text = "XPS provides local trucking, port pickup, airport cargo collection, warehouse staging, scheduled delivery, and commercial distribution support across Nassau and New Providence."
-label = "Request Trucking Support"
+label = "Talk to our team"
 href = "/contact-us/"
 
 +++

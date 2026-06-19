@@ -31,12 +31,12 @@ heading = "Family Island Shipping Services in The Bahamas"
 text = "Safe, professional cargo shipping from Nassau to the Family Islands. We manage your customs clearance, port transfers, warehouse staging, and mailboat coordination under one roof."
 
 [[heroCtas]]
-label = "Request Shipping Support"
+label = "Talk to our team"
 href = "/contact-us/"
 style = "primary"
 
 [[heroCtas]]
-label = "Speak With XPS"
+label = "Talk to our team"
 href = "/contact-us/"
 style = "secondary"
 
@@ -242,7 +242,7 @@ limit = 3
 [finalCta]
 heading = "Need Family Island Shipping Support?"
 text = "XPS provides customs clearance, Nassau pickup, warehouse staging, domestic carrier handoff, and commercial shipping coordination for cargo moving throughout The Bahamas."
-label = "Request Shipping Support"
+label = "Talk to our team"
 href = "/contact-us/"
 
 +++

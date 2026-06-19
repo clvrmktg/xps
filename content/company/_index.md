@@ -82,4 +82,3 @@ role = "Operations/Logistics Manager"
 image = "joseph-pinder-xps.jpg"
 
 +++
-

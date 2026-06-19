@@ -12,7 +12,7 @@ subheading = """
 Whether you are importing commercial inventory or a single personal shipment, we manage the entire customs process for you. We take care of the tariff classification, organize your documentation, and file directly through Click2Clear so your goods clear Arawak Cay or LPIA without unexpected delays.
 """
 
-cta = "Talk to a customs broker"
+cta = "Talk to our team"
 
 # Social Media Cover - 1200 x 1200
 # Crop the hero 1:1 ratio

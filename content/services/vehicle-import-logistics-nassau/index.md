@@ -12,7 +12,7 @@ subheading = """
 Streamlined port clearance, heavy haulage transport, and customs coordination for commercial fleets, construction machinery, and industrial transport equipment in The Bahamas.
 """
 
-cta = "Talk to a vehicle logistics specialist"
+cta = "Talk to our team"
 
 [highlights]
 title = "Why our vehicle import logistics works"

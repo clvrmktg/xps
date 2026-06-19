@@ -1,0 +1,98 @@
+{{- define "variables" -}}
+{{- .Store.Set "hasBouncer" true -}}
+{{- end -}}
+{{ define "main" }}
+<article class="[ job-detail ][ grid section--spacing section--padding ]">
+  <header class="[ job-detail__header ][ grid gap--1 ]">
+    {{ partial "breadcrumbs.html" . }}
+    <p class="[ job-detail__department ]">{{ .Params.department | default "Careers" }}</p>
+    <h1>{{ .Title }}</h1>
+    <p class="[ lead ]">{{ .Description }}</p>
+    <dl class="[ job-detail__meta ]">
+      {{ with .Params.location }}
+        <div>
+          <dt>Location</dt>
+          <dd>{{ . }}</dd>
+        </div>
+      {{ end }}
+      {{ with .Params.employment_type }}
+        <div>
+          <dt>Employment type</dt>
+          <dd>{{ . }}</dd>
+        </div>
+      {{ end }}
+      {{ with .Params.workplace_type }}
+        <div>
+          <dt>Workplace</dt>
+          <dd>{{ . }}</dd>
+        </div>
+      {{ end }}
+      {{ with .Params.salary.display }}
+        <div>
+          <dt>Salary</dt>
+          <dd>{{ . }}</dd>
+        </div>
+      {{ end }}
+    </dl>
+  </header>
+
+  <div class="[ job-detail__content content ]">
+    {{ .Content }}
+  </div>
+
+  <section class="[ job-apply ][ grid gap--2 ]" id="apply">
+    <div>
+      <h2>Apply for this role</h2>
+      <p class="[ lead ]">Send your details and resume to our team. Include any relevant logistics, warehousing, operations, or customer service experience.</p>
+    </div>
+    <form class="[ job-apply__form ][ grid gap--1 ]" name="job-application" action="/thank-you/" method="POST" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-validate>
+      <div class="hidden">
+        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+      </div>
+      <input type="hidden" name="form-name" value="job-application">
+      <input type="hidden" name="job_title" value="{{ .Title }}">
+      <input type="hidden" name="job_url" value="{{ .Permalink }}">
+      <input type="hidden" name="subject" value="Job application: {{ .Title }}">
+
+      <div class="[ grid md:col--2 col-gap--2 row-gap--1 ]">
+        <div class="[ form__field ][ grid ]">
+          <label class="[ form__label ]" for="first_name">First Name <abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr></label>
+          <input class="[ form__input ][ py--0.25 ]" name="first_name" id="first_name" type="text" required minlength="2" maxlength="50">
+        </div>
+        <div class="[ form__field ][ grid ]">
+          <label class="[ form__label ]" for="last_name">Last Name <abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr></label>
+          <input class="[ form__input ][ py--0.25 ]" name="last_name" id="last_name" type="text" required minlength="2" maxlength="50">
+        </div>
+      </div>
+
+      <div class="[ grid md:col--2 col-gap--2 row-gap--1 ]">
+        <div class="[ form__field ][ grid ]">
+          <label class="[ form__label ]" for="email">Email <abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr></label>
+          <input class="[ form__input ][ py--0.25 ]" name="email" id="email" type="email" required>
+        </div>
+        <div class="[ form__field ][ grid ]">
+          <label class="[ form__label ]" for="phone">Phone Number</label>
+          <input class="[ form__input ][ py--0.25 ]" name="phone" id="phone" type="tel">
+        </div>
+      </div>
+
+      <div class="[ form__field ][ grid ]">
+        <label class="[ form__label ]" for="resume">Resume <abbr class="[ required ]" title="This field is required" aria-label="This field is required">*</abbr></label>
+        <input class="[ form__input job-apply__file ][ py--0.25 ]" name="resume" id="resume" type="file" accept=".pdf,.doc,.docx" required>
+        <small>Accepted file types: PDF, DOC, DOCX.</small>
+      </div>
+
+      <div class="[ form__field ][ grid ]">
+        <label class="[ form__label ]" for="message">Message</label>
+        <textarea class="[ form__message ][ p--0.25 ]" name="message" id="message" placeholder="Tell us why you're interested in this role..." maxlength="3000"></textarea>
+      </div>
+
+      <small>By submitting this form, you consent to the collection and use of your information for recruitment purposes. For more details, please see our <a href="/privacy-policy/">Privacy Policy</a>.</small>
+      <div data-netlify-recaptcha="true"></div>
+      <div class="[ flex end ]">
+        <button class="[ btn btn--lg btn--red ]" type="submit">Submit application</button>
+      </div>
+    </form>
+  </section>
+</article>
+{{ end }}

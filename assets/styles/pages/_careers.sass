@@ -1,0 +1,111 @@
+@use '../abstracts' as *
+
+.careers-hero
+  background: color('black')
+  color: color('white')
+
+  h1
+    color: color('white')
+    max-width: 10em
+    font-weight: 900
+    line-height: 1.05
+
+  p
+    color: rgba(255, 255, 255, 0.78)
+
+.careers-list__items
+  list-style: none
+  margin: 0
+  padding: 0
+
+.job-card
+  border: rem(1) solid color('border')
+  border-left: rem(5) solid color('xps-red')
+  background: color('white')
+  box-shadow: 0 rem(16) rem(36) rgba(32, 32, 32, 0.07)
+
+.job-card__link
+  color: inherit
+  padding: clamp(1.25rem, 3vw, 1.75rem)
+
+  h3
+    padding-bottom: 0.25rem
+    line-height: 1.1
+
+  p
+    max-width: 62rem
+    color: var(--text-body)
+
+.job-card__meta,
+.job-detail__meta
+  display: grid
+  gap: 0.75rem
+  margin: 0
+
+  div
+    display: grid
+    gap: 0.1rem
+
+  dt
+    color: var(--text-muted)
+    font-size: var(--step--1)
+    font-weight: 700
+    text-transform: uppercase
+
+  dd
+    margin: 0
+    color: var(--text-heading)
+    font-weight: 800
+
+.careers-empty
+  max-width: rem(720)
+  padding: clamp(1.5rem, 4vw, 2.5rem)
+  border: rem(1) solid color('border')
+  border-left: rem(5) solid color('xps-red')
+  background: color('neutral-grey-lightest')
+
+.job-detail
+  max-width: rem(880)
+
+.job-detail__department
+  color: color('xps-red')
+  font-weight: 800
+  text-transform: uppercase
+
+.job-detail__header
+  h1
+    max-width: 11em
+    font-weight: 900
+    line-height: 1.05
+
+.job-detail__meta
+  padding: 1.25rem
+  border: rem(1) solid color('border')
+  border-left: rem(5) solid color('xps-red')
+  background: color('neutral-grey-lightest')
+
+.job-detail__content
+  max-width: rem(760)
+
+.job-apply
+  padding: clamp(1.5rem, 4vw, 2.5rem)
+  border: rem(1) solid color('border')
+  border-top: rem(5) solid color('xps-red')
+  background: color('neutral-grey-lightest')
+
+  h2
+    padding-bottom: 0.25rem
+    font-weight: 900
+    line-height: 1.08
+
+.job-apply__form
+  padding: clamp(1rem, 3vw, 1.5rem)
+  background: color('white')
+
+.job-apply__file
+  cursor: pointer
+
+@media (min-width: 800px)
+  .job-card__meta,
+  .job-detail__meta
+    grid-template-columns: repeat(4, minmax(0, 1fr))

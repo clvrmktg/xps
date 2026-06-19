@@ -1,7 +1,7 @@
 +++
 date = '2026-05-21T00:00:00-04:00'
 draft = false
-title = "Licensed Customs Broker Services in The Bahamas"
+title = "Customs Broker Bahamas"
 description = "Looking for a fast, reliable customs broker in the Bahamas? XPS manages Click2Clear entries and port clearance across Nassau & the Family Islands. Talk to a broker."
 
 type = "landing"
@@ -45,28 +45,24 @@ infrastructureLead = "Commercial customs clearance in The Bahamas involves multi
 # =============================================================================
 
 [lead]
-heading = "Licensed Customs Broker Services in The Bahamas"
-text = "Reliable customs brokerage, Click2Clear entry preparation, import permit coordination, and cargo clearance support for Bahamian businesses and international vendors shipping to Nassau and the Family Islands."
+heading = "Customs Broker Bahamas"
+text = "Customs broker services in The Bahamas for commercial imports, customs clearance, Click2Clear entry preparation, import permit coordination, and cargo release support throughout Nassau and the Family Islands."
 
 [[heroCtas]]
-label = "Request Customs Support"
+label = "Talk to our team"
 href = "/contact-us/"
 style = "primary"
-
-[[heroCtas]]
-label = "Speak With XPS"
-href = "/contact-us/"
-style = "secondary"
 
 # =============================================================================
 # DEFINITION
 # =============================================================================
 
 [definition]
-heading = "What Does a Customs Broker Do?"
+heading = "Why Businesses Use Customs Brokers"
 paragraphs = [ 
-  "A licensed customs broker manages the legal and administrative complexities of moving goods across international borders. From initial document auditing and strict tariff classification to coordinating cargo release protocols, a professional broker ensures complete compliance with the Department of Customs.", 
-  "Our integrated brokerage workflows unify data collection, pre-arrival preparation, and local agency coordination into a single transparent pipeline, protecting businesses from unnecessary supply chain delays." 
+  "Importing goods into The Bahamas can be challenging when documentation is incomplete, permits are missing, or goods are classified incorrectly. These issues often lead to delays, unexpected costs, and disruptions to your supply chain.", 
+  "XPS helps businesses navigate the customs clearance process by preparing entries, coordinating permits, reviewing documentation, and managing communication with Customs and other government agencies.",
+  "Whether you're importing commercial inventory, construction materials, vehicles, or specialized equipment, we help reduce risk, avoid unnecessary delays, and keep shipments moving from arrival to release." 
 ]
 
 # =============================================================================
@@ -74,8 +70,8 @@ paragraphs = [
 # =============================================================================
 
 [serviceList]
-heading = "Services Offered by XPS"
-text = "From the moment your cargo leaves the supplier to its final delivery in The Bahamas, our team handles the logistics. We manage the freight, take care of the customs paperwork, and ensure your goods clear the port smoothly."
+heading = "Logistics Services That Support Customs Clearance"
+text = "Customs clearance is only one part of the import process. XPS also provides freight forwarding, warehousing, and distribution services to help move cargo from origin to final delivery throughout The Bahamas."
 
 include = [
   "customs-brokerage",
@@ -86,20 +82,19 @@ include = [
 
 [[serviceDescriptions]]
 slug = "freight-forwarding"
-text = "Reliable air and ocean shipping solutions. We coordinate directly with your suppliers to ship and track your cargo from start to finish."
+text = "Coordinate air and ocean shipments with suppliers and carriers so cargo arrives with the documents needed for customs clearance."
 
 [[serviceDescriptions]]
 slug = "customs-brokerage"
-text = "Complete clearance support. We review your commercial invoices, apply the correct duty rates, and file your entries directly into Click2Clear."
+text = "Prepare Click2Clear entries, review invoices, classify goods, coordinate permits, and facilitate cargo release."
 
 [[serviceDescriptions]]
 slug = "warehousing"
-text = "Secure cargo holding. Once your goods clear Nassau Container Port or LPIA, we provide safe storage and organized staging for your inventory."
+text = "Store and stage cleared cargo securely while inventory awaits delivery, redistribution, or project deployment."
 
 [[serviceDescriptions]]
 slug = "distribution"
-text = "Local final-mile transport. We deliver straight to your business in Nassau or handle mailboat transfers at Potter's Cay for the Family Islands."
-
+text = "Coordinate final-mile delivery in Nassau and onward Family Island movement after goods are released from Customs."
 # =============================================================================
 # PAIN POINTS
 # =============================================================================
@@ -263,27 +258,28 @@ alt = "Distribution vehicle outside warehouse"
 
 [[faq]]
 question = "What does a customs broker do?"
-answer = "A licensed customs broker helps businesses coordinate customs clearance, tariff classification, import documentation, permit processing, and cargo release procedures for goods entering The Bahamas."
-
-[[faq]]
-question = "Does XPS provide customs clearance support in The Bahamas?"
-answer = "Yes. XPS coordinates commercial customs brokerage support, including Click2Clear (C2C/BESW) entry preparation, documentation review, tariff classification, and customs release coordination."
+answer = "A licensed customs broker helps businesses navigate the customs clearance process by preparing Click2Clear entries, reviewing import documentation, coordinating permits, managing tariff classifications, and facilitating cargo release through Bahamas Customs."
 
 [[faq]]
 question = "Can XPS assist with import permits?"
-answer = "Yes. XPS assists businesses with permit coordination and pre-arrival import requirements, including BAHFSA and other OGA documentation where applicable."
+answer = "Yes. XPS assists businesses with permit coordination and import compliance requirements, including BAHFSA approvals and other government agency (OGA) documentation required before customs clearance."
 
 [[faq]]
-question = "Does XPS handle commercial cargo?"
-answer = "Yes. XPS supports retailers, wholesalers, contractors, hospitality operators, automotive businesses, food and beverage companies, and growing commercial importers throughout The Bahamas."
+question = "What information is needed to prepare a customs entry?"
+answer = "Most customs entries require a commercial invoice, bill of lading or airway bill, packing list, permits where applicable, and details necessary for tariff classification and valuation."
+
+[[faq]]
+question = "What types of cargo does XPS support?"
+answer = "XPS supports a wide range of commercial imports, including retail inventory, construction materials, vehicles, food and beverage products, hospitality supplies, manufacturing equipment, and project cargo."
 
 [[faq]]
 question = "Can XPS coordinate Family Island cargo movement?"
-answer = "Yes. XPS coordinates local Nassau delivery, Potter’s Cay cargo transfers, mailboat logistics, and onward cargo movement to destinations including Abaco, Exuma, Eleuthera, Freeport, and other Family Island routes."
+answer = "Yes. XPS coordinates cargo movement beyond Nassau through Potter’s Cay, mailboat operators, and regional logistics partners, supporting destinations including Abaco, Exuma, Eleuthera, Freeport, and other Family Islands."
 
 [[faq]]
-question = "Does XPS support air and ocean freight imports?"
-answer = "Yes. XPS coordinates customs support for commercial air cargo via LPIA, LCL shipments through Gladstone Freight Terminal (GFT), FCL cargo through Nassau Container Port, and ocean freight imports arriving into Nassau."
+question = "How long does customs clearance take in The Bahamas?"
+answer = "Clearance times vary depending on cargo type, documentation, inspections, and permit requirements. Shipments with complete documentation can often be processed more quickly, while customs examinations, permit approvals, and additional agency requirements may extend the timeline."
+
 
 # =============================================================================
 # INSIGHTS
@@ -301,7 +297,7 @@ limit = 3
 [finalCta]
 heading = "Need a Customs Broker in The Bahamas?"
 text = "XPS provides customs brokerage, Click2Clear coordination, import permit support, and commercial cargo clearance services throughout The Bahamas."
-label = "Request a Consultation"
+label = "Talk to our team"
 href = "/contact-us/"
 
 +++

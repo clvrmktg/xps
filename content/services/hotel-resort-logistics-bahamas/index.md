@@ -12,7 +12,7 @@ subheading = """
 End-to-end cargo consolidation, advanced customs clearance, and timed on-site delivery management for hospitality properties, luxury resorts, and boutique estates across Nassau and the Family Islands.
 """
 
-cta = "Talk to a hospitality logistics specialist"
+cta = "Talk to our team"
 
 [highlights]
 title = "Why our hotel & resort logistics works"

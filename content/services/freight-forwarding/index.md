@@ -14,7 +14,7 @@ Seamless air and ocean freight forwarding connecting South Florida consolidation
 We ensure full Bahamian customs compliance and secure handling from origin to final destination.
 """
 
-cta = "Talk to a freight specialist"
+cta = "Talk to our team"
 
 
 [highlights]

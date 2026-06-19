@@ -35,12 +35,12 @@ heading = "Third-Party Logistics (3PL) Services from Florida to The Bahamas"
 text = "Reliable freight coordination, customs brokerage, warehousing, and distribution services for Bahamian businesses and international vendors shipping to Nassau and the Family Islands."
 
 [[heroCtas]]
-label = "Request a Logistics Quote"
+label = "Talk to our team"
 href = "/contact-us/"
 style = "primary"
 
 [[heroCtas]]
-label = "Speak With XPS"
+label = "Talk to our team"
 href = "/contact-us/"
 style = "secondary"
 
@@ -250,7 +250,7 @@ limit = 3
 [finalCta]
 heading = "Need Reliable 3PL Support in The Bahamas?"
 text = "XPS provides customs brokerage, freight coordination, warehousing support, and third-party logistics services for businesses across The Bahamas."
-label = "Request a Consultation"
+label = "Talk to our team"
 href = "/contact-us/"
 
 

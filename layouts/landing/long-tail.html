@@ -9,7 +9,6 @@
     <div class="[ hero__inner ][ full-width content-grid ]">
       <div class="[ wrapper ][ flex middle section--padding-bottom ]">
         <div class="[ hero__content ][ ch--54 ]">
-          <p class="[ hero__eyebrow ][ font--1- upper ]">{{ .Params.eyebrow | default (printf "XPS • %s" .Title) }}</p>
           <h1>{{ $lead.heading | default .Title }}</h1>
           {{ with $lead.text }}
             <p class="[ lead ]">{{ . }}</p>
@@ -17,7 +16,7 @@
           {{ with .Params.heroCtas }}
             <div class="[ flex flex--wrap gap--1 ]">
               {{ range . }}
-                <a class="[ btn btn--lg {{ if eq .style "secondary" }}btn--red--ghost{{ else }}btn--red{{ end }} ]" href="{{ .href }}" data-prefetch>{{ .label }}</a>
+                <a class="[ btn btn--lg {{ if eq .style "secondary" }}btn--red--ghost{{ else }}btn--red{{ end }} ]" href="{{ .href }}" data-prefetch>{{ if eq .style "secondary" }}{{ .label }}{{ else }}Talk to our team{{ end }}</a>
               {{ end }}
             </div>
           {{ end }}
@@ -26,45 +25,6 @@
     </div>
   </section>
 
-  {{ with .Params.trustBar }}
-    <section class="[ full-width content-grid bg--light ]">
-      <div class="[ wrapper ][ trust-bar ]">
-        {{ range . }}
-          <span>{{ . }}</span>
-        {{ end }}
-      </div>
-    </section>
-  {{ end }}
-
-  {{ with .Params.definition }}
-    <section class="[ section--padding section--spacing ]">
-      <div class="[ wrapper ][ grid md:col--2 gap--3 ]">
-        <div>
-          <h2>{{ .heading }}</h2>
-        </div>
-        <div class="[ content ]">
-          {{ range .paragraphs }}
-            <p>{{ . }}</p>
-          {{ end }}
-        </div>
-      </div>
-    </section>
-  {{ end }}
-
-  {{- with .Params.serviceList -}}
-    {{- $descriptions := dict -}}
-    {{- range $.Params.serviceDescriptions -}}
-      {{- $descriptions = merge $descriptions (dict .slug .text) -}}
-    {{- end -}}
-    {{- $services := site.GetPage "section" "services" -}}
-    {{ partial "service-list.html" (dict
-      "page" $services
-      "title" .heading
-      "lead" .text
-      "include" (.include | default (slice "freight-forwarding" "customs-brokerage" "warehousing" "distribution"))
-      "descriptions" $descriptions
-    ) }}
-  {{- end -}}
 
   {{ with .Params.painPoints }}
     <section class="[ outcome-section ][ full-width content-grid ]">
@@ -100,33 +60,29 @@
     </section>
   {{ end }}
 
-  {{ with .Params.advantages }}
-    <section class="[ advantage-section ][ full-width content-grid banner--black ]">
-      <div class="[ wrapper ][ advantage-section__inner ]">
-        <div class="[ advantage-section__header ch--60 ]">
-          <h2>{{ $.Params.advantagesHeading | default "Why Businesses Choose XPS" }}</h2>
-          {{ with $.Params.advantagesLead }}
+  {{ with .Params.process }}
+    <section class="[ process-section ][ full-width content-grid ]">
+      <div class="[ wrapper ][ process-section__inner ]">
+        <div class="[ process-section__header ch--54 ]">
+          <h2>{{ $.Params.processHeading | default "How XPS Support Works" }}</h2>
+          {{ with $.Params.processLead }}
             <p class="[ lead ]">{{ . }}</p>
           {{ end }}
         </div>
-        <div class="[ advantage-grid ]">
-          {{ range . }}
-            <article class="[ advantage-card ]">
-              <div class="[ advantage-card__icon ]" aria-hidden="true">
-                {{ with .icon }}
-                  {{- $icon := printf "static/tabler/%s.svg" . -}}
-                  {{- if fileExists $icon -}}
-                    {{ readFile $icon | safeHTML }}
-                  {{- end -}}
-                {{ end }}
-              </div>
-              <div class="[ advantage-card__content ]">
-                <h3 class="[ font--4 ]">{{ .title }}</h3>
-                <p>{{ .text }}</p>
-              </div>
-            </article>
+        <ol class="[ process-timeline ]">
+          {{ range $index, $step := . }}
+            <li class="[ process-step ]">
+              <article class="[ process-step__card ]">
+                <span class="[ process-step__badge ]">{{ printf "%02d" (add $index 1) }}</span>
+                <div class="[ process-step__content ]">
+                  <h3 class="[ font--4 ]">{{ .title }}</h3>
+                  <p>{{ .text }}</p>
+                </div>
+              </article>
+              <span class="[ process-step__node ]" aria-hidden="true"></span>
+            </li>
           {{ end }}
-        </div>
+        </ol>
       </div>
     </section>
   {{ end }}
@@ -162,34 +118,36 @@
       </div>
     </section>
   {{ end }}
-
-  {{ with .Params.process }}
-    <section class="[ process-section ][ full-width content-grid ]">
-      <div class="[ wrapper ][ process-section__inner ]">
-        <div class="[ process-section__header ch--54 ]">
-          <h2>{{ $.Params.processHeading | default "How XPS Support Works" }}</h2>
-          {{ with $.Params.processLead }}
+  {{ with .Params.advantages }}
+    <section class="[ advantage-section ][ full-width content-grid banner--black ]">
+      <div class="[ wrapper ][ advantage-section__inner ]">
+        <div class="[ advantage-section__header ch--60 ]">
+          <h2>{{ $.Params.advantagesHeading | default "Why Businesses Choose XPS" }}</h2>
+          {{ with $.Params.advantagesLead }}
             <p class="[ lead ]">{{ . }}</p>
           {{ end }}
         </div>
-        <ol class="[ process-timeline ]">
-          {{ range $index, $step := . }}
-            <li class="[ process-step ]">
-              <article class="[ process-step__card ]">
-                <span class="[ process-step__badge ]">{{ printf "%02d" (add $index 1) }}</span>
-                <div class="[ process-step__content ]">
-                  <h3 class="[ font--4 ]">{{ .title }}</h3>
-                  <p>{{ .text }}</p>
-                </div>
-              </article>
-              <span class="[ process-step__node ]" aria-hidden="true"></span>
-            </li>
+        <div class="[ advantage-grid ]">
+          {{ range . }}
+            <article class="[ advantage-card ]">
+              <div class="[ advantage-card__icon ]" aria-hidden="true">
+                {{ with .icon }}
+                  {{- $icon := printf "static/tabler/%s.svg" . -}}
+                  {{- if fileExists $icon -}}
+                    {{ readFile $icon | safeHTML }}
+                  {{- end -}}
+                {{ end }}
+              </div>
+              <div class="[ advantage-card__content ]">
+                <h3 class="[ font--4 ]">{{ .title }}</h3>
+                <p>{{ .text }}</p>
+              </div>
+            </article>
           {{ end }}
-        </ol>
+        </div>
       </div>
     </section>
   {{ end }}
-
   {{ with .Params.industries }}
     <section class="[ industries-section ][ full-width content-grid ]">
       <div class="[ wrapper ][ industries-section__inner ]">
@@ -250,7 +208,20 @@
       </div>
     </section>
   {{ end }}
-
+  {{- with .Params.serviceList -}}
+    {{- $descriptions := dict -}}
+    {{- range $.Params.serviceDescriptions -}}
+      {{- $descriptions = merge $descriptions (dict .slug .text) -}}
+    {{- end -}}
+    {{- $services := site.GetPage "section" "services" -}}
+    {{ partial "service-list.html" (dict
+      "page" $services
+      "title" .heading
+      "lead" .text
+      "include" (.include | default (slice "freight-forwarding" "customs-brokerage" "warehousing" "distribution"))
+      "descriptions" $descriptions
+    ) }}
+  {{- end -}}
   {{ with .Params.insights }}
     {{- $category := .category | default "Trade & Industry" -}}
     {{- $limit := .limit | default 3 -}}
@@ -260,7 +231,7 @@
     {{- if gt (len $posts) 0 -}}
       <section class="[ full-width content-grid section--padding section--spacing ]">
           <div class="[ ch--54 ]">
-            <h2>Insights</h2>
+            <h2>Resource Center</h2>
             <p class="[ lead ]">{{ .lead }}</p>
             {{ with .text }}<p>{{ . }}</p>{{ end }}
           </div>
@@ -277,7 +248,7 @@
           <p class="[ ch--54 ]">{{ .text }}</p>
         </div>
         <div>
-          <a class="[ btn btn--lg btn--red ]" href="{{ .href }}" data-prefetch>{{ .label }}</a>
+          <a class="[ btn btn--lg btn--red ]" href="{{ .href }}" data-prefetch>Talk to our team</a>
         </div>
       </div>
     </section>

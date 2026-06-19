@@ -1,0 +1,58 @@
+{{ define "main" }}
+<section class="[ careers-hero ][ full-width content-grid section--padding ]">
+  <div class="[ wrapper ][ grid gap--1 ]">
+    <h1>{{ .Params.heading | default .Title }}</h1>
+    {{ with .Params.subheading }}
+      <p class="[ lead ]">{{ . }}</p>
+    {{ end }}
+  </div>
+</section>
+
+<section class="[ careers-list ][ grid section--spacing section--padding ]">
+  {{ $jobs := .RegularPages.ByDate.Reverse }}
+  {{ if gt (len $jobs) 0 }}
+    <div>
+      <h2>Open roles</h2>
+      <p class="[ lead ]">Review current opportunities and salary ranges before applying.</p>
+    </div>
+    <ul class="[ careers-list__items ][ grid gap--1 ]">
+      {{ range $jobs }}
+        <li class="[ job-card ]">
+          <a class="[ job-card__link ][ grid gap--1 ]" href="{{ .RelPermalink }}" data-prefetch>
+            <div>
+              <h3>{{ .Title }}</h3>
+              <p>{{ .Description }}</p>
+            </div>
+            <dl class="[ job-card__meta ]">
+              {{ with .Params.location }}
+                <div>
+                  <dt>Location</dt>
+                  <dd>{{ . }}</dd>
+                </div>
+              {{ end }}
+              {{ with .Params.employment_type }}
+                <div>
+                  <dt>Type</dt>
+                  <dd>{{ . }}</dd>
+                </div>
+              {{ end }}
+              {{ with .Params.salary.display }}
+                <div>
+                  <dt>Salary</dt>
+                  <dd>{{ . }}</dd>
+                </div>
+              {{ end }}
+            </dl>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ else }}
+    <div class="[ careers-empty ][ grid gap--1 ]">
+      <h2>No jobs at this time</h2>
+      <p class="[ lead ]">There are no open roles listed right now. Please check back for future opportunities with XPS.</p>
+    </div>
+  {{ end }}
+</section>
+
+{{ end }}

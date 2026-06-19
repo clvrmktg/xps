@@ -50,12 +50,12 @@ heading = "Commercial Shipping Services from Florida to The Bahamas"
 text = "Reliable freight coordination, cargo consolidation, customs clearance, and final delivery for commercial importers and international vendors."
 
 [[heroCtas]]
-label = "Request Shipping Support"
+label = "Talk to our team"
 href = "/contact-us/"
 style = "primary"
 
 [[heroCtas]]
-label = "Speak With XPS"
+label = "Talk to our team"
 href = "/contact-us/"
 style = "secondary"
 
@@ -302,7 +302,7 @@ limit = 3
 [finalCta]
 heading = "Need Commercial Shipping Support to The Bahamas?"
 text = "XPS provides freight coordination, customs brokerage, warehousing support, and commercial cargo distribution services throughout The Bahamas."
-label = "Request a Consultation"
+label = "Talk to our team"
 href = "/contact-us/"
 
 +++
