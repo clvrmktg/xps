@@ -1,0 +1,2 @@
+{{- $effectiveDate := .Lastmod | default .Date -}}
+<p><strong>Effective Date:</strong> <time datetime="{{ $effectiveDate.Format "2006-01-02" }}">{{ $effectiveDate.Format "January 2, 2006" }}</time></p>

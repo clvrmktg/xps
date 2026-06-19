@@ -1,10 +1,14 @@
 {{ define "main" }}
-<article class="[ x--700 grid layout--spacing section--padding-top ]">
+{{- $policyURLs := slice "/privacy-policy/" "/terms-use/" "/cookie-policy/" "/accessibility-statement/" -}}
+<article class="[ x--700 grid layout--spacing section--padding ]">
   <header>
     <h1>{{ .Title }}</h1>
     {{ partial "breadcrumbs.html" . }}
   </header>
   <div class="[ content ]">
+    {{ if in $policyURLs .RelPermalink }}
+      {{ partial "policy-effective-date.html" . }}
+    {{ end }}
     {{ .Content }}
   </div>
 </article>

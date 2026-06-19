@@ -8,7 +8,8 @@ The Hidden Costs of Poor Warehousing
 Container Detention and Returns: Avoiding Per Diem Charges does exist in the production build.
 -->
 <!-- CTA - START -->
-{{ if and (ne .context.Section "contact-us") (ne .context.Section "careers") }}
+{{- $ctaExcludedURLs := slice "/sitemap/" "/privacy-policy/" "/terms-use/" "/cookie-policy/" "/accessibility-statement/" -}}
+{{ if and (ne .context.Section "contact-us") (ne .context.Section "careers") (not (in $ctaExcludedURLs .context.RelPermalink)) }}
 <section class="[ cta ][ content-grid section--padding ]">
   <b class="[ line ]"></b>
   <div class="[ mailer ][ grid md:col--2 gap--3 ]">

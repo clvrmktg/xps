@@ -25,6 +25,8 @@ $max: $max-font-size * 5
 +padding(2, 'bottom')
 +padding(5, 'bottom')
 
++padding(2, 'left', 'md')
+
 +padding(0.25, 'y')
 +padding(0.5, 'y')
 +padding(1, 'y')
@@ -34,6 +36,13 @@ $max: $max-font-size * 5
 +padding(0.25)
 +padding(0.5)
 +padding(1)
+
+
+.py--3\:5
+  +clamp('padding-top', $min, $max)
+  +clamp('padding-bottom', $min, $max)
+
+
 
 
 +col(2, 'md')

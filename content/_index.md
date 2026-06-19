@@ -12,7 +12,7 @@ description = "XPS provides customs brokerage, freight forwarding, warehousing, 
 heading = "Logistics Made Simple For Businesses Shipping To The Bahamas"
 
 subheading = """
-Customs brokerage, freight forwarding, warehousing, and distribution coordinated through one local partner. From Florida suppliers to Family Island deliveries, XPS helps businesses navigate the complexities of Bahamian logistics.
+Customs brokerage, freight forwarding, warehousing, and distribution coordinated through one local partner. From Florida suppliers straight to your final island destination, we keep your commercial supply chain moving on time.
 """
 
 [highlights]
@@ -46,9 +46,8 @@ heading = "Local Knowledge. Practical Solutions."
 image = "nassau-container-port-bahamas.jpg"
 alt = "Nassau Container Port in The Bahamas"
 paragraphs = [
-  "Successful logistics in The Bahamas requires more than transportation. Businesses must navigate customs requirements, government agencies, warehousing constraints, and distribution across multiple islands.",
-  "XPS combines practical logistics experience with local market knowledge to help businesses move goods efficiently from arrival to final delivery.",
-  "Whether you're importing commercial inventory, managing project cargo, or distributing products throughout the islands, our team provides the guidance and coordination needed to keep your supply chain moving."
+  "Moving cargo through the Bahamian supply chain requires tight control over both international freight routes and local ground handling. XPS orchestrates your entire shipment—routing your freight across ocean and air lanes, while directly managing the crucial customs clearance, warehousing, and ground trucking operations once it lands in Nassau.",
+  "Whether you are importing commercial retail stock, handling heavy construction project cargo, or scheduling recurring distribution to the Family Islands, our team handles the ground execution and clear communication needed to protect your inventory and keep your shipments moving."
 ]
 
 [reasons]
@@ -57,28 +56,28 @@ lead = "The right logistics partner should simplify coordination, reduce uncerta
 
 [[reasons.items]]
 title = "One Point of Contact"
-text = "Coordinate freight, customs, warehousing, and distribution through a single local partner."
+text = "Stop chasing multiple brokers, truckers, and mailboats. We manage your entire shipment from international receipt to final delivery."
 icon = "arrows-transfer-up-down"
 
 [[reasons.items]]
 title = "Built for The Bahamas"
-text = "Local understanding of regulations, ports, airports, and Family Island logistics."
+text = "Deep local knowledge of Nassau container ports, custom entry requirements, and Family Island vessel schedules to prevent unexpected transit delays."
 icon = "map-pin"
 
 [[reasons.items]]
 title = "Practical Logistics Knowledge"
-text = "Insights and guidance that help businesses avoid delays and costly mistakes."
+text = "Decades of hands-on experience handling everything from retail inventory replenishment to heavy industrial construction materials and equipment."
 icon = "clipboard-check"
 
 [[reasons.items]]
 title = "Responsive Communication"
-text = "Real people. Real updates. Real accountability."
+text = "Real people offering real updates. We confirm document receipts immediately so you never have to guess if your freight is moving."
 icon = "heart-handshake"
 
 [resourceCenter]
 title = "Bahamas Logistics Resource Center"
 lead = "Practical guides, industry updates, and logistics knowledge designed for businesses importing into and operating throughout The Bahamas."
-text = "Learn about customs procedures, permits, freight forwarding, warehousing, distribution, and supply chain planning from a local perspective."
+text = "Learn about customs procedures, permits, freight forwarding, warehousing, and distribution from a local perspective, or [browse our complete directory of logistics services and resources](/sitemap/)."
 
 [coverage]
 title = "Supporting Businesses Across The Bahamas"

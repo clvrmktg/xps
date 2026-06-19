@@ -33,31 +33,29 @@
 
 {{ with .Params.brandStatement }}
 <section class="[ brand-statement ][ full-width content-grid ]">
-  <div class="[ brand-statement__inner ][ grid md:col--2 ]">
-    <div class="[ brand-statement__media ]">
-      {{ partial "image.html" (dict
-        "page" $
-        "image" (dict
-          "path" .image
-          "alt" (.alt | default .heading)
-        )
-        "fallback" (dict
-          "path" "/uploads/xps-feature-fallback.jpg"
-          "width" 1920
-          "height" 1080
-        )
-        "class" "brand-statement__img"
-        "ratio" "4:3"
-        "helper" "scale"
-      ) }}
-    </div>
-    <div class="[ brand-statement__content ][ grid middle ]">
-      <div>
-        <h2>{{ .heading }}</h2>
-        {{ range .paragraphs }}
-        <p>{{ . }}</p>
-        {{ end }}
-      </div>
+  <div class="[ brand-statement__media ][ bleed-left ]">
+    {{ partial "image.html" (dict
+      "page" $
+      "image" (dict
+        "path" .image
+        "alt" (.alt | default .heading)
+      )
+      "fallback" (dict
+        "path" "/uploads/xps-feature-fallback.jpg"
+        "width" 1920
+        "height" 1080
+      )
+      "class" "brand-statement__img"
+      "ratio" "4:3"
+      "helper" "scale"
+    ) }}
+  </div>
+  <div class="[ brand-statement__content ][ content-right grid middle py--3:5 md:pl--2 ]">
+    <div>
+      <h2>{{ .heading }}</h2>
+      {{ range .paragraphs }}
+      <p>{{ . }}</p>
+      {{ end }}
     </div>
   </div>
 </section>
@@ -69,7 +67,7 @@
     <h2>{{ .title }}</h2>
     {{ with .lead }}<p class="[ lead ]">{{ . }}</p>{{ end }}
   </div>
-  <ul class="[ reason-list ][ grid md:col--2 lg:col--4 gap--2 ]">
+  <ul class="[ reason-list ][ grid md:col--2 gap--2 ]">
     {{ range .items }}
     <li class="[ reason-card ][ grid gap--1 ]">
       {{ with .icon }}
@@ -83,15 +81,15 @@
 </section>
 {{ end }}
 
-<section class="[ resource-center home-section ][ grid section--spacing section--padding ]">
+<section class="[ home-section ][ grid section--spacing section--padding ]">
   <div>
     {{ with .Params.resourceCenter }}
     <h2>{{ .title }}</h2>
     <p class="[ lead ]">{{ .lead }}</p>
-    <p>{{ .text }}</p>
+    {{ .text | markdownify }}
     {{ else }}
     <h2>Bahamas Logistics Resource Center</h2>
-    <p class="[ lead ]">Practical guides, industry updates, and logistics knowledge designed for businesses importing into and operating throughout The Bahamas.</p>
+    <p class="[ lead ]">Practical guides, industry updates, and logistics knowledge designed for businesses importing into and operating throughout The Bahamas. Learn about customs procedures, permits, freight forwarding, warehousing, and distribution from a local perspective, or <a href="/sitemap/">browse our complete directory of logistics services and resources</a>.</p>
     {{ end }}
   </div>
   {{ $posts := (site.GetPage "section" "insights").RegularPages | first 3 }}

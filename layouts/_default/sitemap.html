@@ -1,0 +1,75 @@
+{{ define "main" }}
+{{- $excluded := slice .RelPermalink "/thank-you/" -}}
+{{- $policyURLs := slice "/privacy-policy/" "/terms-use/" "/cookie-policy/" "/accessibility-statement/" -}}
+{{- $sections := slice -}}
+{{- range .Site.Sections -}}
+  {{- if and (not (in $excluded .RelPermalink)) (not (in $policyURLs .RelPermalink)) -}}
+    {{- $sections = $sections | append .Section -}}
+  {{- end -}}
+{{- end -}}
+
+<article class="[ sitemap ][ grid layout--spacing section--padding ]">
+  <header class="[ sitemap__header ][ grid row-gap--0.5 ]">
+    <h1>{{ .Title }}</h1>
+    {{ partial "breadcrumbs.html" . }}
+    {{ with .Content }}<div class="[ content ]">{{ . }}</div>{{ end }}
+  </header>
+
+  <div class="[ sitemap__groups ][ grid md:col--2 gap--3 ]">
+    <section class="[ sitemap__group ][ grid row-gap--1 ]" aria-labelledby="sitemap-main-pages">
+      <h2 id="sitemap-main-pages">Main Pages</h2>
+      <ul class="[ sitemap__list ][ grid row-gap--0.5 ]">
+        <li><a href="{{ site.Home.RelPermalink }}">Home</a></li>
+        {{ range .Site.Sections.ByTitle }}
+          {{ if and (not (in $excluded .RelPermalink)) (not (in $policyURLs .RelPermalink)) }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </section>
+
+    {{ range .Site.Sections.ByTitle }}
+      {{ if and (not (in $excluded .RelPermalink)) (not (in $policyURLs .RelPermalink)) (gt (len .RegularPages) 0) }}
+      <section class="[ sitemap__group ][ grid row-gap--1 ]" aria-labelledby="sitemap-{{ .Section | urlize }}">
+        <h2 id="sitemap-{{ .Section | urlize }}"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <ul class="[ sitemap__list ][ grid row-gap--0.5 ]">
+          {{ range .RegularPages.ByTitle }}
+            {{ if not (in $excluded .RelPermalink) }}
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          {{ end }}
+        </ul>
+      </section>
+      {{ end }}
+    {{ end }}
+
+    <section class="[ sitemap__group ][ grid row-gap--1 ]" aria-labelledby="sitemap-policies">
+      <h2 id="sitemap-policies">Policies</h2>
+      <ul class="[ sitemap__list ][ grid row-gap--0.5 ]">
+        {{ range site.Menus.policies }}
+          {{ if ne .URL "/sitemap/" }}
+          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </section>
+
+    {{- $otherPages := slice -}}
+    {{- range .Site.RegularPages -}}
+      {{- if and (not (in $excluded .RelPermalink)) (not (in $policyURLs .RelPermalink)) (not (in $sections .Section)) -}}
+        {{- $otherPages = $otherPages | append . -}}
+      {{- end -}}
+    {{- end -}}
+    {{ if gt (len $otherPages) 0 }}
+    <section class="[ sitemap__group ][ grid row-gap--1 ]" aria-labelledby="sitemap-other-pages">
+      <h2 id="sitemap-other-pages">Other Pages</h2>
+      <ul class="[ sitemap__list ][ grid row-gap--0.5 ]">
+        {{ range $otherPages.ByTitle }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    </section>
+    {{ end }}
+  </div>
+</article>
+{{ end }}

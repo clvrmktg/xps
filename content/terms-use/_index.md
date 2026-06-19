@@ -9,8 +9,6 @@ description = ''
 
 +++
 
-**Effective Date:** [Insert Date]
-
 Welcome to the website of XPS (“we,” “our,” or “us”). By accessing or using this website (the “Site”), you agree to be bound by the following Terms of Use. If you do not agree to these terms, please do not use the Site.
 
 ## 1. Use of the Site

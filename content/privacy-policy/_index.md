@@ -5,8 +5,6 @@ title = 'Privacy Policy'
   
 +++
 
-**Effective Date:** [Insert Date]
-
 XPS ("we", "our", or "us") respects your privacy and is committed to protecting the personal information you provide when using our website.
 
 ## 1. Information We Collect

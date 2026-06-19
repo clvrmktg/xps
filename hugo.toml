@@ -21,6 +21,8 @@ public_path = "/uploads"
     categories = "/categories/:slug/"
 
 [ params ]
+  name = "XPS"
+  legalName = "XPS Holdings Ltd."
   version = "1738220434631"
   twic = "xpslogistics"
   share = "/uploads/xps-share-fallback.jpg"
@@ -117,6 +119,12 @@ public_path = "/uploads"
   name = "Accessibility Statement"
   url = "/accessibility-statement/"
   weight = 4
+
+[[menu.policies]]
+  identifier = "sitemap"
+  name = "Sitemap"
+  url = "/sitemap/"
+  weight = 5
 
 
 [markup]

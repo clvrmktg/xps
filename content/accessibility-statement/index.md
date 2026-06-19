@@ -10,8 +10,6 @@ description = "XPS is committed to making our website accessible to all users. L
 +++
 
 
-**Effective Date:** [Insert Date]
-
 XPS is committed to providing a website that is accessible to all users, including those with disabilities. We aim to ensure that our content is easy to navigate and interact with, regardless of technology or ability.
 
 ## Our Commitment

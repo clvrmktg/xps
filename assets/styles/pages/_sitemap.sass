@@ -1,0 +1,25 @@
+@use 'abstracts' as *
+
+.sitemap
+  --content-max-width: #{rem(960)}
+
+.sitemap__header
+  max-width: #{rem(700)}
+
+.sitemap__groups
+  align-items: start
+
+.sitemap__group
+  border-top: em(1) solid var(--border)
+  padding-top: 1em
+
+  h2
+    font-size: var(--step-1)
+
+.sitemap__list
+  list-style: none
+  padding: 0
+
+  a
+    text-decoration-color: color('red')
+    text-underline-offset: 0.2em
