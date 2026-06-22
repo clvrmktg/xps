@@ -15,6 +15,8 @@ subheading = """
 Customs brokerage, freight forwarding, warehousing, and distribution coordinated through one local partner. From Florida suppliers straight to your final island destination, we keep your commercial supply chain moving on time.
 """
 
+heroTrust = "★★★★★ 5.0 Google Rating — Trusted by Commercial Importers in Nassau"
+
 [highlights]
 title = "How XPS Supports Your Supply Chain"
 lead  = "A single logistics partner for customs clearance, freight forwarding, warehousing, and distribution throughout The Bahamas."
@@ -46,8 +48,9 @@ heading = "Local Knowledge. Practical Solutions."
 image = "nassau-container-port-bahamas.jpg"
 alt = "Nassau Container Port in The Bahamas"
 paragraphs = [
-  "Moving cargo through the Bahamian supply chain requires tight control over both international freight routes and local ground handling. XPS orchestrates your entire shipment—routing your freight across ocean and air lanes, while directly managing the crucial customs clearance, warehousing, and ground trucking operations once it lands in Nassau.",
-  "Whether you are importing commercial retail stock, handling heavy construction project cargo, or scheduling recurring distribution to the Family Islands, our team handles the ground execution and clear communication needed to protect your inventory and keep your shipments moving."
+  "Successful logistics in The Bahamas requires more than transportation. Businesses must navigate customs requirements, government agencies, warehousing constraints, and distribution across multiple islands.",
+  "XPS combines local logistics knowledge with practical coordination for cargo moving through Nassau Container Port, Arawak Cay, Lynden Pindling International Airport, LPIA cargo facilities, and Family Island distribution networks.",
+  "Whether you are importing commercial inventory, managing project cargo, or shipping through the Florida-to-Bahamas trade lane, our team helps coordinate the details from arrival to final delivery."
 ]
 
 [reasons]
@@ -74,18 +77,35 @@ title = "Responsive Communication"
 text = "Real people offering real updates. We confirm document receipts immediately so you never have to guess if your freight is moving."
 icon = "heart-handshake"
 
+[testimonials]
+title = "Trusted By Businesses Across The Bahamas"
+lead = "Businesses rely on XPS for responsive communication, practical logistics support, and dependable coordination from customs clearance to final delivery."
+
+[[testimonials.items]]
+quote = "XPS completely sorted out our import delays. They confirm receipt of our customs paperwork immediately, so we always know exactly when our inventory is clearing the port."
+label = "Commercial Importer"
+
+[[testimonials.items]]
+quote = "We use XPS to coordinate our heavy materials transport to Nassau job sites. Their ground team is organized, responsive, and reliable."
+label = "Project Cargo Client"
+
+[[testimonials.items]]
+quote = "Getting commercial freight from the port onto Family Island mailboats used to be a scheduling headache. XPS handles the transfer smoothly."
+label = "Family Island Distribution Client"
+
 [resourceCenter]
 title = "Bahamas Logistics Resource Center"
-lead = "Practical guides, industry updates, and logistics knowledge designed for businesses importing into and operating throughout The Bahamas."
-text = "Learn about customs procedures, permits, freight forwarding, warehousing, and distribution from a local perspective, or [browse our complete directory of logistics services and resources](/sitemap/)."
+lead = "The Bahamas Logistics Resource Center provides practical guidance for businesses importing, storing, distributing, and managing cargo throughout The Bahamas. Learn from local customs brokerage and freight professionals about customs procedures, permits, freight forwarding, warehousing, distribution, and supply chain planning."
+text = ""
 
 [coverage]
 title = "Supporting Businesses Across The Bahamas"
 items = [
-  "Commercial Imports",
-  "Nassau & New Providence",
-  "Family Island Distribution",
-  "Florida-Bahamas Trade Lane"
+  "Commercial Customs Brokerage",
+  "Nassau Port Logistics",
+  "Air & Ocean Freight Forwarding",
+  "Commercial Ground Trucking",
+  "Family Island Mailboat Distribution"
 ]
 
 +++

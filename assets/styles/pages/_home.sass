@@ -122,6 +122,20 @@
     color: color('xps-red')
     font-weight: 800
 
+.hero__trust
+  display: inline-block
+  max-width: max-content
+  margin-top: 0.25rem
+  margin-bottom: 1rem
+  padding: 0.35rem 0.55rem
+  border: rem(1) solid rgba(255, 255, 255, 0.22)
+  border-radius: rem(4)
+  background: rgba(0, 0, 0, 0.28)
+  color: rgba(255, 255, 255, 0.86)
+  font-size: var(--step--1)
+  font-weight: 800
+  line-height: 1.35
+
 .brand-statement
   background: color('black')
   color: color('white')
@@ -221,6 +235,31 @@
     width: rem(24)
     height: rem(24)
     stroke: currentcolor
+
+.testimonial-list
+  align-items: start
+
+.testimonial-card
+  min-height: 100%
+  padding: clamp(1.35rem, 3vw, 1.75rem)
+  border: rem(1) solid color('neutral-grey-light')
+  border-top: rem(4) solid color('xps-red')
+  border-radius: rem(8)
+  background: color('white')
+  box-shadow: 0 rem(18) rem(42) rgba(32, 32, 32, 0.07)
+
+  blockquote,
+  p
+    padding-bottom: 0
+
+  blockquote
+    color: var(--text-body)
+    line-height: 1.6
+
+  figcaption
+    color: color('xps-red')
+    font-style: normal
+    font-weight: 900
 
 .coverage-strip
   padding-block: clamp(2rem, 5vw, 3rem)

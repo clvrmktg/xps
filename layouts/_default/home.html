@@ -15,8 +15,11 @@
       <div class="[ hero__content ]">
         <h2 class="[ display font--900 ]">{{ .Params.heading }}</h2>
         <p class="[ font--600 ch--54 ]">{{ .Params.subheading | safeHTML }}</p>
+        {{ with .Params.heroTrust }}
+        <p class="[ hero__trust ]">{{ . }}</p>
+        {{ end }}
         <div class="[ hero__actions ][ flex gap--1 ]">
-          <a class="[ btn btn--lg btn--red ]" href="/contact-us" data-prefetch>Talk to our team</a>
+          <a class="[ btn btn--lg btn--red ]" href="/contact-us/" data-prefetch>Talk To Our Team</a>
           <a class="[ btn btn--lg btn--white--ghost ]" href="/services/" data-prefetch>Explore Services</a>
         </div>
       </div>
@@ -81,6 +84,25 @@
 </section>
 {{ end }}
 
+{{ with .Params.testimonials }}
+<section class="[ testimonials home-section ][ grid section--spacing section--padding ]" aria-label="Client testimonials">
+  <div>
+    <h2>{{ .title }}</h2>
+    {{ with .lead }}<p class="[ lead ]">{{ . }}</p>{{ end }}
+  </div>
+  <div class="[ testimonial-list ][ grid md:col--3 gap--2 ]">
+    {{ range .items }}
+    <figure class="[ testimonial-card ][ grid gap--1 ]">
+      <blockquote>
+        <p>{{ .quote }}</p>
+      </blockquote>
+      <figcaption>{{ .label }}</figcaption>
+    </figure>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
 <section class="[ home-section ][ grid section--spacing section--padding ]">
   <div>
     {{ with .Params.resourceCenter }}
@@ -89,7 +111,7 @@
     {{ .text | markdownify }}
     {{ else }}
     <h2>Bahamas Logistics Resource Center</h2>
-    <p class="[ lead ]">Practical guides, industry updates, and logistics knowledge designed for businesses importing into and operating throughout The Bahamas. Learn about customs procedures, permits, freight forwarding, warehousing, and distribution from a local perspective, or <a href="/sitemap/">browse our complete directory of logistics services and resources</a>.</p>
+    <p class="[ lead ]">The Bahamas Logistics Resource Center provides practical guidance for businesses importing, storing, distributing, and managing cargo throughout The Bahamas. Learn from local customs brokerage and freight professionals about customs procedures, permits, freight forwarding, warehousing, distribution, and supply chain planning.</p>
     {{ end }}
   </div>
   {{ $posts := (site.GetPage "section" "insights").RegularPages | first 3 }}
@@ -100,7 +122,7 @@
 <section class="[ coverage-strip ][ full-width content-grid section--padding ]">
   <div class="[ coverage-strip__inner ][ grid gap--2 ]">
     <h2>{{ .title }}</h2>
-    <ul class="[ coverage-strip__list ][ grid lg:col--4 gap--1 ]">
+    <ul class="[ coverage-strip__list ][ grid md:col--2 lg:col--4 gap--1 ]">
       {{ range .items }}
       <li>{{ . }}</li>
       {{ end }}
